@@ -1,0 +1,6 @@
+<!-- svg for play icon in MRU Card -->
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+	xmlns="http://www.w3.org/2000/svg">
+	<circle cx="16" cy="16" r="16" fill="#2B579A" fill-opacity="0.1"/>
+	<path d="M14.4961 11.9933C13.8295 11.6124 13 12.0938 13 12.8616V19.1384C13 19.9062 13.8295 20.3876 14.4961 20.0066L19.9884 16.8682C20.6602 16.4843 20.6602 15.5156 19.9884 15.1318L14.4961 11.9933Z" fill="#2E6AC5"/>
+</svg>

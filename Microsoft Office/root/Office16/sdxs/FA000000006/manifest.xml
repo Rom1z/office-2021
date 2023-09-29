@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>42CEE6CD-98A1-4A32-BD2E-084C451C95E5</Id>
+  <!--Version. Updates from the store only get triggered if there is a version change. -->
+  <Version>1.0.2305.17003</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Search" />
+  <Description DefaultValue="Search" />
+  <IconUrl DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/images/smartLookupIcon.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
+  <!--End Basic Settings. -->
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <Hosts>
+    <Host Name="Document" />
+    <Host Name="Presentation" />
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://uci.edog.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?isAgave" />
+  </DefaultSettings>
+  <!-- End TaskPane Mode integration.  -->
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="SharedRuntime" />
+      <Set Name="SearchWithAgave" />
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Localhost.URL" DefaultValue="http://localhost:8080/main_ssr.html?isAgave" />
+        <!-- Team Dogfood on INT Master build without any local package support -->
+        <bt:Url id="TeamDogfood.URL" DefaultValue="https://uciserviceintcdnwus.blob.core.windows.net/mirrored/smartlookup/current/main_ssr.html?isAgave" />
+        <!-- Team Dogfood on Daily Release build without any local package support -->
+        <bt:Url id="TeamDogfood.Next.URL" DefaultValue="https://uciserviceintcdnwus.blob.core.windows.net/mirrored/smartlookup/next/main_ssr.html?isAgave" />
+        <!-- The endpoint of SearchPane for real users in all environments, with local offline files for both Service and Setup Delivery -->
+        <bt:Url id="SearchPane.URL" DefaultValue="https://uci.edog.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?isAgave" />
+      </bt:Urls>
+    </Resources>
+    <ConnectedServiceControls>
+      <Scopes>
+        <Scope>AnalyzeUserContent</Scope>
+      </Scopes>
+    </ConnectedServiceControls>
+  </VersionOverrides>
+</OfficeApp>

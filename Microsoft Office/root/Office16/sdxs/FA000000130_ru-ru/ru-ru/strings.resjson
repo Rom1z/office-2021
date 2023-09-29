@@ -1,0 +1,19 @@
+{
+  "Title": "Вы можете сделать больше, сохраняя данные в OneDrive",
+  "InformationTableAccessibilityLabel": "Таблица, показывающая преимущества сохранения файлов в OneDrive. Список включает: 1. Автономный доступ, 2. Доступ к файлам и их резервное копирование с любого устройства, 3. Совместное использование и совместная работа в реальном времени, 4. Обеспечение соответствия, безопасности и защиты файлов и 5. Автосохранение и журнал версий.",
+  "OnYourComputerHeader": "На компьютере",
+  "InYourOneDriveHeader": "В вашем хранилище OneDrive",
+  "OfflineMessage": "Автономный доступ",
+  "AccessAndBackupMessage": "Получайте доступ и создавайте резервные копии файлов с любого устройства",
+  "ShareAndCollabMessage": "Предоставляйте общий доступ и совместно работайте в реальном времени",
+  "CompliantSecureAndProtectionMessage": "Обеспечьте соответствие требованиям, безопасность и защиту для файлов",
+  "AutoSaveAndVersionMessage": "Автосохранение и журнал версий",
+  "SaveToComputerButtonText": "Сохранить на компьютере",
+  "SaveToCloudButtonText": "Сохранить в облако",
+  "DontAskAgainControlText": "Больше не спрашивать",
+  "SubscriptionText": "*Хранилище OneDrive включено в вашу подписку на M365",
+  "SmileFeedbackLabel": "Отправить смайлик в качестве отзыва",
+  "FrownFeedbackLabel": "Отправить нахмуренный смайлик в качестве отзыва",
+  "AvailableAccessibilityLabel": "В сети",
+  "NotAvailableAccessibilityLabel": "Недоступно"
+}

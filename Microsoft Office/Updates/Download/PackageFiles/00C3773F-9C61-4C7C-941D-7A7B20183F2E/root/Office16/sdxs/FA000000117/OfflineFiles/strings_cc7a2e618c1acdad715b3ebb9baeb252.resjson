@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Python នៅក្នុង Excel (សាកល្បង)",
+  "premiumHubMessageTextForPythonInExcel": "រួមបញ្ចូលរូបមន្ត Python ជាមួយក្រឡាចត្រង្គ Excel ដើម្បីសម្អាត រុករក និងវិភាគទិន្នន័យរបស់អ្នក។ ធានាសុវត្ថិភាពដោយប្រើ្មបណ្តាញសមូហកម្មរបស់ Microsoft, បង្កើត និងចែករំលែកការវិភាគកម្រិតខ្ពស់នៅក្នុង Excel។",
+  "premiumHubSectionOneHeaderForPythonInExcel": "ចូលទៅកាន់បណ្ណាល័យ",
+  "premiumHubSectionOneMessageForPythonInExcel": "ធ្វើឱ្យងាយស្រួល និងពន្លឿនការវិភាគរបស់អ្នកដោយប្រើបណ្ណាល័យ Python ទូទៅ។",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "រកមើលលំនាំ",
+  "premiumHubSectionTwoMessageForPythonInExcel": "ប្រើរូបមន្ត Python ដើម្បីស្វែងរកស្ថិតិដែលលាក់កំបាំងនៅក្នុងទិន្នន័យរបស់អ្នក ហើយបង្ហាញទិន្នន័យទាំងនោះឱ្យឃើញដោយប្រើប្លង់ដ្យាក្រាម។",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "មិនតម្រូវឲ្យដំឡើងទេ",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ធ្វើឱ្យលំហូរការងារងាយស្រួលជាមួយនឹងបរិស្ថានសុវត្ថិភាពដែលត្រៀមរួចជាស្រេចក្នុងការប្រើប្រាស់។",
+  "premiumHubTermsOfUseForPythonInExcel": "ខណៈពេលដែល Python នៅក្នុង Excel កំពុងស្ថិតក្នុងការមើលជាមុនជាសាធារណៈ, អ្នកនឹងអាចប្រើលក្ខណៈពិសេសនេះជាផ្នែកមួយនៃការជាវរបស់អ្នក. បន្ទាប់ពីការមើលជាមុន អ្នកត្រូវទិញអាជ្ញាប័ណ្ណបន្ថែមដើម្បីប្រើប្រាស់។ មើល {0}។",
+  "premiumHubLearnMoreLinkForPythonInExcel": "ស្វែងយល់បន្ថែម",
+  "premiumHubPythonCenterButtonForPythonInExcel": "បង្ហាញខ្ញុំនូវរបៀបដែលវាដំណើរការ",
+  "premiumHubTryPreviewButtonForPythonInExcel": "សាកល្បងការមើលជាមុន",
+  "termsOfUseLinkForPreview": "មើលលក្ខខណ្ឌប្រើប្រាស់ជាមុន"
+}

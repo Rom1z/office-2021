@@ -1,0 +1,15 @@
+{
+  "components": {
+  },
+  "runtime": {
+  },
+  "assetsPath": ".",
+  "bundle": {
+    "fileName": "OneNoteCopilot.win32",
+    "extension": "bundle.js"
+  },
+  "packager": { 
+    "host": "localhost:8081",
+    "fileName": "src/OneNoteCopilot"
+  }
+}

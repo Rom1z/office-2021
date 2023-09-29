@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Rhowch gynnig ar Python in Excel (rhagolwg)",
+  "premiumHubMessageTextForPythonInExcel": "Cyfuno fformiwlâu Python gyda'r grid Excel i lanhau, archwilio a dadansoddi eich data. Wedi'i diogelu gan gwmwl Microsoft, dylech greu a rhannu mwy o ddadansoddi y tu mewn i Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Defnyddio llyfrgelloedd",
+  "premiumHubSectionOneMessageForPythonInExcel": "Symleiddio a hwyluso eich dadansoddiadau â llyfrgelloedd Python cyffredin.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Canfod patrymau",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Defnyddiwch fformiwlâu Python i ddarganfod cipolygon cudd yn eich data a'u darlunio gyda phlotiau.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Does dim angen gosod",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Symleiddio llifau gwaith ag amgylcheddau diogel sy'n barod i'w defnyddio.",
+  "premiumHubTermsOfUseForPythonInExcel": "Tra mae Python yn Excel mewn rhagolwg cyhoeddus, byddwch yn gallu defnyddio'r nodwedd hon fel rhan o'ch tanysgrifiad. Ar ôl y rhagolwg, bydd angen i chi brynu trwydded ychwanegol i'w ddefnyddio. Gweld y {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Dysgu mwy",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Dangos i mi sut mae'n gweithio",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Rhoi cynnig ar y rhagolwg",
+  "termsOfUseLinkForPreview": "telerau defnydd y rhagolwg"
+}

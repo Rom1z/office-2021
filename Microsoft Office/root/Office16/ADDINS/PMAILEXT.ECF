@@ -1,0 +1,28 @@
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={2A003F50-61ED-11d1-951A-00A0C90D2899}
+Path="pmailext.dll"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+
+[Exchange Client Compatibility]
+Exchange Registry=1
+Exchange Extension Key="PMail Extension"
+Exchange Context Map=01
+Exchange Interface Map=1
+
+[Folder]
+Events=OnExtCommand
+Commands=WinCEInboxTransfer
+Outlook Commands=WinCEInboxTransfer
+Extension Outlook Commands=50000
+
+[Command]
+WinCEInboxTransfer=50000;*;Tools End Enabled Suppress
+
+[Strings]
+DisplayName=Поддержка Windows CE
+Description=Передача в папку Входящие Windows CE
+

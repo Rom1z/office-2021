@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- SQL_ENGINE_ERROR ERRORS (30000 to 39999) -->
+    <Package ID="4" DefaultComponent="SQLEngine">
+
+        <!-- GENERAL ERRORS (30000 to 30999) -->
+
+        <Error Key="LogicError" Params="2" NativeErrorCode="30000">Логикалық қате [%1%: %2%].</Error>
+
+        <Error Key="InvalidAET" Params="2" NativeErrorCode="30010">Жарамсыз AE тармағы [%1%: %2%].</Error>
+
+        <Error Key="InvalidParseTree" Params="2" NativeErrorCode="30040">Талдау тармағы дұрыс емес [%1%: %2%].</Error>
+
+        <Error Key="LexerScannerInitFail" NativeErrorCode="30050">Лексикалық талдаушыны/сканерді іске қосу кезінде ақаулық пайда болды.</Error>
+
+        <Error Key="StoredProcedureNotFound" Params="1" NativeErrorCode="30070">Сақталған процедура табылмады: %1%</Error>
+
+        <Error Key="DuplicateParameterIndex" Params="1" NativeErrorCode="30080">Сақталған процедура үшін тіркелген қайталанатын параметр индексі: %1%</Error>
+
+        <Error Key="InvalidParameterIndex" Params="1" NativeErrorCode="30090">Сақталған процедура үшін тіркелген параметр индексі дұрыс емес: %1%</Error>
+
+        <Error Key="InvalidReturnValueIndex" NativeErrorCode="30100">Қайтару мәндерінің индексі 0 болуы керек.</Error>
+
+        <Error Key="InvalidNumberProcedureParameters" Params="3" NativeErrorCode="30110">Сақталған "%1%" процедураларға арналған параметрлердің саны дұрыс емес. Күтілгені: %2%; Алынғаны: %3%</Error>
+
+        <Error Key="InvalidNumberStoredProcedureResults" NativeErrorCode="30120">Сақталған процедуралар тек бір нәтижені қайтара алады.</Error>
+      
+        <Error Key="InvalidDefaultParam" Params="1" NativeErrorCode="30130">Сақталған %1% процедура аргументі әдепкі мәнге ие бола алмайды. Тек input және input_output параметрлері ғана әдепкі бола алады.</Error>
+      
+        <Error Key="DefaultSpecForNonDefaultParam" Params="1" NativeErrorCode="30140">%1% параметрі әдепкі бола алмайды, себебі оның әдепкі мәні жоқ.</Error>
+
+        <Error Key="InvalidDataEngineProp" Params="1" NativeErrorCode="30141">Жарамсыз дерек механизмінің сипаты: %1%</Error>
+
+        <Error Key="CannotCreateCollator" Params="1" NativeErrorCode="30142">Келесі тіл үшін реттеу құралын жасау мүмкін емес: %1%</Error>
+
+        <Error Key="TypeUnsupported" Params="1" NativeErrorCode="30160">%1% is unsupported.</Error>
+
+        <Error Key="CantPushFixedLengthDataInParts" NativeErrorCode="30170">Бекітілген ұзындық параметрінің дерегін бөліктерге жіберу мүмкін емес.</Error>
+
+        <Error Key="PushedParamDataTooLarge" NativeErrorCode="30180">Жіберілген параметр дерегі максималды ұзындықтан асып кетеді.</Error>
+
+        <Error Key="InvalidPushedParamConversion" NativeErrorCode="30190">Жіберілген параметр мәнін түрлендіру кезінде қате пайда болды.</Error>
+
+        <Error Key="CannotQueryParameterValueDuringPassdown" NativeErrorCode="30200">Жіберу кезінде параметр мәнін сұрау мүмкін емес, себебі ол орындалу барысында өзгеруі мүмкін.</Error>
+
+        <!-- SQL Errors. (31000 to 39999) -->
+        <!-- Sorted by SQLState and the keys. -->
+      
+        <Error Key="RestrictedDataTypeViolation" NativeErrorCode="31020">Шектелген деректер түрі атрибутының бұзылуы.</Error>
+
+        <Error Key="ConvertConversionNotSupported" Params="2" NativeErrorCode="31040">Көрсетілген %1% – %2% түрленуіне CONVERT мәні қолдау көрсетпейді.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CastConversionNotSupported" Params="2" NativeErrorCode="31041">Көрсетілген %1% – %2% түрленуіне CAST қолдау көрсетпейді.</Error>
+
+        <Error Key="InvalidValueSubQuery" NativeErrorCode="31050">Элементтер санының бұзылуы - мәннің ендірілген сұрауы бірнеше мән қайтарды.</Error>
+
+        <Error Key="InvalidNumberInsertValues" Params="2" NativeErrorCode="31051">Кірістірілуі тиіс мәндердің саны (%1%) кірістіру кестесіндегі бағандардың санына (%2%) сәйкес келмейді.</Error>
+
+        <Error Key="RightDataTruncation" NativeErrorCode="31052">Жолдың немесе екілік деректің оң жақтан қиылуы.</Error>
+
+        <Error Key="MaxPrecisionExceeded" Params="2" NativeErrorCode="31060">"%1%" саны рұқсат етілген максималды дәлдіктен асып кетеді (%2%).</Error>
+
+        <Error Key="ScalarFnDomainError" Params="1" NativeErrorCode="31070">"%1%" скаляр функциясы үшін домен аты ауқымнан тыс.</Error>
+
+        <Error Key="ScalarFnRangeError" Params="1" NativeErrorCode="31080">"%1%" скаляр функциясы үшін нәтиже мәні ауқымнан тыс.</Error>
+
+        <Error Key="ScalarFnYearRangeError" Params="1" NativeErrorCode="31090">%1% жыл мәні ауқымнан тыс, рұқсат етілген ауқым – [-9999, 9999].</Error>
+
+        <Error Key="DivisionByZero" NativeErrorCode="31100">Нөлге бөлу.</Error>
+
+        <Error Key="LeadingPrecisionExceeded" Params="1" NativeErrorCode="31101">%1% бастапқы аралық дәлдігі шамадан асты.</Error>
+
+        <Error Key="LeadingPrecisionRangeError" NativeErrorCode="31102">Бастапқы аралық дәлдігінің мәні [0, 9] ауқымында болуы керек.</Error>
+
+        <Error Key="FractionalPrecisionRangeError" NativeErrorCode="31103">Бөлшектік секундтардың дәлдік мәні [1, 9] ауқымында болуы керек.</Error>
+
+        <Error Key="CompareBinaryTypesNotSupported" NativeErrorCode="31110">Екілік түріндегілерді салыстыруға қолдау көрсетілмейді.</Error>
+
+        <Error Key="IncompatibleArgTypeForScalarFn" Params="3" NativeErrorCode="31120">%3% скаляр функциясының %2% аргументіне %1% аргумент түрі үйлеспейді.</Error>
+
+        <Error Key="IncompatibleCollations" NativeErrorCode="31130">Үйлесім таппайтын сұрыптау параметрлері табылды.</Error>
+
+        <Error Key="IncompatibleTypeInPredicate" NativeErrorCode="31140">Предикатта түрлер сәйкес келмейді.</Error>
+
+        <Error Key="LikePredicateRequiresCharTypes" NativeErrorCode="31150">LIKE предикаттарына таңбалық дерек түрлері қажет.</Error>
+
+        <Error Key="IncompatibleInsertType" Params="2" NativeErrorCode="31151">Кірістіру үшін түрі сәйкес келмейді: күтілгені – %1%, нақтысы – %2%.</Error>
+
+        <Error Key="LOBInOrderByOrGroupBy" NativeErrorCode="31160">GROUP BY немесе ORDER BY ішіндегі ұзын дерек түрлеріне қолдау көрсетілмейді.</Error>
+
+        <Error Key="ScalarFnLiteralConvError" Params="1" NativeErrorCode="31161">Скаляр функциясы үшін "%1%" мәнін сандық мәнге түрлендіру кезінде қате пайда болды.</Error>
+
+        <Error Key="ScalarFnIntegerLiteralConvError" Params="1" NativeErrorCode="31162">Скаляр функциясы үшін "%1%" мәнін бүтін сан мәніне түрлендіру кезінде қате пайда болды.</Error>
+
+        <Error Key="InvalidEscapeChar" Params="1" NativeErrorCode="31166">"%1%" LIKE ESCAPE сөйлемі жарамсыз. Ол тек 1 таңбадан тұруы керек.</Error>
+
+        <Error Key="InvalidEscapeSequence" NativeErrorCode="31167">LIKE ESCAPE реті дұрыс емес. Escape таңбасынан кейін "%", "_" немесе басқа escape таңбасы болуы керек.</Error>
+
+        <Error Key="AggrFnAndSubQueryInGroupBy" NativeErrorCode="31180">GROUP BY сөйлемінде функциялар мен ендірілген сұрауларды біріктіруге рұқсат етілмейді.</Error>
+
+        <Error Key="AggrFunctionInOn" NativeErrorCode="31190">ON сөйлеміндегі біріктіру функциясы SELECT LIST немесе HAVING сөйлемдеріндегі ендірілген сұрауда болмайынша және біріктіретін баған сыртқы сілтеме болмайынша, оған рұқсат етілмейді.</Error>
+
+        <Error Key="AggrFunctionInWhere" NativeErrorCode="31200">WHERE сөйлеміндегі біріктіру функциясы SELECT LIST немесе HAVING сөйлемдеріндегі ендірілген сұрауда болмайынша және біріктіретін баған сыртқы сілтеме болмайынша, оған рұқсат етілмейді.</Error>
+
+        <Error Key="AggrFunctionNotInSelListOrHaving" NativeErrorCode="31210">Сыртқы сілтемесі бар біріктіру функциясы SELECT LIST немесе HAVING сөйлемінде болуы керек.</Error>
+
+        <Error Key="ConstantOrderByExpression" NativeErrorCode="31220">Кемінде бір ORDER BY коды тұрақты өрнек болып табылады.</Error>
+
+        <Error Key="CorrSubQueryNotAllowedInHaving" NativeErrorCode="31230">HAVING сөйлемінде байланысты ендірілген сұрауға рұқсат етілмейді.</Error>
+
+        <Error Key="DuplicatedColumnName" Params="2" NativeErrorCode="31240">Қайталанатын "%1%" бағанының аты "%2%" ішінде көрсетілді.</Error>
+
+        <Error Key="DuplicatedUpdateColumnName" Params="1" NativeErrorCode="31241">"%1%" қайталанатын бағанның аты жаңарту тізімінде көрсетілді.</Error>
+
+        <Error Key="DynParamNotAllowed" Params="1" NativeErrorCode="31250">Динамикалық параметрге %1% ішінде рұқсат етілмейді.</Error>
+
+        <Error Key="ExprInGroupByNotRowBased" NativeErrorCode="31260">GROUP BY сөйлеміндегі әрбір өрнектің кемінде бір баған сілтемесі болуы керек. Барлық баған сілтемесі сыртқы ауқымды білдіре бермейді.</Error>
+
+        <Error Key="IfCondInNonSelectList" Params="1" NativeErrorCode="31270">IF шарттары таңдау тізімінде болуы керек.</Error>
+
+        <Error Key="IncompatibleBinaryOperandTypes" Params="3" NativeErrorCode="31280">%1% және %2% операнд түрлері %3% операторы үшін жарамсыз.</Error>
+
+        <Error Key="IncompatibleUnionColumnTypes" Params="2" NativeErrorCode="31281">%1% және %2% біріккен бағандарында сәйкес келмейтін түрлер бар.</Error>
+
+        <Error Key="IncompatibleSetColumnTypes" Params="2" NativeErrorCode="31282">Сәйкес келетін бағандар %1% мәнімен араласқан нәтижелер жинағында түрленетін болуы керек. %2% және %3% түрленбейді.</Error>
+
+        <Error Key="IncompatibleCaseResultTypes" Params="1" NativeErrorCode="31283">CASE мәлімдемелеріне арналған нәтиже түрлері түрленетін болуы керек. %1% түрлерін өзара түрлендіру мүмкін емес.</Error>
+
+        <Error Key="InvalidCollationName" Params="1" NativeErrorCode="31290">'%1%' is not a valid collation name.</Error>
+
+        <Error Key="InvalidColumnPrefix" Params="1" NativeErrorCode="31300">Жарамсыз баған префиксі: %1%.</Error>
+
+        <Error Key="InvalidOperandTypeForSetFn" Params="2" NativeErrorCode="31310">"%2%" SET операторы үшін %1% операнд түрі дұрыс емес.</Error>
+
+        <Error Key="InvalidOrderByExpression" NativeErrorCode="31320">ORDER BY коды дұрыс емес. Кодтар белгісі жоқ бүтін сандар немесе case өрнектері, IF шарттары, параметрлері немесе ішкі сұрауларына жатпайтын өрнектер болуы керек.</Error>
+
+        <Error Key="InvalidOrderByColumn" NativeErrorCode="31321">%1% үшін ORDER BY параметріне рұқсат етілмейді.</Error>
+
+        <Error Key="InvalidScalarFnArgCount" Params ="1" NativeErrorCode="31330">%1% скаляр функциясы үшін аргумент саны дұрыс емес.</Error>
+
+        <Error Key="InvalidScalarFnName" Params="1" NativeErrorCode="31340">%1% is not a valid scalar function or procedure call.</Error>
+
+        <Error Key="InvalidSecondArgForConvertFn" NativeErrorCode="31350">CONVERT екінші аргументі жарамды SQL_* түрінің аты емес.</Error>
+
+        <Error Key="InvalidFirstArgForTSAddFn" NativeErrorCode="31351">TIMESTAMPADD үшін бірінші аргумент дұрыс емес. SQL_TSI_FRAC_SECOND, SQL_TSI_SECOND, SQL_TSI_MINUTE, SQL_TSI_HOUR, SQL_TSI_DAY, SQL_TSI_WEEK, SQL_TSI_MONTH, SQL_TSI_QUARTER немесе SQL_TSI_YEAR күтілді.</Error>
+
+        <Error Key="InvalidFirstArgForTSDiffFn" NativeErrorCode="31352">TIMESTAMPDIFF үшін екінші аргумент дұрыс емес. SQL_TSI_FRAC_SECOND, SQL_TSI_SECOND, SQL_TSI_MINUTE, SQL_TSI_HOUR, SQL_TSI_DAY, SQL_TSI_WEEK, SQL_TSI_MONTH, SQL_TSI_QUARTER немесе SQL_TSI_YEAR болуы керек.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidSecondArgForCastFn" NativeErrorCode="31353">CAST параметрінің екінші аргументі жарамды SQL_* түрінің аты емес.</Error>
+
+        <Error Key="InvalidArithmeticOperandType" Params="2" NativeErrorCode="31360">%2% операторы үшін %1% түрі жарамсыз.</Error>
+
+        <Error Key="InvalidBinaryArithmeticOperandType" Params="3" NativeErrorCode="31361">%3% операторы үшін %1% және %2% түрлері жарамсыз.</Error>
+
+        <Error Key="InvalidValueInValueList" NativeErrorCode="31370">Мәндер тізіміндегі мән дұрыс емес.</Error>
+
+        <Error Key="InvalidValueForTopN" Params="0" NativeErrorCode="31371">TOP мәні дұрыс емес. Мән оң бүтін сан болуы керек.</Error>
+
+        <Error Key="InvalidValueForTopPercent" Params="0" NativeErrorCode="31372">TOP PERCENT мәні дұрыс емес. Мән 0 және 100 аралығындағы оң сан болуы керек.</Error>
+
+        <Error Key="TopPercentCantComputeRowCount" Params="0" NativeErrorCode="31373">TOP PERCENT үшін қатар санын есептеу мүмкін болмады.</Error>
+
+        <Error Key="MultiColumnsInAggrFn" Params="1" NativeErrorCode="31380">Сыртқы сілтемеден тұратын біріктірілген функцияда бірнеше баған көрсетілген. Егер біріктіру функциясында сыртқы сілтеме болса, сол сыртқы сілтеме жалғыз баған сілтемесі болуы керек.</Error>
+
+        <Error Key="MultiExprsInSubQuery" Params="1" NativeErrorCode="31390">Ендірілген сұрауды таңдау тізіміндегі бірнеше өрнек EXISTS тарапынан ұсынылмаған.</Error>
+
+        <Error Key="MultiPartColNameNotBound" Params="1" NativeErrorCode="31400">Квалификаторы бар бағанды байланыстыру мүмкін болмады: %1%.</Error>
+
+        <Error Key="NestedAggrFunctionNotAllowed" NativeErrorCode="31410">Біріктіру функциясының құрамында біріктіру функциясы да, ендірілген сұрау да болмауы керек.</Error>
+
+        <Error Key="NoColumnNameSpecified" Params="2" NativeErrorCode="31420">"%2%" кестесінің/ендірілген сұрауының %1% бағанында баған аты көрсетілмеді.</Error>
+		
+		<Error Key="NoMergeOperationSpecified" Params="0" NativeErrorCode="31421">MERGE үшін операция көрсетілмеді. WHEN MATCHED және WHEN NOT MATCHED сөйлемдерінің екеуі де жоқ.</Error>
+        
+		<Error Key="NonGroupingColInSelList" Params="1" NativeErrorCode="31430">"%1%" бағаны біріктіру функциясында емес немесе GROUP BY сөйлемінен алынбаған.</Error>
+
+        <Error Key="NonUniqueColRef" Params="1" NativeErrorCode="31440">Бірегей емес баған сілтемесі: %1%.</Error>
+
+        <Error Key="OrderByExprNotInSelectDistinct" NativeErrorCode="31450">SELECT DISTINCT бар болғанда, ORDER BY өрнектері таңдау тізімінде пайда болуы керек.</Error>
+
+        <Error Key="OrderByExprNotInSelectList" NativeErrorCode="31460">EXCEPT, INTERSECT немесе UNION өрнектері бар болғанда, бірінші сұрау сипаттамасының таңдау тізімінде ORDER BY өрнектері пайда болуы керек.</Error>
+
+        <!-- [42000]: ORDER BY position number out of range.-->
+        <Error Key="OrderByPositionNumberOutOfRange" NativeErrorCode="31470">ORDER BY өрнегіндегі позиция нөмірі ауқымнан тыс.</Error>
+
+        <!-- [42000]: GROUP BY position number out of range.-->
+        <Error Key="GroupByPositionNumberOutOfRange" NativeErrorCode="31473">GROUP BY ішіндегі позиция нөмірі ауқымнан тыс.</Error>
+
+        <!-- [42000]: GROUP BY position number out of range.-->
+        <Error Key="GroupByPositionNumberWithStar" NativeErrorCode="31474">SELECT тізімінде "*" таңбасы болғанда, GROUP BY мәні бағанның реттік нөмірін пайдаланатын SELECT мәнін білдірмеуі мүмкін.</Error>
+
+        <!-- [42000]: ORDER BY occurs in a subquery without an accompanying TOP.-->
+        <Error Key="OrderByInSubQueryWithoutTop" NativeErrorCode="31475">TOP немесе LIMIT арқылы байланысқанда ғана ORDER BY өрнегі ендірілген сұрауда пайда болады.</Error>
+
+        <Error Key="ParsingFailure" Params="2" NativeErrorCode="31480">%1% near '%2%'.</Error>
+
+        <Error Key="UknownParsingFailure" Params="2" NativeErrorCode="31490">Белгісіз талдау сәтсіз аяқталды.</Error>
+
+        <Error Key="RowConstructorNotSupported" NativeErrorCode="31500">(Сандық) салыстырулар, IN, BETWEEN сияқты предикаттарда қатар мәнінің құрастырғышына қолдау көрсетілмейді.</Error>
+
+        <Error Key="TableOrCorNameNotUnique" Params="1" NativeErrorCode="31510">Кесте/өзара байланыс аты бірегей емес: %1%.</Error>
+
+        <Error Key="SetFnInIFCond" Params="1" NativeErrorCode="31520">IF шартында жинақ функцияларына рұқсат жоқ.</Error>
+
+        <Error Key="SubQueryInIFCond" Params="1" NativeErrorCode="31530">IF шартында ендірілген сұрауларға рұқсат жоқ.</Error>
+      
+        <Error Key="MaxBinaryLiteralLenExceeded" Params="2" NativeErrorCode="31540">"%1%" екілік литералдың ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxCharLiteralLenExceeded" Params="2" NativeErrorCode="31550">"%1%" таңба литералының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxIndexSizeExceeded" Params="1" NativeErrorCode="31560">Индекстің өлшемі максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxRowSizeExceeded" Params="1" NativeErrorCode="31570">Қатардың өлшемі максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxStatementLenExceeded" Params="1" NativeErrorCode="31580">Мәлімдеменің ұзындығы максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxCatalogNameLenExceeded" Params="2" NativeErrorCode="31590">"%1%" каталог атының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxColumnNameLenExceeded" Params="2" NativeErrorCode="31600">"%1%" баған атының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxColumnsInGroupByExceeded" Params="1" NativeErrorCode="31610">GROUP BY сөйлеміндегі бағандардың саны максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxColumnsInIndexExceeded" Params="1" NativeErrorCode="31620">Индекстегі бағандардың саны максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxColumnsInOrderByExceeded" Params="1" NativeErrorCode="31630">ORDER BY сөйлеміндегі бағандардың саны максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxColumnsInSelectExceeded" Params="1" NativeErrorCode="31640">Таңдау тізіміндегі бағандардың саны максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxColumnsInTableExceeded" Params="1" NativeErrorCode="31650">Кестедегі бағандардың саны максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxCursorNameLenExceeded" Params="2" NativeErrorCode="31660">"%1%" курсор атының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxIdentifierLenExceeded" Params="2" NativeErrorCode="31670">"%1%" идентификаторының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxProcedureNameLenExceeded" Params="2" NativeErrorCode="31680">"%1%" процедура атының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxSchemaNameLenExceeded" Params="2" NativeErrorCode="31690">"%1%" схемасы атының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxTableNameLenExceeded" Params="2" NativeErrorCode="31700">"%1%" кестесі атының ұзындығы максималды мәннен асып кетеді: %2%.</Error>
+      
+        <Error Key="MaxTablesInSelectExceeded" Params="1" NativeErrorCode="31710">Таңдау мәлімдемесіндегі кестелердің саны максималды мәннен асып кетеді: %1%.</Error>
+      
+        <Error Key="MaxUserNameLenExceeded" Params="2" NativeErrorCode="31720">Пайдаланушы атының ұзындығы максималды мәннен асып кетеді.</Error>
+
+        <Error Key="InvalidExtractType" Params="2" NativeErrorCode="31721">"Invalid call to scalar function EXTRACT: Argument of type %1% has no field %2%.</Error>
+
+        <Error Key="ReservedKeywordUsed" Params="1" NativeErrorCode="31730">'%1%' is a reserved keyword.</Error>
+      
+        <Error Key="InvalidSqlDataTypeSpecified" Params="1" NativeErrorCode="31731">Көрсетілген SQL дерек түрі дұрыс емес: %1%.</Error>
+
+        <Error Key="InvalidNumberColumnsSet" Params="1" NativeErrorCode="31731">Бағандар саны сәйкес келмейді. %1% қосқандағы нәтижелер жинақтарындағы бағандар саны тең болуы керек.</Error>
+
+        <Error Key="InvalidOpDriverReadOnly" Params="1" NativeErrorCode="31732">Драйверді тек оқуға болады және ол %1% операцияларына рұқсат етпейді.</Error>
+
+        <Error Key="DuplicateInsertColumn" Params="1" NativeErrorCode="31733">Кірістіру бағандарының тізімінде "%1%" бағаны бірнеше рет пайда болды.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TopAndLimit" NativeErrorCode="31734">TOP және LIMIT өрнектерінің біреуін ғана SELECT сұрауында қолдануға болады.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CorrelationSpecNonUniqueColumns" Params="2" NativeErrorCode="31735">"%1%" өзара қатынас сипаттамасында "%2%" деген баған аты бірнеше рет кездеседі.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CorrelationSpecInvalidNumColumns" Params="3" NativeErrorCode="31736">"%1%" өзара қатынас сипаттамасындағы бағандардың саны дұрыс емес : Күтілгені – %2%, Нақтысы – %3%.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidSetFn" Params="1" NativeErrorCode="31737">Сұрауда қолдау көрсетілмейтін "%1%" агрегат функциясы көрсетілді.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CustomSetFnNotSupported" Params="1" NativeErrorCode="31739">Реттелмелі агрегат функцияларына (%1%) қазірше ETree ішінде қолдау көрсетілмейді.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TableOrViewAlreadyExists" Params="1" NativeErrorCode="31738">Кесте немесе көрініс бұрыннан бар: %1%</Error>
+
+        <Error Key="TableOrViewNotFound" Params="1" NativeErrorCode="31740">Кесте немесе көрініс табылмады: %1%</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="IndexAlreadyExists" Params="1" NativeErrorCode="31745">Индекс бұрыннан бар: %1%</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="IndexNotFound" Params="1" NativeErrorCode="31746">Индекс табылмады: %1%</Error>
+
+        <Error Key="ColumnNotFound" Params="1" NativeErrorCode="31750">Баған табылмады: %1%</Error>
+
+        <Error Key="InvalidSqlDataType" Params="3" NativeErrorCode="31760">SQL дерегінің түрі дұрыс емес: %1% [%2%: %3%].</Error>
+
+        <Error Key="OperationCanceled" NativeErrorCode="31765">Әрекет тоқтатылды.</Error>
+
+        <Error Key="InvalidOutputParameter" Params="1" NativeErrorCode="31770">Сақталған %1% процедура аргументі шығыс параметрі ретінде байланыстырылуы керек.</Error>
+
+        <Error Key="CatalogNotSupported" NativeErrorCode="31771">Кесте идентификаторлары үшін каталогтарға қолдау көрсетілмейді.</Error>
+
+        <Error Key="SchemaNotSupported" NativeErrorCode="31772">Кесте идентификаторлары үшін схемаларға қолдау көрсетілмейді.</Error>
+      
+        <Error Key="FeatureNotSupported" NativeErrorCode="31780">Әрекетке қолдау көрсетілмейді.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CreateTableNotSupported" NativeErrorCode="31781">Кесте мәлімдемелерін жасауға қолдау көрсетілмейді.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CreateIndexNotSupported" NativeErrorCode="31785">Индекс мәлімдемелерін жасауға қолдау көрсетілмейді.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="DropTableNotSupported" NativeErrorCode="31790">Кесте мәлімдемелерін жоюға қолдау көрсетілмейді.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="DropIndexNotSupported" NativeErrorCode="31795">Индекс мәлімдемелерін жоюға қолдау көрсетілмейді.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TableConstraintNotSupported" NativeErrorCode="31800">Кестенің шектеулеріне қолдау көрсетілмейді.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidNumberTypeParameters" NativeErrorCode="31820">%1% дерек түрі үшін параметрлердің саны дұрыс емес.</Error>
+
+    </Package> 
+</Messages>

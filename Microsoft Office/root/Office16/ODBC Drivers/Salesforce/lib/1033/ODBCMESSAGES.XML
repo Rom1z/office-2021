@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- #################################################################################### -->
+    <Package ID="1" DefaultComponent="ODBC">
+
+      <!-- Errors and warnings in general operation. --> 
+      <Error Key="GenErr" NativeErrorCode="10000"><!-- _locID=GenErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an unexpected exception is caught." -->General error: Unexpected exception has been caught.</Error>
+
+      <Error Key="GenErr1" Params="1" NativeErrorCode="10001"><!-- _locID=GenErr1 _locComment="[Tag:CALC-ACC-ODBCDrivers]Same as GenErr, but allows for a custom message (say, from an std::exception)" -->General error: %1%</Error>
+
+      <Error Key="MemAllocErr" NativeErrorCode="10010"><!-- _locID=MemAllocErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a std::bad_alloc exception is caught." -->Memory allocation error: std::bad_alloc exception is caught.</Error>
+
+      <Error Key="FuncSeqErr" NativeErrorCode="10020"><!-- _locID=FuncSeqErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when ODBC functions are executed out of the allowed sequence as specified in the ODBC specification." -->ODBC Function(s) executed out of allowable sequence.</Error>
+
+      <Error Key="InvalidStmt" NativeErrorCode="10040"><!-- _locID=InvalidStmt _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when statement is invalid or not found." -->Statement invalid or not found.</Error>
+
+      <Error Key="InvalidConn" NativeErrorCode="10050"><!-- _locID=InvalidConn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when connection is invalid or not found." -->Connection invalid or not found.</Error>
+
+      <Error Key="InvalidAppDesc" NativeErrorCode="10060"><!-- _locID=InvalidAppDesc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when descriptor is invalid or not found." -->Application descriptor invalid or not found.</Error>
+
+      <Error Key="InvalidExplAppDesc" NativeErrorCode="10070"><!-- _locID=InvalidExplAppDesc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when explicit application descriptor is invalid or not found." -->Explicit application descriptor invalid or not found.</Error>
+
+      <Error Key="InvalidQueryMgr" NativeErrorCode="10080"><!-- _locID=InvalidQueryMgr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when query manager is invalid or not found." -->Query manager invalid or not found.</Error>
+
+      <Error Key="InvalidExecResults" NativeErrorCode="10090"><!-- _locID=InvalidExecResults _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when execution results are invalid or not found." -->Execution results invalid or not found.</Error>
+
+      <!-- Errors and warnings with diagnostics reporting. --> 
+      <Error Key="InvalidDiagIdent" NativeErrorCode="10110"><!-- _locID=InvalidDiagIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid diagnostic identifier is used." -->Invalid diagnostic identifier used.</Error>
+
+      <Error Key="NoBinaryDiagFields" NativeErrorCode="10120"><!-- _locID=NoBinaryDiagFields _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when requesting for a diagnostic field in binary format while no binary diagnostic fields exist." -->No binary diagnostic fields exist. Unable to return diagnostic field in binary format.</Error>
+
+
+      <!-- Errors and warnings with the provided buffer and buffer length. --> 
+      <Error Key="InvalidStrOrBuffLen" NativeErrorCode="10130"><!-- _locID=InvalidStrOrBuffLen _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid string or buffer length is provided by the application." -->Invalid string or buffer length was provided by the application.</Error>
+
+      <Error Key="StrRightTruncWarn" NativeErrorCode="10160"><!-- _locID=StrRightTruncWarn _locComment="[Tag:CALC-ACC-ODBCDrivers]Warning posted when an output string is right truncated to fit into the output buffer." -->String data right truncation: String data is too big for the output data buffer and has been truncated.</Error>
+
+      <Error Key="StrRightTruncErr" NativeErrorCode="10170"><!-- _locID=StrRightTruncErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when string data is too big for the driver's data buffer." -->String data right truncation on data from data source: String data is too big for the driver's data buffer.</Error>
+
+      <Error Key="InvalidOutputBuff" NativeErrorCode="10180"><!-- _locID=InvalidOutputBuff _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid output buffer is provided." -->Invalid output buffer provided.</Error>
+
+      <Error Key="InvalidStrTrunc" NativeErrorCode="10190"><!-- _locID=InvalidStrTrunc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there is an invalid string truncation." -->Invalid string truncation.</Error>
+
+
+      <!-- Error and warnings with Attributes. --> 
+      <Error Key="AttrTypeNotSupported" NativeErrorCode="10200"><!-- _locID=AttrTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the attribute type specified is not supported for the current operation." -->Attribute type not supported for current operation.</Error>
+
+      <Error Key="InvalidAttrIdent" Params="1" NativeErrorCode="10210"><!-- _locID=InvalidAttrIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the attribute identifier specified is invalid or not supported." -->Attribute identifier invalid or not supported: %1%</Error>
+
+      <Error Key="CannotSetReadOnlyAttr" NativeErrorCode="10220"><!-- _locID=CannotSetReadOnlyAttr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting the value of a read-only attribute." -->Cannot set a read-only attribute.</Error>
+
+      <Error Key="AttrValNotFound" NativeErrorCode="10230"><!-- _locID=AttrValNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when failed to retrieve an attribute value." -->Cannot obtain attribute value.</Error>
+
+      <Error Key="CannotSetImpDescHandle" NativeErrorCode="10240"><!-- _locID=CannotSetImpDescHandle _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting the implementation descriptor handle, a statement's implementation descriptor cannot be replaced." -->You cannot change a statement's implementation descriptor handle.</Error>
+
+      <Error Key="SetAsyncEnabNotSupported" NativeErrorCode="10250"><!-- _locID=SetAsyncEnabNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting the value of SQL_ATTR_ASYNC_ENABLE statement attribute when driver does not support this operation." -->Setting SQL_ATTR_ASYNC_ENABLE attribute not supported.</Error>
+
+      <Error Key="ObtainCheckingConnAttrFailed" NativeErrorCode="10260"><!-- _locID=ObtainCheckingConnAttrFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when failed to obtain a connection attribute that is required to check if the current operation is valid." -->Could not obtain a required connection attribute to check if current operation is valid.</Error>
+
+      <Error Key="AutoPopIpdNotSupported" NativeErrorCode="10270"><!-- _locID=AutoPopIpdNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when changing the option to enable auto population of IPD while driver does not support IPD auto population." -->Auto population of IPD (Implementation Parameter Descriptor)is not supported.</Error>
+
+      <Error Key="InvalidAttrVal" NativeErrorCode="10280"><!-- _locID=InvalidAttrVal _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting an attribute to a value that is invalid." -->Invalid attribute value.</Error>
+
+      <Error Key="OptAttrValChangedWarn" NativeErrorCode="10290"><!-- _locID=OptAttrValChangedWarn _locComment="[Tag:CALC-ACC-ODBCDrivers]Warning posted when setting an attribute value that is not supported or invalid, and the driver was able to substitute a similar value." -->Attribute value not supported or invalid, so a similar attribute value was substituted. Get the attribute value to see the substitute.</Error>
+
+      <Error Key="RevertAttrValueToOrigFailed" NativeErrorCode="10300"><!-- _locID=RevertAttrValueToOrigFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when failing to revert a temporarily substituted attribute value back to its original value." -->Could not revert temporary attribute value back to original value.</Error>
+
+      <Error Key="ObtainDefaultStmtAttrValueFailed" NativeErrorCode="10310"><!-- _locID=ObtainDefaultStmtAttrValueFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when failing to obtain a default value for a statement attribute during statement creation." -->Could not obtain default statement attribute value.</Error>
+
+      <Error Key="ExplAppDescHandleNotFromSameConn" NativeErrorCode="10320"><!-- _locID=ExplAppDescHandleNotFromSameConn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting an explicit application descriptor handle on a statement that is not from the statement's parent connection." -->Explicit application descriptor handle not from the same connection as the target statement.</Error>
+
+      <Error Key="ImplicitAppDescHandleNotOrig" NativeErrorCode="10330"><!-- _locID=ImplicitAppDescHandleNotOrig _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting an implicit application descriptor handle on a statement but the descriptor was not one of the target statement's original implicit application descriptors." -->Implicit application descriptor handle is not an original implicit application descriptor of the target statement.</Error>
+
+      <Error Key="BufLenTooSmallForBinaryAttrData" NativeErrorCode="10340"><!-- _locID=BufLenTooSmallForBinaryAttrData _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when buffer is too small to hold binary attribute data." -->Buffer length too small for the returning binary attribute data.</Error>
+
+      <Error Key="AttrDataTypeNotRecog" NativeErrorCode="10350"><!-- _locID=AttrDataTypeNotRecog _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when attribute data type is invalid or not supported." -->Attribute data type not recognized.</Error>
+
+
+      <!-- Error and warnings with establishing connection to data source. -->
+      <Error Key="InvalidConnStr" NativeErrorCode="10360"><!-- _locID=InvalidConnStr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the connection string is not of valid form." -->Invalid connection string.</Error>
+
+      <Error Key="InvalidConnStrAttr" NativeErrorCode="10370"><!-- _locID=InvalidConnStrAttr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the connection string does not contain information requested by the driver." -->Invalid connection string attribute that does not match driver requested information.</Error>
+
+      <Error Key="UnableToEstConn" Params="1" NativeErrorCode="10380"><!-- _locID=UnableToEstConn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when unable to establish a connection with the data source." -->Unable to establish a connection with data source. Missing settings: %1%</Error>
+
+      <Error Key="UpdateConnSettingsWithDiaglogFailed" NativeErrorCode="10390"><!-- _locID=UpdateConnSettingsWithDiaglogFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when failed to obtain connection information through the driver provided dialog box." -->Update connection settings with dialog prompt failed.</Error>
+
+      <Error Key="NoEstConn" NativeErrorCode="10400"><!-- _locID=NoEstConn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when performing an operation that requires an established connection but no connection has been established yet." -->Current operation requires established connection but no connection has been established yet.</Error>
+
+      <Error Key="ConnAlreadyEst" NativeErrorCode="10410"><!-- _locID=ConnAlreadyEst _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when trying to establish a connection but a connection already exist." -->Connection is already established.</Error>
+
+      <Error Key="DataSourceDidNotGiveProperResp" NativeErrorCode="10420"><!-- _locID=DataSourceDidNotGiveProperResp _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when data source did not provide a valid response." -->Data source did not provide a proper response.</Error>
+
+      <Error Key="NotEnoughConnInfoButDriverNoPrompt" Params="1" NativeErrorCode="10430"><!-- _locID=NotEnoughConnInfoButDriverNoPrompt _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when application did not provide enough information to establish a connection to the data source but application specified that driver should not prompt application for more information." -->Not enough information provided to establish a connection to the data source and specified to not prompt for more information. Missing required settings: %1%</Error>
+
+      <Error Key="InvalidDriverComplFlag" NativeErrorCode="10440"><!-- _locID=InvalidDriverComplFlag _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when driver complete flag is invalid or not supported." -->Driver completion flag invalid or not supported.</Error>
+
+      <Error Key="NullIndPtrNotSupplied" NativeErrorCode="10450"><!-- _locID=NullIndPtrNotSupplied _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when driver needs an indicator buffer to indicate NULL output data to the application but the application did not provide such buffer." -->Indicator pointer is required by the driver to indicate NULL output data, but is not provided.</Error>
+
+      <Error Key="DataConvError" NativeErrorCode="10460"><!-- _locID=DataConvError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when data conversion could not complete properly." -->Data conversion error.</Error>
+
+      <Error Key="DataConvNotSupported" NativeErrorCode="10470"><!-- _locID=DataConvNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when data conversion is not supported." -->Data conversion not supported.</Error>
+
+      <Error Key="FetchTypeNotSupported" NativeErrorCode="10480"><!-- _locID=FetchTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fetch orientation is not compatible with current settings." -->Fetch type not supported as fetch orientation is not compatible with current settings.</Error>
+
+      <Error Key="InvalidCursorPos" NativeErrorCode="10490"><!-- _locID=InvalidCursorPos _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cursor is in an invalid position for fetching data." -->Cursor was either positioned before the beginning or after the end of the result set.</Error>
+
+      <Error Key="InvalidForwardSetPosOper" NativeErrorCode="10495"><!-- _locID=InvalidForwardSetPosOper _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cursor is forward-only and SetPos is called while on a valid row." -->SQLSetPos is an invalid operation when the cursor is forward-only.</Error>
+
+      <Error Key="InvalidCursorType" NativeErrorCode="10500"><!-- _locID=InvalidCursorType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cursor is not of a supported type." -->Cursor type invalid or not supported.</Error>
+
+      <Error Key="InvalidCursorState" NativeErrorCode="10510"><!-- _locID=InvalidCursorState _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cursor is in an invalid state." -->Invalid cursor state.</Error>
+
+      <Error Key="NoMoreDataToFetch" NativeErrorCode="10530"><!-- _locID=NoMoreDataToFetch _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there is no more data left to fetch." -->No more data left to fetch.</Error>
+
+      <Error Key="NotAllowedToGetSpecifiedColumn" NativeErrorCode="10540"><!-- _locID=NotAllowedToGetSpecifiedColumn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when getting data that has already been fetched, but current settings do not allow this behavior." -->Not allowed to get data for the specified column that was already fetched.</Error>
+
+      <Error Key="InvalidColNumInResultSet" NativeErrorCode="10550"><!-- _locID=InvalidColNumInResultSet _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when requesting a column in the result set but no matching column is found." -->Invalid result set column number, no matching column found.</Error>
+
+      <Error Key="InvalidRowStatus" NativeErrorCode="10560"><!-- _locID=InvalidRowStatus _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when checking the status of a fetched row but the status is invalid and not recognized." -->Invalid row status detected after fetching operation.</Error>
+
+      <Error Key="ChangeTypesInMultipartSQLGetDataNotSupported" NativeErrorCode="10570"><!-- _locID=ChangeTypesInMultipartSQLGetDataNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when changing types between multipart SQLGetData() calls." -->Changing types between multipart SQLGetData() calls is not supported.</Error>
+
+      <Error Key="InvalidSrcData" NativeErrorCode="10580"><!-- _locID=InvalidSrcData _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the source data is invalid (i.e. null when it shouldn't be." -->Source data is invalid.</Error>
+
+      <Error Key="NoMoreDataToGet" NativeErrorCode="10590"><!-- _locID=NoMoreDataToGet _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there is no more data to get." -->There is no more data to get.</Error>
+
+      <Error Key="InvalidStrategy" NativeErrorCode="10600"><!-- _locID=InvalidStrategy _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the conversion strategy is invalid (i.e. null when it shouldn't be)." -->Conversion strategy is invalid.</Error>
+
+      <Error Key="StrategyNotSupported" NativeErrorCode="10610"><!-- _locID=StrategyNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the conversion strategy is not supported." -->Conversion strategy is unsupported.</Error>
+
+      <Error Key="CannotConvWhileHasMoreData" NativeErrorCode="10620"><!-- _locID=CannotConvWhileHasMoreData _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a conversion is attempted when there is more data." -->Cannot convert when there is more data.</Error>
+
+      <Error Key="InvalidConvResult" NativeErrorCode="10630"><!-- _locID=InvalidConvResult _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the result of a conversion is invalid." -->Invalid conversion result.</Error>
+
+      <Error Key="FlushFailed" NativeErrorCode="10640"><!-- _locID=FlushFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a flush fails to clear the data." -->Flush failed to clear data.</Error>
+
+      <Error Key="NoAvailableResultSet" NativeErrorCode="10651"><!-- _locID=NoAvailableResultSet _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when execution expects a result set but no result set is available from the DSII." -->No result set is available after execute, but one was available after prepare.</Error>
+
+
+      <!-- Error and warnings with descriptors. -->
+      <Error Key="BookmarkColumnNotSupported" NativeErrorCode="10660"><!-- _locID=BookmarkColumnNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when requesting a bookmark column but bookmark columns are not supported." -->Bookmark column not supported.</Error>
+
+      <Error Key="InvalidDescIndex" NativeErrorCode="10670"><!-- _locID=InvalidDescIndex _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when requesting a descriptor record or its information, but the descriptor record cannot be found" -->Invalid descriptor index, descriptor record does not exist, or is not properly initialized.</Error>
+
+      <Error Key="InvalidDescFieldIdent" NativeErrorCode="10680"><!-- _locID=InvalidDescFieldIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when requesting a descriptor field that is not supported or is invalid." -->Descriptor field identifier invalid or not supported.</Error>
+
+      <Error Key="DescRecNotSeq" NativeErrorCode="10690"><!-- _locID=DescRecNotSeq _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when descriptor records are not sequential during query execution." -->At least one expected descriptor record does not exist during query execution.</Error>
+
+      <Error Key="InvalidDescCount" NativeErrorCode="10700"><!-- _locID=InvalidDescCount _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when retrieving the SQL_DESC_COUNT field that is zero for a IRD." -->Invalid descriptor count field, no count to be returned.</Error>
+
+      <Error Key="ReadOnlyDescField" NativeErrorCode="10710"><!-- _locID=ReadOnlyDescField _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting a read-only descriptor field." -->Read only descriptor field.</Error>
+
+      <Error Key="CannotAssocNonExpDescWithDeleteListener" NativeErrorCode="10720"><!-- _locID=CannotAssocNonExpDescWithDeleteListener _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when registering or unregistering a listener (statement) on a non-explicit descriptor." -->Cannot associate non-explicit descriptors with descriptor listeners used for deletion cleanup.</Error>
+
+      <Error Key="CannotGetParentConnOnNonExpDesc" NativeErrorCode="10730"><!-- _locID=CannotGetParentConnOnNonExpDesc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when getting the parent connection of a non-explicit descriptor." -->Cannot get parent connection on a non-explicit descriptor.</Error>
+
+      <Error Key="CannotDropRecOfImplRowDesc" NativeErrorCode="10740"><!-- _locID=CannotDropRecOfImplRowDesc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when dropping descriptor record of an implementation row descriptor." -->Cannot drop record of an implementation row descriptor.</Error>
+
+      <Error Key="InvalidDatetimeSubcodeIdent" NativeErrorCode="10750"><!-- _locID=InvalidDatetimeSubcodeIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid or not supported datetime subcode identifier is given." -->Datetime subcode identifier invalid or not supported.</Error>
+
+      <Error Key="InvalidIntevalSubcodeIdent" NativeErrorCode="10760"><!-- _locID=InvalidIntevalSubcodeIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid or not supported interval subcode identifier is given." -->Interval subcode identifier invalid or not supported.</Error>
+
+      <Error Key="DescFieldNotSupported" NativeErrorCode="10770"><!-- _locID=DescFieldNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when requesting a descriptor field that is not supported or invalid." -->Descriptor field invalid or not supported.</Error>
+
+      <Error Key="CannotGetStrDescFieldInNonStrMethod" NativeErrorCode="10780"><!-- _locID=CannotGetStrDescFieldInNonStrMethod _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when using a non-string method to get a string descriptor field." -->Invalid use of non-string method to get string descriptor field.</Error>
+
+      <Error Key="InvalidDescFieldType" NativeErrorCode="10790"><!-- _locID=InvalidDescFieldType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when specifying a descriptor field type that is not valid or not supported" -->Descriptor field type invalid or not supported.</Error>
+
+      <Error Key="DescRecNotFound" NativeErrorCode="10800"><!-- _locID=DescRecNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the specified descriptor record cannot be found." -->Descriptor record not found.</Error>
+
+      <Error Key="DescUnnamedNotAllowed" NativeErrorCode="10810"><!-- _locID=DescUnnamedNotAllowed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting SQL_DESC_UNNAMED to SQL_NAMED which is not allowed." -->Not allowed to set SQL_DESC_UNNAMED to SQL_NAMED.</Error>
+
+      <Error Key="StmtNotPrep" NativeErrorCode="10820"><!-- _locID=StmtNotPrep _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when performing an operation which requires the statement to be prepared but is not." -->Statement is not prepared.</Error>
+
+      <Error Key="DescFieldValueNotSupported" Params="2" NativeErrorCode="10830"><!-- _locID=DescFieldValueNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting or getting a descriptor field value that is not supported." -->Descriptor field %1% does not support the value %2%.</Error>
+
+      <Error Key="CannotModImpRowDesc" NativeErrorCode="10840"><!-- _locID=CannotModImpRowDesc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when application modifies an implementation row descriptor" -->Cannot modify implementation row descriptors.</Error>
+
+      <Error Key="CannotSetDescAllocType" NativeErrorCode="10850"><!-- _locID=CannotSetDescAllocType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting the SQL_DESC_ALLOC_TYPE descriptor field." -->Cannot set descriptor SQL_DESC_ALLOC_TYPE.</Error>
+
+      <Error Key="IllegalDescType" NativeErrorCode="10860"><!-- _locID=IllegalDescType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an illegal descriptor type is detected." -->Illegal descriptor type is detected.</Error>
+
+      <Error Key="IllegalDescConciseType" NativeErrorCode="10870"><!-- _locID=IllegalDescConciseType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an illegal descriptor concise type is detected" -->Illegal descriptor concise type.</Error>
+
+      <Error Key="InvalidDatetimeCodeIdent" NativeErrorCode="10880"><!-- _locID=InvalidDatetimeCodeIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid or not supported datetime interval code is given." -->Datetime interval code invalid or not supported.</Error>
+
+      <Error Key="InvalidIntervalCode" NativeErrorCode="10890"><!-- _locID=InvalidIntervalCode _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid or not supported interval code is given." -->Interval code invalid or not supported.</Error>
+
+
+      <!-- Error and warnings with SQL statement execution. -->
+      <Error Key="CannotReadFromOutputParam" NativeErrorCode="10900"><!-- _locID=CannotReadFromOutputParam _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when reading from an output parameter." -->Cannot read from output parameter.</Error>
+
+      <Error Key="CannotReadFromDefaultParam" NativeErrorCode="10910"><!-- _locID=CannotReadFromDefaultParam _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when reading from a default input parameter." -->No data can be obtained from default input parameter.</Error>
+
+      <Error Key="CannotReadFromPushedParam" NativeErrorCode="10920"><!-- _locID=CannotReadFromPushedParam _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when reading from an input parameter which value has already been pushed down." -->No data can be obtained from input parameter whose value has already been pushed down.</Error>
+
+      <Error Key="WriteToDefaultParam" NativeErrorCode="10930"><!-- _locID=WriteToDefaultParam _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when writing to a default output parameter." -->Cannot write to a default parameter.</Error>
+
+      <Error Key="WriteToInputParam" NativeErrorCode="10940"><!-- _locID=WriteToInputParam _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when writing to an input parameter" -->Cannot write to an input parameter.</Error>
+
+      <Error Key="InvalidExecStatusCode" NativeErrorCode="10950"><!-- _locID=InvalidExecStatusCode _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when received an execute result status code that is not recognizable." -->Execute result status code is invalid or not supported.</Error>
+
+      <Error Key="SendNonCharBinaryConcatData" NativeErrorCode="10970"><!-- _locID=SendNonCharBinaryConcatData _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when sending concatenated data that is not binary nor character." -->Cannot concatenate and send data that is not character or binary.</Error>
+
+      <Error Key="SendConcatDataForDefaultOrNullParam" NativeErrorCode="10980"><!-- _locID=SendConcatDataForDefaultOrNullParam _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when sending concatenated data that is a default or null parameter." -->Cannot concatenate and send data in pieces for default for null parameter.</Error>
+
+      <Error Key="InvalidGetInfoField" NativeErrorCode="10990"><!-- _locID=InvalidGetInfoField _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when getting SQLGetInfo field which is not supported." -->SQLGetInfo field is invalid or not supported.</Error>
+
+      <Error Key="NoQueryExecutor" NativeErrorCode="11000"><!-- _locID=NoQueryExecutor _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when getting query executor from catalog query manager.  Catalog functions are already executed thus has not query executor." -->No query executor exists for catalog query manager.</Error>
+
+      <Error Key="NoDataAtExecParameter" NativeErrorCode="11010"><!-- _locID=NoDataAtExecParameter _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there is no data-at-execution parameter detected for query executor." -->No data-at-execution parameter.</Error>
+
+      <Error Key="CannotQueryParmSrcDuringPopulate" NativeErrorCode="11020"><!-- _locID=CannotQueryParmSrcDuringPopulate _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when querying a parameter source during auto population." -->Cannot query information about parameter source during parameter auto population.</Error>
+
+      <Error Key="CannotSetParmSrcAttrDuringPushData" NativeErrorCode="11030"><!-- _locID=CannotSetParmSrcAttrDuringPushData _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting fields of a parameter source during parameter data pushing." -->Cannot set parameter source attributes during parameter data pushing.</Error>
+
+      <Error Key="PushValueStatusUnknown" NativeErrorCode="11040"><!-- _locID=PushValueStatusUnknown _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when querying push value status while not performing execution. " -->Push value status can only be queried during execution.</Error>
+
+      <Error Key="ParamRegistNotPermit" NativeErrorCode="11050"><!-- _locID=ParamRegistNotPermit _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when registering a parameter but not allowed in current state of execution." -->Parameter registration not permitted.</Error>
+
+      <Error Key="InvalidParamRegistIndex" NativeErrorCode="11060"><!-- _locID=InvalidParamRegistIndex _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when invalid parameter index used for parameter registration." -->Invalid parameter index used for registration.</Error>
+
+      <Error Key="DescFieldNotRecg" NativeErrorCode="11070"><!-- _locID=DescFieldNotRecg _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when descriptor field value is not recognizable." -->Descriptor field value not of recognized value.</Error>
+
+      <Error Key="InvalidParameterType" NativeErrorCode="11080"><!-- _locID=InvalidParameterType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when parameter type is invalid or not supported " -->Parameter type invalid or not supported.</Error>
+
+
+      <!-- Error and warnings with connection and statement. -->
+      <Error Key="CursorNameTooLong" NativeErrorCode="11100"><!-- _locID=CursorNameTooLong _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting a cursor name that is longer than the maximum limit." -->Cursor name too long.</Error>
+
+      <Error Key="DuplicateCursorName" NativeErrorCode="11110"><!-- _locID=DuplicateCursorName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting a cursor name that is already in use." -->Duplicate cursor name.</Error>
+
+      <Error Key="OutstandingTransDuringDisconn" NativeErrorCode="11120"><!-- _locID=OutstandingTransDuringDisconn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there are outstanding transactions when attempting to disconnect." -->Outstanding transactions during disconnect.</Error>
+
+      <Error Key="AllocNonStmtDescInConn" NativeErrorCode="11130"><!-- _locID=AllocNonStmtDescInConn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when using a connection to allocate a resource that is not statement nor descriptor." -->Cannot use a connection to allocate a non-statement and non-descriptor resource.</Error>
+
+      <Error Key="FreeNonStmtDescInConn" NativeErrorCode="11140"><!-- _locID=FreeNonStmtDescInConn _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when using a connection to free a resource that is not statement nor descriptor." -->Cannot use a connection to free a non-statement and non-descriptor resource.</Error>
+
+      <Error Key="FreeImplicitAppDesc" NativeErrorCode="11150"><!-- _locID=FreeImplicitAppDesc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when freeing an implicit application descriptor." -->Cannot free an implicit application descriptor.</Error>
+
+      <Error Key="DropImplicitAppDesc" NativeErrorCode="11160"><!-- _locID=DropImplicitAppDesc _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when dropping an implicit application descriptor from its parent statement." -->Cannot drop implicit application descriptor from its parent statement.</Error>
+
+      <!-- MAINTENANCE NOTE: This error message needs to manually be duplicated in the other locales, since it has not be translated -->
+      <Error Key="GetInfoPropNotFound" NativeErrorCode="11180" Params="1"><!-- _locID=GetInfoPropNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cannot retrieve the requested SQLGetInfo property. " -->SQLGetInfo property not found: %1%</Error>
+
+      <Error Key="FreeStmtWithoutAllocStmt" NativeErrorCode="11190"><!-- _locID=FreeStmtWithoutAllocStmt _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when freeing a statement when no statements have been allocated." -->Cannot free a statement without an allocated statement.</Error>
+
+      <Error Key="AttrCantBeSetNow" NativeErrorCode="11200"><!-- _locID=AttrCantBeSetNow _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting an attribute that is not allowed to be set in the current state of execution." -->Attribute cannot be set now.</Error>
+
+      <Error Key="InvalidTransState" NativeErrorCode="11210"><!-- _locID=InvalidTransState _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when performing an operation that is not allowed during a transaction state." -->Invalid transaction state: Operation not allowed during the transaction state.</Error>
+
+      <Error Key="PreparedStmtNotCursorSpec" NativeErrorCode="11220"><!-- _locID=PreparedStmtNotCursorSpec _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the current operation requires a cursor spec but statement does not have one." -->Prepared statement is not a cursor specification.</Error>
+
+      <Error Key="CancelTreatedAsCloseWarn" NativeErrorCode="11230"><!-- _locID=CancelTreatedAsCloseWarn _locComment="[Tag:CALC-ACC-ODBCDrivers]Warning posted when SQLCancel is treated as closing a cursor." -->Cancel treated as close cursor.</Error>
+
+      <Error Key="InvalidFreeStmtOptionIdent" NativeErrorCode="11240"><!-- _locID=InvalidFreeStmtOptionIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when free statement option identifier is invalid or not supported." -->Free statement option identifier invalid or not supported.</Error>
+
+      <Error Key="InvalidColAttrFieldIdent" NativeErrorCode="11250"><!-- _locID=InvalidColAttrFieldIdent _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when column attribute field identifier is invalid or not supported." -->Column attribute field identifier invalid or not supported.</Error>
+
+      <Error Key="InvalidStmtResultType" NativeErrorCode="11270"><!-- _locID=InvalidStmtResultType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the result type of a statement is invalid or not supported." -->Statement result type invalid or not supported.</Error>
+
+      <Error Key="InvalidCursorStateSetCatalog" NativeErrorCode="11280"><!-- _locID=InvalidCursorStateSetCatalog _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the setting the current catalog when a result set is pending." -->Invalid cursor state. Cannot set current catalog when results are pending.</Error>
+
+
+      <!-- Error and warnings with environment. -->
+      <Error Key="AllocNonConnInEnv" NativeErrorCode="11290"><!-- _locID=AllocNonConnInEnv _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when using an environment to allocate a resource that is not connection." -->Cannot use an environment to allocate a non-connection resource.</Error>
+
+      <Error Key="InvalidFreeHandleOperationInEnvAllocState" NativeErrorCode="11300"><!-- _locID=InvalidFreeHandleOperationInEnvAllocState _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when using an environment to free a resource that is not connection." -->Invalid free handle operation in the allocated environment state.</Error>
+
+      <Error Key="SqlCTypeNotSupported" NativeErrorCode="11310"><!-- _locID=SqlCTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when SQL C type is not supported." -->SQL C type not supported.</Error>
+
+      <Error Key="SqlTypeNotSupported" NativeErrorCode="11320"><!-- _locID=SqlTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when SQL type is not supported." -->SQL type not supported.</Error>
+
+      <Error Key="CursorNameBeginWithReservedPrefix" NativeErrorCode="11330"><!-- _locID=CursorNameBeginWithReservedPrefix _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting a cursor name that begins with the reserved prefix." -->Cursor name cannot begin with reserved prefix.</Error>
+
+
+      <!-- Error and warnings with catalog functions. -->
+      <Error Key="MetadataTableIDNotFoundForCatalogFunctionId" NativeErrorCode="11360"><!-- _locID=MetadataTableIDNotFoundForCatalogFunctionId _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to map metadata table id to catalog function id." -->Cannot find metadata table ID corresponding to the catalog function ID.</Error>
+
+      <Error Key="InvalidNullCatalogName" NativeErrorCode="11370"><!-- _locID=InvalidNullCatalogName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when catalog name is null but is required." -->Invalid use of NULL pointer for catalog name.</Error>
+
+      <Error Key="InvalidNullSchemaName" NativeErrorCode="11371"><!-- _locID=InvalidNullSchemaName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when schema name is null but is required." -->Invalid use of NULL pointer for schema name.</Error>
+
+      <Error Key="InvalidNullTableName" NativeErrorCode="11375"><!-- _locID=InvalidNullTableName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when table name is null but is required." -->Invalid use of NULL pointer for table name.</Error>
+
+      <Error Key="InvalidNullColumnName" NativeErrorCode="11376"><!-- _locID=InvalidNullColumnName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when column name is null but is required." -->Invalid use of NULL pointer for column name.</Error>
+
+      <Error Key="InvalidNullProcName" NativeErrorCode="11377"><!-- _locID=InvalidNullProcName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when procedure name is null but is required." -->Invalid use of NULL pointer for procedure name.</Error>
+
+      <Error Key="CatalogNameTooLong" NativeErrorCode="11380"><!-- _locID=CatalogNameTooLong _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when catalog name longer than max." -->Catalog name too long.</Error>
+
+      <Error Key="SchemaNameTooLong" NativeErrorCode="11390"><!-- _locID=SchemaNameTooLong _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when schema name longer than max." -->Schema name too long.</Error>
+
+      <Error Key="TableNameTooLong" NativeErrorCode="11400"><!-- _locID=TableNameTooLong _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when table name longer than max." -->Table name too long.</Error>
+
+      <Error Key="ProcNameTooLong" NativeErrorCode="11410"><!-- _locID=ProcNameTooLong _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when procedure name longer than max." -->Procedure name too long.</Error>
+
+      <Error Key="ColumnNameTooLong" NativeErrorCode="11420"><!-- _locID=ColumnNameTooLong _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when column name longer than max." -->Column name too long.</Error>
+
+      <Error Key="CatalogNameNotSupported" NativeErrorCode="11430"><!-- _locID=CatalogNameNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when provided a catalog name but catalog names are not supported." -->Catalog name not supported.</Error>
+
+      <Error Key="SchemaNotSupported" NativeErrorCode="11440"><!-- _locID=SchemaNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when provided a schema name but schemas are not supported." -->Schema not supported.</Error>
+
+      <Error Key="BookmarkNotSupportedForCursorType" NativeErrorCode="11450"><!-- _locID=BookmarkNotSupportedForCursorType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the current settings of bookmark and cursor type are not compatible." -->Bookmark not supported for cursor type.</Error>
+
+      <Error Key="InvalidCatalogFuncID" NativeErrorCode="11460"><!-- _locID=InvalidCatalogFuncID _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when catalog function id is invalid or not supported." -->Catalog function ID invalid not supported.</Error>
+
+      <Error Key="TransNotSupported" NativeErrorCode="11470"><!-- _locID=TransNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when attempting to use transactions when they aren't supported." -->Transactions are not supported.</Error>
+
+      <!-- Error and warnings with driver functions. -->
+      <Error Key="TooManyHandles" NativeErrorCode="11480"><!-- _locID=TooManyHandles _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when we have too many handles." -->Too many handles. Free handles to generate more.</Error>
+
+      <Error Key="OperationCanceled" NativeErrorCode="11490"><!-- _locID=OperationCanceled _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an operation is canceled." -->Operation canceled.</Error>
+
+
+      <!-- Error and warnings with driver functions. -->
+      <Error Key="DriverConfigurationWarningEncoding" NativeErrorCode="11510"><!-- _locID=DriverConfigurationWarningEncoding _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when driver configuration is invalid for DriverManagerEncoding" -->Invalid driver configuration for DriverManagerEncoding.</Error>
+
+      <Error Key="NoSQLGetPrivateProfileString" NativeErrorCode="11560"><!-- _locID=NoSQLGetPrivateProfileString _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when unable to use SQLGetPrivateProfileString functions." -->Unable to locate SQLGetPrivateProfileString function.</Error>
+
+      <Error Key="CredentialMissing" NativeErrorCode="11570" Params="1"><!-- _locID=CredentialMissing _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thown when attempting to connect with missing required credential settings." -->Required credential settings are missing: %1%. </Error>
+    </Package>
+    
+    <!-- #################################################################################### -->
+    <Package ID="2" DefaultComponent="DSI">
+
+      <Error Key="DSIConnPropNotFound" Params="1" NativeErrorCode="20000"><!-- _locID=DSIConnPropNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to get connection property from DSI " -->Connection property not found in DSI: %1%</Error>
+
+      <Error Key="DSIDriverPropNotFound" Params="1" NativeErrorCode="20001"><!-- _locID=DSIDriverPropNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to get driver property from DSI." -->Driver property not found in DSI: %1%</Error>
+
+      <Error Key="DSIEnvPropNotFound" Params="1" NativeErrorCode="20002"><!-- _locID=DSIEnvPropNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to get environment property from DSI." -->Environment property not found in DSI: %1%</Error>
+
+      <Error Key="DSIStmtPropNotFound" Params="1" NativeErrorCode="20003"><!-- _locID=DSIStmtPropNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to get statement property from DSI." -->Statement property not found in DSI: %1%</Error>
+
+      <Error Key="EnvAttrOutputNtsNotSupported" NativeErrorCode="20004"><!-- _locID=EnvAttrOutputNtsNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting driver to not put null terminator while driver does not support this feature." -->Driver does not support returning non null-terminated strings.</Error>
+
+      <Error Key="DSIStmtPropLimitNotFound" Params="1" NativeErrorCode="20005"><!-- _locID=DSIStmtPropLimitNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to get statement property limits." -->Statement property limitation not found: %1%</Error>
+
+      <Error Key="ResultSetTraverseDirNotSupported" Params="1" NativeErrorCode="20006"><!-- _locID=ResultSetTraverseDirNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when current result set traversal direction is not supported." -->Result set traversal direction is not supported: %1%</Error>
+
+      <Error Key="InvalidMetadataTableID" Params="1" NativeErrorCode="20007"><!-- _locID=InvalidMetadataTableID _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when metadata table id is invalid or not supported." -->Invalid metadata table ID: %1%</Error>
+
+      <Error Key="InvalidFilterInMetadataRestrictionGenerator" NativeErrorCode="20008"><!-- _locID=InvalidFilterInMetadataRestrictionGenerator _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when invalid filter is passed into metadata restriction generator." -->Invalid filter being used in metadata restriction generator.</Error>
+
+      <Error Key="NoColumnsNeededDuringDataRetrieval" NativeErrorCode="20012"><!-- _locID=NoColumnsNeededDuringDataRetrieval _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when no columns are marked as needed during data retrieval." -->No column data requested but data retrieval performed.</Error>
+
+      <Error Key="InvalidColumnNum" Params="1" NativeErrorCode="20013"><!-- _locID=InvalidColumnNum _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when no column exists for column number for data retrieval." -->Invalid column number: %1%</Error>
+
+      <Error Key="MetadataSourceNotFound" NativeErrorCode="20014"><!-- _locID=MetadataSourceNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when metadata source invalid or not found." -->Metadata source invalid or not found.</Error>
+
+      <Error Key="CursorTypeNotSupported" Params="1" NativeErrorCode="20016"><!-- _locID=CursorTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cursor type invalid or not supported." -->Cursor type is not supported: %1%</Error>
+
+      <Error Key="CannotGetDerivedDataOnBasicResult" NativeErrorCode="20017"><!-- _locID=CannotGetDerivedDataOnBasicResult _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when asking basic metadata result for derived data." -->Cannot retrieve derived data on basic filtered metadata result.</Error>
+
+      <Error Key="InvalidDerivedColumnID" NativeErrorCode="20018"><!-- _locID=InvalidDerivedColumnID _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when derived column Id is invalid for current metadata root." -->Invalid derived metadata column ID.</Error>
+
+      <Error Key="DefaultParamNotAllowed" NativeErrorCode="20020"><!-- _locID=DefaultParamNotAllowed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when current parameter is default but data source does not allow it to be default value for current parameter." -->Current parameter has no default value and is not allowed to be default.</Error>
+
+      <Error Key="InvalidColumnName" Params="1" NativeErrorCode="20021"><!-- _locID=InvalidColumnName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a specified column name is invalid or not found." -->Invalid column name: %1%</Error>
+
+      <Error Key="InvalidFilterVal" NativeErrorCode="20023"><!-- _locID=InvalidFilterVal _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there is an invalid filter value (i.e. null)." -->Invalid filter value - do not use null strings in filter values, to do no filtering use an empty vector.</Error>
+      
+      <Error Key="CannotPerformCursorOrDataRetrievalOperationOnRowCountResult" NativeErrorCode="20027"><!-- _locID=CannotPerformCursorOrDataRetrievalOperationOnRowCountResult _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when performing cursor or data retrieval related operations on a row count result." -->Cannot perform cursor or data retrieval related operations on row count result.</Error>
+      
+      <Error Key="FuncNotSupported" NativeErrorCode="20029"><!-- _locID=FuncNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a function is not supported." -->Function not supported.</Error>
+      
+      <Error Key="DSIMemAllocErr" NativeErrorCode="20030"><!-- _locID=DSIMemAllocErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when memory allocation failed." -->Memory management error.</Error>
+
+      <Error Key="CustomPropNotFound" Params="1" NativeErrorCode="20031"><!-- _locID=CustomPropNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cannot find custom property." -->Custom property not found: %1%</Error>
+
+      <Error Key="DSIReqSettingNotFound" Params="1" NativeErrorCode="20032"><!-- _locID=DSIReqSettingNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a required setting is requested but not present." -->Required setting '%1%' is not present in the connection settings.</Error>
+
+      <Error Key="IncompatibleParameterTypes" Params="1" NativeErrorCode="20033"><!-- _locID=IncompatibleParameterTypes _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a parameter type is output for an input parameter, or input for an output parameter." -->Incompatible parameter type specified for parameter: %1%.</Error>
+
+      <Error Key="IncompatibleParameterSqlTypes" Params="3" NativeErrorCode="20034"><!-- _locID=IncompatibleParameterSqlTypes _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a parameter SQL type doesn't match the bound type." -->Incompatible parameter SQL type specified for parameter: %1%. Bound type: %2%. Expected type: %3%</Error>
+
+      <Error Key="InvalidCurrentCatalog" Params="1" NativeErrorCode="20035"><!-- _locID=InvalidCurrentCatalog _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a specifying an invalid catalog as the current catalog." -->Invalid catalog specified: %1%</Error>
+
+      <Error Key="DSIHexToBinaryConversionOddLengthError" NativeErrorCode="20036"><!-- _locID=DSIHexToBinaryConversionOddLengthError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a hex string with an odd length is given to DSITypeUtilities::HexStringToBinary()" -->There was an error converting from a hexidecimal string to binary: The given hexadecimal string was of an odd length.</Error>
+
+      <Error Key="DSIHexToBinaryConversionInvalidCharacterError" Params="1" NativeErrorCode="20037"><!-- _locID=DSIHexToBinaryConversionInvalidCharacterError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a hex string with an invalid character is given to DSITypeUtilities::HexStringToBinary()" -->There was an error converting from a Hexidecimal string to binary: The given hex string contained the non-hex character '%1%'.</Error>
+
+      <Error Key="IncorrectPropertyAttributeType" Params="3" NativeErrorCode="20038"><!-- _locID=IncorrectPropertyAttributeType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an property type is incorrect." -->Property AttributeData type is incorrect for property key %1%. Expected: %2%, Actual: %3%</Error>
+      
+      <Error Key="ICUUFailureStatus" Params="3" NativeErrorCode="20039"><!-- _locID=ICUUFailureStatus _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an ICU throws a U_FAILURE." -->There was an error when initializing an ICU function, %1%, with the following UErrorCode, %2%.</Error>
+
+      <Error Key="SwapLimitErr" NativeErrorCode="20040"><!-- _locID=SwapLimitErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the total swap file disk space has reached the limit." -->Total swap files disk space limit reached.</Error>
+    
+      <Error Key="LibLoadErr" NativeErrorCode="20041"><!-- _locID=LibLoadErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when OpenSSL fails to load." -->There was an error while loading the dynamic or shared library '%1%': '%2%'.</Error>
+    
+      <Error Key="LibFunctLoadErr" NativeErrorCode="20042"><!-- _locID=LibFunctLoadErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when OpenSSL fails to load." -->There was an error while loading the function '%2%' from the dynamic or shared library '%1%'.</Error>
+    
+      <Error Key="SwapFileEncryptErr" NativeErrorCode="20043"><!-- _locID=SwapFileEncryptErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when OpenSSL fails to load." -->There was an internal error while encrypting or decrypting the content of a swap file: Call '%1%' - reason '%2%'.</Error>
+    
+      <Error Key="InvalidEscapeChar" Params="1" NativeErrorCode="22019"><!-- _locID=InvalidEscapeChar _locComment="[Tag:CALC-ACC-ODBCDrivers][22019]: Invalid LIKE escape character." -->Invalid LIKE ESCAPE clause '%1%'. It must consist of exactly 1 character.</Error>
+
+      <Error Key="InvalidEscapeSequence" NativeErrorCode="22025"><!-- _locID=InvalidEscapeSequence _locComment="[Tag:CALC-ACC-ODBCDrivers][22025]: Invalid LIKE escape sequence." -->Invalid LIKE ESCAPE sequence. Escape character must be followed be a '%', '_', or another escape character.</Error>
+
+    </Package>
+
+    <!-- #################################################################################### -->
+    <Package ID="3" DefaultComponent="Support">
+
+      <Error Key="AttrDataTypeNotRecog" NativeErrorCode="40020"><!-- _locID=AttrDataTypeNotRecog _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when attribute data type is invalid or not supported." -->Attribute data type not recognized.</Error>
+
+      <Error Key="BufLenTooSmallForBinaryAttrData" NativeErrorCode="40070"><!-- _locID=BufLenTooSmallForBinaryAttrData _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when buffer is too small to hold binary attribute data." -->Buffer length too small for the returning binary attribute data.</Error>
+
+      <Error Key="WarningListenerNotValid" NativeErrorCode="40090"><!-- _locID=WarningListenerNotValid _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when warning listener is not valid or not found." -->Warning listener is not valid.</Error>
+
+      <Error Key="InvalidStrBufLen" NativeErrorCode="40100"><!-- _locID=InvalidStrBufLen _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when invalid string buffer length is given." -->Invalid string buffer length.</Error>
+
+      <Error Key="IllegalDataConvFromCToCType" NativeErrorCode="40110"><!-- _locID=IllegalDataConvFromCToCType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when converting from SQL C type to SQL C type." -->Illegal data conversion from SQL C type to SQL C type.</Error>
+
+      <Error Key="IllegalDataConvFromSQLToSQLType" NativeErrorCode="40120"><!-- _locID=IllegalDataConvFromSQLToSQLType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when converting from SQL type to SQL type." -->Illegal data conversion from SQL type to SQL type.</Error>
+
+      <Error Key="PrecLessThanZero" NativeErrorCode="40130"><!-- _locID=PrecLessThanZero _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting precision less than zero." -->Precision can't be less than zero.</Error>
+
+      <Error Key="MaxPrecisionExceeded" Params="2" NativeErrorCode="40131"><!-- _locID=MaxPrecisionExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting precision greater than supported." -->The number '%1%' exceeds the maximum precision allowed (%2%).</Error>
+
+      <Error Key="ScaleLessThanZero" NativeErrorCode="40140"><!-- _locID=ScaleLessThanZero _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when setting scale less than zero." -->Scale can't be less than zero.</Error>
+
+      <Error Key="SQLCTypeNotSupported" Params="2" NativeErrorCode="40150"><!-- _locID=SQLCTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when SQL C type is not supported." -->SQL C type not supported: %1% (%2%)</Error>
+
+      <Error Key="SQLTypeNotSupported" Params="2" NativeErrorCode="40160"><!-- _locID=SQLTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when SQL type is not supported." -->SQL type not supported: %1% (%2%)</Error>
+
+      <Error Key="SQLTDWTypeNotSupported" Params="1" NativeErrorCode="40170"><!-- _locID=SQLTDWTypeNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when SQL TDW type is not supported." -->SQL TDW type not supported (%1%).</Error>
+
+      <Error Key="DataConvAlgorithmError" NativeErrorCode="40180"><!-- _locID=DataConvAlgorithmError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when data conversion algorithm resulted in an error." -->Data conversion algorithm error.</Error>
+
+      <Error Key="DataConvAlgorithmMemError" NativeErrorCode="40181"><!-- _locID=DataConvAlgorithmMemError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when data conversion algorithm resulted in a memory allocation error." -->Data conversion algorithm memory allocation error.</Error>
+
+      <Error Key="DataConvAlgorithmNotSupported" Params="2" NativeErrorCode="40190"><!-- _locID=DataConvAlgorithmNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when conversion between the 2 data types are not supported." -->Data conversion algorithm not supported for %1% to %2%.</Error>
+
+      <Error Key="TDWTypeNotFoundForCType" Params="2" NativeErrorCode="40450"><!-- _locID=TDWTypeNotFoundForCType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to map SQLC type to tDW type." -->Cannot find a corresponding TDW type for the SQL C type %1% (%2%).</Error>
+
+      <Error Key="TDWTypeNotFoundForSqlType" Params="2" NativeErrorCode="40460"><!-- _locID=TDWTypeNotFoundForSqlType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to map SQL type to tDW type." -->Cannot find a corresponding TDW type for a SQL type %1% (%2%).</Error>
+
+      <Error Key="DefaultCForTDWTypeNotFound" Params="2" NativeErrorCode="40210"><!-- _locID=DefaultCForTDWTypeNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fail to find default SQL C type for the TDW type." -->Cannot find a default SQL C type for the TDW type %1% (%2%).</Error>
+
+      <Error Key="InvalidTDWTimestampType" NativeErrorCode="40220"><!-- _locID=InvalidTDWTimestampType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when TDW timestamp type is invalid." -->Invalid TDW timestamp type.</Error>
+
+      <Error Key="DetectedBufferDescriptorLoop" NativeErrorCode="40240"><!-- _locID=DetectedBufferDescriptorLoop _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when joining two buffer descriptors forms a loop." -->Detected a loop when joining two buffer descriptors.</Error>
+
+      <Error Key="CannotAllocateMemoryForString" NativeErrorCode="40250"><!-- _locID=CannotAllocateMemoryForString _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when attempting to allocate memory for a string fails." -->Cannot allocate memory to read string into.</Error>
+
+      <Error Key="CannotGenerateHandle" NativeErrorCode="40260"><!-- _locID=CannotGenerateHandle _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when attempting to generate a new handle when the maximum handle value has been hit." -->Too many handles. Free handles to generate more.</Error>
+
+      <Error Key="IllegalArgument" NativeErrorCode="40280"><!-- _locID=IllegalArgument _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an argument is passed to an object that is invalid." -->Invalid argument passed to function.</Error>
+
+      <Error Key="HandleInsertionFailed" NativeErrorCode="40290"><!-- _locID=HandleInsertionFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a new handle failed to be inserted in the manager." -->Handle was not successfully inserted into handle manager.</Error>
+
+      <Error Key="BadAttrType" NativeErrorCode="40300"><!-- _locID=BadAttrType _locComment="[Tag:CALC-ACC-ODBCDrivers]Warning posted when trying to get attribute data as the wrong type." -->Cannot get attribute as requested type.</Error>
+
+      <Error Key="InvalidBufferStrategyOperation" NativeErrorCode="40310"><!-- _locID=InvalidBufferStrategyOperation _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when SetLength or AttachBuffer are called on SQLData with the wrong ownership strategy." -->Invalid opperation for the selected buffer ownership strategy.</Error>
+
+      <Error Key="TDWNumericArithmeticError" Params="1" NativeErrorCode="40320"><!-- _locID=TDWNumericArithmeticError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error posted when an arithmetic operation resulted in an invalid numeric." -->Numeric operation '%1%' resulted in an invalid numeric.</Error>
+
+      <Error Key="TDWNumericStringError" Params="1" NativeErrorCode="40321"><!-- _locID=TDWNumericStringError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when constructing a numeric from a string resulted in an invalid numeric." -->String value '%1%' resulted in an invalid numeric.</Error>
+
+      <Error Key="TDWNumericValueError" Params="1" NativeErrorCode="40322"><!-- _locID=TDWNumericValueError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when constructing a numeric from a number resulted in an invalid numeric." -->Value '%1%' resulted in an invalid numeric.</Error>
+
+      <Error Key="TDWNumericOperationOnInvalid" Params="1" NativeErrorCode="40323"><!-- _locID=TDWNumericOperationOnInvalid _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when constructing a numeric from a number resulted in an invalid numeric." -->Attempted operation '%1%' on an invalid numeric.</Error>
+
+      <Error Key="TDWNumericOutOfRangeError" Params="2" NativeErrorCode="40324"><!-- _locID=TDWNumericOutOfRangeError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when fetching a numeric resulted in an out of range error." -->Value '%1%' fetched as %2% was out of range.</Error>
+
+      <Error Key="SwapInvalidColumnNum" NativeErrorCode="40340"><!-- _locID=SwapInvalidColumnNum _locComment="[Tag:CALC-ACC-ODBCDrivers]Swap: Invalid column number." -->Internal error - SwapInvalidRowColumnNum.</Error>
+
+      <Error Key="SwapInvalidOffset" NativeErrorCode="40350"><!-- _locID=SwapInvalidOffset _locComment="[Tag:CALC-ACC-ODBCDrivers]Swap: Invalid offset." -->Internal error - SwapInvalidOffset.</Error>
+
+      <Error Key="SwapInvalidRowNum" NativeErrorCode="40360"><!-- _locID=SwapInvalidRowNum _locComment="[Tag:CALC-ACC-ODBCDrivers]Swap: Invalid row number." -->Internal error - SwapInvalidRowNum.</Error>
+
+      <Error Key="SwapReadError" NativeErrorCode="40370"><!-- _locID=SwapReadError _locComment="[Tag:CALC-ACC-ODBCDrivers]Swap: Read error." -->Internal error - SwapReadError.</Error>
+
+      <Error Key="SwapSeekError" NativeErrorCode="40380"><!-- _locID=SwapSeekError _locComment="[Tag:CALC-ACC-ODBCDrivers]Swap: Seek error." -->Internal error - SwapSeekError.</Error>
+
+      <Error Key="SwapWriteError" NativeErrorCode="40390"><!-- _locID=SwapWriteError _locComment="[Tag:CALC-ACC-ODBCDrivers]Swap: Write error." -->Internal error - SwapWriteError.</Error>
+
+      <Error Key="UnexpectedBufferEnd" NativeErrorCode="40400"><!-- _locID=UnexpectedBufferEnd _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the end of the message buffer is encountered while more data is expected." -->Unexpectedly reached the end of content buffer.</Error>
+
+      <Error Key="OutOfMemToSerialize" NativeErrorCode="40410"><!-- _locID=OutOfMemToSerialize _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown if the serializer runs out of memory to serialize into." -->Ran out of memory to serialize content into.</Error>
+
+      <Error Key="TempTableTraverseDirNotSupported" NativeErrorCode="40430"><!-- _locID=TempTableTraverseDirNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when traversal direction is not supported for temporary table." -->Traversal direction is not supported for temporary table.</Error>
+
+      <Error Key="CannotAccessDataWithCursor" NativeErrorCode="40440"><!-- _locID=CannotAccessDataWithCursor _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when accesing a closed temporary table." -->Cannot access data in temporary table without open cursor.</Error>
+
+      <Error Key="StrRightTrunc" NativeErrorCode="40450"><!-- _locID=StrRightTrunc _locComment="[Tag:CALC-ACC-ODBCDrivers][01004]: String data, right-truncated." -->String data truncated while performing conversion.</Error>
+
+      <Error Key="FractionalTrunc" NativeErrorCode="40460"><!-- _locID=FractionalTrunc _locComment="[Tag:CALC-ACC-ODBCDrivers][01S07]: Fractional truncation." -->Fractional data truncated while performing conversion.</Error>
+
+      <Error Key="RestrictedDataTypeAttrViolation" NativeErrorCode="40461"><!-- _locID=RestrictedDataTypeAttrViolation _locComment="[Tag:CALC-ACC-ODBCDrivers][07006]: Restricted data type violation." -->Restricted data type attribute violation.</Error>
+
+      <Error Key="InvalidMultiFieldIntervalConversion" NativeErrorCode="40462"><!-- _locID=InvalidMultiFieldIntervalConversion _locComment="[Tag:CALC-ACC-ODBCDrivers][07006]: Invalid multi-field interval conversion." -->Invalid conversion. Multi-field intervals can't be converted to a single number.</Error>
+
+      <Error Key="StrRightTruncErr" NativeErrorCode="40465"><!-- _locID=StrRightTruncErr _locComment="[Tag:CALC-ACC-ODBCDrivers][22001]: String data, right-truncated." -->String data truncated while performing conversion.</Error>
+
+      <Error Key="NumericValOutOfRange" Params="2" NativeErrorCode="40470"><!-- _locID=NumericValOutOfRange _locComment="[Tag:CALC-ACC-ODBCDrivers][22003]: Numeric value out of range." -->Conversion error at column %1% and row %2%: Numeric value out of range.</Error>
+
+      <Error Key="InvalidDatetimeFormat" NativeErrorCode="40480"><!-- _locID=InvalidDatetimeFormat _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid date, time or datetime format." -->Invalid date, time or timestamp format.</Error>
+
+      <Error Key="InvalidDateFormat" Params="1" NativeErrorCode="40481"><!-- _locID=InvalidDateFormat _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid date format." -->Invalid date format for '%1%'. The format should be [-]YYYY-MM-DD.</Error>
+
+      <Error Key="InvalidTimeFormat" Params="1" NativeErrorCode="40482"><!-- _locID=InvalidTimeFormat _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid time format." -->Invalid time format for '%1%'. The format should be hh:mm:ss[.fffffffff].</Error>
+
+      <Error Key="InvalidTimestampFormat" Params="1" NativeErrorCode="40483"><!-- _locID=InvalidTimestampFormat _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid timestamp format." -->Invalid timestamp format for '%1%'. The format should be [-]YYYY-MM-DD hh:mm:ss[.fffffffff].</Error>
+
+      <Error Key="InvalidDatetimeValue" NativeErrorCode="40490"><!-- _locID=InvalidDatetimeValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid date, time or datetime value." -->Invalid date, time or timestamp value.</Error>
+
+      <Error Key="InvalidDateValue" Params="1" NativeErrorCode="40500"><!-- _locID=InvalidDateValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid date value." -->Invalid date value '%1%'. The year must be in the range [-9999, 9999], the month must be within the range [1, 12], and the day must be within the range [1, 31] while conforming to the range of days for the specified month and year.</Error>
+
+      <Error Key="InvalidTimeValue" Params="1" NativeErrorCode="40501"><!-- _locID=InvalidTimeValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid time value." -->Invalid time value '%1%'. The hour must be in the range [0, 23], the minute must be within the range [0, 59], and the second must be within the range [0, 61] with 60 and 61 being used for leap seconds.</Error>
+
+      <Error Key="InvalidTimestampValue" Params="1" NativeErrorCode="40502"><!-- _locID=InvalidTimestampValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid timestamp value." -->Invalid timestamp value '%1%'. The year must be in the range [-9999, 9999] excluding 0, the month must be within the range [1, 12], the day must be within the range [1, 31] while conforming to the range of days for the specified month and year, the hour must be in the range [0, 23], the minute must be within the range [0, 59], and the second must be within the range [0, 61], with 60 and 61 being used for leap seconds.</Error>
+
+      <Error Key="InvalidYearMonthIntervalValue" Params="1" NativeErrorCode="40491"><!-- _locID=InvalidYearMonthIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid year to month interval value." -->Invalid year to month interval value: %1%. The year must be within the range [0, 999999999], and the month must be within the range [0, 11].</Error>
+
+      <Error Key="InvalidDayHourIntervalValue" Params="1" NativeErrorCode="40492"><!-- _locID=InvalidDayHourIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid day to hour interval value." -->Invalid day to hour interval value: %1%. The day must be within the range [0, 999999999], and the hour must be within the range [0, 23].</Error>
+
+      <Error Key="InvalidDayMinuteIntervalValue" Params="1" NativeErrorCode="40493"><!-- _locID=InvalidDayMinuteIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid day to minute interval value." -->Invalid day to minute interval value: %1%. The day must be within the range [0, 999999999], the hour must be within the range [0, 23], and the minute must be within the range [0, 59].</Error>
+
+      <Error Key="InvalidDaySecondIntervalValue" Params="1" NativeErrorCode="40494"><!-- _locID=InvalidDaySecondIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid day to second interval value." -->Invalid day to second interval value: %1%. The day must be within the range [0, 999999999], and the hour must be within the range [0, 23], and the minute and second must be within the range [0, 59].</Error>
+
+      <Error Key="InvalidHourMinuteIntervalValue" Params="1" NativeErrorCode="40495"><!-- _locID=InvalidHourMinuteIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid hour to minute interval value." -->Invalid hour to minute interval value: %1%. The hour must be within the range [0, 999999999], and the minute must be within the range [0, 59].</Error>
+
+      <Error Key="InvalidHourSecondIntervalValue" Params="1" NativeErrorCode="40496"><!-- _locID=InvalidHourSecondIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid hour to second interval value." -->Invalid hour to second interval value: %1%. The hour must be within the range [0, 999999999] and the minute and second must be within the range [0, 59].</Error>
+
+      <Error Key="InvalidMinuteSecondIntervalValue" Params="1" NativeErrorCode="40497"><!-- _locID=InvalidMinuteSecondIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid minute to second interval value." -->Invalid minute to second interval value: %1%. The minute must be within the range [0, 999999999] and the second must be within the range [0, 59].</Error>
+
+      <Error Key="InvalidSecondIntervalValue" Params="1" NativeErrorCode="40498"><!-- _locID=InvalidSecondIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid second interval value." -->Invalid second interval value: %1%. The second must be within the range [0, 999999999].</Error>
+
+      <Error Key="InvalidSingleFieldIntervalValue" Params="1" NativeErrorCode="40499"><!-- _locID=InvalidSingleFieldIntervalValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22007]: Invalid single field interval value." -->Invalid single field interval value: %1%. The value must be within the range [0, 999999999].</Error>
+
+      <Error Key="IntervalArithOverflow" Params="1" NativeErrorCode="40519"><!-- _locID=IntervalArithOverflow _locComment="[Tag:CALC-ACC-ODBCDrivers][22008]: Invalid datetime value resulting in a field overflow." -->Interval field overflow resulted from '%1%' operation.</Error>
+
+      <Error Key="DatetimeFieldOverflow" NativeErrorCode="40520"><!-- _locID=DatetimeFieldOverflow _locComment="[Tag:CALC-ACC-ODBCDrivers][22008]: Invalid datetime value resulting in a field overflow." -->Datetime field overflow resulting from invalid datetime.</Error>
+
+      <Error Key="IntervalFieldOverflow" NativeErrorCode="40530"><!-- _locID=IntervalFieldOverflow _locComment="[Tag:CALC-ACC-ODBCDrivers][22015]: Interval field overflow." -->Interval field overflow.</Error>
+
+      <Error Key="InvalidLeadingPrecision" NativeErrorCode="40540"><!-- _locID=InvalidLeadingPrecision _locComment="[Tag:CALC-ACC-ODBCDrivers][22015]: Leading precision is too small for the leading interval value." -->Leading precision is smaller than precision of leading interval value.</Error>
+
+      <Error Key="LeadingPrecisionExceeded" Params="1" NativeErrorCode="40541"><!-- _locID=LeadingPrecisionExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][22015]: Leading interval precision exceeded." -->Leading interval precision of %1% exceeded.</Error>
+
+      <Error Key="FractionalPrecisionExceeded" Params="1" NativeErrorCode="40542"><!-- _locID=FractionalPrecisionExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][22015]: Fractional seconds precision exceeded." -->Fractional seconds precision of %1% exceeded.</Error>
+
+      <Error Key="InvalidCharValForCast" NativeErrorCode="40550"><!-- _locID=InvalidCharValForCast _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Invalid character value for cast." -->Invalid character value for cast specification.</Error>
+
+      <Error Key="InvalidGuidValue" Params="1" NativeErrorCode="40560"><!-- _locID=InvalidGuidValue _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Invalid GUID data format." -->Invalid GUID data value: %1%. Data should be in the format of XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX with optional enclosing {} braces.</Error>
+
+      <Error Key="OutOfMemoryError" NativeErrorCode="40600"><!-- _locID=OutOfMemoryError _locComment="[Tag:CALC-ACC-ODBCDrivers][HY013]: Out of memory error." -->Out of memory error.</Error>
+      
+      <Error Key="ConvInvalidData" NativeErrorCode="40610"><!-- _locID=ConvInvalidData _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Conversion invalid data." -->Invalid data for conversion.</Error>
+      
+      <Error Key="ConvLogicError" NativeErrorCode="40620"><!-- _locID=ConvLogicError _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Conversion logic error." -->Logic error during conversion.</Error>
+
+      <Error Key="InvalidArgument" Params="2" NativeErrorCode="30020"><!-- _locID=InvalidArgument _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid argument passed to a function." -->Invalid argument(s) passed into a function [%1%: %2%].</Error>
+
+      <Error Key="InvalidArgumentParam" Params="3" NativeErrorCode="30021"><!-- _locID=InvalidArgumentParam _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid argument passed to a function." -->Invalid argument (%1%) passed into a function [%2%: %3%].</Error>
+
+      <Error Key="InvalidOperation" Params="3" NativeErrorCode="30030"><!-- _locID=InvalidOperation _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid function/method has been invoked." -->A logic error occurred while calling function %1% [%2%: %3%]. Ensure the operation is supported and the function is implemented.</Error>
+
+      <Error Key="ErrSemaphoreMaxValue" NativeErrorCode="40621"><!-- _locID=ErrSemaphoreMaxValue _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Semaphore at maximum value." -->Cannot set semaphore to a value greater than SEMAPHORE_MAX_VALUE.</Error>
+
+      <Error Key="ErrSemaphoreInit" Params="1" NativeErrorCode="40622"><!-- _locID=ErrSemaphoreInit _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Error initializing semaphore." -->Error initializing semaphore: %1%</Error>
+
+      <Error Key="IOError" NativeErrorCode="40630"><!-- _locID=IOError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there is an I/O error." -->An I/O error has occurred.</Error>
+
+      <Error Key="RegKeyNotFound" NativeErrorCode="50010"><!-- _locID=RegKeyNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when registry key not found when trying to connect." -->Registry key not found.</Error>
+
+      <Error Key="CannotOpenRegistry" NativeErrorCode="50020"><!-- _locID=CannotOpenRegistry _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cannot open registry when trying to connect. " -->Cannot open registry.</Error>
+
+      <Error Key="CannotOpenIniFile" NativeErrorCode="50040"><!-- _locID=CannotOpenIniFile _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when cannot open ini file when trying to connect." -->Cannot open Ini file.</Error>
+
+      <Error Key="EnvVarNotFound" Params="1" NativeErrorCode="50050"><!-- _locID=EnvVarNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when environment variable not found when trying to connect." -->Environment variable not found: '%1%'.</Error>
+
+      <Error Key="CannotOpenFile" Params="2" NativeErrorCode="50070"><!-- _locID=CannotOpenFile _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a file cannot be opened." -->Cannot open file '%1%' - Error: %2%</Error>
+
+      <Error Key="EncodingNotRecog" NativeErrorCode="50080"><!-- _locID=EncodingNotRecog _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an encoding type is not recognized." -->Encoding is not recognized.</Error>
+
+      <Error Key="StrToNumConvFailed" Params="1" NativeErrorCode="50090"><!-- _locID=StrToNumConvFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when conversion from string to numeric value fails." -->Conversion from string to number failed with value: '%1%'</Error>
+
+      <Error Key="StrToNumConvFailedUnsigned" Params="1" NativeErrorCode="50100"><!-- _locID=StrToNumConvFailedUnsigned _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when conversion from string to unsigned numeric value fails." -->Conversion from string to unsigned number failed with value: '%1%'</Error>
+
+      <Error Key="StrToNumConvFailedOverflow" Params="1" NativeErrorCode="50110"><!-- _locID=StrToNumConvFailedOverflow _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when conversion from string to numeric value due to overflow fails." -->Conversion from string to number failed due to overflow with value: '%1%'</Error>
+
+      <Error Key="StrToNumConvFailedUnderflow" Params="1" NativeErrorCode="50120"><!-- _locID=StrToNumConvFailedUnderflow _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when conversion from string to numeric value due to underflow fails." -->Conversion from string to number failed due to underflow with value: '%1%'</Error>
+
+      <Error Key="NumToStrConvFailed" NativeErrorCode="50130"><!-- _locID=NumToStrConvFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when conversion from integer to string value fails due to an undersized buffer." -->Conversion from number to string failed due to an undersized character buffer.</Error>
+
+      <Error Key="NotImplYet" NativeErrorCode="50140"><!-- _locID=NotImplYet _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when using a method that has not been implemented yet." -->Method not implemented yet.</Error>
+
+      <Error Key="ThreadInvalidStateAction" NativeErrorCode="50160"><!-- _locID=ThreadInvalidStateAction _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an argument is passed to an object that is invalid." -->Invalid action for thread in current state.</Error>
+
+      <Error Key="ThreadCreationFailed" NativeErrorCode="50170"><!-- _locID=ThreadCreationFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when creation of a new thread failed." -->Creation of new thread failed.</Error>
+
+      <Error Key="ThreadAttributeCreationFailed" NativeErrorCode="50175"><!-- _locID=ThreadAttributeCreationFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when creation of new thread attributes failed." -->Creation of new thread attributes failed.</Error>
+
+      <Error Key="ThreadWaitFailed" NativeErrorCode="50180"><!-- _locID=ThreadWaitFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a wait for a thread has failed." -->Wait for thread failed.</Error>
+
+      <Error Key="ThreadAlreadyStarted" NativeErrorCode="50185"><!-- _locID=ThreadAlreadyStarted _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a thread is started multiple times." -->Thread has already been started, cannot be started multiple times.</Error>
+
+      <Error Key="CannotGenerateTempFileName" Params="1" NativeErrorCode="50190"><!-- _locID=CannotGenerateTempFileName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a temporary file cannot be generated for swapping." -->Error creating temporary swap file name: %1%</Error>
+
+      <Error Key="InvalidFileName" NativeErrorCode="50200"><!-- _locID=InvalidFileName _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when name for file is invalid. " -->File name is invalid.</Error>
+
+      <Error Key="CannotSetFilePosition" NativeErrorCode="50210"><!-- _locID=CannotSetFilePosition _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when text file position cannot be set. " -->Cannot set file position.</Error>
+
+      <Error Key="InvalidCodePtMaxSize" NativeErrorCode="50220"><!-- _locID=InvalidCodePtMaxSize _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the maximum size for code point is invalid (i.e too large)." -->Invalid maximum size for code point.</Error>
+
+      <Error Key="InvalidNumCodePtInBuffer" NativeErrorCode="50230"><!-- _locID=InvalidNumCodePtInBuffer _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when there is an invalid number of code points in a buffer (i.e too many)." -->Invalid number of code points in a buffer.</Error>
+
+      <Error Key="InvalidBuffPos" NativeErrorCode="50240"><!-- _locID=InvalidBuffPos _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the position in a buffer is invalid (i.e buffer overrun)." -->Invalid buffer position.</Error>
+
+      <Error Key="StrByteAlignErr" NativeErrorCode="50250"><!-- _locID=StrByteAlignErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when output string will not align properly with the output byte buffer." -->String bytes does not align properly.</Error>
+
+      <Error Key="InvalidEncodingEndianForPlatform" NativeErrorCode="50260"><!-- _locID=InvalidEncodingEndianForPlatform _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the endianness of the encoding is invalid for the platform (i.e. big endian for Windows, or for Unix on a little endian machine)." -->Invalid encoding endianness for the platform.</Error>
+
+      <Error Key="SetBuffErr" NativeErrorCode="50270"><!-- _locID=SetBuffErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when trying to set a buffer that hasn't been fully used yet, or when setting it with an invalid buffer." -->Setting a buffer that has not been fully used, or setting it with an invalid buffer.</Error>
+
+      <Error Key="InvalidNullParam" NativeErrorCode="50280"><!-- _locID=InvalidNullParam _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when given NULL for a parameter that should not be NULL." -->Parameter cannot be null.</Error>
+
+      <Error Key="ICUCreateUConverterErr" Params="1" NativeErrorCode="50290"><!-- _locID=ICUCreateUConverterErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when ICU gives an error when creating a Unicode converter object." -->Error creating an ICU Unicode converter object for encoding '%1%'.</Error>
+
+      <Error Key="ICUConvErr" NativeErrorCode="50300"><!-- _locID=ICUConvErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when ICU gives an error when converting a string." -->Error converting a string with ICU.</Error>
+
+      <Error Key="ICUConvErrNotRecog" NativeErrorCode="50310"><!-- _locID=ICUConvErrNotRecog _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when ICU gives an unrecognized conversion error." -->Unrecognized ICU conversion error.</Error>
+
+      <Error Key="ICURegexError" Params="1" NativeErrorCode="50315"><!-- _locID=ICURegexError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when ICU gives an error using a regex." -->Error using regular expression: %1%.</Error>
+
+      <Error Key="UnsupportedCodeUnitSize" Params="1" NativeErrorCode="50320"><!-- _locID=UnsupportedCodeUnitSize _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an unsupported code unit size is specified when retrieving data." -->Unsupported code unit size (%1%) for data retrieval.</Error>
+
+      <!-- Product License Errors and Warnings -->
+
+      <Error Key="LicFileNotFound" Params="1" NativeErrorCode="50320"><!-- _locID=LicFileNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when license file is not found." -->The license file '%1%' could not be found. Please contact your administrator or Simba Technologies Inc. at sales@simba.com.</Error>
+
+      <Error Key="LicFileCorrupt" Params="1" NativeErrorCode="50330"><!-- _locID=LicFileCorrupt _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when license file is corrupt." -->The license file '%1%' is corrupt. Please contact your administrator or Simba Technologies Inc. at sales@simba.com.</Error>
+
+      <Error Key="TrialPeriodExp" Params="1" NativeErrorCode="50340"><!-- _locID=TrialPeriodExp _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when evaluation is expired." -->Your license expired on %1%. Please contact Simba Technologies Inc. at sales@simba.com.</Error>
+      
+      <Error Key="TrialPeriodNotBegun" Params="1" NativeErrorCode="50341"><!-- _locID=TrialPeriodNotBegun _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when evaluation has not yet begun." -->Your evaluation period has not yet started, it will start on %1%. Please contact Simba Technologies Inc. at sales@simba.com.</Error>
+
+      <Error Key="TrialPeriodExpSoon" Params="1" NativeErrorCode="50342"><!-- _locID=TrialPeriodExpSoon _locComment="[Tag:CALC-ACC-ODBCDrivers]Warning posted when evaluation will expire soon." -->Your evaluation period will expire on %1%. Please contact Simba Technologies Inc. at sales@simba.com.</Error>
+
+      <Error Key="IniParseError" Params="2" NativeErrorCode="50350"><!-- _locID=IniParseError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an INI file contains a line that cannot be parsed." -->INI Parse error on line %1% of %2%.</Error>
+
+      <Error Key="LicenseValidationFailure" Params="1" NativeErrorCode="50351"><!-- _locID=LicenseValidationFailure _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the license check fails." -->License validation error: %1%. Please contact Simba Technologies Inc. at sales@simba.com.</Error>
+      
+      <Error Key="IntegratedSecurityAuthFailed" NativeErrorCode="50360" Params="1"><!-- _locID=IntegratedSecurityAuthFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Authentication failed for integrated security." -->Integrated security authentication failed. (%1%)</Error>
+
+      <Error Key="FailedToAcquireCredentials" NativeErrorCode="50361" Params="1"><!-- _locID=FailedToAcquireCredentials _locComment="[Tag:CALC-ACC-ODBCDrivers]Integrated security failed to acquire local credentials." -->Integrated security failed to acquire local credentials. (%1%)</Error>
+
+      <Error Key="FailedToGetUsername" NativeErrorCode="50363" Params="1"><!-- _locID=FailedToGetUsername _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown on failure to get username for integrated security." -->Failed to get username. (%1%)</Error>
+
+      <Error Key="SecurityContextInProgress" NativeErrorCode="50364"><!-- _locID=SecurityContextInProgress _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown if attempting to change properties of a security context already in progress." -->Cannot change properties of the security context because it is already in progress.</Error>
+
+      <Error Key="ThreadImpersonationFailed" NativeErrorCode="50365" Params="1"><!-- _locID=ThreadImpersonationFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown if there is a failure establishing thread impersonation" -->Error enabling thread impersonation. (%1%)</Error>
+
+      <Error Key="GSSAPILoadFailed" NativeErrorCode="50366" Params="1"><!-- _locID=GSSAPILoadFailed _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thown when gssapi lib delay load fails." -->Failed to load the security library: (%1%)</Error>
+      
+      <Error Key="NoSecurityAPI" NativeErrorCode="50367" Params="0"><!-- _locID=NoSecurityAPI _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thown when attempting to use the security API on an unsupported platform." -->No supported security API on this platform. </Error>
+      <Error Key="InvalidNumeric" NativeErrorCode="50368" Params="0"><!-- _locID=InvalidNumeric _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thown when an invalid TDWExactNumericType is detected." -->Validation of TDWExactNumericType object failed.</Error>
+
+      <Error Key="LibLoadErr" Params="2" NativeErrorCode="50400"><!-- _locID=LibLoadErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when OpenSSL fails to load." -->There was an error while loading the dynamic or shared library '%1%': '%2%'.</Error>
+	  
+      <Error Key="LibFunctLoadErr" Params="2" NativeErrorCode="50401"><!-- _locID=LibFunctLoadErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when OpenSSL fails to load." -->There was an error while loading the function '%2%' from the dynamic or shared library '%1%'.</Error>
+	  
+      <Error Key="SwapFileEncryptErr"  Params="2" NativeErrorCode="50402"><!-- _locID=SwapFileEncryptErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when OpenSSL fails to load." -->There was an internal error while encrypting or decrypting the content of a swap file: Call '%1%' - reason '%2%'.</Error>
+	  
+      <Error Key="SwapLimitErr" NativeErrorCode="50403"><!-- _locID=SwapLimitErr _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the total swap file disk space has reached the limit." -->Total swap files disk space limit reached.</Error>
+	  
+    </Package>
+</Messages>

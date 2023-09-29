@@ -1,0 +1,13 @@
+{
+  "suggestionsGroupSearchResultAccessibilityLabel": "Результаты поиска",
+  "somethingWentWrongLabel": "Произошла ошибка",
+  "tryAgainLabel": "Повторить",
+  "clearSearchLabel": "Очистить и попробовать другой поисковый запрос",
+  "seeMoreHyperLinkLabel": "Показать больше",
+  "combineSentences": "{0}. {1}",
+  "discoveryPromoFooterText": "Попробуйте \"/\", чтобы найти и вставить файлы непосредственно на холст.",
+  "newTagText": "Новое",
+  "emailSentBy": "Отправлено пользователем {0}",
+  "feedbackText": "Отзывы и предложения",
+  "meetingSeries": "Ряд собраний"
+}

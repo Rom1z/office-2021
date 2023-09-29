@@ -1,0 +1,13 @@
+{
+  "suggestionsGroupSearchResultAccessibilityLabel": "Іздеу нәтижелері",
+  "somethingWentWrongLabel": "Бірдеңе дұрыс болмады",
+  "tryAgainLabel": "Әрекетті қайталау",
+  "clearSearchLabel": "Тазалап, басқа іздеуді байқап көріңіз",
+  "seeMoreHyperLinkLabel": "Көбірек көрсету",
+  "combineSentences": "{0}. {1}",
+  "discoveryPromoFooterText": "Іздеу және файлдарды тікелей кенепке қою үшін \"/\" қолданып көріңіз.",
+  "newTagText": "Жаңа",
+  "emailSentBy": "Жіберуші: {0}",
+  "feedbackText": "Пікір",
+  "meetingSeries": "Жиналыстар қатары"
+}

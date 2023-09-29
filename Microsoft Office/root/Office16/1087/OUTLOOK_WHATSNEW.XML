@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhatsNewCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://whatsNewSchemaUri">
+  <Product>Outlook</Product>
+  <Platform>Desktop</Platform>
+  <Locale>kk-KZ</Locale>
+  <Release>1706 JUNE</Release>
+  <WhatsNewItem>
+    <ItemId>17071</ItemId>
+    <Title>Жаңа "Сөйлесу тізбегі" көрінісін пайдаланып көріңіз</Title>
+    <Description>Бір сөйлесу тізбегіндегі хабарларды олардың қабылданған ретімен оқыңыз. Электрондық хабарларды жоғарыдан төменге қарай, ескісінен жаңасына қарай оқып шығып, барлығына жылдам жауап беріңіз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>CCconversations</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Outlook.ModConv.Wave2</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17072</ItemId>
+    <Title>Бұлттан тіркемелерді жасауға арналған жақсартылған мүмкіндіктер</Title>
+    <Description>Енді OneDrive тіркемелерін компьютерге сақтағанда немесе сүйреп апарғанда, файлдар сіз үшін жүктеп алынады.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SaveAttachToOneDrive</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Outlook.Mail.Attachments.DownloadWebRefAsync</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17073</ItemId>
+    <Title>Оңтайлы "Кімге:" өрісі</Title>
+    <Description>Хабарды жіберу үшін "Кімге:" өрісін басқан кезде, сіз таңдауыңыз мүмкін алушылар тізімі ұсынылады. Оған қоса, тиісті адамға жіберіп жатқаныңызға көз жеткізу үшін, олардың суреттерін де көре аласыз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>GroupPowerQueryOrganization</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Shared.PeopleSearch.RecipientAutoCompleteSupport</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17074</ItemId>
+    <Title>Адамдар және топтар туралы ақпаратқа қысқаша шолу</Title>
+    <Description>Сіз бағдарламаның компьютердегі, браузердегі нұсқасын немесе мобильді нұсқасын пайдаланып отырғаныңызға қарамастан, профиль карталары сізге ең маңызды мәліметтерді көрсетеді.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>NewContact</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Shared.Pcx.ContactCardV2</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>12</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17075</ItemId>
+    <Title>Дыбыстық сөзкөмектер арнайы мүмкіндіктерді жақсартады</Title>
+    <Description>Бағдарламамен жұмысты жеңілдету үшін, дыбыстық сөзкөмектерді қосыңыз. Оны "Параметрлер" &gt; "Арнайы мүмкіндіктер" тармағынан таба аласыз. Ешқандай қондырманы орнатудың қажеті жоқ.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SoundInsertFromFile</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.UXPlatform.ModernOfficeSoundsSettingEnabled</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17076</ItemId>
+    <Title>Барлық бұрышынан көру үшін 3D үлгілерді кірістіру</Title>
+    <Description>Электрондық пошта хабарларының визуалды және креативтік көріністерін арттыру үшін, 3D үлгісін пайдаланыңыз. 3D үлгісін енгізсеңіз болғаны, содан кейін оны 360 градусқа бұра аласыз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>Insert3DModelDropdown</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.Model3D</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17077</ItemId>
+    <Title>Дубай қаласындай заманауи Dubai қарпі</Title>
+    <Description>Дубай Әмірліктері мен Microsoft арасындағы серіктестік негізінде әзірленген Dubai қарпімен өз ойыңызды жеткізіңіз. Мәтін араб не батыс еуропалық тілде жазылса да, осы жаңа қаріптің артықшылығын көресіз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>DubaiFont</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.WhatsNew.ShowDubaiFont</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+</WhatsNewCollection>

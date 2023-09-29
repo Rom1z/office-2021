@@ -1,0 +1,11 @@
+{
+    "1.0": [
+        "index.win32.bundle",
+        "strings.resjson",
+        "tester.win32.bundle",
+        "_office_iss_excel_shared_ux\\Filter\\strings.resjson",
+        "_office_iss_excel_shared_ux\\UserActivityUX\\strings.resjson",
+        "StoreLogo.png",
+        "manifest.xml"
+    ]
+}

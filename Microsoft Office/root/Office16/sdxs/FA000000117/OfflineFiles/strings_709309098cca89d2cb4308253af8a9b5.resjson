@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Prøv Python i Excel (prøveversion)",
+  "premiumHubMessageTextForPythonInExcel": "Kombiner Python-formler med Excel-gitteret for at rense, udforske og analysere dine data. Sikret af Microsoft Cloud, opret og del avanceret analyse direkte i Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Tryk ind i biblioteker",
+  "premiumHubSectionOneMessageForPythonInExcel": "Gør din analyse enklere og hurtigere med almindelige Python-biblioteker.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Find mønstre",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Brug Python-formler til at finde skjulte indsigter i dine data og visualisere dem med plot.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Der kræves ingen installation",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Strømlin arbejdsprocesser med sikre miljøer, der er klar til brug.",
+  "premiumHubTermsOfUseForPythonInExcel": "Mens Python i Excel er i offentlig prøveversion, kan du bruge denne funktion som en del af dit abonnement. Efter forhåndsvisningen skal du købe en ekstra licens for at bruge den. Vis {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Få mere at vide",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Vis mig, hvordan det fungerer",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Prøv forhåndsvisning",
+  "termsOfUseLinkForPreview": "vilkår for anvendelse af prøveversion"
+}

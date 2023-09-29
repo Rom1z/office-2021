@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Try Python in Excel (preview)",
+  "premiumHubMessageTextForPythonInExcel": "Combine Python formulae with the Excel grid to clean, explore and analyse your data. Secured by the Microsoft Cloud, create and share advanced analytics right inside Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Tap into libraries",
+  "premiumHubSectionOneMessageForPythonInExcel": "Simplify and expedite your analysis with common Python libraries.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Find patterns",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Use Python formulae to discover hidden insights in your data and visualise them with plots.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "No setup required",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Streamline workflows with ready-to-use, secure environments.",
+  "premiumHubTermsOfUseForPythonInExcel": "While Python in Excel is in public preview, you will be able to use this feature as part of your subscription. After the preview, you will need to purchase an additional licence to use it. View the {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Learn more",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Show me how it works",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Try preview",
+  "termsOfUseLinkForPreview": "preview terms of use"
+}

@@ -1,0 +1,8 @@
+{
+  "premiumPreviewSubheader": "Редактор содержит расширенные предложения по написанию текста",
+  "premiumPreviewSuggestionTitle": "Чтобы отобразить предложение, используйте 1 кредит",
+  "premiumPreviewUpgradeEditor": "Повысить статус редактора",
+  "premiumPreviewAddOnHeaderText": "У вас остались кредиты ({0}) в этом месяце.",
+  "premiumPreviewAddOnHeaderTextSingular": "У вас остался {0} кредит в этом месяце.",
+  "premiumPreviewAddOnHeaderNoCredits": "У вас больше нет бесплатных кредитов в этом месяце."
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>aaabc2eb-656a-4b4d-ab1c-9b065dd3419f</Id>
+  <Version>1.0.2201.20002</Version>
+  <ProviderName>PowerBI</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Power BI Datasets">
+    <Override Locale="af-ZA" Value="Power BI-datastelle" />
+    <Override Locale="am-ET" Value="Power BI የውሂብ ስብስቦች" />
+    <Override Locale="ar-SA" Value="مجموعات بيانات Power BI" />
+    <Override Locale="as-IN" Value="Power BI ডাটাছেটবোৰ" />
+    <Override Locale="az-Latn-AZ" Value="Power BI Verilənlər Dəstləri" />
+    <Override Locale="bg-BG" Value="Набори от данни на Power BI" />
+    <Override Locale="bn-IN" Value="Power BI ডেটাসেট" />
+    <Override Locale="bs-Latn-BA" Value="Power BI skupovi podataka" />
+    <Override Locale="ca-ES" Value="Conjunts de dades del Power BI" />
+    <Override Locale="ca-ES-valencia" Value="Conjunts de dades del Power BI" />
+    <Override Locale="cs-CZ" Value="Datové sady Power BI" />
+    <Override Locale="cy-GB" Value="Setiau Data Power BI" />
+    <Override Locale="da-DK" Value="Power BI-datasæt" />
+    <Override Locale="de-DE" Value="Power BI-Datasets" />
+    <Override Locale="el-GR" Value="Σύνολα δεδομένων Power BI" />
+    <Override Locale="en-GB" Value="Power BI Datasets" />
+    <Override Locale="es-ES" Value="Conjuntos de datos de Power BI" />
+    <Override Locale="es-MX" Value="Conjuntos de datos de Power BI" />
+    <Override Locale="et-EE" Value="Power BI andmekomplektid" />
+    <Override Locale="eu-ES" Value="Power BI datu multzoak" />
+    <Override Locale="fa-IR" Value="مجموعه داده‌های Power BI" />
+    <Override Locale="fi-FI" Value="Power BI -tietojoukot" />
+    <Override Locale="fil-PH" Value="Mga Power BI Dataset" />
+    <Override Locale="fr-CA" Value="Ensembles de données Power BI" />
+    <Override Locale="fr-FR" Value="Jeux de données Power BI" />
+    <Override Locale="ga-IE" Value="Tacair sonraí Power BI" />
+    <Override Locale="gd-GB" Value="Seataichean dàta Power BI" />
+    <Override Locale="gl-ES" Value="Conxuntos de datos de Power BI" />
+    <Override Locale="gu-IN" Value="Power BI ડેટાસેટ્સ" />
+    <Override Locale="he-IL" Value="ערכות נתונים של Power BI" />
+    <Override Locale="hi-IN" Value="Power BI डेटासेट्स" />
+    <Override Locale="hr-HR" Value="Skupovi podataka na servisu Power BI" />
+    <Override Locale="hu-HU" Value="Power BI-adathalmazok" />
+    <Override Locale="id-ID" Value="Himpunan Data Power BI" />
+    <Override Locale="is-IS" Value="Gagnamengi Power BI" />
+    <Override Locale="it-IT" Value="Set di dati di Power BI" />
+    <Override Locale="ja-JP" Value="Power BI データセット" />
+    <Override Locale="ka-GE" Value="Power BI-ის მონაცემთა ნაკრები" />
+    <Override Locale="kk-KZ" Value="Power BI деректер жиыны" />
+    <Override Locale="km-KH" Value="សំណុំទិន្នន័យ Power BI" />
+    <Override Locale="kn-IN" Value="Power BI ಡೇಟಾಸೆಟ್‌ಗಳು" />
+    <Override Locale="ko-KR" Value="Power BI 데이터 세트" />
+    <Override Locale="kok-IN" Value="power BI डेटासंच" />
+    <Override Locale="lb-LU" Value="Power-BI-Datesätz" />
+    <Override Locale="lo-LA" Value="ຊຸດຂໍ້ມູນ Power BI" />
+    <Override Locale="lt-LT" Value="„Power BI“ duomenų rinkiniai" />
+    <Override Locale="lv-LV" Value="Power BI datu kopas" />
+    <Override Locale="mi-NZ" Value="Ngā huinga raraunga Power BI" />
+    <Override Locale="mk-MK" Value="Групи податоци на Power BI" />
+    <Override Locale="ml-IN" Value="Power BI ഡാറ്റാസെറ്റുകൾ" />
+    <Override Locale="mr-IN" Value="Power BI डेटासेट" />
+    <Override Locale="ms-MY" Value="Set data Power BI" />
+    <Override Locale="mt-MT" Value="Datasets ta' Power BI" />
+    <Override Locale="nb-NO" Value="Power BI-datasett" />
+    <Override Locale="ne-NP" Value="Power BI डाटासेटहरू" />
+    <Override Locale="nl-NL" Value="Power BI-gegevenssets" />
+    <Override Locale="nn-NO" Value="Power BI-datasett" />
+    <Override Locale="or-IN" Value="Power BI ଡାଟାସେଟ୍‌ଗୁଡିକ" />
+    <Override Locale="pa-IN" Value="Power BI ਦੇ ਡੇਟਾਸੈਟ" />
+    <Override Locale="pl-PL" Value="Zestawy danych usługi Power BI" />
+    <Override Locale="pt-BR" Value="Conjuntos de Dados do Power BI" />
+    <Override Locale="pt-PT" Value="Conjuntos de Dados do Power BI" />
+    <Override Locale="quz-PE" Value="Power BI Yuyachiykuna" />
+    <Override Locale="ro-RO" Value="Seturi de date Power BI" />
+    <Override Locale="ru-RU" Value="Наборы данных Power BI" />
+    <Override Locale="sk-SK" Value="Množiny údajov služby Power BI" />
+    <Override Locale="sl-SI" Value="Nabori podatkov storitve Power BI" />
+    <Override Locale="sq-AL" Value="Bashkësitë e të dhënave të Power BI" />
+    <Override Locale="sr-Cyrl-BA" Value="Power BI скупови података" />
+    <Override Locale="sr-Cyrl-RS" Value="Power BI скупови података" />
+    <Override Locale="sr-Latn-RS" Value="Power BI skupovi podataka" />
+    <Override Locale="sv-SE" Value="Power BI-datauppsättningar" />
+    <Override Locale="ta-IN" Value="Power BI தரவுத்தொகுப்புகள்" />
+    <Override Locale="te-IN" Value="Power BI డేటాసెట్‌లు" />
+    <Override Locale="th-TH" Value="ชุดข้อมูล Power BI" />
+    <Override Locale="tr-TR" Value="Power BI Veri Kümeleri" />
+    <Override Locale="tt-RU" Value="Power BI мәгълүмат җыелмалары" />
+    <Override Locale="ug-CN" Value="Power BI بەرمىلەر توپلاملىرى" />
+    <Override Locale="uk-UA" Value="Набори даних Power BI" />
+    <Override Locale="ur-PK" Value="Power BI ڈیٹاسیٹس" />
+    <Override Locale="vi-VN" Value="Tập dữ liệu Power BI" />
+    <Override Locale="zh-CN" Value="Power BI 数据集" />
+    <Override Locale="zh-TW" Value="Power BI 資料集" />
+  </DisplayName>
+  <Description DefaultValue="Connect your Power BI dataset"/>
+  <IconUrl DefaultValue="https://app.powerbi.com/assets/PowerBI.32x32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://app.powerbi.com/assets/PowerBI.80x80.png"/>
+  <SupportUrl DefaultValue="https://powerbi.microsoft.com/en-us/"/>
+  <AppDomains>
+    <AppDomain>https://localhost:3000/</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://app.powerbi.com/taskpane.html" />
+    <RequestedWidth>400</RequestedWidth>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="PowerBi.Url" DefaultValue="https://app.powerbi.com/taskpane.html"/>
+        <bt:Url id="PowerBi.DevUrl" DefaultValue="https://aka.ms/pbiexceldev"/>
+        <bt:Url id="PowerBi.FfUrl" DefaultValue="https://app.powerbigov.us/taskpane.html"/>       <!-- Fairfax GCC -->
+        <bt:Url id="PowerBi.FfhUrl" DefaultValue="https://app.high.powerbigov.us/taskpane.html"/> <!-- Fairfax UsGovHigh -->
+        <bt:Url id="PowerBi.FfdUrl" DefaultValue="https://app.mil.powerbigov.us/taskpane.html"/>  <!-- Fairfax UsGovDoD -->
+        <bt:Url id="PowerBi.BfUrl" DefaultValue="https://app.powerbi.de/taskpane.html"/>          <!-- Blackforest -->
+        <bt:Url id="PowerBi.McUrl" DefaultValue="https://app.powerbi.cn/taskpane.html"/>          <!-- Mooncake -->
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>5c29b96a-51e0-40c1-b348-fbfebbe0e86c</Id>
+      <Authorizations>
+        <!-- Prod -->
+        <Authorization>
+          <Resource>https://analysis.windows.net/powerbi/api</Resource>
+        </Authorization>
+        <!-- PPE -->
+        <Authorization>
+          <Resource>https://analysis.windows-int.net/powerbi/api</Resource>
+        </Authorization>
+        <!-- Fairfax - GCC -->
+        <Authorization>
+          <Resource>https://analysis.usgovcloudapi.net/powerbi/api</Resource>
+        </Authorization>
+        <!-- Fairfax - UsGovHigh -->
+        <Authorization>
+          <Resource>https://high.analysis.usgovcloudapi.net/powerbi/api</Resource>
+        </Authorization>
+        <!-- Fairfax - UsGovDoD -->
+        <Authorization>
+          <Resource>https://mil.analysis.usgovcloudapi.net/powerbi/api</Resource>
+        </Authorization>
+        <!-- Blackforest -->
+        <Authorization>
+          <Resource>https://analysis.cloudapi.de/powerbi/api</Resource>
+        </Authorization>
+        <!-- Mooncake -->
+        <Authorization>
+          <Resource>https://analysis.chinacloudapi.cn/powerbi/api</Resource>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>

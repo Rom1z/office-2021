@@ -1,0 +1,12 @@
+{
+  "clear": "Диагностика деректерін тазалау",
+  "navigateTo": "{0} торына өту",
+  "executionStartTime": "Кодты орындаудың басталу уақыты",
+  "runningDuration": "Орындалу ұзақтығы: {0} мс",
+  "stdout": "Стандартты шығыс",
+  "stderr": "Стандартты қате шығысы",
+  "serviceError": "Python аудармашысының қатесі",
+  "diagnosticsEntryDescription": "{0} диагностика шығысы",
+  "autoShowCheckboxText": "Автоматты түрде көрсету",
+  "autoShowCheckboxToolTip": "Жаңа журналдар пайда болған кез келген уақытта тақтаны автоматты түрде көрсету."
+}

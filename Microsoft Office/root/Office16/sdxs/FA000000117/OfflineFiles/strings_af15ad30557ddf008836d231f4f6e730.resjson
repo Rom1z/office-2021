@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Proveu el Python a l'Excel (versió preliminar)",
+  "premiumHubMessageTextForPythonInExcel": "Combineu les fórmules del Python amb la quadrícula de l'Excel per netejar, explorar i analitzar les dades. Protegit pel Microsoft Cloud, crea i comparteix anàlisis avançades directament des de l'Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Toqueu les biblioteques",
+  "premiumHubSectionOneMessageForPythonInExcel": "Simplifiqueu i expediu anàlisis amb biblioteques comunes del Python.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Cerca patrons",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Utilitzeu fórmules del Python per descobrir conclusions amagades a les dades i visualitzar-les amb traçats.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "No cal aplicar cap configuració",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Optimitzeu els fluxos de treball amb entorns preparats per utilitzar-se i segurs.",
+  "premiumHubTermsOfUseForPythonInExcel": "Mentre el Python a l'Excel estigui en versió preliminar pública, podreu utilitzar aquesta característica com a part de la vostra subscripció. Després de la versió preliminar, haureu de comprar una llicència addicional per utilitzar-lo. Consulteu les {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Més informació",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Mostra'm com funciona",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Prova la versió preliminar",
+  "termsOfUseLinkForPreview": "condicions d'ús de la versió preliminar"
+}

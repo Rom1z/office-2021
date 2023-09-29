@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>8210fc2e-de9c-4ab2-81ca-030e5975cc12</Id>
+  <Version>1.0.2308.24002</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Editor Pane"/>
+  <Description DefaultValue="Check grammar, spelling, and more in Word"/>
+  <IconUrl DefaultValue="assets/StoreLogo.png"/>
+  <SupportUrl DefaultValue="https://support.office.com/en-us" />
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://support.microsoft.com/en-us/office/check-grammar-spelling-and-more-in-word-0f43bf32-ccde-40c5-b16a-c6a282c0d251" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="ReactNative" MinVersion="64.0" />
+      <Set Name="EditorPaneSdx" MinVersion="2.0" />
+    </Sets>
+  </Requirements>
+</OfficeApp>

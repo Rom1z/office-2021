@@ -1,0 +1,21 @@
+{
+  "title": "Параметры обновления типов данных",
+  "subTitle": "Управление типами данных, которые будут обновляться в этой книге.",
+  "noRefreshableDataTypes": "В этой книге не найдены обновляемые типы данных.",
+  "lastRefreshedNever": "Последнее обновление: неизвестно",
+  "lastRefreshedAt": "Последнее обновление: {0} в {1}",
+  "lastRefreshedTimeAgo": "Последнее обновление: {0}",
+  "update": "Обновлять данные этого типа",
+  "onFileOpen": "При открытии файла",
+  "manually": "Вручную",
+  "periodic": "Автоматически каждые {0} мин",
+  "dataPoweredBy": "Данные на основе",
+  "refreshIntervalRadioGroupLabel": "Обновить этот тип данных:",
+  "dataTypeFoldoutButtonHint": "Развертывание параметров интервала обновления для {0}",
+  "dataTypeFoldoutNoAutoRefreshOptionsHint": "Тип \"{0}\" обновляется только вручную",
+  "refreshButtonHint": "Обновить {0}",
+  "refreshAllButtonLabel": "Все",
+  "refreshOptionRadioButtonAccessibilityLabel": "Обновление {0} {1}",
+  "foldoutButtonActionExpand": "Развернуть",
+  "foldoutButtonActionCollapse": "Свернуть"
+}

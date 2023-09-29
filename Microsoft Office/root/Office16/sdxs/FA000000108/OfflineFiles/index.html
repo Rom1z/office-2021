@@ -1,0 +1,75 @@
+<!doctype html><html><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="Content-Security-Policy" content="navigate-to 'self' 'unsafe-inline'"/><title>Task Pane</title></head><body style="margin: 0px"><div id="root"></div><script id="populateWithResources">var parametersString = document.location.search + document.location.hash;
+      var culture = getParam(parametersString, "culture", "en-US");
+      const rtlLanguageList = ["ar","he","ckb","dv","fa","ff-adlm","ks","lrc","mzn","nqo","pa","prs","ps","sd","syr","ug","ur","uz","yi"];
+      rtlLanguageList.forEach((rtlLanguage) => {
+        if (culture.substring(0, rtlLanguage.length + 1) === rtlLanguage + "-") {
+          document.dir = "rtl";
+        }
+      });
+
+      var lowerCaseCulture = culture.toLowerCase();
+      var iconResourceList = [
+        "@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-initial-app-sprite.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-lazy-app-sprite.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-ribbon-sprite-lazy.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/excel-uiSlice20-sprite.js","@1js/excel-online-icons/dist/{defaultCultureLowerCase}/ribbon-menu-sprite.js",
+      ];
+      var stringResourceFilePathNameList = [
+        "@1js/office-online-strings-proxy/lib/{defaultCulture}/excel-data-cleansing-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/excel-powerquery-taskpane-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/uxpp-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/friendly-dates-strings.js","@1js/office-online-strings-proxy/lib/{defaultCulture}/office-common-strings.js",
+      ];
+      var populateWithResources = document.getElementById(
+        "populateWithResources"
+      );
+      iconResourceList
+        .map((resource) =>
+          resource.replace(
+            new RegExp(
+              "{defaultCultureLowerCase}",
+              "g"
+            ),
+            lowerCaseCulture
+          )
+        )
+        .concat(
+          stringResourceFilePathNameList.map((resource) =>
+            resource.replace(
+              new RegExp(
+                "{defaultCulture}",
+                "g"
+              ),
+              culture
+            )
+          )
+        )
+        .forEach((resource) => {
+          var script = document.createElement("script");
+          populateWithResources.parentNode.insertBefore(
+            script,
+            populateWithResources.nextSibling
+          );
+          script.setAttribute("src", resource);
+        });
+
+      function getParam(parametersString, paramName, defaultValue) {
+        var paramValue = defaultValue;
+        if (!parametersString) {
+          return paramValue;
+        }
+
+        var paramCandidates = parametersString
+          .split(new RegExp("[?#&]"))
+          .filter((nameValue) => !!nameValue && nameValue.length > 0)
+          .filter((nameValue) => nameValue.startsWith(paramName + "="))
+          .filter(
+            (nameValue) =>
+              nameValue.split("=") && nameValue.split("=").length > 0
+          )
+          .map((nameValue) => nameValue.split("=")[1])
+          .filter((value) => value && value.trim().length > 0);
+        if (
+          !!paramCandidates &&
+          paramCandidates.length > 0 &&
+          !!paramCandidates[0]
+        ) {
+          paramValue = paramCandidates[0];
+        }
+
+        return paramValue;
+      }</script><script src="runtime.bundle.js"></script><script src="main.bundle.js"></script></body></html>

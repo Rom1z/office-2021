@@ -1,0 +1,58 @@
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+html,
+body {
+  background: #F3F3F3;
+}
+
+b {
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #262626;
+}
+
+h4 {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #201F1E;
+}
+
+h5 {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #201F1E;
+}
+
+#container {
+    height: 100%;
+    overflow: auto;
+}
+
+svg {
+    color: #2E6AC5;
+}
+
+ul {
+  list-style-type: square
+}
+
+span {
+  float: right;
+  padding-right: 10px;
+}

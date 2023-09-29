@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>8b62f88e-0bcf-48e6-b6c0-d404f53c5de2</Id>
+  <Version>1.0.2303.24002</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Live Captions" />
+  <Description DefaultValue="Live Captions" />
+  <IconUrl DefaultValue="assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="assets/icon-80.png" />
+  <SupportUrl DefaultValue="https://aka.ms/edusupport" />
+  <AppDomains>
+    <AppDomain>onenote.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Notebook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://www.onenote.com/officeaddins/livecaptions/" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+    xsi:type="VersionOverridesV1_0">
+    <!-- SSO CONFIGURATION -->
+    <WebApplicationInfo>
+      <Id>53e0d905-101b-4a8f-8edb-5a1ca2527920</Id>
+      <Resource>https://officeapps.live.com</Resource>
+      <Scopes>
+        <Scope>profile</Scope>
+        <Scope>openid</Scope>
+      </Scopes>
+      <Authorizations>
+        <Authorization>
+          <Resource>https://officeapps.live.com</Resource>
+          <Scopes>
+            <Scope>profile</Scope>
+            <Scope>openid</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+    <Hosts>
+      <Host xsi:type="Notebook">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title" />
+            <Description resid="GetStarted.Description" />
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl" />
+          </GetStarted>
+          <FunctionFile resid="Commands.Url" />
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabView">
+              <Group id="LiveCaptions.TabGroup">
+                <Label resid="CommandsGroup.Label" />
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16" />
+                  <bt:Image size="32" resid="Icon.32x32" />
+                  <bt:Image size="80" resid="Icon.80x80" />
+                </Icon>
+                <Control xsi:type="Button" id="TaskpaneButton">
+                  <Label resid="TaskpaneButton.Label" />
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label" />
+                    <Description resid="TaskpaneButton.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16" />
+                    <bt:Image size="32" resid="Icon.32x32" />
+                    <bt:Image size="80" resid="Icon.80x80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>LiveCaptions</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16"
+          DefaultValue="assets/icon-16.png" />
+        <bt:Image id="Icon.32x32"
+          DefaultValue="assets/icon-32.png" />
+        <bt:Image id="Icon.80x80"
+          DefaultValue="assets/icon-80.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl"
+          DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
+        <bt:Url id="Commands.Url"
+          DefaultValue="https://www.onenote.com/officeaddins/livecaptions/functions?tenant=" />
+        <bt:Url id="Taskpane.Url"
+          DefaultValue="https://www.onenote.com/officeaddins/livecaptions/?tenant=" />
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with Live Captions!" />
+        <bt:String id="CommandsGroup.Label" DefaultValue="Live Captions Add-in" />
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Live Captions">
+          <bt:Override Locale="ar-SA" Value="التسميات التوضيحية المباشرة" />
+          <bt:Override Locale="bg-BG" Value="Надписи на живо" />
+          <bt:Override Locale="ca-ES" Value="Subtítols en directe" />
+          <bt:Override Locale="cs-CZ" Value="Živé titulky" />
+          <bt:Override Locale="cy-GB" Value="Capsiynau Byw" />
+          <bt:Override Locale="da-DK" Value="Liveundertekster" />
+          <bt:Override Locale="de-DE" Value="Liveuntertitel" />
+          <bt:Override Locale="el-GR" Value="Ζωντανές λεζάντες" />
+          <bt:Override Locale="en-GB" Value="Live Captions" />
+          <bt:Override Locale="es-ES" Value="Subtítulos en directo" />
+          <bt:Override Locale="et-EE" Value="Vaegkuuljate reaalajasubtiitrid" />
+          <bt:Override Locale="eu-ES" Value="Zuzeneko epigrafeak" />
+          <bt:Override Locale="fi-FI" Value="Live-tekstitys" />
+          <bt:Override Locale="fr-CA" Value="Sous-titres en direct" />
+          <bt:Override Locale="gl-ES" Value="Subtítulos en directo" />
+          <bt:Override Locale="he-IL" Value="כתוביות חיות" />
+          <bt:Override Locale="hi-IN" Value="लाइव कैप्शन" />
+          <bt:Override Locale="hr-HR" Value="Opisi uživo" />
+          <bt:Override Locale="hu-HU" Value="Élő feliratok" />
+          <bt:Override Locale="id-ID" Value="Keterangan Langsung" />
+          <bt:Override Locale="is-IS" Value="Skjátextar í beinni" />
+          <bt:Override Locale="it-IT" Value="Sottotitoli in tempo reale" />
+          <bt:Override Locale="ja-JP" Value="ライブ キャプション" />
+          <bt:Override Locale="kk-KZ" Value="Автоматты субтитрлар" />
+          <bt:Override Locale="ko-KR" Value="라이브 캡션" />
+          <bt:Override Locale="lt-LT" Value="Automatiniai aprašai" />
+          <bt:Override Locale="lv-LV" Value="Tiešraides titri" />
+          <bt:Override Locale="ms-MY" Value="Kapsyen Langsung" />
+          <bt:Override Locale="nb-NO" Value="Direkte tekster" />
+          <bt:Override Locale="nl-NL" Value="Liveondertitels" />
+          <bt:Override Locale="nn-NO" Value="Direkte teksting" />
+          <bt:Override Locale="pl-PL" Value="Napisy na żywo" />
+          <bt:Override Locale="pt-BR" Value="Legendas ao Vivo" />
+          <bt:Override Locale="pt-PT" Value="Legendas em Tempo Real" />
+          <bt:Override Locale="ro-RO" Value="Subtitrări în direct" />
+          <bt:Override Locale="ru-RU" Value="Автоматические субтитры" />
+          <bt:Override Locale="sk-SK" Value="Titulky naživo" />
+          <bt:Override Locale="sl-SI" Value="Napisi v živo" />
+          <bt:Override Locale="sr-Cyrl-RS" Value="Натписи уживо" />
+          <bt:Override Locale="sr-Latn-RS" Value="Natpisi uživo" />
+          <bt:Override Locale="sv-SE" Value="Livetextning" />
+          <bt:Override Locale="th-TH" Value="คำอธิบายภาพสด" />
+          <bt:Override Locale="tr-TR" Value="Canlı Alt Yazı" />
+          <bt:Override Locale="uk-UA" Value="Динамічні субтитри" />
+          <bt:Override Locale="vi-VN" Value="Chú thích trực tiếp" />
+          <bt:Override Locale="zh-Hans" Value="实时字幕" />
+          <bt:Override Locale="zh-Hant" Value="即時字幕" />
+        </bt:String>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description"
+          DefaultValue="Your Live Captions add-in loaded succesfully. Go to the HOME tab and click the 'Live Captions' button to get started." />
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show Live Captions" />
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

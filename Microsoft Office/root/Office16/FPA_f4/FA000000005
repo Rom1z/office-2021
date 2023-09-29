@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>F438B4E6-2B49-466F-9A91-B75F473EBA96</Id>
+  <!--Version. Updates from the store only get triggered if there is a version change. -->
+  <Version>1.0.0.12</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Ideas" />
+  <Description DefaultValue="Insights service manifest used in Excel Ideas" />
+  <IconUrl DefaultValue="https://insights.microsoft.com/Images/button32x32.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
+  <!--End Basic Settings. -->
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://insights.microsoft.com/App/Index" />
+  </DefaultSettings>
+  <!-- End TaskPane Mode integration.  -->
+  <Permissions>ReadWriteDocument</Permissions>
+  <!-- SSO -->
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Insights.Https" DefaultValue="https://insights.microsoft.com/App/Index" />
+        <bt:Url id="Insights.Https.PPE" DefaultValue="https://ppe.insights.microsoft.com/App/Index" />
+        <bt:Url id="Insights.Https.Bundle" DefaultValue="https://insights.microsoft.com/App/Index_Bundle" />
+        <bt:Url id="Insights.Https.PPE.Bundle" DefaultValue="https://ppe.insights.microsoft.com/App/Index_Bundle" />
+        <bt:Url id="Insights.UsePivotBridge.Url" DefaultValue="https://insights.microsoft.com:8799/app-excel-pivot-bridge.html" />
+        <bt:Url id="Insights.PPE" DefaultValue="https://ppe.insights.microsoft.com:8799/App/Index" />
+        <bt:Url id="RecommendCharts" DefaultValue="https://insights.microsoft.com/App/Index" />
+        <bt:Url id="RecommendCharts.PPE" DefaultValue="https://ppe.insights.microsoft.com/App/Index" />
+        <bt:Url id="RecommendCharts.Bundle" DefaultValue="https://insights.microsoft.com/App/Index_Bundle" />
+        <bt:Url id="RecommendCharts.PPE.Bundle" DefaultValue="https://ppe.insights.microsoft.com/App/Index_Bundle" />
+        <bt:Url id="RecommendPivotTables" DefaultValue="https://insights.microsoft.com/App/Index" />
+        <bt:Url id="RecommendPivotTables.PPE" DefaultValue="https://ppe.insights.microsoft.com/App/Index" />
+        <bt:Url id="RecommendPivotTables.Bundle" DefaultValue="https://insights.microsoft.com/App/Index_Bundle" />
+        <bt:Url id="RecommendPivotTables.PPE.Bundle" DefaultValue="https://ppe.insights.microsoft.com/App/Index_Bundle" />
+        <bt:Url id="IdeasNL" DefaultValue="https://insights.microsoft.com/App/Index" />
+        <bt:Url id="IdeasNL.PPE" DefaultValue="https://ppe.insights.microsoft.com/App/Index" />
+        <bt:Url id="IdeasNL.Bundle" DefaultValue="https://insights.microsoft.com/App/Index_Bundle" />
+        <bt:Url id="IdeasNL.PPE.Bundle" DefaultValue="https://ppe.insights.microsoft.com/App/Index_Bundle" />
+      </bt:Urls>
+    </Resources>
+    <ConnectedServiceControls>
+      <Scopes>
+        <Scope>AnalyzeUserContent</Scope>
+      </Scopes>
+    </ConnectedServiceControls>
+  </VersionOverrides>
+</OfficeApp>

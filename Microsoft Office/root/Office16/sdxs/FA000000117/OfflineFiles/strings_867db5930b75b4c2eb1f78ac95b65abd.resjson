@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Python ბიბლიოთეკა Excel-ში (გადახედვა)",
+  "premiumHubMessageTextForPythonInExcel": "გააერთიანეთ Python-ის ფორმულები Excel-ის ბადესთან თქვენი მონაცემების გასასუფთავებლად, შესასწავლად და გასაანალიზებლად. უსაფრთხოებას უზრუნველყოფს Microsoft Cloud, შექმენით და გააზიარეთ მოწინავე ანალიტიკა Excel-ის შიგნით.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "შეხებით შედით ბიბლიოთეკებში",
+  "premiumHubSectionOneMessageForPythonInExcel": "გაამარტივეთ და დააჩქარეთ თქვენი ანალიზი Python-ის საერთო ბიბლიოთეკებით.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "ნიმუშების ძიება",
+  "premiumHubSectionTwoMessageForPythonInExcel": "გამოიყენეთ Python-ის ფორმულები თქვენი მონაცემების დამალული მიმოხილვების ნახვისა და ვიზუალიზაციისთვის შინაარსთან ერთად.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "პარამეტრების დაყენება არ მოითხოვება",
+  "premiumHubSectionThreeMessageForPythonInExcel": "გაამარტივეთ სამუშაო პროცესები მზა, უსაფრთხო გარემოთი.",
+  "premiumHubTermsOfUseForPythonInExcel": "მიუხედავად იმისა, რომ პითონი Excel- ში არის საჯარო გადახედვაში, თქვენ შეძლებთ გამოიყენოთ ეს ფუნქცია, როგორც თქვენი გამოწერის ნაწილი. გადახედვის შემდეგ, თქვენ უნდა შეიძინოთ დამატებითი ლიცენზია მისი გამოსაყენებლად. იხილეთ {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "ვრცლად",
+  "premiumHubPythonCenterButtonForPythonInExcel": "მაჩვენეთ, როგორ მუშაობს ეს",
+  "premiumHubTryPreviewButtonForPythonInExcel": "გადახედვის ცდა",
+  "termsOfUseLinkForPreview": "გამოყენების პირობების გადახედვა"
+}

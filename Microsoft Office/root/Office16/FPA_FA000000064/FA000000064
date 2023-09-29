@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>93BA1D50-9260-48E8-B42F-979634F28AD7</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Navigation" />
+  <Description DefaultValue="Taskpane for navigating through Excel worksheets and their content." />
+  <IconUrl DefaultValue="https://fa000000064.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2103.12003/en-us_web/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://fa000000064.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2103.12003/en-us_web/assets/icon-64.png" />
+  <SupportUrl DefaultValue="https://support.office.com"/>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://aka.ms/ExcelNavPaneOnMac" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

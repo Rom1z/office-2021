@@ -1,0 +1,7 @@
+{
+  "contextAccessibilityLabelForSpelling": "Қате жазылған, {0}, {1}",
+  "contextAccessibilityLabelForRepeatedWord": "Қайталанған сөз, {0}, {1}",
+  "contextAccessibilityLabelForGrammar": "Грамматикалық қате, {0}, {1}",
+  "contextAccessibilityLabelForRefinement": "Мәнердің нақтылануы, {0}, {1}",
+  "contextAccessibilityLabelForCorrection": "Түзету, {0}, {1}"
+}

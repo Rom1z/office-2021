@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>b23f29e3-11f3-4fe4-996d-50bbdb5bc496</Id>
+  <Version>1.0.2008.10006</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Save Prompt"/>
+  <Description DefaultValue="Contents for the save prompt"/>
+  <IconUrl DefaultValue="assets/StoreLogo.png"/>
+  <SupportUrl DefaultValue="https://aka.ms/sdx"/>
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.2">
+    <!-- IdentityAPI 1.2 or geater are needed to prevent an office client without support for the localization framework getting it -->
+      <Set Name="IdentityApi" />
+    </Sets>
+  </Requirements>
+</OfficeApp>

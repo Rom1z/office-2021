@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:ManifestLabs:http---schemas-microsoft-com-office-webextensions-1-0" solutionVersion="1.0.0.4" productVersion="14.0.0" PIVersion="1.0.0.0" href="file:///C:\Users\bensack\Desktop\ManifestLabs\manifest.xsf" language="en-us" ?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.3"?>
+<ns1:OfficeWebExtension xmlns:ns1="http://schemas.microsoft.com/office/webextensions/1.0">
+	<ns1:ID>OSF Wikipedia</ns1:ID>
+	<ns1:Version>1.1</ns1:Version>
+	<ns1:DisplayNames>
+		<ns1:DisplayName Locale="EN-US">OSF Wikipedia</ns1:DisplayName>
+		<ns1:DisplayName Locale="EN-US">Display Name 2b</ns1:DisplayName>
+		<ns1:DisplayName Locale="EN-US">Display Name 3b</ns1:DisplayName>
+		<ns1:DisplayName Locale="EN-US">Display Name 4b</ns1:DisplayName>
+	</ns1:DisplayNames>
+	<ns1:Descriptions>
+		<ns1:Description Locale="EN-US">Description 1</ns1:Description>
+		<ns1:Description Locale="EN-US">Description 2</ns1:Description>
+		<ns1:Description Locale="EN-US">Description 3</ns1:Description>
+		<ns1:Description Locale="EN-US">Description 4</ns1:Description>
+	</ns1:Descriptions>
+	<ns1:SourceLocations>
+		<ns1:SourceLocation Locale="">Source Location 1</ns1:SourceLocation>
+		<ns1:SourceLocation Locale="EN-US">Source Location 2</ns1:SourceLocation>
+		<ns1:SourceLocation Locale="">Source Location 3</ns1:SourceLocation>
+		<ns1:SourceLocation Locale="">Source Location 4</ns1:SourceLocation>
+	</ns1:SourceLocations>
+	<ns1:OfficeExtensionTargets>
+		<ns1:OfficeExtensionTarget>InTaskPane</ns1:OfficeExtensionTarget>
+	</ns1:OfficeExtensionTargets>
+	<ns1:Capabilities>
+		<ns1:DocumentRead>true</ns1:DocumentRead>
+		<ns1:DocumentWrite>false</ns1:DocumentWrite>
+		<ns1:DocumentEvents>true</ns1:DocumentEvents>
+		<ns1:ServerProxy>Server Proxy 1</ns1:ServerProxy>
+		<ns1:ServerProxy>Server Proxy 2</ns1:ServerProxy>
+		<ns1:ServerProxy>Server Proxy 3</ns1:ServerProxy>
+		<ns1:ServerProxy>Server Proxy 4</ns1:ServerProxy>
+	</ns1:Capabilities>
+	<ns1:DefaultSize DefaultHeight="1" DefaultWidth="1" MaxHeight="1" MaxWidth="1" MinHeight="1" MinWidth="1"></ns1:DefaultSize>
+	<ns1:HostApps>
+		<ns1:HostApp Name="Outlook" MinVersion="1" MaxVersion="1"></ns1:HostApp>
+		<ns1:HostApp Name="OutlookWebApp" MinVersion="1" MaxVersion="1"></ns1:HostApp>
+		<ns1:HostApp Name="Word" MinVersion="1" MaxVersion="1"></ns1:HostApp>
+		<ns1:HostApp Name="WordWebApp" MinVersion="1" MaxVersion="1"></ns1:HostApp>
+		<ns1:HostApp Name="Excel" MinVersion="1" MaxVersion="1"></ns1:HostApp>
+		<ns1:HostApp Name="ExcelWebApp" MinVersion="1" MaxVersion="1"></ns1:HostApp>
+	</ns1:HostApps>
+	<ns1:Browsers>
+		<ns1:Browser Name="IE" MinVersion="1" MaxVersion="1"></ns1:Browser>
+		<ns1:Browser Name="Firefox" MinVersion="1" MaxVersion="1"></ns1:Browser>
+		<ns1:Browser Name="Chrome" MinVersion="1" MaxVersion="1"></ns1:Browser>
+		<ns1:Browser Name="Safari" MinVersion="1" MaxVersion="1"></ns1:Browser>
+		<ns1:Browser Name="Opera" MinVersion="1" MaxVersion="1"></ns1:Browser>
+		<ns1:Browser Name="Other" MinVersion="1" MaxVersion="1"></ns1:Browser>
+	</ns1:Browsers>
+</ns1:OfficeWebExtension>

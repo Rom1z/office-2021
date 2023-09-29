@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>d56b7504-88b5-484a-8880-9f1bc0770dab</Id>
+  <Version>1.0.2308.23014</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Discover-Try-Buy"/>
+  <Description DefaultValue="Discover-Try-Buy prograde"/>
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
+  <AppDomains>
+    <AppDomain>https://localhost:3000/</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000/messageBoxDialog.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="DiscoverTryBuySdx" MinVersion="1.1.0"/>
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <WebApplicationInfo>
+      <Id>d56b7504-88b5-484a-8880-9f1bc0770dab</Id>
+      <Authorizations>
+        <Authorization>
+          <Resource>https://admin-ignite.microsoft.com</Resource>
+          <Scopes>
+            <Scope>profile</Scope>
+            <Scope>openId</Scope>
+            <Scope>files.read.all</Scope>
+            <Scope>user.read</Scope>
+            <Scope>offline_access</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="MessageBox.Url" DefaultValue="https://localhost:3000/messageBoxDialog.html"/>
+        <bt:Url id="PremiumHub.Url" DefaultValue="https://localhost:3000/premiumHub.html"/>
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

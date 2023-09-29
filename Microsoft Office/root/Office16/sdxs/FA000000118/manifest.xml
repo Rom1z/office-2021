@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+
+  <!-- Manifest documation here: https://docs.microsoft.com/en-us/office/dev/add-ins/reference/manifest/officeapp -->
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>217f4f1c-cc0a-48ed-ae85-e56150fcb027</Id>
+
+  <Version>1.0.2308.15004</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Excel Python Center SDX"/>
+  <Description DefaultValue="Microsoft Excel Python Center."/>
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="assets/logo.png" />
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://aka.ms/sdx" />
+
+  <!-- Hosts is used to specify which app the SDX should run in
+            Document (Word)
+            Database (Access)
+            Mailbox (Outlook)
+            Notebook (OneNote)
+            Presentation (PowerPoint)
+            Project (Project)
+            Workbook (Excel)
+  -->
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+</OfficeApp>

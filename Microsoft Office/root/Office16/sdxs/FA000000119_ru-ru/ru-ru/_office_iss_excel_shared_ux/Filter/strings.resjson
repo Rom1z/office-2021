@@ -1,0 +1,10 @@
+{
+  "filterTooltip": "Фильтрация",
+  "invalidRangeText": "Введите допустимый диапазон.",
+  "filterInputPlaceholderText": "Выберите диапазон для фильтрации.",
+  "defaultFilterText": "Эта книга",
+  "filterByRangeText": "Диапазон",
+  "filterBySheetText": "Лист",
+  "clearFilterText": "Очистить фильтр",
+  "commitFilterText": "Зафиксировать"
+}

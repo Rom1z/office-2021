@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>F100F45E-9E23-4411-B13A-8198563B8FEF</Id>
+  <Version>1.2.2308.31016</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Copilot (Preview)"/>
+  <Description DefaultValue="Copilot (Preview)"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="assets/icon-80.png"/>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="CdnUrlSupport" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <WebApplicationInfo>
+      <Id>62bcf154-4a5e-4647-850a-5d1570d20854</Id>
+      <Resource>https://insights.microsoft.com</Resource>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>

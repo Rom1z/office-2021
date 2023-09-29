@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "ลองใช้ Python ใน Excel (ตัวอย่าง)",
+  "premiumHubMessageTextForPythonInExcel": "รวมสูตร Python กับเส้นตาราง Excel เพื่อล้าง สํารวจ และวิเคราะห์ข้อมูลของคุณ รักษาความปลอดภัยโดย Microsoft Cloud สร้างและแชร์การวิเคราะห์ขั้นสูงภายใน Excel",
+  "premiumHubSectionOneHeaderForPythonInExcel": "แตะลงในไลบรารี",
+  "premiumHubSectionOneMessageForPythonInExcel": "ลดความซับซ้อนและเร่งการวิเคราะห์ของคุณด้วยไลบรารี Python ทั่วไป",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "ค้นหารูปแบบ",
+  "premiumHubSectionTwoMessageForPythonInExcel": "ใช้สูตร Python เพื่อค้นหาข้อมูลเชิงลึกที่ซ่อนอยู่ในข้อมูลของคุณและแสดงแผนภาพด้วยพล็อต",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "ไม่จำเป็นต้องติดตั้ง",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ปรับปรุงเวิร์กโฟลว์ด้วยสภาพแวดล้อมที่พร้อมใช้งานและปลอดภัย",
+  "premiumHubTermsOfUseForPythonInExcel": "ในขณะที่ Python ใน Excel อยู่ในการแสดงตัวอย่างสาธารณะ คุณจะสามารถใช้ฟีเจอร์นี้เป็นส่วนหนึ่งของการสมัครใช้งานของคุณได้ หลังจากพรีวิว คุณจะต้องซื้อสิทธิการใช้งานเพิ่มเติมเพื่อใช้งาน ดู {0}",
+  "premiumHubLearnMoreLinkForPythonInExcel": "เรียนรู้เพิ่มเติม",
+  "premiumHubPythonCenterButtonForPythonInExcel": "แสดงให้ฉันเห็นว่าทำงานอย่างไร",
+  "premiumHubTryPreviewButtonForPythonInExcel": "ลองพรีวิว",
+  "termsOfUseLinkForPreview": "ข้อกําหนดการใช้พรีวิว"
+}

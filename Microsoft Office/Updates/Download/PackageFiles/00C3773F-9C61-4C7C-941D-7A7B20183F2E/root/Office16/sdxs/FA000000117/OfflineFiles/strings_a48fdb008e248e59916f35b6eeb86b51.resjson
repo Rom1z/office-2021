@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Proovige Exceli Pythoni funktsiooni (eelversioon)",
+  "premiumHubMessageTextForPythonInExcel": "Andmete puhastamiseks, uurimiseks ja analüüsimiseks saate kombineerida Pythoni valemid Exceli ruudustikuga. Microsofti pilveteenuse abil saate luua ja jagada täiustatud analüütikat otse Exceli sees.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Kasutage teeke",
+  "premiumHubSectionOneMessageForPythonInExcel": "Analüüsi lihtsustamiseks ja kiirendamiseks saate kasutada levinud Pythoni teeke.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Mustrite otsimine",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Kasutage Pythoni valemeid, et leida oma andmetest peidetud ülevaateid ja visualiseerida neid graafikute abil.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Installida pole vaja",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Tõhustage töövooge kasutusvalmis ja turvaliste keskkondade abil.",
+  "premiumHubTermsOfUseForPythonInExcel": "Kui Python on Excelis avalikus eelversioonis, saate seda funktsiooni oma tellimuse osana kasutada. Pärast eelversiooni kasutamist peate selle kasutamiseks ostma täiendava litsentsi. Saate vaadata {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Lisateave",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Kuva juhised",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Proovi eelversiooni",
+  "termsOfUseLinkForPreview": "eelvaate kasutustingimused"
+}

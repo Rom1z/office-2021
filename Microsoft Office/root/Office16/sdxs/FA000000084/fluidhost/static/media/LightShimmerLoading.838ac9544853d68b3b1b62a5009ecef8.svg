@@ -1,0 +1,83 @@
+<svg id="e3TApwWgynR1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin slice" viewBox="0 0 634 187" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <style>
+#e3TApwWgynR11_to {animation: e3TApwWgynR11_to__to 2000ms linear infinite normal forwards}@keyframes e3TApwWgynR11_to__to { 0% {transform: translate(-317px,110px)} 100% {transform: translate(951px,110px)}}
+ </style>
+  <defs>
+    <linearGradient id="e3TApwWgynR4-fill" x1="242" y1="147" x2="-30" y2="147" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR4-fill-0" offset="0%" stop-color="#f3f2f1"/>
+      <stop id="e3TApwWgynR4-fill-2" offset="100%" stop-color="#f2f2f1"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR5-fill" x1="272" y1="94" x2="0" y2="94" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR5-fill-0" offset="0%" stop-color="#f3f2f1"/>
+      <stop id="e3TApwWgynR5-fill-2" offset="100%" stop-color="#f2f2f1"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR6-fill" x1="272" y1="58" x2="0" y2="58" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR6-fill-0" offset="0%" stop-color="#f3f2f1"/>
+      <stop id="e3TApwWgynR6-fill-2" offset="100%" stop-color="#f2f2f1"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR7-fill" x1="272" y1="33" x2="0" y2="33" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR7-fill-0" offset="0%" stop-color="#f3f2f1"/>
+      <stop id="e3TApwWgynR7-fill-2" offset="100%" stop-color="#f2f2f1"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR8-fill" x1="272" y1="8" x2="0" y2="8" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR8-fill-0" offset="0%" stop-color="#f3f2f1"/>
+      <stop id="e3TApwWgynR8-fill-2" offset="100%" stop-color="#f2f2f1"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR9-fill" x1="274" y1="147" x2="2" y2="147" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR9-fill-0" offset="0%" stop-color="#f3f2f1"/>
+      <stop id="e3TApwWgynR9-fill-2" offset="100%" stop-color="#f2f2f1"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR11-fill" x1="0" y1="0.5" x2="1" y2="0.5" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR11-fill-0" offset="0%" stop-color="rgba(242,242,241,0)"/>
+      <stop id="e3TApwWgynR11-fill-1" offset="50%" stop-color="#d5d5d5"/>
+      <stop id="e3TApwWgynR11-fill-2" offset="100%" stop-color="rgba(243,242,241,0)"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR14-fill" x1="16" y1="8" x2="0" y2="8" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR14-fill-0" offset="0%" stop-color="#f7f7f7"/>
+      <stop id="e3TApwWgynR14-fill-1" offset="100%" stop-color="#e4e4e4"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR15-fill" x1="92" y1="8" x2="0" y2="8" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR15-fill-0" offset="0%" stop-color="#f7f7f7"/>
+      <stop id="e3TApwWgynR15-fill-1" offset="100%" stop-color="#e4e4e4"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR16-fill" x1="130" y1="8" x2="0" y2="8" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR16-fill-0" offset="0%" stop-color="#f7f7f7"/>
+      <stop id="e3TApwWgynR16-fill-1" offset="100%" stop-color="#e4e4e4"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR17-fill" x1="223" y1="8" x2="0" y2="8" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR17-fill-0" offset="0%" stop-color="#f7f7f7"/>
+      <stop id="e3TApwWgynR17-fill-1" offset="100%" stop-color="#e4e4e4"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR18-fill" x1="272" y1="8" x2="0" y2="8" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR18-fill-0" offset="0%" stop-color="#f7f7f7"/>
+      <stop id="e3TApwWgynR18-fill-1" offset="100%" stop-color="#e4e4e4"/>
+    </linearGradient>
+    <linearGradient id="e3TApwWgynR19-fill" x1="272" y1="8" x2="0" y2="8" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+      <stop id="e3TApwWgynR19-fill-0" offset="0%" stop-color="#f7f7f7"/>
+      <stop id="e3TApwWgynR19-fill-1" offset="100%" stop-color="#e4e4e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="92" height="16" rx="4" ry="4" transform="translate(48 16)" fill="url(#e3TApwWgynR4-fill)"/>
+  <rect width="182.57" height="16" rx="4" ry="4" transform="translate(16 68)" fill="url(#e3TApwWgynR5-fill)"/>
+  <rect width="318.19" height="16" rx="4" ry="4" transform="translate(16 107)" fill="url(#e3TApwWgynR6-fill)"/>
+  <rect width="386" height="16" rx="4" ry="4" transform="translate(16 131)" fill="url(#e3TApwWgynR7-fill)"/>
+  <rect width="243.86" height="16" rx="4" ry="4" transform="translate(16 155)" fill="url(#e3TApwWgynR8-fill)"/>
+  <rect width="16" height="16" rx="4" ry="4" transform="translate(16 16)" fill="url(#e3TApwWgynR9-fill)"/>
+  <g mask="url(#e3TApwWgynR12)">
+    <g id="e3TApwWgynR11_to" transform="translate(-317,110)">
+      <rect width="634" height="220" rx="0" ry="0" transform="translate(-317,-110)" fill="url(#e3TApwWgynR11-fill)"/>
+    </g>
+    <mask id="e3TApwWgynR12" mask-type="luminance">
+      <g>
+        <rect width="92" height="16" rx="4" ry="4" transform="translate(48 16)" fill="url(#e3TApwWgynR15-fill)"/>
+        <rect width="182.57" height="16" rx="4" ry="4" transform="translate(16 68)" fill="url(#e3TApwWgynR16-fill)"/>
+        <rect width="318.19" height="16" rx="4" ry="4" transform="translate(16 107)" fill="url(#e3TApwWgynR17-fill)"/>
+        <rect width="386" height="16" rx="4" ry="4" transform="translate(16 131)" fill="url(#e3TApwWgynR18-fill)"/>
+        <rect width="243.86" height="16" rx="4" ry="4" transform="translate(16 155)" fill="url(#e3TApwWgynR19-fill)"/>
+        <rect width="16" height="16" rx="4" ry="4" transform="translate(16 16)" fill="url(#e3TApwWgynR14-fill)"/>
+      </g>
+    </mask>
+  </g>
+</svg>

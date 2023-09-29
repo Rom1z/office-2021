@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel-ലെ Python പരീക്ഷിക്കുക (പ്രിവ്യൂ)",
+  "premiumHubMessageTextForPythonInExcel": "നിങ്ങളുടെ ഡാറ്റാ ക്ലീൻ ചെയ്യാനും പര്യവേക്ഷണം ചെയ്യാനും വിശകലനം ചെയ്യാനും Excel ഗ്രിഡുമായി Python സൂത്രവാക്യങ്ങൾ സംയോജിപ്പിക്കുക. Microsoft ക്ലൗഡ് സുരക്ഷിതമാക്കി, Excel-നുള്ളിൽ തന്നെ നൂതന അനലിറ്റിക്‌സ് സൃഷ്‌ടിക്കുകയും പങ്കിടുകയും ചെയ്യുക.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "ലൈബ്രറികളിൽ സ്പര്‍ശിക്കുക",
+  "premiumHubSectionOneMessageForPythonInExcel": "പൊതുവായ Python ലൈബ്രറികൾ ഉപയോഗിച്ച് നിങ്ങളുടെ വിശകലനം ലളിതമാക്കുകയും വേഗത്തിലാക്കുകയും ചെയ്യുക.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "പാറ്റേണുകൾ കണ്ടെത്തുക",
+  "premiumHubSectionTwoMessageForPythonInExcel": "നിങ്ങളുടെ ഡാറ്റയിലെ മറഞ്ഞിരിക്കുന്ന ഇൻസൈറ്റുകൾ കണ്ടെത്തുന്നതിനും പ്ലോട്ടുകൾ ഉപയോഗിച്ച് ദൃശ്യവൽക്കരിക്കുന്നതിനും Python സൂത്രവാക്യങ്ങൾ ഉപയോഗിക്കുക.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "സജ്ജീകരണം ആവശ്യമില്ല",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ഉപയോഗിക്കാൻ തയ്യാറുള്ള, സുരക്ഷിതമായ പരിതസ്ഥിതികൾ ഉപയോഗിച്ച് വർക്ക്ഫ്ലോകൾ സ്ട്രീംലൈൻ ചെയ്യുക.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel-ലെ Python പൊതു പ്രിവ്യൂവിൽ ആയിരിക്കുമ്പോൾ, നിങ്ങളുടെ സബ്‌സ്ക്രിപ്ഷന്റെ ഭാഗമായി നിങ്ങൾക്ക് ഈ സവിശേഷത ഉപയോഗിക്കാൻ കഴിയും. പ്രിവ്യൂവിന് ശേഷം, ഇത് ഉപയോഗിക്കുന്നതിന് നിങ്ങൾ ഒരു അധിക ലൈസൻസ് വാങ്ങേണ്ടതുണ്ട്. {0} കാണുക.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "കൂടുതലറിയുക",
+  "premiumHubPythonCenterButtonForPythonInExcel": "ഇത് എങ്ങനെ പ്രവർത്തിക്കുന്നുവെന്ന് എന്നെ കാണിക്കുക",
+  "premiumHubTryPreviewButtonForPythonInExcel": "പ്രിവ്യൂ പരീക്ഷിക്കുക",
+  "termsOfUseLinkForPreview": "ഉപയോഗ നിബന്ധനകള്‍ പ്രിവ്യൂ ചെയ്യുക"
+}

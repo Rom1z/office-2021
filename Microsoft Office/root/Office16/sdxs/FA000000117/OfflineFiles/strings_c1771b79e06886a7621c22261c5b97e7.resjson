@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel-এ Python ব্যবহার করে দেখুন (পূর্বরূপ)",
+  "premiumHubMessageTextForPythonInExcel": "আপনার ডেটা পরিষ্কার, এক্সপ্লোর এবং বিশ্লেষণ করতে Excel গ্রিডের সাথে Python সূত্রগুলি একত্রিত করুন। Microsoft ক্লাউড দ্বারা সুরক্ষিত, একেবারে Excel-এর ভিতরেই উন্নত অ্যানালিটিক্স তৈরি এবং ভাগ করুন।",
+  "premiumHubSectionOneHeaderForPythonInExcel": "লাইব্রেরীগুলিতে ট্যাপ করুন",
+  "premiumHubSectionOneMessageForPythonInExcel": "সাধারণ Python লাইব্রেরীর মাধ্যমে আপনার বিশ্লেষণকে সহজ এবং উন্নত করুন৷",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "প্যাটার্নগুলি খুঁজুন",
+  "premiumHubSectionTwoMessageForPythonInExcel": "আপনার ডেটায় লুকোনো অন্তর্দৃষ্টি আবিষ্কার করতে Python সূত্রগুলি ব্যবহার করুন এবং সেগুলিকে প্লটগুলির মাধ্যমে কল্পনা করুন।",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "কোনও সেট আপের দরকার নেই",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ব্যবহারের জন্য-প্রস্তুত, সুরক্ষিত পরিবেশ সহ স্ট্রিমলাইন কর্মপ্রবাহ।",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel-এ Python সর্বজনীন পূর্বরূপে থাকার সময়, আপনি আপনার সদস্যতার অংশ হিসেবে আপনি বিনামূল্যে এই বৈশিষ্ট্যটি ব্যবহার করতে পারবেন। পূর্বরূপের পরে, এটি ব্যবহার করার জন্য আপনাকে একটি অতিরিক্ত লাইসেন্স ক্রয় করতে হবে৷{0}টি দেখুন৷",
+  "premiumHubLearnMoreLinkForPythonInExcel": "আরও জানুন",
+  "premiumHubPythonCenterButtonForPythonInExcel": "কীভাবে এটি কাজ করে তা আমাকে দেখান",
+  "premiumHubTryPreviewButtonForPythonInExcel": "পূর্বরূপ ব্যবহার করে দেখুন",
+  "termsOfUseLinkForPreview": "ব্যবহারের শর্তাবলীর পূর্বরূপ দেখুন"
+}

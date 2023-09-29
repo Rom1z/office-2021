@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>C3F01A92-4AC0-416B-AA8E-3428278AD24E</Id>
+
+  <!--Version. Updates from the store only get triggered if there is a version change. -->
+  <Version>1.0.0.0</Version>
+  <ProviderName>Microsoft Office Service</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Help" />
+  <Description DefaultValue="User-invoked guided walkthrough tutorials." />
+  <IconUrl DefaultValue="https://support.office.com/images/inapp-help-icon-32.png"/>
+  <SupportUrl DefaultValue="https://support.office.com" />
+  <!--End Basic Settings. -->
+
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://support.office.com/f1/GuidedWalkthrough" />
+  </DefaultSettings>
+  <!-- End TaskPane Mode integration.  -->
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <ConnectedServiceControls>
+      <Scopes>
+        <Scope>AnalyzeUserContent</Scope>
+        <Scope>DownloadOnlineContent</Scope>
+        <Scope>Controller</Scope>
+      </Scopes>
+    </ConnectedServiceControls>
+  </VersionOverrides>
+</OfficeApp>

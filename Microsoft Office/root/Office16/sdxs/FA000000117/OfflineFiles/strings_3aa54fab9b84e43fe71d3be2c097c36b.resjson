@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excelలో Pythonను ప్రయత్నించండి (పరిదృశ్యం)",
+  "premiumHubMessageTextForPythonInExcel": "మీ డేటాను శుభ్రం చేయడానికి, అన్వేషించడానికి మరియు విశ్లేషించడానికి Excel గ్రిడ్‌తో Python సూత్రాలను కలపండి. Microsoft క్లౌడ్ ద్వారా సురక్షితం చేయబడింది, Excel లోపల అధునాతన అనలిటిక్స్‌ను సృష్టించండి మరియు భాగస్వామ్యం చేయండి.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "లైబ్రరీల్లోకి ట్యాప్ చేయండి",
+  "premiumHubSectionOneMessageForPythonInExcel": "సాధారణ Python లైబ్రరీలతో మీ విశ్లేషణను సరళీకరించండి మరియు వేగవంతం చేయండి.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "నమూనాలను కనుగొనండి",
+  "premiumHubSectionTwoMessageForPythonInExcel": "మీ డేటాలో దాచిన అంతర్దృష్టులను కనుగొనడానికి మరియు ప్లాట్‌లతో వాటిని విజువలైజ్ చేయడానికి Python సూత్రాలను ఉపయోగించండి.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "ఏ సెటప్ అవసరం లేదు",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ఉపయోగించడానికి సిద్ధంగా ఉన్న, సురక్షిత ఎన్విరాన్‌మెంట్‌లతో వర్క్‌ఫ్లోలను క్రమబద్ధీకరించండి.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excelలో Python పబ్లిక్ పరిదృశ్యంలో ఉన్నప్పుడు, మీరు మీ సభ్యత్వంలో భాగంగా ఈ ఫీచర్‌ని ఉపయోగించగలరు. పరిదృశ్యం తర్వాత, దాన్ని ఉపయోగించడానికి మీరు అదనపు లైసెన్స్‌ని కొనుగోలు చేయాల్సి ఉంటుంది. {0}ని వీక్షించండి.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "మరింత తెలుసుకోండి",
+  "premiumHubPythonCenterButtonForPythonInExcel": "ఇది ఎలా పనిచేస్తుందో నాకు చూపించండి",
+  "premiumHubTryPreviewButtonForPythonInExcel": "పరిదృశ్యాన్ని ప్రయత్నించండి",
+  "termsOfUseLinkForPreview": "వినియోగ నిబంధనలను పరిదృశ్యం చేయండి"
+}

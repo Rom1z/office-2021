@@ -1,0 +1,8 @@
+<svg width="634" height="220" preserveAspectRatio="none" viewBox="0 0 634 220" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <rect width="634" height="220" fill="#E5E5E5"/>
+  <g id="Background">
+    <rect id="Gray_box" width="634" height="220" rx="4" fill="#292929"/>
+    <rect id="White_box" x="6" y="44" width="622" height="164" rx="4" fill="#1E1E1E"/>
+  </g>
+</svg>

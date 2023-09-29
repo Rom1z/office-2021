@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhatsNewCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://whatsNewSchemaUri">
+  <Product>Word</Product>
+  <Platform>Desktop</Platform>
+  <Locale>ru-RU</Locale>
+  <Release>1706 JUNE</Release>
+  <WhatsNewItem>
+    <ItemId>17071</ItemId>
+    <Title>Автоматическое сохранение в Word</Title>
+    <Description>Изменения в документах, хранящихся в облаке, сохраняются автоматически. Благодаря этому изменения, внесенные другими пользователями, отображаются за считаные секунды.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SaveAttachToOneDrive</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Word.EnableAutosaveWin32ODSP</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17072</ItemId>
+    <Title>Трехмерные модели для обзора во всех ракурсах</Title>
+    <Description>Проявите свои творческие способности, создавая визуально привлекательные документы с трехмерными изображениями. Добавляйте трехмерные модели, которые можно повернуть на 360 градусов.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>Insert3DModelDropdown</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.Model3D</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17073</ItemId>
+    <Title>Правка с помощью средств обучения</Title>
+    <Description>Средства обучения теперь доступны в режиме веб-документа в Word: вы можете настраивать интервалы и отображать слоги. При озвучивании текста документа слова выделяются в любом режиме.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>ReadAloud</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Word.LearningTools.EnableLearningToolsWebView</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17074</ItemId>
+    <Title>Использование синтаксиса LaTeX в формулах</Title>
+    <Description>Теперь можно создавать и редактировать математические формулы, используя синтаксис LaTeX.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>EquationConvertSplitButton</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Word.EnableLaTexEquations</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17075</ItemId>
+    <Title>Новые эффекты рукописного ввода</Title>
+    <Description>Выражайте свои идеи, используя перья с эффектом "металлик" и эффекты рукописного ввода (радуга, галактика, лава, океан, золото, серебро и др.).</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>HighlightNew</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.OartInkEffects</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17076</ItemId>
+    <Title>Звуковые подсказки</Title>
+    <Description>Включите звуковые подсказки, чтобы упростить работу с приложением, в меню "Параметры", раздел "Специальные возможности". Для использования не нужны надстройки.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SoundInsertFromFile</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.UXPlatform.ModernOfficeSoundsSettingEnabled</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17077</ItemId>
+    <Title>Шрифт Dubai — современный как мегаполис</Title>
+    <Description>Выражайте свои мысли с помощью шрифта Dubai, разработанного корпорацией Майкрософт совместно с эмиратом Дубай. Незавсимо от того, на каком языке вы печатаете: арабском или западноевропейском языке, вам понравится результат.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>DubaiFont</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.WhatsNew.ShowDubaiFont</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+</WhatsNewCollection>

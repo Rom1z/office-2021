@@ -1,0 +1,22 @@
+{
+    "1.0": [
+        "kk-kz\\AccCheckerStrings.resjson",
+        "kk-kz\\AIRewriteStrings.resjson",
+        "kk-kz\\AutoReplaceStrings.resjson",
+        "kk-kz\\CatchUpStrings.resjson",
+        "kk-kz\\CommonStrings.resjson",
+        "kk-kz\\CritiqueExplanationStrings.resjson",
+        "kk-kz\\CritiqueStrings.resjson",
+        "kk-kz\\FeedbackStrings.resjson",
+        "kk-kz\\FooterFREStrings.resjson",
+        "kk-kz\\InlineFeedbackStrings.resjson",
+        "kk-kz\\InlineSuggestionsStrings.resjson",
+        "kk-kz\\NeuralRewriteStrings.resjson",
+        "kk-kz\\PremiumPreviewCritiqueStrings.resjson",
+        "kk-kz\\SimilarityCheckerStrings.resjson",
+        "kk-kz\\SummarizationCommandBarStrings.resjson",
+        "kk-kz\\TextFormattingStrings.resjson",
+        "kk-kz\\TextPenAlternates.resjson",
+        "kk-kz\\TrackChangesStrings.resjson"
+    ]
+}

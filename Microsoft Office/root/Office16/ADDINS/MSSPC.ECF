@@ -1,0 +1,34 @@
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={EA1F5314-EDFD-11ce-8D13-00AA0051BF96}
+Path="msspc32.dll"
+Entry Point=2
+Client Version=4.0
+Extension Version=1.0
+Misc Flags=WarnIfNoDll;DllFromDarwin;NoUserEdit
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key="Schedule+"
+
+; Exchange Context Map is VIEWER.  When running in Outlook, the TASK
+; context is unnecessary.
+Exchange Context Map=01
+
+; Exchange Interface Map is IExchExtCommands.
+Exchange Interface Map=1000000
+
+[Folder]
+Events=OnExtCommand
+Commands=SuppSchedPlus
+Outlook Commands=ToolbarShowSchedule
+Extension Outlook Commands=50004
+
+[Command]
+SuppSchedPlus=50004;*;Toolbar Suppress
+
+[Strings]
+DisplayName=Расписание+
+Description=Расписание+
+

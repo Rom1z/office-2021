@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhatsNewCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://whatsNewSchemaUri">
+  <Product>PowerPoint</Product>
+  <Platform>Desktop</Platform>
+  <Locale>kk-KZ</Locale>
+  <Release>1706 JUNE</Release>
+  <WhatsNewItem>
+    <ItemId>17071</ItemId>
+    <Title>Барлық бұрышынан көру үшін 3D үлгілерді кірістіру</Title>
+    <Description>Презентацияларыңыздың визуалды және креативтік көріністерін арттыру үшін, 3D үлгісін пайдаланыңыз. Слайдтар арасында анимациялар жасайтын "Түрлендіру" сияқты өту мүмкіндіктерінің көмегімен презентацияңызға 3D үлгілерін қосыңыз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>Insert3DModelDropdown</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.Model3D</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17072</ItemId>
+    <Title>PowerPoint бағдарламасы сіз үшін сақтайды</Title>
+    <Description>Бұлтта сақталған презентацияларға жасалған өзгертулер автоматты түрде сақталады және сіз басқалардың жаңартуларын санаулы секунд ішінде көре аласыз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SaveAttachToOneDrive</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.PowerPoint.AutoSaveCloudFile</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17073</ItemId>
+    <Title>Сіз орныңызда болмағанда</Title>
+    <Description>PowerPoint бағдарламасы сіз соңғы рет кіргеннен кейін ортақ презентацияны кімнің өңдегендігін көрсетеді.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>CollaborateActivity</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Docs.UnseenActivity</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17074</ItemId>
+    <Title>Өзгертулерді қарап шығу</Title>
+    <Description>Басқа пайдаланушылар өзгерткен слайдтар бөлектеліп көрсетіледі.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SharingPresenceMoreUsersBackground</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.PowerPoint.RevisionTracking.Editing</ExperimentalName>
+    <FeatureGateScope>Audience::Automation &amp;&amp; !Plat::MacOS</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17075</ItemId>
+    <Title>Жаңа қолжазбалық әсерлер</Title>
+    <Description>Идеяларыңызды металл қаламұштармен және кемпірқосақ, галактика, лава, теңіз, алтын, күміс және тағы басқалары сияқты қолжазба әсерлерімен жеткізіңіз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>HighlightNew</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.OartInkEffects</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17076</ItemId>
+    <Title>Дыбыстық сөзкөмектер</Title>
+    <Description>Бағдарламамен жұмысты жеңілдету үшін, дыбыстық сөзкөмектерді қосыңыз. Оны "Параметрлер" &gt; "Арнайы мүмкіндіктер" тармағынан таба аласыз. Ешқандай қондырманы орнатудың қажеті жоқ.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SoundInsertFromFile</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.UXPlatform.ModernOfficeSoundsSettingEnabled</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17077</ItemId>
+    <Title>Дубай қаласындай заманауи Dubai қарпі</Title>
+    <Description>Дубай Әмірліктері мен Microsoft арасындағы серіктестік негізінде әзірленген Dubai қарпімен өз ойыңызды жеткізіңіз. Мәтін араб не батыс еуропалық тілде жазылса да, осы жаңа қаріптің артықшылығын көресіз.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>DubaiFont</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.WhatsNew.ShowDubaiFont</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+</WhatsNewCollection>

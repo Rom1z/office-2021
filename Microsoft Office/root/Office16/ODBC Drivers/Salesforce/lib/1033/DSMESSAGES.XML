@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+  <!ELEMENT Messages (Package*)>
+
+  <!ELEMENT Package (Error*)>
+  <!ATTLIST Package ID CDATA #REQUIRED>
+  <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+  <!ELEMENT Error (#PCDATA)>
+  <!ATTLIST Error Key ID #REQUIRED>
+  <!ATTLIST Error Component CDATA #IMPLIED>
+  <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+  <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- Package DS_ERROR. ID corresponds to the DS_ERROR constant defined in DriverSupport.h -->
+    <Package ID="110" DefaultComponent="DriverSupport">
+      <Error Key="DSStringResourceError" Params="1" NativeErrorCode="1000"><!-- _locID=DSStringResourceError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to load a string resource for the dialog." -->String resource %1% not found.</Error>
+
+      <Error Key="DSCursorResourceError" Params="1" NativeErrorCode="1010"><!-- _locID=DSCursorResourceError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to load a cursor resource.." -->An error occurred while attempting to load a cursor: %1%</Error>
+
+      <Error Key="DSEncryptError" Params="1" NativeErrorCode="1020"><!-- _locID=DSEncryptError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to encrypt data." -->An error occurred while attempting to encrypt data: %1%</Error>
+      
+      <Error Key="DSDecryptError" Params="1" NativeErrorCode="1030"><!-- _locID=DSDecryptError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to decrypt data." -->Failed to decrypt data: %1%</Error>
+    </Package>
+</Messages>

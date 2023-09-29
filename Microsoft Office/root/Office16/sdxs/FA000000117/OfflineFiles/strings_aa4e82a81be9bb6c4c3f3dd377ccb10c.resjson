@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel मा Python प्रयास गर्नुहोस् (पूर्वावलोकन)",
+  "premiumHubMessageTextForPythonInExcel": "आफ्नो डाटा सफा गर्न, अन्वेषण गर्न र विश्लेषण गर्न Excel ग्रिडसँग Python सूत्रहरू मिलाउनुहोस्। Microsoft क्लाउड द्वारा सुरक्षित, Excel भित्रै उन्नत विश्लेषणहरू सिर्जना र साझेदारी गर्नुहोस्।",
+  "premiumHubSectionOneHeaderForPythonInExcel": "लाइब्रेरीमा ट्याप गर्नुहोस्",
+  "premiumHubSectionOneMessageForPythonInExcel": "साधारण Python पुस्तकालयहरु संग आफ्नो विश्लेषण सरल र छिटो।",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "ढाँचाहरू फेला पार्नुहोस्",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Python सूत्रहरू प्रयोग गर्नुहोस् तपाईंको डाटामा लुकेका अन्तर्दृष्टिहरू पत्ता लगाउन र तिनीहरूलाई प्लटहरूको साथ कल्पना गर्नुहोस्।",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "कुनै सेटअप आवश्यक छैन",
+  "premiumHubSectionThreeMessageForPythonInExcel": "प्रयोग गर्न तयार, सुरक्षित वातावरणको साथ स्ट्रिमलाइन कार्यप्रवाह।",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel मा Python सार्वजनिक पूर्वावलोकनमा हुँदा, तपाईंले आफ्नो सदस्यताको भागको रूपमा यो सुविधा प्रयोग गर्न सक्षम हुनुहुनेछ। पूर्वावलोकन पछि, तपाईंले यसलाई प्रयोग गर्नको लागि अतिरिक्त इजाजतपत्र खरिद गर्न आवश्यक हुनेछ। हेर्नुहोस्।{0}",
+  "premiumHubLearnMoreLinkForPythonInExcel": "थप जान्नुहोस्",
+  "premiumHubPythonCenterButtonForPythonInExcel": "यसले कसरी काम गर्छ मलाई देखाउनुहोस्",
+  "premiumHubTryPreviewButtonForPythonInExcel": "पूर्वावलोकन प्रयास गर्नुहोस्",
+  "termsOfUseLinkForPreview": "प्रयोगको सर्तहरू पूर्वावलोकन गर्नुहोस्"
+}

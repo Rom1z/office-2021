@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+  <!ELEMENT Messages (Package*)>
+
+  <!ELEMENT Package (Error*)>
+  <!ATTLIST Package ID CDATA #REQUIRED>
+  <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+  <!ELEMENT Error (#PCDATA)>
+  <!ATTLIST Error Key ID #REQUIRED>
+  <!ATTLIST Error Component CDATA #IMPLIED>
+  <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+  <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- Package SF_ERROR. ID corresponds to the SF_ERROR constant defined in Salesforce.h -->
+    <Package ID="100" DefaultComponent="Salesforce">
+        <Error Key="SFLicenseFailure" Params="1" NativeErrorCode="0">Лицензия жарамдылығын тексеру қатесі: %1%. Simba Technologies Inc. компаниясына sales@simba.com мекенжайы бойынша хабарласыңыз.</Error>
+
+        <Error Key="SFUnknownType" Params="1" NativeErrorCode="5">Белгісіз Salesforce дерек түрі: %1%</Error>
+
+        <Error Key="SFXMLResultParseFormatError" Params="1" NativeErrorCode="22">Salesforce тарапынан келген XML жауабын талдау кезіндегі қате: %1%</Error>
+
+        <Error Key="SFHTTPError" Params="1" NativeErrorCode="23">Http сұрауындағы қате: %1%</Error>
+
+        <Error Key="SFNoSessionId" NativeErrorCode="24">Сеанс идентификаторы қолжетімсіз. Қайта қосылып көріңіз.</Error>
+
+        <Error Key="SFSoqlParseError" NativeErrorCode="30">SOQL талдау кезінде синтаксистік қате пайда болды немесе қатынасу ережесі бұзылды.</Error>
+
+        <Error Key="JSONParseError" Params="1" NativeErrorCode="56">JSON талдау қатесі: %1%.</Error>
+
+        <Error Key="SFUnknownSqlType" Params="1" NativeErrorCode="57">Белгісіз SQL түрі %1%.</Error>
+
+        <Error Key="SFInvalidURL" Params="1" NativeErrorCode="60">Байланыс үшін жарамсыз Salesforce URL мекенжайы қолданылды: %1%. salesforce.com немесе visual.force.com сайттарына қосылатын URL мекенжайларына ғана рұқсат етіледі.</Error>
+
+        <Error Key="SFReportError" Params="2" NativeErrorCode="70">[%1%] %2%</Error>
+
+        <Error Key="SFUnknownSoapError" NativeErrorCode="80">SOAP жауаьынан белгісіз қате алынды, мәселе пайдаланушы артықшылықтарында болуы мүмкін.</Error>
+
+        <Error Key="SFUnknownRestError" NativeErrorCode="81">REST жауабынан белгісіз қате алынды, мәселе пайдаланушы артықшылықтарында болуы мүмкін.</Error>
+
+        <Error Key="SFBulkApiError" Params="1" NativeErrorCode="90">Bulk API қатесі: %1%</Error>
+
+        <Error Key="SFColumnWriteError" Params="1" NativeErrorCode="100">Келесі бағанға жазу мүмкін емес: %1%</Error>
+
+        <Error Key="SFMaxFieldsError" NativeErrorCode="110">Өрістердің саны 5 000-нан аспауы керек.</Error>
+
+        <Error Key="SFFieldsCharError" NativeErrorCode="111">Жазбадағы таңбалар саны 400 000-нан аспауы керек.</Error>
+
+        <Error Key="SFBatchCharError" NativeErrorCode="112">Топтамадағы таңбалардың саны 10 000 000-нан аспауы керек. BulkBatchSize өлшемін азайтып көріңіз.</Error>
+
+        <Error Key="SFFieldCharError" NativeErrorCode="113">Өрістегі таңбалардың саны 32 000-нан аспауы керек.</Error>
+
+        <Error Key="SFBatchSizeError" NativeErrorCode="114">BulkBatchSize мәні 10 000-нан аспауы керек.</Error>
+
+        <Error Key="SFMissingServicePath" NativeErrorCode="115">ServicePath параметрі жоқ, драйверді қайта орнатыңыз немесе драйвер конфигурациясын тексеріңіз.</Error>
+		
+        <Error Key="SFPKChunkSizeError" NativeErrorCode="116">PKChunkSize мәні 250 000 санына тең немесе одан аз оң бүтін сан болуы керек.</Error>
+
+        <Error Key="SFSOQLFirstError" Params="2" NativeErrorCode="120">SOQL_FIRST режимін дайындау сәтсіз аяқталды:
+SOQL қатесі: %1%
+SQL қатесі: %2%</Error>
+
+        <Error Key="SFSQLFirstError" Params="2" NativeErrorCode="121">SQL_FIRST режимін дайындау сәтсіз аяқталды:
+SQL қатесі: %1%
+SOQL қатесі: %2%</Error>
+
+        <Error Key="SFError" Params="1" NativeErrorCode="148">%1%</Error>
+
+        <Error Key="SFkParseErrorNone" NativeErrorCode="200">JSON талдау қатесі: Қате жоқ.</Error>
+        <Error Key="SFkParseErrorDocumentEmpty" NativeErrorCode="201">JSON талдау қатесі: Құжат бос.</Error>
+        <Error Key="SFkParseErrorDocumentRootNotSingular" NativeErrorCode="202">JSON талдау қатесі: Құжат түбірінен кейін басқа мәндер болмауы керек.</Error>
+        <Error Key="SFkParseErrorValueInvalid" NativeErrorCode="203">JSON талдау қатесі: жарамсыз мән.</Error>
+        <Error Key="SFkParseErrorObjectMissName" NativeErrorCode="204">JSON талдау қатесі: нысан мүшесінің аты жоқ.</Error>
+        <Error Key="SFkParseErrorObjectMissColon" NativeErrorCode="205">JSON талдау қатесі: нысан мүшесінің атынан кейін қос нүкте жоқ.</Error>
+        <Error Key="SFkParseErrorObjectMissCommaOrCurlyBracket" NativeErrorCode="206">JSON талдау қатесі: нысан мүшесінен кейін үтір немесе "}" таңбасы жоқ.</Error>
+        <Error Key="SFkParseErrorArrayMissCommaOrSquareBracket" NativeErrorCode="207">JSON талдау қатесі: Массив элементінен кейін үтір немесе "]" таңбасы жоқ.</Error>
+        <Error Key="SFkParseErrorStringUnicodeEscapeInvalidHex" NativeErrorCode="208">JSON талдау қатесі: жолдағы \\u таңбасынан кейін оналтылық таңба дұрыс емес.</Error>
+        <Error Key="SFkParseErrorStringUnicodeSurrogateInvalid" NativeErrorCode="209">JSON талдау қатесі: жолдағы алмастыратын жұп жарамсыз.</Error>
+        <Error Key="SFkParseErrorStringEscapeInvalid" NativeErrorCode="210">JSON талдау қатесі: жолдағы ауысым таңбасы жарамсыз.</Error>
+        <Error Key="SFkParseErrorStringMissQuotationMark" NativeErrorCode="211">JSON талдау қатесі: жолда жабық тырнақша жоқ.</Error>
+        <Error Key="SFkParseErrorStringInvalidEncoding" NativeErrorCode="212">JSON талдау қатесі: жолдағы кодтау жарамсыз.</Error>
+        <Error Key="SFkParseErrorNumberTooBig" NativeErrorCode="213">JSON талдау қатесі: қосарлап сақтау үшін нөмір өте үлкен.</Error>
+        <Error Key="SFkParseErrorNumberMissFraction" NativeErrorCode="214">JSON талдау қатесі: нөмірдің бөлшектік бөлігі жоқ.</Error>
+        <Error Key="SFkParseErrorNumberMissExponent" NativeErrorCode="215">JSON талдау қатесі: нөмірде деңгей көрсеткіші жоқ.</Error>
+        <Error Key="SFkParseErrorTermination" NativeErrorCode="216">JSON талдау қатесі: талдау тоқтатылды.</Error>
+        <Error Key="SFkParseErrorUnspecificSyntaxError" NativeErrorCode="217">JSON талдау қатесі: кәдуілгі синтаксис қатесі.</Error>
+
+        <Error Key="SFJSONTypeError" NativeErrorCode="230">Деректерді түрлендірудегі күтпеген JSON түрі.</Error>
+
+      <!-- Configuration dialog error messages. -->
+        <Error Key="SFInvalidPort" Params="1" NativeErrorCode="1060">Жарамсыз порт: "%1%". Жарамды мәндер [0, 65535] ауқымында.</Error>
+    </Package>
+</Messages>

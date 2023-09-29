@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Python in Excel を試す (プレビュー)",
+  "premiumHubMessageTextForPythonInExcel": "Python の数式と Excel グリッドを組み合わせて、データをクリーンアップ、調査、分析します。Microsoft Cloud によって保護され、Excel 内で高度な分析を作成して共有できます。",
+  "premiumHubSectionOneHeaderForPythonInExcel": "ライブラリを利用する",
+  "premiumHubSectionOneMessageForPythonInExcel": "一般的な Python ライブラリを使用して分析を簡素化し、迅速化します。",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "パターンの検索",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Python の数式を使用して、データに隠された分析情報を発見し、プロットで視覚化します。",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "設定の必要はありません",
+  "premiumHubSectionThreeMessageForPythonInExcel": "すぐに使用できる安全な環境でワークフローを効率化します。",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel の Python はパブリック プレビュー中ですが、サブスクリプションの一部としてこの機能を使用できるようになります。プレビューの後、使用するには追加のライセンスを購入する必要があります。{0} を表示します。",
+  "premiumHubLearnMoreLinkForPythonInExcel": "詳細情報",
+  "premiumHubPythonCenterButtonForPythonInExcel": "しくみを見る",
+  "premiumHubTryPreviewButtonForPythonInExcel": "プレビューを試す",
+  "termsOfUseLinkForPreview": "利用規約のプレビュー"
+}

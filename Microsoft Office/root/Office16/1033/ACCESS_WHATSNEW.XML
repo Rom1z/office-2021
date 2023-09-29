@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhatsNewCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://whatsNewSchemaUri">
+  <Product>Access</Product>
+  <Platform>Desktop</Platform>
+  <Locale>en-US</Locale>
+  <Release>1706 JUNE</Release>
+  <WhatsNewItem>
+    <ItemId>17071</ItemId>
+    <Title>Editing a new item is more accessible</Title>
+    <Description>Use a quick keyboard shortcut (Ctrl+E) to edit a new item from a Combo Box or List Box.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>FormControlComboBox</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName />
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17072</ItemId>
+    <Title>Label Name property</Title>
+    <Description>Enhance accessibility by associating a label with a control on a form.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>DataTypeNumber</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName />
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+</WhatsNewCollection>

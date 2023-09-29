@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="TaskPaneApp">
+  <Id>fea532a4-52ba-430b-95ab-9b648492da70</Id>
+  <Version>1.0.2109.7001</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Immersive Reader"/>
+  <Description DefaultValue="Immersive Reader"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+  <Hosts>
+    <Host Name="Notebook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://www.onenote.com/officeaddins/learningtools"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

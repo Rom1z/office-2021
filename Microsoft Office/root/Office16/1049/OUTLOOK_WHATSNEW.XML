@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhatsNewCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://whatsNewSchemaUri">
+  <Product>Outlook</Product>
+  <Platform>Desktop</Platform>
+  <Locale>ru-RU</Locale>
+  <Release>1706 JUNE</Release>
+  <WhatsNewItem>
+    <ItemId>17071</ItemId>
+    <Title>Новое представление бесед</Title>
+    <Description>Просматривайте отдельные беседы, в которых сообщения упорядочены по времени доставки: старые вверху, а новые — внизу. В таком порядке удобно читать сообщения и отвечать на них.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>CCconversations</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Outlook.ModConv.Wave2</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17072</ItemId>
+    <Title>Улучшенные возможности для вложений из облака</Title>
+    <Description>Теперь при сохранении или перетаскивании вложений OneDrive на компьютер файлы будут скачиваться автоматически.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SaveAttachToOneDrive</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Outlook.Mail.Attachments.DownloadWebRefAsync</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17073</ItemId>
+    <Title>Улучшенная строка "Кому:"</Title>
+    <Description>Если щелкнуть строку "Кому" в сообщении, программа предложит вам несколько получателей вместе с их фото, чтобы вы случайно не отправили письмо не тому человеку.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>GroupPowerQueryOrganization</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Shared.PeopleSearch.RecipientAutoCompleteSupport</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17074</ItemId>
+    <Title>Удобное оформление сведений о людях и группах</Title>
+    <Description>В картах профилей вы можете просматривать самые актуальные сведения. Их можно просматривать на компьютерах, мобильных устройствах и в Интернете.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>NewContact</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Shared.Pcx.ContactCardV2</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>12</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17075</ItemId>
+    <Title>Звуковые подсказки как часть специальных возможностей</Title>
+    <Description>Включите звуковые подсказки, чтобы упростить работу с приложением, в меню "Параметры", раздел "Специальные возможности". Для использования не нужны надстройки.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SoundInsertFromFile</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.UXPlatform.ModernOfficeSoundsSettingEnabled</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17076</ItemId>
+    <Title>Трехмерные модели для обзора во всех ракурсах</Title>
+    <Description>Проявите свои творческие способности, создавая визуально привлекательные сообщения с трехмерными изображениями. Добавляйте трехмерные модели, которые можно повернуть на 360 градусов.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>Insert3DModelDropdown</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.Model3D</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17077</ItemId>
+    <Title>Шрифт Dubai — современный как мегаполис</Title>
+    <Description>Выражайте свои мысли с помощью шрифта Dubai, разработанного корпорацией Майкрософт совместно с эмиратом Дубай. Незавсимо от того, на каком языке вы печатаете: арабском или западноевропейском языке, вам понравится результат.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>DubaiFont</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.WhatsNew.ShowDubaiFont</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+</WhatsNewCollection>

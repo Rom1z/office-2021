@@ -1,0 +1,52 @@
+<AppXManifestLocalization>
+  <String Id="WW_Shell_Verb_Edit" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Edit']">&amp;Edit</String>
+  <String Id="WW_Shell_Verb_New" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;New']">&amp;New</String>
+  <String Id="WW_Shell_Verb_Open" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Open']">&amp;Open</String>
+  <String Id="WW_Shell_Verb_OpenAsReadOnly" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Open as Read-Only'] ">Open as Read-Only</String>
+  <String Id="WW_Shell_Verb_Print" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Print'] ">&amp;Print</String>
+  <String Id="WW_Shell_Verb_PrintTo" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Print &amp;To'] ">Print &amp;To</String>
+  <String Id="WW_Shell_Verb_Show" xpath="//appv:ShellCommand//appv:FriendlyName[text()='S&amp;how'] ">S&amp;how</String>
+  <String Id="WW_Shell_Verb_Design" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Design'] ">&amp;Design</String>
+  <String Id="WW_Shell_Verb_Browse" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Browse'] ">&amp;Browse</String>
+  <String Id="WW_Shell_Verb_Preview" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Pre&amp;view'] ">Pre&amp;view</String>
+  <String Id="WW_Shell_Verb_Run" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Run'] ">&amp;Run</String>
+  <String Id="WW_Shell_Verb_ProtectedView" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Open in Protected &amp;View'] ">Open in Protected &amp;View</String>
+  <String Id="WW_Shell_XL_OpenInExcel" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Open in Excel']">&amp;Open in Excel</String>
+  <String Id="WW_Shell_XL_OpenInMSExcel" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Open in Microsoft Office Excel']">&amp;Open in Microsoft Excel</String>
+  <String Id="WW_Shell_XL_EditInExcel" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Edit in Excel']">&amp;Edit in Excel</String>
+  <String Id="WW_Shell_XL_EditInNotepad" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Edit with Notepad']">&amp;Edit with Notepad</String>
+  <String Id="WW_Shell_Acc_Datasheet" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Data&amp;sheet']">Data&amp;sheet</String>
+  <String Id="WW_ACC_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Access')]]//appv:Description">Build a professional app quickly to manage data.</String>
+  <String Id="WW_XL_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Excel')]]//appv:Description">Easily discover, visualize, and share insights from your data.</String>
+  <String Id="WW_XD_Editor_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'InfoPath Filler')]]//appv:Description">Fill out dynamic forms to gather and reuse information throughout the organization using Microsoft InfoPath.</String>
+  <String Id="WW_XD_Designer_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'InfoPath Designer')]]//appv:Description">Design dynamic forms to gather and reuse information throughout the organization using Microsoft InfoPath.</String>
+  <String Id="WW_Lync_Shortcut_Record_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'OcPubMgr')]]//appv:Description">Manage all your Skype for Business recordings in one place.</String>
+  <String Id="WW_Lync_Shortcut_Record_name" xpath="//appv:Shortcut//appv:File[contains(text(),'Skype for Business Recording Manager')]" replace="Skype for Business Recording Manager">Skype for Business Recording Manager</String>
+  <String Id="WW_Lync_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'lync.exe')]]//appv:Description">Connect with people everywhere through voice and video calls, Skype Meetings, and IM.</String>
+  <String Id="Lync_Exe_Title" xpath="//appv:Shortcut//appv:File[contains(text(),'Skype for Business')]" replace="Skype for Business">Skype for Business</String>
+  <String Id="OfficeHub_Exe_Title" xpath="//appv:Shortcut[appv:File[contains(text(),'OfficeHubWin32')]]//appv:Description">Microsoft Office Hub</String>
+  <String Id="WW_ON_MainShortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'ONENOTE.EXE')]]//appv:Description">Take notes and have them when you need them.</String>
+  <String Id="WW_ONM_MainShortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'ONENOTEM.EXE')]]//appv:Description">Show the clipping panel (Windows+N) or take a screen clipping (Windows+S)</String>
+  <String Id="WW_ONoteM_ShortcutName" xpath="//appv:Shortcut//appv:File[contains(text(),'Send to OneNote')]" replace="Send to OneNote 2016">OneNote (Desktop)</String>
+  <String Id="WW_OUT_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Outlook')]]//appv:Description">Manage your email, schedules, contacts, and to-dos.</String>
+  <String Id="WW_PPT_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'PowerPoint')]]//appv:Description">Design and deliver beautiful presentations with ease and confidence.</String>
+  <String Id="WW_PRJ_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Project')]]//appv:Description">Easily collaborate with others to quickly start and deliver winning projects.</String>
+  <String Id="WW_PUB_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Publisher')]]//appv:Description">Create professional-grade publications that make an impact.</String>
+  <String Id="WW_VIS_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Visio')]]//appv:Description">Create professional and versatile diagrams that simplify complex information.</String>
+  <String Id="WW_WRD_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Word')]]//appv:Description">Create beautiful documents, easily work with others, and enjoy the read.</String>
+  <String Id="WW_DIR_ToolsMenu" xpath="//appv:Shortcut//appv:File[contains(text(),'Microsoft Office Tools')]" replace="Microsoft Office Tools">Microsoft Office Tools</String>
+  <String Id="WW_DigSig_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'SELFCERT')]]//appv:Description">This program creates a self-signed digital certificate that can be used for personal macros on this machine only.</String>
+  <String Id="WW_DigSig_Shortcut" xpath="//appv:Shortcut//appv:File[contains(text(),'Digital Certificate for VBA Projects')]" replace="Digital Certificate for VBA Projects">Digital Certificate for VBA Projects</String>
+  <String Id="WW_SetLang_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'SETLANG')]]//appv:Description">Change the language preferences for Office applications.</String>
+  <String Id="WW_SetLang_Shortcut" xpath="//appv:Shortcut//appv:File[contains(text(),'Office Language Preferences')]" replace="Office Language Preferences">Office Language Preferences</String>
+  <String Id="WW_DCF_SSC_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'SPREADSHEETCOMPARE')]]//appv:Description">Compare versions of an Excel workbook.</String>
+  <String Id="WW_DCF_DBC_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'DATABASECOMPARE')]]//appv:Description">Compare versions of an Access database.</String>
+  <String Id="OSM_AdminUXShortcut_EVDescription" xpath="//appv:Shortcut[appv:Target[contains(text(),'msoev')]]//appv:Description">View critical errors, compatibility issues and workaround information for your Office solutions by using Office Telemetry Log.</String>
+  <String Id="OSM_AdminUXShortcut_EVName" xpath="//appv:Shortcut//appv:File[contains(text(),'Telemetry Log for Office')]" replace="Telemetry Log for Office">Telemetry Log for Office</String>
+  <String Id="WW_PRJ_SrvAcct_Shortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Project Server')]]//appv:Description">Create and edit account profiles used by Microsoft Project when connecting to Microsoft Project Server.</String>
+  <String Id="WW_PRJ_SrvAcct_Shortcut" xpath="//appv:Shortcut//appv:File[contains(text(),'Project Server 2016')]" replace="Accounts">Accounts</String>
+  <String Id="WW_SPDESIGN_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'SharePoint Designer')]]//appv:Description">Create and customize Microsoft SharePoint Web sites and build workflow-enabled applications with Microsoft SharePoint Designer.</String>
+  <String Id="WW_GRV_SPFS_MainShortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'GROOVE.EXE')]]//appv:Description">Sync SharePoint documents to your computer and work with the content as if you were connected.</String>
+  <String Id="WW_SPFS_FriendlyAppName" xpath="//appv:Shortcut//appv:File[contains(text(),'OneDrive for Business')]" replace="OneDrive for Business">OneDrive for Business</String>
+  <String Id="WW_FriendlyAppName_Desktop_Tag" xpath="//appv:ApplicationCapabilities//appv:CapabilityGroup//appv:Capabilities//appv:Name[contains(text(),'(desktop)')]" replace="(desktop)">(desktop)</String>
+</AppXManifestLocalization>

@@ -1,0 +1,19 @@
+{
+  "Title": "OneDrive бағдарламасына сақтау арқылы қосымша әрекеттер жасауға болады",
+  "InformationTableAccessibilityLabel": "Table showing benefits of saving files to OneDrive. List includes: 1. Offline access, 2. Access and backup files from any device, 3. Share and collaborate in real time, 4. Keep files compliant, secure, and protected, and 5. AutoSave and Version History.",
+  "OnYourComputerHeader": "Компьютеріңізде",
+  "InYourOneDriveHeader": "OneDrive бағдарламасында",
+  "OfflineMessage": "Offline access",
+  "AccessAndBackupMessage": "Файлдарыңызға кез келген құрылғыдан қатынасыңыз және сақтық көшірмесін жасаңыз",
+  "ShareAndCollabMessage": "Нақты уақытта ортақ пайдалану және бірлесіп жұмыс істеу",
+  "CompliantSecureAndProtectionMessage": "Файлдарды талаптарға сай, қауіпсіз және қорғалған күйде сақтаңыз",
+  "AutoSaveAndVersionMessage": "Автоматты сақтау және нұсқалар журналы",
+  "SaveToComputerButtonText": "Компьютерге сақтау",
+  "SaveToCloudButtonText": "Бұлтқа сақтау",
+  "DontAskAgainControlText": "Қайта сұрамау",
+  "SubscriptionText": "*OneDrive сақтау орны M365 жазылымыңызға кіреді",
+  "SmileFeedbackLabel": "Пікір ретінде смайлик жіберу",
+  "FrownFeedbackLabel": "Пікір ретінде көңілсіз смайлик жіберу",
+  "AvailableAccessibilityLabel": "Қолжетімді",
+  "NotAvailableAccessibilityLabel": "Қолжетімді емес"
+}

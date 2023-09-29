@@ -1,0 +1,22 @@
+{
+    "1.0": [
+        "ru-ru\\AccCheckerStrings.resjson",
+        "ru-ru\\AIRewriteStrings.resjson",
+        "ru-ru\\AutoReplaceStrings.resjson",
+        "ru-ru\\CatchUpStrings.resjson",
+        "ru-ru\\CommonStrings.resjson",
+        "ru-ru\\CritiqueExplanationStrings.resjson",
+        "ru-ru\\CritiqueStrings.resjson",
+        "ru-ru\\FeedbackStrings.resjson",
+        "ru-ru\\FooterFREStrings.resjson",
+        "ru-ru\\InlineFeedbackStrings.resjson",
+        "ru-ru\\InlineSuggestionsStrings.resjson",
+        "ru-ru\\NeuralRewriteStrings.resjson",
+        "ru-ru\\PremiumPreviewCritiqueStrings.resjson",
+        "ru-ru\\SimilarityCheckerStrings.resjson",
+        "ru-ru\\SummarizationCommandBarStrings.resjson",
+        "ru-ru\\TextFormattingStrings.resjson",
+        "ru-ru\\TextPenAlternates.resjson",
+        "ru-ru\\TrackChangesStrings.resjson"
+    ]
+}

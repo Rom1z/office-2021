@@ -1,0 +1,274 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=65001" />
+    <title>About Microsoft Measurement Converter</title>
+</head>
+<body lang="en-US" style="font-family:Calibri; font-size:small">
+    <p style="font-size:larger; font-weight:bold">Microsoft Measurement Converter</p>
+    <p>
+        <b>Measurement Converter</b> Measurement Converter recognizes commonly used metric and imperial
+        measurement units in a Word document. You can then convert units from one system
+        to the other, for example convert miles to kilometers or pints to liters. You can
+        also add new recognized units and edit conversion rules. Measurement Converter works with Word
+        2010 and in Outlook 2010 when you use Word as your e-mail editor.</p>
+    <p>
+        <b>Syntax of measurement units</b> Measurement Converter recognizes measurement units with
+        the following syntax: <i>&lt;float value&gt;&lt;space (optional)&gt;&lt;unit name&gt;</i>,
+        for example “1,234.678 km.” Measurement Converter recognizes numbers consisting of 12 digits
+        or fewer, including decimal places.</p>
+    <p>
+        <b>Supported conversions</b> Most conversions are simple multiplications by a coefficient.
+        By default, Measurement Converter supports the following conversions:
+    </p>
+        
+    <table border="1" cellspacing="0" cellpadding="2">
+        <tr>
+            <th>Length</th>
+            <th>Area</th>
+            <th>Volume</th>
+        </tr>
+        <tr>
+            <td>miles to kilometers</td>
+            <td>square feet to square miles</td>
+            <td>U.K. pints to liters</td>
+        </tr>
+        <tr>
+            <td>kilometers to miles</td>
+            <td>square miles to square feet</td>
+            <td>U.S. pints to liters</td>
+        </tr>
+        <tr>
+            <td>inches to centimeters</td>
+            <td>square yards to square miles</td>
+            <td>liters to U.K. pints</td>
+        </tr>
+        <tr>
+            <td>centimeters to inches</td>
+            <td>square miles to square yards</td>
+            <td>liters to U.S. pints</td>
+        </tr>
+        <tr>
+            <td>millimeters to inches</td>
+            <td>acres to hectares</td>
+            <td>liters to gallons</td>
+        </tr>
+        <tr>
+            <td>feet to centimeters</td>
+            <td>hectares to acres</td>
+            <td>gallons to liters</td>
+        </tr>
+        <tr>
+            <td>centimeters to feet</td>
+            <td>acres to square miles</td>
+            <td>ounces to deciliters</td>
+        </tr>
+        <tr>
+            <td>meters to feet</td>
+            <td>square miles to acres</td>
+            <td>deciliters to ounces</td>
+        </tr>
+        <tr>
+            <td>feet to meters</td>
+            <td>&nbsp;</td>
+            <td>quarts to liters</td>
+        </tr>
+        <tr>
+            <td>yards to meters</td>
+            <td>&nbsp;</td>
+            <td>liters to quarts</td>
+        </tr>
+        <tr>
+            <td>meters to yards</td>
+            <td>&nbsp;</td>
+            <td>cubic feet to cubic miles</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>cubic miles to cubic feet</td>
+        </tr>
+        <tr>
+            <td style="height:8pt"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Temperature</th>
+            <th>Weight</th>
+            <th>Speed</th>
+        </tr>
+        <tr>
+            <td>Celsius to Fahrenheit</td>
+            <td>pounds to kilograms</td>
+            <td>mph to km/h</td>
+        </tr>
+        <tr>
+            <td>Fahrenheit to Celsius</td>
+            <td>kilograms to pounds</td>
+            <td>km/h to mph</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>grams to ounces</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>ounces to grams</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>stones to kilograms</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>kilograms to stones</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <p>
+        <b>Conversion precision</b> Measurement Converter rounds results of all
+        conversions. Rounding precision differs between conversion rules. Rounding precision
+        is defined for each conversion rule as the number of decimal places in the conversion
+        result. The precision is set to two decimal places for most conversions, and it is
+        adjusted accordingly for conversions where the target value is much larger or much
+        smaller than the source value.
+    </p>
+    <p>
+        <b>Use Excel for more conversions</b> You can use Microsoft Excel for more conversion
+        features. The CONVERT() formula supports a wide range of measurement conversions
+        in an Excel worksheet. See Excel online help for information on how to enable the CONVERT()
+        formula.
+    </p>
+    <p>
+        <b>Editing the list of conversions</b> You can add, remove, or modify measurement
+        units that are recognized in Word documents. Measurement Converter reads 
+        conversion rules from a Unicode text file (metconv.txt) when Word is launched.
+        You can open metconv.txt in Notepad and edit the contents. Each line in the metconv.txt
+        represents a conversion rule. Each rule is defined by 10 fields, delimited by commas:
+    </p>
+    <table border="1" cellspacing="0" cellpadding="2">
+        <tr>
+            <th style="text-align:center">#</th>
+            <th>Field Description</th>
+            <th>Field Value</th>
+            <th>Example</th>
+            <th>Note</th>
+        </tr>
+        <tr>
+            <td style="text-align:center">1</td>
+            <td>Locale for which the unit is recognized</td>
+            <td>
+                <ol style="list-style-type:lower-alpha">
+                    <li>LCID</li>
+                    <li>“All” if recognized in all languages</li>
+                </ol>
+            </td>
+            <td>All</td>
+            <td>The LCID is an identification number used by Windows to uniquely identify locales and languages. See Microsoft Word 2010 Help or the MSDN Library at <a href="http://msdn.microsoft.com/"> http://msdn.microsoft.com</a> for a listing of LCIDs.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">2</td>
+            <td>Source unit name</td>
+            <td>Text</td>
+            <td>km</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">3</td>
+            <td>Source description</td>
+            <td>Text</td>
+            <td>kilometer</td>
+            <td>You can use the “&amp;” character to define access keys in the description text. For example, “kilo&amp;meter” will set “m” as the access key for this conversion rule.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">4</td>
+            <td>Space between source unit and number</td>
+            <td>“Yes” or “No”</td>
+            <td>Yes</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">5</td>
+            <td>Is the source unit name case sensitive?</td>
+            <td>“Yes” or “No”</td>
+            <td>No</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">6</td>
+            <td>Destination unit name</td>
+            <td>Text</td>
+            <td>mi</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">7</td>
+            <td>Destination description</td>
+            <td>Text</td>
+            <td>mile</td>
+            <td>You can use the “&amp;” character to define access keys in the description text. For example, “mi&amp;le” will set “l” as the access key for this conversion rule.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">8</td>
+            <td>Space between destination unit and number</td>
+            <td>“Yes” or “No”</td>
+            <td>Yes</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">9</td>
+            <td>Rounding precision (number of decimal places in the target)</td>
+            <td>Integer value ranging from 0 to 9</td>
+            <td>3</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">10</td>
+            <td>Conversion ratio or formula reference</td>
+            <td>
+                <ol style="list-style-type:lower-alpha">
+                    <li>Float value ranging from 0.00000000000001 to 1000000. The value must not include
+                        a comma.</li>
+                    <li>“CTOF” (Celsius to Fahrenheit)</li>
+                    <li>“FTOC” (Fahrenheit to Celsius)</li>
+                    <li>“KTOSP” (kilograms to stones and pounds). If the formula reference is KTOSP, then
+                        the Destination Unit Name contains two strings delimited by “|”: “stones|pounds.”</li>
+                </ol>
+            </td>
+            <td>0.6213712</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <p>
+        Measurement Converter always supports conversion rules that have “All”
+        in Field #1. In addition to these rules, Measurement Converter also supports rules with an
+        LCID value that matches the user locale of your Windows Language and Regional Options.
+        For example, if the user locale on your system is set to Russian, Measurement Converter
+        will load conversion rules marked “All” and “1049” in Field #1.
+    </p>
+    <p>
+        Field #2 (“Source unit name”) contains the recognizable strings; that is,
+        strings that Measurement Converter will detect and tag in a Word document. You can add comments
+        in the metconv.txt on a new line as long as they are preceded by the “//” delimiter.
+    </p>
+    <p>
+        <b>Note:</b> New rules can be added anywhere in the metconv.txt file.
+    </p>
+    <p>
+        <b>Number formats</b> Measurements in international documents may use various decimal
+        separators and grouping symbols. Measurement Converter recognizes numbers
+        that use dot or comma as the decimal separator and numbers that use dot, comma, or space as the grouping
+        symbol. If the correct format cannot be determined from the measurement value alone,
+        Measurement Converter will check the current user locale in Regional and Language Options,
+        and it will assume that the measurement uses the format defined there. For example, if the
+        measurement is “2,234 km” and the user locale is French, the value is interpreted
+        as “two point two hundred thirty-four kilometers.” If the same measurement is recognized
+        on a system with user locale set to English, it is interpreted as “two thousand
+        two hundred thirty-four kilometers.” Measurement Converter only recognizes numbers where digits
+        are grouped in groups of three.
+   </p>
+</body>
+</html>

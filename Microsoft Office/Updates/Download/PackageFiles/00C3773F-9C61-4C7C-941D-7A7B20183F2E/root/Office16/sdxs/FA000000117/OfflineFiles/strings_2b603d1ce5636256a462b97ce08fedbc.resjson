@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel üzerinde Python'ı deneyin (önizleme)",
+  "premiumHubMessageTextForPythonInExcel": "Verilerinizi temizlemek, keşfetmek ve analiz etmek için Python formüllerini Excel kılavuzuyla birleştirin. Microsoft Cloud tarafından güvence altına alınan, gelişmiş analitiği doğrudan Excel'in içinde oluşturun ve paylaşın.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Kitaplıklara dokunun",
+  "premiumHubSectionOneMessageForPythonInExcel": "Ortak Python kitaplıklarıyla analizinizi basitleştirin ve hızlandırın.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Desenleri bulma",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Verilerinizdeki gizli içgörüleri keşfetmek ve bunları grafiklerle görselleştirmek için Python formüllerini kullanın.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Kurulum gerekmez",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Kullanıma hazır, güvenli ortamlarla iş akışlarını kolaylaştırın.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel'de Python genel önizleme aşamasındayken bu özelliği aboneliğinizin bir parçası olarak kullanabilirsiniz. Önizlemeden sonra, kullanmak için ek bir lisans satın alasınız. Görünümü {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Daha fazla bilgi",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Nasıl çalıştığını göster",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Önizlemeyi deneyin",
+  "termsOfUseLinkForPreview": "Kullanım koşullarını önizleme"
+}

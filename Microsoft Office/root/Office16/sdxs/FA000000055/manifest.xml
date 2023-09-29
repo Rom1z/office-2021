@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:ce44715c-8c4e-446b-879c-ea9ebe0f09c8-->
+<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+4  See LICENSE in the project root for license information -->
+<OfficeApp
+          xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+          xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+          xsi:type="TaskPaneApp">
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>5dfd9615-8430-4401-9838-0805662e3196</Id>
+
+  <!--Version. Updates from the store only get triggered if there is a version change. -->
+  <Version>1.0.2307.26004</Version>
+  <ProviderName>Microsoft Office Licensing Team</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="DynamicLicensingExperiences" />
+  <Description DefaultValue="Dynamic experiences for the user subscription lifecycle in Office"/>
+
+  <!-- Icon is unused, this is just a placeholder to pass icon URL validation -->
+  <IconUrl DefaultValue="https://support.office.com/socimages/inapp-help-icon-32.png" />
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?linkid=2143311" />
+
+  <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
+  <AppDomains>
+    <AppDomain>https://content.lifecycle.office.net</AppDomain>
+    <AppDomain>https://content.lifecycle.officeppe.net</AppDomain>
+    <AppDomain>https://setup.office.com</AppDomain>
+    <AppDomain>https://account.microsoft.com</AppDomain>
+    <AppDomain>https://www.microsoft.com</AppDomain>
+    <AppDomain>https://lifecycle.office.com</AppDomain>
+    <AppDomain>https://lifecycle.officeppe.com</AppDomain>
+  </AppDomains>
+  <!--End Basic Settings. -->
+
+  <!-- Supported apps for this manifest -->
+  <Hosts>
+    <Host Name="Workbook"/>
+    <Host Name="Document"/>
+    <Host Name="Presentation"/>
+  </Hosts>
+
+  <!-- Default location for the hosted content -->
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://content.lifecycle.office.net/launchpad/v1/launchpad.sdx.html" />
+  </DefaultSettings>
+
+  <!-- Auth related information -->
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Setup.Office.URL" DefaultValue="https://setup.office.com/sdx" />
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>a2760c41-63c9-42b5-8d58-bfa1fd9e2eb3</Id>
+      <Resource>api://lifecycle.office.com/a2760c41-63c9-42b5-8d58-bfa1fd9e2eb3</Resource>
+      <Scopes>
+        <Scope>profile</Scope>
+        <Scope>openid</Scope>
+        <Scope>ConsumerStore.Purchase</Scope>
+        <Scope>ConsumerStore.Product.Read</Scope>
+        <Scope>ConsumerStore.Payment.ReadWrite</Scope>
+        <Scope>ConsumerStore.UserAccount.ReadWrite</Scope>
+        <Scope>service::lifecycle.office.com::MBI_SSL</Scope>
+        <Scope>https://setup.office.com/setup.redeem</Scope>
+        <Scope>pifd.read</Scope>
+        <Scope>pifd.create</Scope>
+        <Scope>pifd.update</Scope>
+        <Scope>https://setup.officedev.com/setup.redeem</Scope>
+        <Scope>api://2e28359a-02c7-4160-8753-f25d4c7e0441/purchase.create</Scope>
+        <Scope>api://918e5f2f-eef8-4053-92c7-2db23219f584/purchase.create</Scope>
+        <Scope>https://smbpurchase.omex.office.net/.default</Scope>
+        <Scope>https://commerceapi.office.net/.default</Scope>
+        <Scope>https://paymentinstruments.mp.microsoft.com/.default</Scope>
+        <Scope>https://jarvisapi.account.microsoft.com/.default</Scope>
+        <Scope>https://lifecycle.office.com/eligibility.read</Scope>
+      </Scopes>
+      <Authorizations>
+        <Authorization>
+          <Resource>https://lifecycle.office.com</Resource>
+          <Scopes>
+            <Scope>ConsumerStore.Purchase</Scope>
+            <Scope>ConsumerStore.Product.Read</Scope>
+            <Scope>ConsumerStore.Payment.ReadWrite</Scope>
+            <Scope>ConsumerStore.UserAccount.ReadWrite</Scope>
+            <Scope>service::lifecycle.office.com::MBI_SSL</Scope>
+            <Scope>eligibility.read</Scope>
+            <Scope>api://2e28359a-02c7-4160-8753-f25d4c7e0441/purchase.create</Scope>
+            <Scope>api://918e5f2f-eef8-4053-92c7-2db23219f584/purchase.create</Scope>
+            <Scope>https://smbpurchase.omex.office.net/.default</Scope>
+            <Scope>https://commerceapi.office.net/.default</Scope>
+            <Scope>https://paymentinstruments.mp.microsoft.com/.default</Scope>
+            <Scope>https://jarvisapi.account.microsoft.com/.default</Scope>
+            <Scope>https://lifecycle.office.com/eligibility.read</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>https://setup.office.com</Resource>
+          <Scopes>
+            <Scope>https://setup.office.com/setup.redeem</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>https://purchase.mp.microsoft.com</Resource>
+          <Scopes>
+            <Scope>profile</Scope>
+            <Scope>openid</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>https://www.microsoft.com</Resource>
+          <Scopes>
+            <Scope>profile</Scope>
+            <Scope>openid</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>https://pifd.cp.microsoft.com</Resource>
+          <Scopes>
+            <Scope>pifd.read</Scope>
+            <Scope>pifd.create</Scope>
+            <Scope>pifd.update</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>https://setup.officedev.com</Resource>
+          <Scopes>
+            <Scope>https://setup.officedev.com/setup.redeem</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+
+  </VersionOverrides>
+
+  <!-- End Add-in Commands Mode integration. -->
+</OfficeApp>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+    <types>
+        <type name="sttDGalAds" id="dgtad" bbcategory="0">
+            <group name="sttDGalDGMain_S13" visibility="1" xml="DGAd.xml" id="dgad" ></group>
+            <group name="sttDGalDGMain_S13" visibility="2" xml="DGWebAd.xml" id="dgadw" ></group>
+            <group name="sttDGalDGMain_S14" visibility="1" xml="DGCoupon.xml" id="dgcpon" ></group>
+            <group name="sttDGalDGMain_S15" xml="DGAtnGet.xml" id="dgatn" ></group>
+        </type>
+        <type name="sttDGalAccents" id="dgtacc" bbcategory="1">
+            <group name="sttDGalAccents_Box" xml="DGAccBox.xml" id="dgacbx" ></group>
+            <group name="sttDGalAccents_Bar" xml="DGAccBar.xml" id="dgacbr" ></group>
+            <group name="sttDGalAccents_Line" xml="DGBarbll.xml" id="dgbarb" ></group>
+            <group name="sttDGalAccents_Other" xml="DGChkbrd.xml" id="dgchk" ></group>
+            <group name="sttDGalFrames_Borders" xml="DGBorder.xml" id="dgbord" ></group>
+            <group name="sttDGalFrames_Emphasis" xml="DGPunct.xml" id="dgpunc" ></group>
+        </type>
+        <type name="sttDGalBI" id="dgtbi" bbcategory="3">
+            <group name="sttDGalDGMain_S12" xml="DGLogo.xml" id="dglogo" assetID="ZZ120000050"></group>
+            <group name="sttDGalDGMain_S51" visibility="1" xml="DGCInfo.xml" id="dgcinf" assetID="ZZ120000049"></group>
+        </type>
+        <type name="sttDGalDGMain_S11" id="dgtcal" bbcategory="2">
+            <group name="sttDGalDGMain_S11" visibility="1" xml="DGCal.xml" id="dgcal" ></group>
+            <group name="sttDGalDGMain_S11" visibility="2" xml="DGWebCal.xml" id="dgcalw" ></group>
+        </type>
+        <type name="sttDGalPgParts" id="dgtpt" bbcategory="4">
+            <group name="sttDGalDGMain_S1" visibility="2" xml="DGWebHd.xml" id="dgpgh" ></group>
+            <group name="sttDGalDGMain_S5" visibility="2" xml="DGWebBtn.xml" id="dgbtn" ></group>
+            <group name="sttDGalDGMain_StoryBB" visibility="1" xml="DGStory.xml" id="dgsty" assetID="ZZ120000056"></group>
+            <group name="sttDGalDGMain_StoryVertBB" visibility="1" xml="DGStoryVert.xml" id="dgstyV" assetID="ZZ120000059"></group>
+            <group name="sttDGalDGMain_S50" visibility="1" xml="DGHeading.xml" id="dghdg" assetID="ZZ120000053"></group>
+            <group name="sttDGalDGMain_S2" visibility="1" xml="DGToc.xml" id="dgtoc" ></group>
+            <group name="sttDGalDGMain_S6" visibility="1" xml="DGRepFrm.xml" id="dgrep" ></group>
+            <group name="sttDGalDGMain_S6" visibility="2" xml="DGWebReF.xml" id="dgrepw" ></group>
+            <group name="sttDGalDGMain_S16" visibility="1" xml="DGZipC.xml" id="dgzip" ></group>
+            <group name="sttDGalDGMain_S7" visibility="1" xml="DGSidebr.xml" id="dgsbar" assetID="ZZ120000055"></group>
+            <group name="sttDGalDGMain_S7" visibility="2" xml="DGWebSbr.xml" id="dgsbw" ></group>
+            <group name="sttDGalDGMain_S8" visibility="1" xml="DGPQuot.xml" id="dgpq" assetID="ZZ120000054"></group>
+            <group name="sttDGalDGMain_SidebarVertBB" visibility="1" xml="DGSidebrV.xml" id="dgsbrv" assetID="ZZ120000058"></group>
+            <group name="sttDGalDGMain_S8" visibility="2" xml="DGWebPQt.xml" id="dgpqw" ></group>
+        </type>
+        <type name="sttDGalDGMain_S4" visibility="2" id="dgtnav" >
+            <group name="sttDGalDGMain_S4" visibility="2" xml="DGNavBar.xml" id="dgnav" ></group>
+        </type>
+        <type name="sttDGalDGMain_S9" visibility="0" xml="DGPicCap.xml" id="dgpic" ></type>
+    </types>
+</catalog>

@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Izmēģināt Python programmatūrā Excel (priekšskatījums)",
+  "premiumHubMessageTextForPythonInExcel": "Apvienojiet Python formulas ar Excel režģi, lai notīrītu, izpētītu un analizētu datus. Nodrošina Microsoft Cloud, veidojiet un koplietojiet papildu analīzi tieši programmā Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Pieskarieties bibliotēkām",
+  "premiumHubSectionOneMessageForPythonInExcel": "Vienkāršojiet un veiciniet analīzi, izmantojot bieži lietotās Python bibliotēkas.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Atrast modeļus",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Izmantojiet Python formulas, lai atklātu paslēptus ieskatus datos un vizualizētu tos ar skicēm.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Iestatīšana nav nepieciešama",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Racionalizējiet darbplūsmas, izmantojot lietošanai gatavas, drošas vides.",
+  "premiumHubTermsOfUseForPythonInExcel": "Kamēr programma Python programmā Excel darbojas publiskā priekšskatījuma režīmā, šo līdzekli varēsit izmantot kā daļu no sava abonementa. Pēc priekšskatījuma jums būs jāiegādāas papildu licence, lai to izmantotu. Skatīt {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Papildinformācija",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Rādīt, kā tas darbojas",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Izmēģināt priekšskatījumu",
+  "termsOfUseLinkForPreview": "priekšskatīt lietošanas nosacījumus"
+}

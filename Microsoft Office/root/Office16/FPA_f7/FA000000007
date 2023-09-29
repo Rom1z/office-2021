@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>D843E887-C690-4A52-9ED6-7097BF430A62</Id>
+  <!--Version. Updates from the store only get triggered if there is a version change. -->
+  <Version>1.0.0.0</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Document Item" />
+  <Description DefaultValue="Find and re-use parts of documents within your organization" />
+  <IconUrl DefaultValue="https://markdowneditorforword.azurewebsites.net/assets/images/logo_32.png"/>
+  <SupportUrl DefaultValue="https://support.office.com/en-us/article/Find-and-use-the-content-you-need-when-you-need-without-leaving-Word-860118fc-1f61-41f6-922f-40084a284658" />
+  <!--End Basic Settings. -->
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <Hosts>
+    <Host Name="Document" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://shredder.osi.office.net/ShredderService/web/desktop/views/main.cshtml" />
+  </DefaultSettings>
+  <!-- End TaskPane Mode integration.  -->
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:ce44715c-8c4e-446b-879c-ea9ebe0f09c8-->
+<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+4  See LICENSE in the project root for license information -->
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xsi:type="TaskPaneApp">
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>87b35109-b1d7-4cdf-9cbb-84c1d946d22b</Id>
+
+  <!--Version. Updates from the store only get triggered if there is a version change. -->
+  <Version>1.0.2304.5005</Version>
+  <ProviderName>Amplify Signals and Insights Team</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+
+  <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="CV Surveys Win32" />
+  <Description DefaultValue="Customer Voice surveys for Win32 desktop applications" />
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="https://cvimagehosting.blob.core.windows.net/images/write-icon.png" />
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://aka.ms/AAgl0tc" />
+
+  <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
+  <AppDomains>
+    <AppDomain>https://www.microsoft.com</AppDomain>
+  </AppDomains>
+  <!--End Basic Settings. -->
+
+  <!-- Hosts is used to specify which app the SDX should run in
+    Document (Word)
+    Database (Access)
+    Mailbox (Outlook)
+    Notebook (OneNote)
+    Presentation (PowerPoint)
+    Project (Project)
+    Workbook (Excel)
+  -->
+  <Hosts>
+    <Host Name="Workbook"/>
+    <Host Name="Document"/>
+    <Host Name="Presentation"/>
+  </Hosts>
+
+  <!-- Default location for the hosted content -->
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://sdx-cv-surveys-win32-hch3akcne6ewc8fa.z01.azurefd.net/index.html" />
+  </DefaultSettings>
+
+  <!-- Auth related information -->
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+  </VersionOverrides>
+
+  <!-- End Add-in Commands Mode integration. -->
+</OfficeApp>

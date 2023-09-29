@@ -1,0 +1,6 @@
+{
+  "catchUpHeading": "Жаңа",
+  "catchUpEditedDescriptionFormat": "{0} өңдеді",
+  "catchUpDescriptorWithOneOtherFragment": "{0} және тағы 1 пайдаланушы",
+  "catchUpDescriptorWithMultipleOthersFragment": "{0} және тағы {1} адам"
+}

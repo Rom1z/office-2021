@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- Package ID corresponds to the PGO_ERROR constant defined in PostgreSQLODBC.h -->
+    <Package ID="101" DefaultComponent="RedShift ODBC">
+        <Error Key="PGOResultSetTraverseDirNotSupported" NativeErrorCode="3">Нәтижелер жинағының айналма бағытына қолдау көрсетілмейді.</Error>
+      
+        <Error Key="PGOConnectionError" Params="1" NativeErrorCode="10">Байланыс орнату кезінде қате пайда болды: %1%</Error>
+
+        <Error Key="PGOPrepareError" Params="1" NativeErrorCode="20">Сұрауды дайындау кезінде қате пайда болды: %1%</Error>
+
+        <Error Key="PGOExecuteError" Params="1" NativeErrorCode="30">Сұрауды орындау кезінде қате пайда болды: %1%</Error>
+        
+        <Error Key="PGOUnknownType" Params="2" NativeErrorCode="40">Белгісіз дерек түрі: %2% бағанындағы %1%  </Error>
+
+      <!-- Configuration dialog error messages. -->
+        <!-- Error thrown when an unknown error occurs while trying to connect. -->
+        <Error Key="PGOStringResourceError" Params="1" NativeErrorCode="1020">%1% жол ресурсы табылмады.</Error>
+
+        <Error Key="PGOCursorResourceError" Params="1" NativeErrorCode="1030">Курсорды жүктеу кезінде қате пайда болды: %1%</Error>
+      
+        <Error Key="SSLModeInvalidError" Params="0" NativeErrorCode="50">Жарамсыз SSL режимі берілді</Error>
+      
+        <Error Key="PGOConnectionDead" Params="1" NativeErrorCode="50">Байланыс орнатудың уақыты бітті, қайта қосылыңыз. Ағымдағы байланыс күй: %1%</Error>
+
+        <Error Key="PGOCancelError" Params="1" NativeErrorCode="60">Сұраудан бас тарту процесі сәтсіз аяқталды: %1%</Error>
+
+        <Error Key="PGOEmptyDatabaseNameError" Params="0" NativeErrorCode="70">Дерекқор аты бос байланысты орнату мүмкін емес.</Error>
+
+        <Error Key="PGOOptionsGetResultSetsWarning" Params="2" NativeErrorCode="80">%1% және %2% параметрлерінің екеуін де 1-ге орнату мүмкін емес</Error>
+
+        <Error Key="PGOOptionsValueOutOfRangeWarning" Params="1" NativeErrorCode="90">%1% is out of range. Insert value should be between 1 and 2147483647</Error>
+      
+        <Error Key="PGOUnsupportedEncryptionMethod" Params="1" NativeErrorCode="100">Шифрлау әдісіне қолдау көрсетілмейді: %1%</Error>
+
+        <Error Key="PGOUnsupportedEncryptionMethodDPAPIIsWindowsOnly" Params="1" NativeErrorCode="100">Шифрлау әдісіне қолдау көрсетілмейді: %1%. DPAPI шифрлауына тек Windows жүйесінде қолдау көрсетіледі.</Error>
+
+        <Error Key="PGOEncryptError" Params="1" NativeErrorCode="110">Деректерді шифрлау кезінде қате пайда болды: %1%</Error>
+
+        <Error Key="PGODecryptError" Params="1" NativeErrorCode="120">Деректі шифрдан шығару сәтсіз аяқталды: %1%</Error>
+    </Package>
+</Messages>

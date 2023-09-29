@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel’да Python’ны сынап карагыз (карап алу)",
+  "premiumHubMessageTextForPythonInExcel": "Мәгълүматны чистарту, күзәтү һәм анализлау өчен, Python формулаларын Excel ятьмәсе белән берләштерегез. Microsoft Cloud белән сакланган, турыдан-туры Excel эчендә киңәйтелгән аналитиканы төзегез һәм уртаклашыгыз.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Библиотекаларга тидереп алу",
+  "premiumHubSectionOneMessageForPythonInExcel": "Уртак Python библиотекалары белән анализны гадиләштерү һәм тизләтү.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Үрнәкләрне табу",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Мәгълүматыгызда яшерен аналитика мәгълүматын ачу һәм аларны графиклар белән визуальләштерү өчен, Python формулаларын кулланыгыз.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Урнаштыру кирәкми",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Кулланырга әзер булган имин мохит белән эш агымнарын оптимальләштерү.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel дагы Python иҗтимагый алдан күренсә дә, сез бу үзенчәлекне язылу кысаларында куллана алачаксыз. Алдан күрүдән соң аны куллану өчен өстәмә лицензия алырга кирәк булачак. {0} карагыз.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Өстәмә мәгълүмат",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Моның ничек эшләвен күрсәтү",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Карап алу версиясен сынап карагыз",
+  "termsOfUseLinkForPreview": "куллану шартларын карап алу"
+}

@@ -1,0 +1,10 @@
+{
+  "filterTooltip": "Сүзгілер",
+  "invalidRangeText": "Рұқсат етілетін ауқымды енгізіңіз.",
+  "filterInputPlaceholderText": "Сүзгі үшін ауқымды таңдаңыз.",
+  "defaultFilterText": "Осы жұмыс кітабы",
+  "filterByRangeText": "Ауқым",
+  "filterBySheetText": "Парақ",
+  "clearFilterText": "Сүзгіні алып тастау",
+  "commitFilterText": "Сақтау"
+}

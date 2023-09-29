@@ -1,0 +1,64 @@
+﻿ <?xml version="1.0" encoding="utf-8" ?> <categories>
+  <word>
+    <ct assetid="ZZ100000039991" name="Жинақшалар" icon="1" />
+    <ct assetid="ZZ100000059991" name="Іскери карталар" icon="2" />
+    <ct assetid="ZZ100000069991" name="Күнтізбелер" icon="3" />
+    <ct assetid="ZZ100000119991" name="Факстар" icon="20" />
+    <ct assetid="ZZ100000139991" name="Пішіндер" icon="6" />
+    <ct assetid="ZZ100000159991" name="Құттықтау қағаздары" icon="8" />
+    <ct assetid="ZZ100000179991" name="Шақырулар" icon="9" />
+    <ct assetid="ZZ100000189991" name="Шоттар" icon="22" />
+    <ct assetid="ZZ100000219991" name="Хаттар" icon="23" />
+    <ct assetid="ZZ100000229991" name="Тізімдер" icon="24" />
+    <ct assetid="ZZ100000239991" name="Жазбахаттар" icon="25" />
+    <ct assetid="ZZ100000249991" name="Минуттар" icon="26" />
+    <ct assetid="ZZ100000259991" name="Жаршылар" icon="11" />
+    <ct assetid="ZZ100000279991" name="Жоспарлаушылар" icon="35" />
+    <ct assetid="ZZ100000289991" name="Түбіртектер" icon="36" />
+    <ct assetid="ZZ100000299991" name="Есептер" icon="13" />
+    <ct assetid="ZZ100000319991" name="Түйіндер" icon="14" />
+    <ct assetid="ZZ100000349991" name="Кеңсе заттары" icon="37" />
+    <ct assetid="ZZ100000369991" name="Қосымша санаттар" icon="41" />
+  </word>
+  <excel>
+    <ct assetid="ZZ100000019991" name="Күн тәртіптер" icon="15" />
+    <ct assetid="ZZ100000049991" name="Бюджеттер" icon="16" />
+    <ct assetid="ZZ100000069991" name="Күнтізбелер" icon="3" />
+    <ct assetid="ZZ100000109991" name="Шығын есептері" icon="33" />
+    <ct assetid="ZZ100000189991" name="Шоттар" icon="22" />
+    <ct assetid="ZZ100000229991" name="Тізімдер" icon="24" />
+    <ct assetid="ZZ100000279991" name="Жоспарлаушылар" icon="35" />
+    <ct assetid="ZZ100000299991" name="Есептер" icon="13" />
+    <ct assetid="ZZ100000329991" name="Кестелер" icon="30" />
+    <ct assetid="ZZ100000339991" name="Нұсқаулар" icon="31" />
+    <ct assetid="ZZ100000349991" name="Кеңсе заттары" icon="37" />
+    <ct assetid="ZZ100000359991" name="Жұмыс сағатын есепке алу тізімдіктері" icon="32" />
+    <ct assetid="ZZ100000369991" name="Қосымша санаттар" icon="41" />
+  </excel>
+  <powerpoint>
+    <ct assetid="ZZ100000029991" name="Марапаттау куәліктері" icon="0" />
+    <ct assetid="ZZ100000069991" name="Күнтізбелер" icon="3" />
+    <ct assetid="ZZ100000379991" name="Мазмұн слайдтары" icon="34" />
+    <ct assetid="ZZ100000389991" name="Жасақтама слайдтары" icon="27" />
+    <ct assetid="ZZ100000089991" name="Диаграммалар" icon="19" />
+    <ct assetid="ZZ100000399991" name="Көрмелер" icon="28" />
+    <ct assetid="ZZ100000329991" name="Кестелер" icon="30" />
+    <ct assetid="ZZ100000369991" name="Қосымша санаттар" icon="41" />
+  </powerpoint>
+  <access>
+    <ct assetid="ZZ100001049991" name="Активтер" icon="42" />
+    <ct assetid="ZZ100001059991" name="Контактілер" icon="43" />
+    <ct assetid="ZZ100001069991" name="Сұрақтар және тапсырмалар" icon="44" />
+    <ct assetid="ZZ100001079991" name="Коммерциялық емес" icon="45" />
+    <ct assetid="ZZ100001089991" name="Жобалар" icon="46" />
+  </access>
+  <project />
+  <visio>
+    <ct assetid="ZZ100000069991" name="Күнтізбелер" icon="3" />
+    <ct assetid="ZZ100000089991" name="Диаграммалар" icon="19" />
+    <ct assetid="ZZ100000269991" name="Жоспарлар" icon="17" />
+    <ct assetid="ZZ100000279991" name="Жоспарлаушылар" icon="35" />
+    <ct assetid="ZZ100000329991" name="Кестелер" icon="30" />
+    <ct assetid="ZZ100000369991" name="Қосымша санаттар" icon="41" />
+  </visio>
+</categories>

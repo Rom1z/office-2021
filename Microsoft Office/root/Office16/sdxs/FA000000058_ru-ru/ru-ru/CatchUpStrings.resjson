@@ -1,0 +1,6 @@
+{
+  "catchUpHeading": "Новое",
+  "catchUpEditedDescriptionFormat": "Пользователь {0} внес изменения",
+  "catchUpDescriptorWithOneOtherFragment": "{0} и еще 1",
+  "catchUpDescriptorWithMultipleOthersFragment": "{0} и еще {1}"
+}

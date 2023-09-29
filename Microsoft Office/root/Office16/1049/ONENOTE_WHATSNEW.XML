@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhatsNewCollection xmlns="http://whatsNewSchemaUri">
+  <Product>OneNote</Product>
+  <Platform>Desktop</Platform>
+  <Locale>ru-ru</Locale>
+  <Release>2016-01-January</Release>
+</WhatsNewCollection>

@@ -1,0 +1,38 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. -->
+<!-- See LICENSE in the project root for license information -->
+
+<!doctype html>
+<html lang="en" data-framework="typescript">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transcription Pane Add-in v2</title>
+    <link href="taskpane-v2.css" rel="stylesheet" type="text/css" />
+    <link href="shimmer-v2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="transcription-pane">
+    <div id="shimmerv2" >
+        <object id = "shimmerPagev2" type="text/html" data="shimmerv2.html" ></object>
+    </div>
+    <div id="container" ></div>
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/beta/hosted/word.js"></script>
+    <!-- For more information on Office UI Fabric, visit https://developer.microsoft.com/fabric. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script>
+          document.onreadystatechange = function() {
+            if ( document.readyState !== "complete" ) {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#shimmerv2").style.visibility = "visible";
+            } else {
+                document.querySelector("body").style.visibility = "visible";
+            }
+          };
+    </script>
+<script type="text/javascript" src="fabric.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="taskpanev2.js"></script></body>
+
+</html>

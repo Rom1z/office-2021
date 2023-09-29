@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp">
+  <Id>88a76755-035d-4d4d-b5be-38ba230b7bd6</Id>
+  <Version>1.0.2309.7012</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Rapidan"/>
+  <Description DefaultValue="Rapidan"/>
+  <IconUrl DefaultValue="https://fa000000131.resources.office.net/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://fa000000131.resources.office.net/assets/icon-80.png"/>
+  <Hosts>
+    <Host Name="Document"/>
+    <Host Name="Presentation"/>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://fa000000131.resources.office.net/index.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="Licensing" MinVersion="2.0.0"/>
+      <Set Name="RapidanSDX" MinVersion="1.1.0"/>
+      <Set Name="SharedRuntime"/>
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="ExcelDialog.URL" DefaultValue="https://fa000000131.resources.office.net/index_xl_dialog.html"/>
+        <bt:Url id="ExcelPane.URL" DefaultValue="https://fa000000131.resources.office.net/index_xl_pane.html"/>
+        <bt:Url id="PptDialog.URL" DefaultValue="https://fa000000131.resources.office.net/index_ppt_dialog.html"/>
+        <bt:Url id="PptPane.URL" DefaultValue="https://fa000000131.resources.office.net/index_ppt_pane.html"/>
+        <bt:Url id="WordDialog.URL" DefaultValue="https://fa000000131.resources.office.net/index_word_dialog.html"/>
+        <bt:Url id="WordPane.URL" DefaultValue="https://fa000000131.resources.office.net/index_word_pane.html"/>
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

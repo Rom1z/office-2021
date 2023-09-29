@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel-இல் (முன்னோட்டம்) Python-ஐப் பயன்படுத்திப் பாருங்கள்",
+  "premiumHubMessageTextForPythonInExcel": "Excel கட்டத்துடன் Python சூத்திரங்களை இணைக்கவும், உங்கள் தரவை சுத்தம் செய்யவும், ஆராயவும் மற்றும் பகுப்பாய்வு செய்யவும். Microsoft Cloud மூலம் பாதுகாக்கப்பட்டு, Excel க்குள் மேம்பட்ட பகுப்பாய்வுகளை உருவாக்கி பகிரவும்.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "நூலகங்களில் தட்டவும்",
+  "premiumHubSectionOneMessageForPythonInExcel": "பொதுவான Python நூலகங்கள் மூலம் உங்கள் பகுப்பாய்வை எளிதாக்குங்கள் மற்றும் விரைவுபடுத்துங்கள்.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "வடிவங்களைக் கண்டறி",
+  "premiumHubSectionTwoMessageForPythonInExcel": "உங்கள் தரவுகளில் மறைந்திருக்கும் நுண்ணறிவுகளைக் கண்டறியவும், அவற்றை அடுக்குகளுடன் காட்சிப்படுத்தவும் Python சூத்திரங்களைப் பயன்படுத்தவும்.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "அமைவு எதுவும் தேவையில்லை",
+  "premiumHubSectionThreeMessageForPythonInExcel": "பயன்படுத்த தயாராக இருக்கும், பாதுகாப்பான சூழல்களுடன் பணிப்பாய்வுகளை நெறிப்படுத்துங்கள்.",
+  "premiumHubTermsOfUseForPythonInExcel": "பொதுமக்கள் பார்வையில் Excel-இல் Python இருக்கும்போது, நீங்கள் இந்த அம்சத்தை உங்கள சந்தாவின் ஒரு பகுதியாகப் பயன்படுத்த முடியும். முன்னோட்டத்திற்குப் பிறகு, நீங்கள் அதைப் பயன்படுத்த ஒரு கூடுதல் உரிமத்தை வாங்க வேண்டியிருக்கும். {0}-ஐப் பார்க்கவும்.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "மேலும் அறிக",
+  "premiumHubPythonCenterButtonForPythonInExcel": "இது எவ்வாறு செயல்படுகிறது என்பதைக் காட்டு",
+  "premiumHubTryPreviewButtonForPythonInExcel": "முன்னோட்டத்தைப் பயன்படுத்திப் பாருங்கள்",
+  "termsOfUseLinkForPreview": "பயன்பாட்டு விதிமுறைகளின் முன்னோட்டம்"
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+   <Id>4c870da9-d211-4fe8-8c99-0e7c36384d8e</Id>
+   <Version>1.0.0.3</Version>
+   <ProviderName>Microsoft Corporation</ProviderName>
+   <DefaultLocale>en-US</DefaultLocale>
+   <DisplayName DefaultValue="Forms">
+   </DisplayName>
+   <Description DefaultValue="Add quizzes and surveys from Microsoft Forms to your presentation.">
+   </Description>
+   <IconUrl DefaultValue="https://forms.office.com/images/addin/addin-icon-32.png"/>
+   <HighResolutionIconUrl DefaultValue="https://forms.office.com/images/addin/addin-icon-80.png"/>
+   <SupportUrl DefaultValue="https://support.office.com/en-us " />
+   <Hosts>
+      <Host Name="Presentation" />
+   </Hosts>
+   <DefaultSettings>
+      <SourceLocation DefaultValue="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx">
+         <Override Locale="af-za" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=af-za" />
+         <Override Locale="am-et" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=am-et" />
+         <Override Locale="ar-sa" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ar-sa" />
+         <Override Locale="as-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=as-in" />
+         <Override Locale="az-latn-az" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=az-latn-az" />
+         <Override Locale="be-by" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=be-by" />
+         <Override Locale="bg-bg" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=bg-bg" />
+         <Override Locale="bn-bd" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=bn-bd" />
+         <Override Locale="bn-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=bn-in" />
+         <Override Locale="bs-cyrl-ba" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=bs-cyrl-ba" />
+         <Override Locale="bs-latn-ba" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=bs-latn-ba" />
+         <Override Locale="ca-es-valencia" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ca-es-valencia" />
+         <Override Locale="ca-es" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ca-es" />
+         <Override Locale="chr-cher-us" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=chr-cher-us" />
+         <Override Locale="cs-cz" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=cs-cz" />
+         <Override Locale="cy-gb" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=cy-gb" />
+         <Override Locale="da-dk" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=da-dk" />
+         <Override Locale="de-de" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=de-de" />
+         <Override Locale="dv-mv" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=dv-mv" />
+         <Override Locale="el-gr" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=el-gr" />
+         <Override Locale="en-us" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=en-us" />
+         <Override Locale="en-au" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=en-au" />
+         <Override Locale="en-gb" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=en-gb" />
+         <Override Locale="es-es" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=es-es" />
+         <Override Locale="es-mx" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=es-mx" />
+         <Override Locale="et-ee" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=et-ee" />
+         <Override Locale="eu-es" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=eu-es" />
+         <Override Locale="fa-ir" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=fa-ir" />
+         <Override Locale="fi-fi" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=fi-fi" />
+         <Override Locale="fil-ph" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=fil-ph" />
+         <Override Locale="fr-ca" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=fr-ca" />
+         <Override Locale="fr-fr" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=fr-fr" />
+         <Override Locale="ga-ie" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ga-ie" />
+         <Override Locale="gd-gb" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=gd-gb" />
+         <Override Locale="gl-es" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=gl-es" />
+         <Override Locale="gu-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=gu-in" />
+         <Override Locale="ha-latn-ng" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ha-latn-ng" />
+         <Override Locale="he-il" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=he-il" />
+         <Override Locale="hi-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=hi-in" />
+         <Override Locale="hr-hr" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=hr-hr" />
+         <Override Locale="hu-hu" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=hu-hu" />
+         <Override Locale="hy-am" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=hy-am" />
+         <Override Locale="id-id" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=id-id" />
+         <Override Locale="ig-ng" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ig-ng" />
+         <Override Locale="is-is" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=is-is" />
+         <Override Locale="it-it" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=it-it" />
+         <Override Locale="iu-latn-ca" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=iu-latn-ca" />
+         <Override Locale="ja-jp" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ja-jp" />
+         <Override Locale="ka-ge" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ka-ge" />
+         <Override Locale="kk-kz" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=kk-kz" />
+         <Override Locale="km-kh" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=km-kh" />
+         <Override Locale="kn-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=kn-in" />
+         <Override Locale="ko-kr" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ko-kr" />
+         <Override Locale="kok-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=kok-in" />
+         <Override Locale="ku-arab-iq" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ku-arab-iq" />
+         <Override Locale="ky-kg" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ky-kg" />
+         <Override Locale="lb-lu" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=lb-lu" />
+         <Override Locale="lo-la" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=lo-la" />
+         <Override Locale="lt-lt" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=lt-lt" />
+         <Override Locale="lv-lv" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=lv-lv" />
+         <Override Locale="mi-nz" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=mi-nz" />
+         <Override Locale="mk-mk" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=mk-mk" />
+         <Override Locale="ml-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ml-in" />
+         <Override Locale="mn-mn" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=mn-mn" />
+         <Override Locale="mr-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=mr-in" />
+         <Override Locale="ms-bn" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ms-bn" />
+         <Override Locale="ms-my" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ms-my" />
+         <Override Locale="mt-mt" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=mt-mt" />
+         <Override Locale="nb-no" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=nb-no" />
+         <Override Locale="ne-np" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ne-np" />
+         <Override Locale="nl-nl" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=nl-nl" />
+         <Override Locale="nn-no" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=nn-no" />
+         <Override Locale="nso-za" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=nso-za" />
+         <Override Locale="or-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=or-in" />
+         <Override Locale="pa-arab-pk" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=pa-arab-pk" />
+         <Override Locale="pa-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=pa-in" />
+         <Override Locale="pl-pl" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=pl-pl" />
+         <Override Locale="prs-af" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=prs-af" />
+         <Override Locale="pt-br" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=pt-br" />
+         <Override Locale="pt-pt" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=pt-pt" />
+         <Override Locale="qps-ploc" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=qps-ploc" />
+         <Override Locale="qps-ploca" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=qps-ploca" />
+         <Override Locale="qps-plocm" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=qps-plocm" />
+         <Override Locale="quc-latn-gt" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=quc-latn-gt" />
+         <Override Locale="qut-gt" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=qut-gt" />
+         <Override Locale="quz-pe" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=quz-pe" />
+         <Override Locale="ro-ro" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ro-ro" />
+         <Override Locale="ru-ru" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ru-ru" />
+         <Override Locale="rw-rw" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=rw-rw" />
+         <Override Locale="sah-ru" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sah-ru" />
+         <Override Locale="sd-arab-pk" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sd-arab-pk" />
+         <Override Locale="si-lk" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=si-lk" />
+         <Override Locale="sk-sk" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sk-sk" />
+         <Override Locale="sl-si" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sl-si" />
+         <Override Locale="sq-al" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sq-al" />
+         <Override Locale="sr-cyrl-ba" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sr-cyrl-ba" />
+         <Override Locale="sr-cyrl-cs" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sr-cyrl-cs" />
+         <Override Locale="sr-cyrl-rs" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sr-cyrl-rs" />
+         <Override Locale="sr-latn-cs" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sr-latn-cs" />
+         <Override Locale="sr-latn-rs" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sr-latn-rs" />
+         <Override Locale="sv-se" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sv-se" />
+         <Override Locale="sw-ke" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=sw-ke" />
+         <Override Locale="ta-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ta-in" />
+         <Override Locale="te-in" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=te-in" />
+         <Override Locale="tg-cyrl-tj" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=tg-cyrl-tj" />
+         <Override Locale="th-th" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=th-th" />
+         <Override Locale="ti-et" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ti-et" />
+         <Override Locale="tk-tm" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=tk-tm" />
+         <Override Locale="tn-za" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=tn-za" />
+         <Override Locale="tr-tr" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=tr-tr" />
+         <Override Locale="tt-ru" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=tt-ru" />
+         <Override Locale="ug-cn" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ug-cn" />
+         <Override Locale="uk-ua" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=uk-ua" />
+         <Override Locale="ur-pk" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=ur-pk" />
+         <Override Locale="uz-latn-uz" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=uz-latn-uz" />
+         <Override Locale="vi-vn" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=vi-vn" />
+         <Override Locale="wo-sn" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=wo-sn" />
+         <Override Locale="xh-za" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=xh-za" />
+         <Override Locale="yo-ng" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=yo-ng" />
+         <Override Locale="zh-cn" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=zh-cn" />
+         <Override Locale="zh-tw" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=zh-tw" />
+         <Override Locale="zu-za" Value="https://forms.office.com/Pages/PowerPointTaskpaneAddinPage.aspx?lang=zu-za" />
+      </SourceLocation>
+   </DefaultSettings>
+   <Permissions>ReadWriteDocument</Permissions>
+   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+      <Resources>
+         <bt:Images>
+            <bt:Image DefaultValue="https://forms.office.com/images/addin/addin-icon-16.png" id="icon1_16x16" />
+            <bt:Image DefaultValue="https://forms.office.com/images/addin/addin-icon-24.png" id="icon1_24x24" />
+            <bt:Image DefaultValue="https://forms.office.com/images/addin/addin-icon-32.png" id="icon1_32x32" />
+            <bt:Image DefaultValue="https://forms.office.com/images/addin/addin-icon-64.png" id="icon1_64x64" />
+            <bt:Image DefaultValue="https://forms.office.com/images/addin/addin-icon-80.png" id="icon1_80x80" />
+         </bt:Images>
+      </Resources>
+      <WebApplicationInfo>
+         <Id>c9a559d2-7aab-4f13-a6ed-e7e9c52aec87</Id>
+         <Resource>https://forms.office.com</Resource>
+         <Scopes>
+            <Scope>openid</Scope>
+         </Scopes>
+         <Authorizations>
+            <Authorization>
+               <Resource>https://forms.office.com</Resource>
+               <Scopes>
+                  <Scope>Forms.ReadWrite</Scope>
+               </Scopes>
+            </Authorization>
+         </Authorizations>
+      </WebApplicationInfo>
+   </VersionOverrides>
+</OfficeApp>

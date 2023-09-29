@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Попробуйте Python в Excel (предварительная версия)",
+  "premiumHubMessageTextForPythonInExcel": "Объедините формулы Python с сеткой Excel для очистки, обзора и анализа данных. Создайте расширенную аналитику и поделитесь ею прямо в Excel под защитой Microsoft Cloud",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Коснитесь библиотек",
+  "premiumHubSectionOneMessageForPythonInExcel": "Упростите и ускорьте анализ с помощью распространенных библиотек Python.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Поиск шаблонов",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Используйте формулы Python для обнаружения скрытых данных и их визуализации с помощью графиков.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Настройка не требуется",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Оптимизируйте рабочие процессы с помощью готовых к использованию безопасных сред.",
+  "premiumHubTermsOfUseForPythonInExcel": "Пока Python в Excel находится в общедоступной предварительной версии, вы сможете использовать эту функцию в рамках подписки. После предварительной версии вам потребуется приобрести дополнительную лицензию, чтобы использовать ее. Просмотреть {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Подробнее",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Узнать, как это работает",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Попробовать предварительную версию",
+  "termsOfUseLinkForPreview": "условия использования предварительной версии"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+    <Id>c345501d-d74d-408a-a28a-9fc35b8fd74e</Id>
+    <Version>1.0.0.2</Version>
+    <ProviderName>Microsoft Corporation</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <DisplayName DefaultValue="LinkedIn Resume Assistant">
+      <Override Locale="en-US" Value="LinkedIn Resume Assistant" />
+    </DisplayName>
+    <Description DefaultValue=" " />
+    <IconUrl DefaultValue="https://i.imgur.com/oZFS95h.png" />
+    <SupportUrl DefaultValue="http://support.officeppe.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a" />
+    <!--BeginTaskpaneMode integration. Office 2013 and any client that doesn't understand commands will use this section.
+    This section will also be used if there are no VersionOverrides
+
+    The ordering of this section may matter:
+    https://social.msdn.microsoft.com/Forums/office/en-US/946729f1-3a5b-4ab7-a579-5392b15dab6b/problem-adding-appdomains-in-the-manifest-of-an-outlook-addin?forum=appsforoffice -->
+    <AppDomains>
+      <AppDomain>https://cascades.linkedin.com</AppDomain>
+      <AppDomain>https://www.linkedin.com</AppDomain>
+      <AppDomain>https://linkedin.com</AppDomain>
+    </AppDomains>
+    <Hosts>
+        <Host Name="Document" />
+    </Hosts>
+    <DefaultSettings>
+        <SourceLocation DefaultValue="https://wordsgs.officeapps.live.com/wordsgs/home/index.html?GATE=37631f2e-a7fa-44d9-9acd-b0fe38a0328f&amp;isSubdomain=true" />
+    </DefaultSettings>
+   <!--EndTaskpaneMode integration -->
+
+   <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

@@ -1,0 +1,21 @@
+{
+  "title": "Деректер түрлерін жаңарту параметрлері",
+  "subTitle": "Осы жұмыс кітабындағы деректер түрлері қалай жаңартылатынын басқарыңыз.",
+  "noRefreshableDataTypes": "Жаңартылатын деректер түрлері осы жұмыс кітабында табылған жоқ.",
+  "lastRefreshedNever": "Cоңғы жаңартылған: белгісіз",
+  "lastRefreshedAt": "Соңғы рет жаңартылған күні: {0} сағат {1}",
+  "lastRefreshedTimeAgo": "Соңғы жаңартылған: {0}",
+  "update": "Осы деректер түрін жаңарту",
+  "onFileOpen": "Ашық файлда",
+  "manually": "Қолмен",
+  "periodic": "Әр {0} минут сайын автоматты түрде",
+  "dataPoweredBy": "Деректер негізінде",
+  "refreshIntervalRadioGroupLabel": "Осы деректер түрін жаңарту:",
+  "dataTypeFoldoutButtonHint": "{0} үшін жаңарту аралығының параметрлерін кеңейтеді",
+  "dataTypeFoldoutNoAutoRefreshOptionsHint": "{0} тек қолмен жаңартады",
+  "refreshButtonHint": "{0} деректер түрін жаңарту",
+  "refreshAllButtonLabel": "Барлығы",
+  "refreshOptionRadioButtonAccessibilityLabel": "{0} {1} деректер түрін жаңарту",
+  "foldoutButtonActionExpand": "Кеңейту",
+  "foldoutButtonActionCollapse": "Тасалау"
+}

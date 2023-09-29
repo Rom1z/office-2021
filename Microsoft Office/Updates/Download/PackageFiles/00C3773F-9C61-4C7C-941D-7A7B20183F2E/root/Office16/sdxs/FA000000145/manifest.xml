@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>eecf68e0-a96e-4d50-b32a-0b2c2ce8ddfa</Id>
+  <Version>1.0.2308.21005</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Content Assembly"/>
+  <Description DefaultValue="Content Assembly"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="assets/icon-32.png"/>
+  <AppDomains>
+    <AppDomain>https://fa000000145.resources.office.net</AppDomain>
+    <AppDomain>*.sharepoint.com</AppDomain>
+    <AppDomain>*.sharepoint-df.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://fa000000145.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2308.11006/en-us_web/contentassemblypage.html#/templatization"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="SharedRuntime"/>
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+  <WebApplicationInfo>
+      <Id>eecf68e0-a96e-4d50-b32a-0b2c2ce8ddfa</Id>
+      <Authorizations>
+        <Authorization>
+          <Resource>*.sharepoint.com</Resource>
+        </Authorization>
+        <Authorization>
+          <Resource>*.sharepoint-df.com</Resource>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Templatization.Url" DefaultValue="https://fa000000145.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2308.16004/en-us_web/contentassemblypage.html#/templatization"/>
+        <bt:Url id="DocGen.Url" DefaultValue="https://fa000000145.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2308.16004/en-us_web/contentassemblypage.html#/docgen"/>
+        <bt:Url id="Snippets.Url" DefaultValue="https://fa000000145.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2308.16004/en-us_web/contentassemblypage.html#/snippets"/>
+        <bt:Url id="ESign.Url" DefaultValue="https://fa000000145.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2308.16004/en-us_web/contentassemblypage.html#/esign"/>
+        <bt:Url id="Templatization_Prod.Url" DefaultValue="https://fa000000145.resources.office.net/033f92d3-bc6d-439a-858a-a17acf70360a/1.0.2308.2004/en-us_web/contentassemblypage.html#/templatization"/>
+        <bt:Url id="DocGen_Prod.Url" DefaultValue="https://fa000000145.resources.office.net/033f92d3-bc6d-439a-858a-a17acf70360a/1.0.2308.2004/en-us_web/contentassemblypage.html#/docgen"/>
+        <bt:Url id="Snippets_Prod.Url" DefaultValue="https://fa000000145.resources.office.net/033f92d3-bc6d-439a-858a-a17acf70360a/1.0.2308.2004/en-us_web/contentassemblypage.html#/snippets"/>
+        <bt:Url id="ESign_Prod.Url" DefaultValue="https://fa000000145.resources.office.net/033f92d3-bc6d-439a-858a-a17acf70360a/1.0.2308.2004/en-us_web/contentassemblypage.html#/esign"/>
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

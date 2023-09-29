@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<categories>
+  <word>
+    <ct assetid="ZZ100000019991" name="Agendas" icon="15" />
+    <ct assetid="ZZ100000029991" name="Award certificates" icon="0" />
+    <ct assetid="ZZ100000039991" name="Brochures" icon="1" />
+    <ct assetid="ZZ100000049991" name="Budgets" icon="16" />
+    <ct assetid="ZZ100000059991" name="Business cards" icon="2" />
+    <ct assetid="ZZ100000069991" name="Calendars" icon="3" />
+    <ct assetid="ZZ100000079991" name="Contracts" icon="18" />
+    <ct assetid="ZZ100000089991" name="Diagrams" icon="19" />
+    <ct assetid="ZZ100000099991" name="Envelopes" icon="4" />
+    <ct assetid="ZZ100000109991" name="Expense reports" icon="33" />
+    <ct assetid="ZZ100000119991" name="Faxes" icon="20" />
+    <ct assetid="ZZ100000129991" name="Flyers" icon="5" />
+    <ct assetid="ZZ100000139991" name="Forms" icon="6" />
+    <ct assetid="ZZ100000149991" name="Gift certificates" icon="7" />
+    <ct assetid="ZZ100000159991" name="Greeting cards" icon="8" />
+    <ct assetid="ZZ100000169991" name="Inventories" icon="21" />
+    <ct assetid="ZZ100000179991" name="Invitations" icon="9" />
+    <ct assetid="ZZ100000189991" name="Invoices" icon="22" />
+    <ct assetid="ZZ100000199991" name="Job descriptions" icon="14" />
+    <ct assetid="ZZ100000209991" name="Labels" icon="10" />
+    <ct assetid="ZZ100000219991" name="Letters" icon="23" />
+    <ct assetid="ZZ100000229991" name="Lists" icon="24" />
+    <ct assetid="ZZ100000239991" name="Memos" icon="25" />
+    <ct assetid="ZZ100000249991" name="Minutes" icon="26" />
+    <ct assetid="ZZ100000259991" name="Newsletters" icon="11" />
+    <ct assetid="ZZ100000269991" name="Plans" icon="17" />
+    <ct assetid="ZZ100000279991" name="Planners" icon="35" />
+    <ct assetid="ZZ100000289991" name="Receipts" icon="36" />
+    <ct assetid="ZZ100000299991" name="Reports" icon="13" />
+    <ct assetid="ZZ100000309991" name="New resume samples" icon="14" />
+    <ct assetid="ZZ100000319991" name="Resumes and CVs" icon="14" />
+    <ct assetid="ZZ100000329991" name="Schedules" icon="30" />
+    <ct assetid="ZZ100000339991" name="Statements" icon="31" />
+    <ct assetid="ZZ100000349991" name="Stationery" icon="37" />
+    <ct assetid="ZZ100000359991" name="Time sheets" icon="32" />
+    <ct assetid="ZZ100000369991" name="More categories" icon="41" />
+  </word>
+  <excel>
+    <ct assetid="ZZ100000019991" name="Agendas" icon="15" />
+    <ct assetid="ZZ100000049991" name="Budgets" icon="16" />
+    <ct assetid="ZZ100000069991" name="Calendars" icon="3" />
+    <ct assetid="ZZ100000109991" name="Expense reports" icon="33" />
+    <ct assetid="ZZ100000119991" name="Faxes" icon="20" />
+    <ct assetid="ZZ100000139991" name="Forms" icon="6" />
+    <ct assetid="ZZ100000169991" name="Inventories" icon="21" />
+    <ct assetid="ZZ100000189991" name="Invoices" icon="22" />
+    <ct assetid="ZZ100000209991" name="Labels" icon="10" />
+    <ct assetid="ZZ100000229991" name="Lists" icon="24" />
+    <ct assetid="ZZ100000239991" name="Memos" icon="25" />
+    <ct assetid="ZZ100000269991" name="Plans" icon="17" />
+    <ct assetid="ZZ100000279991" name="Planners" icon="35" />
+    <ct assetid="ZZ100000289991" name="Receipts" icon="36" />
+    <ct assetid="ZZ100000299991" name="Reports" icon="13" />
+    <ct assetid="ZZ100000329991" name="Schedules" icon="30" />
+    <ct assetid="ZZ100000339991" name="Statements" icon="31" />
+    <ct assetid="ZZ100000349991" name="Stationery" icon="37" />
+    <ct assetid="ZZ100000359991" name="Time sheets" icon="32" />
+    <ct assetid="ZZ100000369991" name="More categories" icon="41" />
+  </excel>
+  <powerpoint>
+    <ct assetid="ZZ100000019991" name="Agendas" icon="15" />
+    <ct assetid="ZZ100000029991" name="Award certificates" icon="0" />
+    <ct assetid="ZZ100000069991" name="Calendars" icon="3" />
+    <ct assetid="ZZ100000379991" name="Content slides" icon="34" />
+    <ct assetid="ZZ100000389991" name="Design slides" icon="27" />
+    <ct assetid="ZZ100000089991" name="Diagrams" icon="19" />
+    <ct assetid="ZZ100000099991" name="Envelopes" icon="4" />
+    <ct assetid="ZZ100000129991" name="Flyers" icon="5" />
+    <ct assetid="ZZ100000139991" name="Forms" icon="6" />
+    <ct assetid="ZZ100000159991" name="Greeting cards" icon="8" />
+    <ct assetid="ZZ100000179991" name="Invitations" icon="9" />
+    <ct assetid="ZZ100000189991" name="Invoices" icon="22" />
+    <ct assetid="ZZ100000209991" name="Labels" icon="10" />
+    <ct assetid="ZZ100000269991" name="Plans" icon="17" />
+    <ct assetid="ZZ100000399991" name="Presentations" icon="28" />
+    <ct assetid="ZZ100000299991" name="Reports" icon="13" />
+    <ct assetid="ZZ100000319991" name="Resumes and CVs" icon="14" />
+    <ct assetid="ZZ100000329991" name="Schedules" icon="30" />
+    <ct assetid="ZZ100000349991" name="Stationery" icon="37" />
+    <ct assetid="ZZ100000369991" name="More categories" icon="41" />
+  </powerpoint>
+  <access>
+    <ct assetid="ZZ100001049991" name="Assets" icon="42" />
+    <ct assetid="ZZ100001059991" name="Contacts" icon="43" />
+    <ct assetid="ZZ100001069991" name="Issues &amp; Tasks" icon="44" />
+    <ct assetid="ZZ100001079991" name="Non-profit" icon="45" />
+    <ct assetid="ZZ100001089991" name="Projects" icon="46" />
+  </access>
+  <project>
+    <ct assetid="ZZ100000269991" name="Plans" icon="17" />
+    <ct assetid="ZZ100000279991" name="Planners" icon="35" />
+    <ct assetid="ZZ100000329991" name="Schedules" icon="30" />
+    <ct assetid="ZZ100000369991" name="More categories" icon="41" />
+  </project>
+  <visio>
+    <ct assetid="ZZ100000069991" name="Calendars" icon="3" />
+    <ct assetid="ZZ100000089991" name="Diagrams" icon="19" />
+    <ct assetid="ZZ100000269991" name="Plans" icon="17" />
+    <ct assetid="ZZ100000279991" name="Planners" icon="35" />
+    <ct assetid="ZZ100000329991" name="Schedules" icon="30" />
+    <ct assetid="ZZ100000369991" name="More categories" icon="41" />
+  </visio>
+</categories>

@@ -1,0 +1,30 @@
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={683C95F0-0A80-11d1-9E2C-00A0C90D2899}
+Path="olmapi32.dll"
+Entry Point=ExchangeRegExt
+Client Version=4.0
+Extension Version=1.0
+Misc Flags=NoOptimizeInterfaceMap;WarnIfNoDLL;DllFromDarwin
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key="Exchange Extensions"
+Exchange Context Map=010100000001100
+Exchange Interface Map=1101011
+
+; Need to have this [Folder] section to avoid Folder Assistant crash
+[Folder]
+Events=AddPropSheetPages
+
+[Property Sheet]
+Events=AddPropSheetPages
+Property Sheet Exclusion=Folder:#30148;Store:#30148
+Property Sheet Dialogs=CustomFormOptions;Message;Store;Folder
+
+[Strings]
+DisplayName=Страницы свойств расширений Exchange
+Description=Структура папки, Формы
+; STR 30148 - Synchronization=Synchronization
+

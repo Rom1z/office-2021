@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>66677b5e-f4cc-4684-93f3-d89d4f495b1b</Id>
+  <Version>1.0.2308.21001</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Office Scripts" />
+  <Description DefaultValue="Record. Tweak. Run."></Description>
+  <IconUrl DefaultValue="assets/images/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="assets/images/icon-64.png" />
+  <SupportUrl DefaultValue="https://support.office.com/en-us" />
+  <AppDomains>
+    <AppDomain>https://localhost:3003</AppDomain>
+    <AppDomain>https://fa000000043.mro1cdnstorage.public.cdn.office.net</AppDomain>
+    <AppDomain>https://fa000000043.mro1cdnstorage.gcc.cdn.office.net</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/#/edit" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="CodeEditor.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/f7024bdc-7caf-4ca8-807d-2908f09640d6/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/edit" />
+        <bt:Url id="ScriptRecorder.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/f7024bdc-7caf-4ca8-807d-2908f09640d6/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/record" />
+        <bt:Url id="Gallery.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/f7024bdc-7caf-4ca8-807d-2908f09640d6/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/gallery" />
+        <bt:Url id="RunFromButton.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/f7024bdc-7caf-4ca8-807d-2908f09640d6/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/runfrombutton" />
+        <bt:Url id="PowerAutomate.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/f7024bdc-7caf-4ca8-807d-2908f09640d6/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/powerautomate" />
+
+        <bt:Url id="ProdCodeEditor.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/edit" />
+        <bt:Url id="ProdScriptRecorder.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/record" />
+        <bt:Url id="ProdGallery.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/gallery" />
+        <bt:Url id="ProdRunFromButton.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/runfrombutton" />
+        <bt:Url id="ProdPowerAutomate.URL" DefaultValue="https://fa000000043.mro1cdnstorage.public.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/powerautomate" />
+
+        <bt:Url id="GCCMCodeEditor.URL" DefaultValue="https://fa000000043.mro1cdnstorage.gcc.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/edit" />
+        <bt:Url id="GCCMScriptRecorder.URL" DefaultValue="https://fa000000043.mro1cdnstorage.gcc.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/record" />
+        <bt:Url id="GCCMGallery.URL" DefaultValue="https://fa000000043.mro1cdnstorage.gcc.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/gallery" />
+        <bt:Url id="GCCMRunFromButton.URL" DefaultValue="https://fa000000043.mro1cdnstorage.gcc.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/runfrombutton" />
+        <bt:Url id="GCCMPowerAutomate.URL" DefaultValue="https://fa000000043.mro1cdnstorage.gcc.cdn.office.net/mro1cdnstorage/033f92d3-bc6d-439a-858a-a17acf70360a/SDX/fa000000043/1.0.2308.21001/en-us_web/index.html#/powerautomate" />
+
+        <bt:Url id="DevCodeEditor.URL" DefaultValue="https://localhost:3003/#/edit" />
+        <bt:Url id="DevScriptRecorder.URL" DefaultValue="https://localhost:3003/#/record" />
+        <bt:Url id="DevGallery.URL" DefaultValue="https://localhost:3003/#/gallery" />
+        <bt:Url id="DevRunFromButton.URL" DefaultValue="https://localhost:3003/#/runfrombutton" />
+        <bt:Url id="DevPowerAutomate.URL" DefaultValue="https://localhost:3003/#/powerautomate" />
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>fa3d58b1-f3bc-489e-954e-119d58a29bae</Id>
+      <Resource>https://officescripting.microsoft.com</Resource>
+      <Scopes>
+        <Scope>System.Functionality</Scope>
+      </Scopes>
+      <Authorizations>
+        <Authorization>
+          <Resource>https://officescripting.microsoft.com</Resource>
+          <Scopes>
+            <Scope>System.Functionality</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>https://officescripting-int.microsoft.com</Resource>
+          <Scopes>
+            <Scope>System.Functionality</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>00000003-0000-0ff1-ce00-000000000000</Resource>
+          <Scopes>
+            <Scope>Files.Read.All</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>*.sharepoint.com</Resource>
+          <Scopes>
+            <Scope>Files.Read.All</Scope>
+          </Scopes>
+        </Authorization>
+        <Authorization>
+          <Resource>*.sharepoint-df.com</Resource>
+          <Scopes>
+            <Scope>Files.Read.All</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+      <!-->No MsaId yet<-->
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>

@@ -1,0 +1,966 @@
+/* Page-specific styling */
+
+html, body {
+    height: 100%;
+    background: transparent;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+html, body, #ts-body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden; /* Should never show horizontal scroll */
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    -ms-content-zooming: none;
+    touch-action: none;
+}
+
+td {
+    vertical-align: top;
+}
+
+/* Office JS overrides */
+.ms-Spinner-circle {
+    display: inline-block;
+}
+
+.ms-Spinner-label {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.ms-TextField {
+    width: 100%;
+}
+
+.ms-Button-icon {
+    margin: 0px !important;
+    line-height: 13px !important;
+}
+
+.ms-MessageBar-content {
+    padding: 10px 5px !important;
+}
+
+.ms-MessageBar-text {
+    white-space: pre-wrap;
+}
+
+.ms-Pivot {
+    padding-top: 8px !important;
+    padding-bottom: 4px !important;
+}
+
+.ms-Pivot-text {
+    margin-top: 10px !important;
+}
+
+.ms-Button.ms-Pivot-link {
+    margin-top: 4px !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+}
+
+.ms-Grid-row {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.contentInner-108 {
+    flex-direction: row !important;
+}
+
+.ms-Panel-scrollableContent {
+    height: 100%;
+}
+
+/* User consent page */
+.ts-upp-consent-panel-content {
+    overflow: hidden;
+}
+
+.ts-upp-scrollable-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.ts-upp-logo {
+    height: 7em;
+}
+
+.ts-upp-logo > .ms-Image-image {
+    outline: none;
+}
+
+.ts-upp-grid-padding {
+    padding-top: 25px !important;
+}
+
+.ts-upp-accept-button-container{
+    padding-bottom: 10px;
+}
+
+.ts-upp-accept-button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 14px !important;
+}
+
+.ts-upp-privacy-link-bar {
+    padding: 5px 10px 10px 10px;
+    bottom: 0px;
+}
+
+.ts-upp-privacy-link {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.ts-upp-privacy-link-rtl {
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* Semantic ui styles */
+.ts-semantic-menu-container {
+    margin-left: -5px;
+}
+
+.ts-semantic-menu {
+    padding-top: 0px !important;
+    min-width: 0px !important;
+    min-height: 0px !important;
+    border: 0px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.ts-semantic-menu input {
+    top: -12px !important;
+    background-color: transparent !important;
+    font-size: 17px;
+    font-weight: 600;
+    width: 63% !important;
+}
+
+.ts-semantic-menu > .text {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.ts-semantic-menu > .icon {
+    top: 0px !important;
+}
+
+.ts-semantic-menu .menu {
+    max-height: 1000% !important;
+    min-width: 230px !important;
+}
+
+.ts-semantic-menu-rtl > .icon {
+    left: -14.5px !important;
+}
+
+.dropdown.selection.ui {
+    padding: .78571429em 2.1em .78571429em 0.7em;
+}
+
+.dropdown.selection.search.ui > input.search{
+    padding: .67857143em 2.1em .67857143em 0.7em;
+}
+
+.ui.selection.dropdown .menu {
+    border-top-width: 1px !important;
+}
+
+.ui.selection.dropdown .menu > .item {
+    border-top: 0px;
+}
+
+.ui.active.search.dropdown input.search:focus + .text {
+    color: #555555 !important;
+}
+
+.dark .ui.active.search.dropdown input.search:focus + .text {
+    color: #d4d4d4 !important;
+}
+
+.ui.selection.dropdown .menu > .item:hover,
+.ui.selection.dropdown .menu .active.item:hover {
+    background: #c5c5c5;
+}
+
+.dark .ui.selection.dropdown .menu > .item:hover {
+    background-color: #505050;
+}
+
+.ui.selection.dropdown .menu .active.item,
+.dark .ui.selection.dropdown .menu .active.item {
+    background: transparent;
+}
+
+/* TS component styles */
+
+.ts-iconButton-colorful:hover,
+.ts-SwitcherButton-colorful:hover,
+.ts-translation-menu-contextual-menu button:hover,
+.ts-messagebar-container .ms-MessageBar-dismissal:hover {
+    background-color: #c8c8c8 !important;
+}
+
+.ts-iconButton-colorful:active,
+.ts-SwitcherButton-colorful:active,
+.ts-translation-menu-contextual-menu button:active,
+.ts-messagebar-container .ms-MessageBar-dismissal:active {
+    background-color: #a6a6a6 !important;
+    color: black;
+}
+
+.ts-iconButton-colorful .ms-Icon {
+    font-weight: 600 !important;
+}
+
+.ts-translation-completion-darktheme {
+    color: white !important;
+}
+
+.ts-translation-darksize-label {
+    font-size: 17px !important;
+}
+
+.ts-translation-completion {
+    text-align: center;
+}
+
+.ts-translation-completion i {
+    font-size: 32px;
+}
+
+.ts-translation-completion .ms-Icon {
+    font-size: 32px;
+}
+
+.ts-translation-completion .ts-completion-label,
+.ts-translation-completion .ts-completion-desc {
+    font-size: 17px;
+}
+
+.ts-translation-completion .ts-completion-desc {
+    margin-top: 20px;
+}
+
+.ts-translation-partial-failure {
+    text-align: center;
+}
+
+.ts-translation-partial-failure .ms-Icon,
+.ts-translation-partial-failure .ts-partial-failure-label,
+.ts-translation-partial-failure .ts-partial-failure-desc {
+    color: #B22222;
+}
+
+.ts-translation-partial-failure .ms-Icon {
+    font-size: 32px;
+}
+
+.ts-translation-partial-failure .ts-partial-failure-label,
+.ts-translation-partial-failure .ts-partial-failure-desc {
+    font-size: 17px;
+}
+
+.ts-translation-partial-failure .ts-partial-failure-desc {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.ts-document-cancel-button,
+.ts-document-OK-button {
+    background-color: whitesmoke;
+}
+
+.ts-textfield-container .ts-iconButton-colorful,
+.ts-collapsible-component-header .ts-iconButton-colorful {
+    color: black !important;
+}
+
+.ts-pivot-container {
+    margin-top: 40px; /* Needs to always clear nav header */
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.ts-pivot-container .ms-FocusZone { /* For the sticky nav header */
+    position: fixed;
+    top: -10px; /* Using -10px to adjust the position of container as .ms-Pivot-text is moving the container down */
+    width: 100vw;
+    z-index: 100;
+    background: transparent;
+}
+
+.ts-messagebar-container {
+    width: 100vw;
+    position: fixed; /* Spec'd to overlay all other elements, including nav header */
+    z-index: 102; /* Must be on top of navbar/footer and feedback comps */
+    left: 0;
+}
+
+.ts-messagebar {
+    padding: 0px !important;
+}
+
+.ts-messagebar-container .ms-MessageBar-innerTextPadding {
+    padding-right: 20px;
+}
+
+.ts-suggestion-link {
+    width: 100%;
+    padding-bottom: 10px !important;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 17px !important;
+}
+
+/* textarea and alignment view need to have the same font size */
+.ts-textfield textarea, .ts-alignment-view {
+    padding-top: 5px !important;
+    padding-right: 20px !important;
+    padding-left: 5px !important;
+    padding-bottom: 20px !important;
+    line-height: normal !important;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px !important;
+    font-weight: normal;
+}
+
+/* If the UI is RTL, we want the greater padding to be on the left to avoid text being overlapped by the scrollbar */
+.ts-textfield-rtl-ui textarea, .ts-alignment-view-rtl-ui {
+    padding-right: 15px !important;
+    padding-left: 20px !important;
+}
+
+.ts-larger-font .ts-textfield textarea,
+.ts-larger-font .ts-alignment-view {
+    font-size: 20px !important;
+}
+
+.ts-textfield div {
+    background: transparent;
+}
+
+.ts-textfield textarea {
+    overflow: hidden !important;
+    background-color: transparent;
+}
+
+.ts-alignment-view {
+    min-height: 94px;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+}
+
+.ts-alignment-view-src {
+    -ms-high-contrast-adjust: none;
+    position: absolute;
+    color: transparent;
+    border-width: 0px;
+}
+
+.ts-alignment-view-tgt {
+    margin-bottom: -24px;
+    background-color: #eff6ff;
+}
+
+.ts-rtl-right-zero {
+    direction: rtl;
+    right: 0px;
+    top: 0px;
+}
+
+.ts-ltr-left-zero {
+    direction: ltr;
+    left: 0px;
+    top: 0px;
+}
+
+.ts-collapsible-component-header {
+    margin-bottom: 10px;
+}
+
+.ts-collapsible-component-title {
+    cursor: pointer;
+    display: inline !important;
+    font-size: 17px !important;
+}
+
+.ts-collapsible-component-title-term {
+    font-weight: bold;
+}
+
+.ts-collapse-button {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.ts-collapse-button .ms-Icon {
+    font-size: 14px !important;
+}
+
+.ts-margin-top-5px {
+    margin-top: 5px;
+}
+
+.ts-margin-top-10px {
+    margin-top: 10px !important;
+}
+
+.ts-margin-right-10px {
+    margin-right: 10px;
+}
+
+.ts-clear-button {
+    font-size: 18px !important;
+}
+
+.ts-clear-button:focus {
+    border: 1px dotted black;
+}
+
+.ts-control-button {
+    min-width: 0px;
+    height: 20px;
+    padding: 0px;
+    z-index: 1;
+}
+
+.ts-control-button:focus {
+    border: 1px dotted black;
+}
+
+.ts-control-button-small {
+    font-size: 12px !important;
+}
+
+.ts-control-button-Trimmed {
+    height: 20px !important
+}
+
+.ts-small-text {
+    font-size: 12px !important;
+}
+
+.ts-altTranslation-control-padding {
+    height: 5px;
+}
+
+.ts-alternate-translations {
+    margin-top: -5px;
+}
+
+.ts-alternate-translations-group {
+    margin-bottom: 10px;
+}
+
+.ts-alternate-translations-pos {
+    font-size: 13px;
+}
+
+.ts-alternate-translations-list {
+    margin-left: 15px;
+}
+
+.ts-altTranslation-container {
+    cursor: pointer;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 5px;
+    user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+}
+
+.ts-altTranslation-container-main {
+    position: relative;
+    display:flex;
+}
+
+.ts-altTranslation-content {
+    width: 100%;
+}
+
+.ts-altTranslation-example {
+    margin-left: 15px;
+}
+
+.ts-altTranslation-example-term {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ts-altTranslation-controls {
+    width: 25px;
+    padding-right: 5px;
+}
+
+.ts-altTranslation-translation {
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ts-altTranslation-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ts-altTranslation-backTranslations {
+    font-size: 14px;
+}
+
+.ts-backTranslation:focus {
+    border: 1px solid black;
+    padding: 0px;
+}
+
+.ts-translation-menu-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.ts-translation-menu-label .ms-Label {
+    padding-top: 0px;
+    font-size: 17px;
+}
+
+.ts-translation-menu-contextual-menu button {
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.ts-textfield-container {
+    position: relative;
+    background: white;
+    cursor: text;
+}
+
+.ts-textfield {
+    z-index: 2;
+    margin-bottom: -28px !important;
+}
+
+.ts-textfield > div {
+    background: transparent;
+}
+
+.ts-speech-bar {
+    z-index: 10;
+}
+
+.ts-speech-bar >div >button {
+    height: 100%;
+}
+
+.ts-speech-bar-volume {
+    margin-left: 5px;
+}
+
+.ts-speech-bar-pronunciation {
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.ts-speech-bar-copy {
+    margin-left: 10px;
+}
+
+.ts-speech-bar-feedback {
+    position: absolute;
+    right: 1px;
+}
+
+.ts-pivot-lookup-component {
+    padding-top: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(-5px + 100%); /* Important to subtract the vertical padding from the usable height */
+}
+
+.ts-grid
+{
+    width: 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.ts-pivot-document-component {
+    padding-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(-10px + 100%); /* Important to subtract the vertical padding from the usable height */
+}
+
+.ts-no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.ts-ms-translator-logo {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 15px;
+    width: 65px;
+}
+
+.ts-footer {
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-top: 1px solid lightgray;
+    z-index: 100;
+}
+
+.ts-footer-solo {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.ts-footer-privacy {
+    margin-right: 5px !important;
+}
+
+.ts-page-end-padding {
+    padding-bottom: 30px;
+}
+
+.ts-right-overlay {
+    position: absolute !important;
+    right: 1px;
+    padding-top: 3px;
+    z-index: 5;
+}
+
+.ts-left-overlay {
+    padding-right: 10px !important;
+    position: absolute !important;
+    left: 1px;
+    padding-top: 3px;
+    z-index: 10;
+}
+
+.ts-lookup-pivot {
+    height: 100%;
+}
+
+.ts-document-pivot {
+    height: 100%;
+}
+
+.ts-test-pivot {
+    height: 100%;
+}
+
+.ts-lookup-middle-container {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.ts-lookup-switcher {
+    position: absolute !important;
+    width: 100% !important;
+    text-align: center;
+}
+
+.ts-lookup-switcher i {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.ts-lookup-spinner {
+    position: absolute; /* both absolutely positioned inside relatively positioned container */
+    right: 0;
+    margin-top: 5px;
+}
+
+.ts-insert-button-container {
+    min-height: 50px;
+}
+
+.ts-microfeedback-inline-flex {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.ts-microfeedback-large-font {
+    font-size: 14px !important;
+}
+
+.ts-microfeedback-medium-font {
+    font-size: 11px !important;
+}
+
+.ts-microfeedback-margin-top-7px {
+    margin-top: 7px !important;
+}
+
+.ts-document-spinner .ms-Spinner-circle,
+.ts-document-spinner .ms-Spinner-label {
+    display: block;
+}
+
+.ts-large-font {
+    font-size: 18px !important;
+}
+
+.ts-medium-font {
+    font-size: 14px !important;
+}
+
+.ts-small-font {
+    font-size: 10px !important;
+}
+
+.ts-no-padding {
+    padding: 0px !important;
+}
+
+.ts-document-grid-row {
+    padding-bottom: 10px;
+}
+
+.ts-inline-block-relative {
+    display: inline-block;
+    position: relative;
+}
+
+.ts-inline-block {
+  display: inline-block;
+}
+
+.ts-inline-important {
+  display: inline !important;
+  cursor: pointer;
+}
+
+.ts-float-right {
+    float: right;
+}
+
+.ts-float-left {
+    float: left;
+}
+
+.ts-hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.ts-speechbar-dogfood {
+    height: 22px;
+}
+
+.ts-padding-right {
+    padding-right: 5px;
+}
+
+.ts-rtl-padding-right {
+    padding-right: 10px;
+}
+
+.ts-settings-button {
+    margin-top: 16px !important;
+    right: 10px !important;
+    top: 2px !important;
+    position: absolute !important;
+    z-index: 101 !important;
+}
+
+/* This applies when screen is resized upto 200% in Windows */
+@media screen and (max-width: 300px) {
+    .ts-settings-button {
+        top: 20px !important;
+    }
+}
+
+.ts-settings-button:focus {
+    border: 1px dotted black;
+}
+
+.ts-language-remove-button-small {
+    vertical-align: middle !important;
+}
+
+.ts-settings-button-rtl {
+    left: 10px !important;
+    top: 2px !important;
+    position: absolute !important;
+    z-index: 101 !important;
+}
+
+.ts-settings-button-rtl:focus {
+    border: 1px dotted black;
+}
+
+.ts-settings-body {
+    padding-left: 15px !important;
+    overflow-y: auto;
+    height: calc(-5px + 100%);
+}
+
+.ts-settings-body-rtl {
+    padding-right: 15px !important;
+}
+
+.ts-back-button {
+    left: -5px;
+    padding-right : 5px;
+    top: 10px;
+}
+
+.ts-settings-text {
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.ts-settings-menu {
+    margin-left: -8px !important;
+}
+
+.ts-settings-menu-rtl {
+    margin-right: -25px !important;
+}
+
+.ts-excluded {
+    background: lightgray;
+    padding: 5px;
+}
+
+.ts-settings-language-button {
+    margin-top: 10px !important;
+}
+
+/* Spinner/Loader */
+.ts-align-page-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ts-spinner {
+    border: 2px solid #c7e0f4;
+    border-radius: 50%;
+    border-top: 2px solid #3498db;
+    width: 24px;
+    height: 24px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.ms-Checkbox {
+    float: left;
+    margin-right: 10px !important;
+    margin-top: 5px !important;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.chrome-high-contrast-button {
+    color: black;
+    background-color: white;
+}
+
+/* Targets displays using the Windows’ "High Contrast Black" theme: */
+@media screen and (-ms-high-contrast: white-on-black) {
+    button.ms-Button--primary {
+        background-color: black !important;
+    }
+    button.ms-Button--primary div.ms-Button-label {
+        color: white !important;
+    }
+ }
+
+/* Targets displays using the Windows’ "High Contrast White" theme: */
+@media screen and (-ms-high-contrast: black-on-white) {
+    button.ms-Button--primary {
+        background-color: white !important;
+    }
+    button.ms-Button--primary div.ms-Button-label {
+        color: black !important;
+    }
+ }
+
+/* By default IE uses textarea font color for placeholder. */
+textarea:-ms-input-placeholder {
+    color: #868686 !important;
+}
+
+/* For Debugging */
+/*
+.ms-Grid-col {
+    border: 1px solid red;
+}
+
+.ms-Grid-row{
+    border: 1px solid blue;
+}
+
+.ms-Button {
+    border: 1px solid yellowgreen;
+}
+
+.ms-spinner {
+    border: 1px solid green;
+}
+
+button {
+    border: 1px solid crimson !important;
+}
+
+.ms-Label {
+    border: 1px solid blueviolet !important;
+}
+
+ts-speech-bar {
+    border: 1px solid green;
+}
+*/
+
+
+/*# sourceMappingURL=index.css.map*/

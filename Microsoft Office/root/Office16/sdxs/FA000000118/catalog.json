@@ -1,0 +1,23 @@
+{
+    "1.0": [
+        "app.json",
+        "assets\\assets\\correlationMatrix_272.png",
+        "assets\\assets\\dummyImage.png",
+        "assets\\assets\\dummyImage1.png",
+        "assets\\assets\\dummyImage2.png",
+        "assets\\assets\\dummyImage3.png",
+        "assets\\assets\\linear_regression_plot_272.png",
+        "assets\\assets\\pairplot_272.png",
+        "assets\\assets\\pandasDescribe.png",
+        "assets\\assets\\scatterplot_272.png",
+        "assets\\assets\\status1.png",
+        "assets\\assets\\status2.png",
+        "assets\\assets\\status3.png",
+        "index.win32.bundle",
+        "strings.resjson",
+        "stringsDogfood.resjson",
+        "tester.win32.bundle",
+        "logo.png",
+        "manifest.xml"
+    ]
+}

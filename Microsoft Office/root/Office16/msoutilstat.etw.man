@@ -1,0 +1,1629 @@
+﻿<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd"
+  xmlns:fib="http://manifests.microsoft.com/win/2004/08/fib/events"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+  <!-- ETW Instrumentation Manifest for Event Publishers
+    MSDN: http://msdn2.microsoft.com/en-us/library/aa385619.aspx
+    See also %otools%\inc\coresdk\winmeta.xml for more info.
+
+    The events described in this manifest are built into a generated header file by manpp.exe.
+    The generated header file contains macros that allow a provider to be registered and unregistered.
+    In addition there are macros for writing each event.
+
+    The generated header file is actually checked into office source
+    (ie %otools%\inc\liblet\etwProvider\etw.h) so that things like offsos and source server
+    will work.  To ensure that the checked in header doesn't get out of sync with the
+    manifest the header is generated again at build time.  If the built header doesn't
+    match the checked in header then the build will fail.
+    
+    This manifest file is also used to build the manifest for timber that is also
+    checked into office source at %TIMBER%\TimberLib\Providers\O16\O16_etwCrimson.man. This
+    file will be automatically updated by calling makeetwh.bat but you must be enlisted to
+    the timber project for this update to work.
+
+    After tweaking this manifest to update the checked in header run: otools\bin\makeetwh.bat msoutilstat
+
+    Tools for editing this manifest:
+    •  Use Visual Studio after running the following (this provides intellisense completion and some validation):
+    o  copy %otools%\inc\coresdk\eventman.xsd %vcinstalldir%\xml\schemas\eventman.xsd
+    •  Use ecmangen.exe which ships with the Windows SDK.  Beware that ecmangen.exe might
+    remove some necessary bits of the manifest such as the eventGUIDs for tasks.
+
+    -->
+    <instrumentation>
+    <events>
+    
+      <!-- Provider for the logging liblet -->
+      <provider name="OfficeLoggingLiblet" guid="{F50D9315-E17E-43C1-8370-3EDF6CC057BE}" symbol="providerEtwLogging" resourceFileName="TracingRes.dll" messageFileName="TracingRes.dll">
+        <channels>
+          <channel chid="LoggingLibletGeneralLogging" name="General Logging" symbol="CHANNEL_OFFICE_LOGGING_LIBLET" type="Analytic" isolation="Application">Office Logging Liblet</channel>
+        </channels>
+        <levels>
+          <level name="VerboseEx" value="16" />
+        </levels>
+        <events>
+          <event symbol="LoggingLibletError" value="100" version="0" level="win:Error" channel="LoggingLibletGeneralLogging" template="LogTraceTag" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet" />
+          <event symbol="LoggingLibletWarning" value="101" version="0" level="win:Warning" channel="LoggingLibletGeneralLogging" template="LogTraceTag" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet" />
+          <event symbol="LoggingLibletInfo" value="102" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="LogTraceTag" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet" />
+          <event symbol="LoggingLibletVerbose" value="103" version="0" level="win:Verbose" channel="LoggingLibletGeneralLogging" template="LogTraceTag" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet" />
+          <event symbol="LoggingLibletSpam" value="104" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="LogTraceTag" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet" />
+          <event symbol="LoggingScopeStart" value="105" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidLoggingScope" task="etwtaskLoggingScope" keywords="LoggingScope" opcode="win:Start" message="$(string.LoggingScopeStart.Event)" />
+          <event symbol="LoggingScopeStop" value="106" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidLoggingScopeNoNameNoSuccess" task="etwtaskLoggingScope" keywords="LoggingScope" opcode="win:Stop" message="$(string.LoggingScopeStop.Event)" />
+          <event symbol="LoggingScopeComplete" value="107" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidLoggingScopeNoName" task="etwtaskLoggingScope" keywords="LoggingScope" opcode="win:Complete" message="$(string.LoggingScopeComplete.Event)" />
+          <event symbol="ScenarioStart" value="108" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidScenario" task="etwtaskLoggingScope" keywords="LoggingScope" opcode="win:Start" message="$(string.ScenarioStart.Event)" />
+          <event symbol="ScenarioStop" value="109" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidScenarioNoNameNoSuccess" task="etwtaskLoggingScope" keywords="LoggingScope" opcode="win:Stop" message="$(string.ScenarioStop.Event)" />
+          <event symbol="ScenarioComplete" value="110" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidScenarioNoName" task="etwtaskLoggingScope" keywords="LoggingScope" opcode="win:Complete" message="$(string.ScenarioComplete.Event)" />
+          <!-- Resource Usage Information -->
+          <event symbol="FileIOUsageData" value="200" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidFileUsageData" task="etwtaskResourceUsage" opcode="win:Info" keywords="DiskIO" />
+          <event symbol="NetworkUsageData" value="201" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidNetworkUsageData" task="etwtaskResourceUsage" opcode="win:Info" keywords="NetworkUsage" />
+          <event symbol="MemoryUsageData" value="202" version="0" level="win:Informational" channel="LoggingLibletGeneralLogging" template="tidMemoryUsageData" task="etwtaskResourceUsage" opcode="win:Info" keywords="MemoryUsage" />
+          <!-- Resource Usage Diagnostic events -->
+          <event symbol="Diag_FileUsageAccess" value="1000" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_FileUsageAccess" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_FileUsageStubAccess" value="1001" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_UsageStubAccess" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_NetworkUsageAccess" value="1002" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_NetworkUsageAccess" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_RollingUpToParent" value="1003" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_RollingUpToParent" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_NetworkUsageTimerStarted" value="1004" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_NetworkUsageTimerStarted" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_NetworkUsageCalculatingElapsedTime" value="1005" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_NetworkUsageCalculatingElapsedTime" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_NetworkUsageCounterFrequency" value="1006" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_NetworkUsageCounterFrequency" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_InstrumentedFunction" value="1007" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_InstrumentedFunction" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_NetworkUsageStubAccess" value="1008" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_UsageStubAccess" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_MemoryUsageAccess" value="1009" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_MemoryUsageAccess" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+          <event symbol="Diag_MemoryUsageStubAccess" value="1010" version="0" level="VerboseEx" channel="LoggingLibletGeneralLogging" template="tidDiagnostic_UsageStubAccess" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" />
+        </events>
+        <keywords>
+          <keyword name="LoggingScope"            symbol="keywordLoggingScope"				mask="0x0100" message="$(string.LoggingScope.Keyword)" />
+          <keyword name="DiskIO"                  symbol="keywordDiskIO"						mask="0x0200" message="$(string.DiskIO.Keyword)" />
+          <keyword name="NetworkUsage"            symbol="keywordNetworkUsage"				mask="0x0400" message="$(string.NetworkUsage.Keyword)" />
+          <keyword name="ResourceUsageDiagnostic" symbol="keywordResourceUsageDiagnostic"	mask="0x0800" message="$(string.ResourceUsageDiagnostic.Keyword)" />
+          <keyword name="MemoryUsage"             symbol="keywordMemoryUsage"					mask="0x1000" message="$(string.MemoryUsage.Keyword)" />
+          <keyword name="LoggingLiblet"           symbol="keywordLoggingLiblet"				mask="0x2000" message="$(string.LoggingLiblet.Keyword)" />
+        </keywords>
+        <tasks>
+          <task name="etwtaskLogging" symbol="taskLogging" value="1" eventGUID="{41ABE7FC-9A39-46B9-972D-811BEB6BC062}" />
+          <task name="etwtaskLoggingScope" symbol="taskLoggingScope" value="2" message="$(string.LoggingScope.Task)" eventGUID="{3E783434-36A3-44BE-AB52-63B6671F0215}" />
+          <task name="etwtaskResourceUsage" symbol="taskResourceUsage" value="3" message="$(string.ResourceUsage.Task)" eventGUID="{0DAE1C22-85EF-479D-BDD9-379C74AAA6B8}" />
+        </tasks>
+         <opcodes>
+          <opcode name="win:Complete" symbol="WIN_Complete" value="10" message="$(string.Complete.Opcode)" />
+         </opcodes>
+        <templates>
+          <template tid="LogTraceTag">
+            <data name="wzProduct" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzCategory" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzTag" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidLoggingScope">
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwInstanceId" inType="win:UInt32" />
+            <data name="dwParentInstanceId" inType="win:UInt32" />
+            <data name="lpScopeName" inType="win:UnicodeString" />
+            <data name="lpParentScenarioName" inType="win:UnicodeString" />
+            <data name="dwParentScenarioTag" inType="win:UInt32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwTag> %1 </dwTag>
+                <dwInstanceId> %2 </dwInstanceId>
+                <dwParentInstanceId> %3 </dwParentInstanceId>
+                <lpScopeName> %4 </lpScopeName>
+                <lpParentScenarioName> %5 </lpParentScenarioName>
+                <dwParentScenarioTag> %6 </dwParentScenarioTag>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidLoggingScopeNoName">
+             <data name="dwTag" inType="win:UInt32" />
+             <data name="dwInstanceId" inType="win:UInt32" />
+             <data name="dwParentInstanceId" inType="win:UInt32" />
+             <data name="bWasSuccessful" inType="win:Boolean" />
+             <data name="bWasErrorCodeSet" inType="win:Boolean" />
+             <data name="ErrorCode" inType="win:Int32" />
+             <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwTag> %1 </dwTag>
+                <dwInstanceId> %2 </dwInstanceId>
+                <dwParentInstanceId> %3 </dwParentInstanceId>
+                <bWasSuccessful> %4 </bWasSuccessful>
+                <bWasErrorCodeSet> %5 </bWasErrorCodeSet>
+                <ErrorCode> %6 </ErrorCode>
+              </EventData>
+             </UserData>
+           </template>
+          <template tid="tidLoggingScopeNoNameNoSuccess">
+             <data name="dwTag" inType="win:UInt32" />
+             <data name="dwInstanceId" inType="win:UInt32" />
+             <data name="dwParentInstanceId" inType="win:UInt32" />
+             <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwTag> %1 </dwTag>
+                <dwInstanceId> %2 </dwInstanceId>
+                <dwParentInstanceId> %3 </dwParentInstanceId>
+             </EventData>
+             </UserData>
+           </template>
+          <template tid="tidScenario">
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwInstanceId" inType="win:UInt32" />
+            <data name="lpScenarioName" inType="win:UnicodeString" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwTag> %1 </dwTag>
+                <dwInstanceId> %2 </dwInstanceId>
+                <lpScopeName> %3 </lpScopeName>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidScenarioNoName">
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwInstanceId" inType="win:UInt32" />
+            <data name="bWasSuccessful" inType="win:Boolean" />
+            <data name="bWasErrorCodeSet" inType="win:Boolean" />
+            <data name="ErrorCode" inType="win:Int32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwTag> %1 </dwTag>
+                <dwInstanceId> %2 </dwInstanceId>
+                <bWasSuccessful> %3 </bWasSuccessful>
+                <bWasErrorCodeSet> %4 </bWasErrorCodeSet>
+                <ErrorCode> %5 </ErrorCode>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidScenarioNoNameNoSuccess">
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwInstanceId" inType="win:UInt32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwTag> %1 </dwTag>
+                <dwInstanceId> %2 </dwInstanceId>
+              </EventData>
+            </UserData>
+          </template>
+          <!-- Resource Usage Templates-->
+          <template tid="tidFileUsageData">
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwInstanceId" inType="win:UInt32" />
+            <data name="FilesCreated" inType="win:Int64" />
+            <data name="NumberOfFileReads" inType="win:Int64" />
+            <data name="TotalBytesRead" inType="win:Int64" />
+            <data name="NumberOfFileWrites" inType="win:Int64" />
+            <data name="TotalBytesWritten" inType="win:Int64" />
+            <data name="NumberOfSetEndOfFiles" inType="win:Int64" />
+            <data name="NumberOfSeeks" inType="win:Int64" />
+            <data name="NumberOfLocks" inType="win:Int64" />
+            <data name="NumberOfUnlocks" inType="win:Int64" />
+          </template>
+          <template tid="tidNetworkUsageData">
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwInstanceId" inType="win:UInt32" />
+            <data name="Requests" inType="win:Int64" />
+            <data name="BytesSent" inType="win:Int64" />
+            <data name="ElapsedMilliseconds" inType="win:Int64" />
+            <data name="BytesReceived" inType="win:Int64" />
+          </template>
+          <template tid="tidMemoryUsageData">
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwInstanceId" inType="win:UInt32" />
+            <data name="BytesUsedDelta" inType="win:Int64" />
+            <data name="BytesUsedAtComplete" inType="win:UInt64" />
+          </template>
+          <!-- Resource Usage Diagnostic templates -->
+          <template tid="tidDiagnostic_FileUsageAccess">
+            <data name="Tag" inType="win:UInt32" />
+            <data name="InstanceId" inType="win:UInt32" />
+            <data name="ResourceScopePtr" inType="win:Pointer" />
+            <data name="FileUsagePtr" inType="win:Pointer" />
+          </template>
+          <template tid="tidDiagnostic_UsageStubAccess">
+            <data name="Tag" inType="win:UInt32" />
+            <data name="InstanceId" inType="win:UInt32" />
+            <data name="ScopePtr" inType="win:Pointer" />
+          </template>
+          <template tid="tidDiagnostic_NetworkUsageAccess">
+            <data name="Tag" inType="win:UInt32" />
+            <data name="InstanceId" inType="win:UInt32" />
+            <data name="ResourceScopePtr" inType="win:Pointer" />
+            <data name="NetworkUsagePtr" inType="win:Pointer" />
+          </template>
+            <template tid="tidDiagnostic_MemoryUsageAccess">
+            <data name="Tag" inType="win:UInt32" />
+            <data name="InstanceId" inType="win:UInt32" />
+            <data name="ResourceScopePtr" inType="win:Pointer" />
+            <data name="MemoryUsagePtr" inType="win:Pointer" />
+          </template>
+          <template tid="tidDiagnostic_RollingUpToParent">
+            <data name="ChildScopePtr" inType="win:Pointer" />
+            <data name="ParentScopePtr" inType="win:Pointer" />
+            <data name="TypeOfData" inType="win:UnicodeString" />
+          </template>
+          <template tid="tidDiagnostic_NetworkUsageTimerStarted">
+            <data name="Result" inType="win:Boolean" />
+            <data name="StartCounter" inType="win:Int64" />
+          </template>
+          <template tid="tidDiagnostic_NetworkUsageCalculatingElapsedTime">
+            <data name="Result" inType="win:Boolean" />
+            <data name="StartCounter" inType="win:Int64" />
+            <data name="StopCounter" inType="win:Int64" />
+            <data name="ElapsedCounters" inType="win:Int64" />
+            <data name="ElapsedMilliseconds" inType="win:Int64" />
+          </template>
+          <template tid="tidDiagnostic_NetworkUsageCounterFrequency">
+            <data name="Result" inType="win:Boolean" />
+            <data name="Frequency" inType="win:Int64" />
+          </template>
+          <template tid="tidDiagnostic_InstrumentedFunction">
+            <data name="FunctionName" inType="win:UnicodeString" />
+            <data name="CurrentResourcePrt" inType="win:Pointer" />
+          </template>
+        </templates>
+      </provider>
+      
+      <!-- Provider for Office shared events from projects such as msoutilstat, msostat, mso etc... -->
+      <provider name="Microsoft-Office-Events" guid="{8736922d-E8B2-47eb-8564-23E77E728CF3}" symbol="guidProviderOfficeUtilStat" resourceFileName="msoetwres.dll" messageFileName="msoetwres.dll">
+        <channels>
+          <channel chid="OFFICE-CHANNEL" name="OfficeChannel" symbol="CHANNEL_OFFICE_MSOUTILSTAT" type="Analytic" isolation="Application">
+            Office specific channel.
+          </channel>
+          <channel chid="OFFICE-CHANNEL-DEBUG" name="OfficeDebugChannel" symbol="CHANNEL_OFFICE_MSOUTILSTAT_DEBUG" type="Debug" isolation="Application">
+            Office specific channel for debug.
+          </channel>
+        </channels>
+        <keywords>
+          <keyword name="CallStack" symbol="KEYWORD_CALLSTACK" mask="0x01" message="$(string.CallStack.Keyword)" />
+          <keyword name="Budget" symbol="KEYWORD_BUDGET" mask="0x02" message="$(string.Budget.Keyword)" />
+          <keyword name="CodeMarker" symbol="KEYWORD_CODEMARKER" mask="0x04" message="$(string.CodeMarker.Keyword)" />
+          <keyword name="Sqm" symbol="KEYWORD_SQM" mask="0x08" message="$(string.Sqm.Keyword)" />
+          <keyword name="PCX" symbol="KEYWORD_PCX" mask="0x10" message="$(string.PCX.Keyword)" />
+          <keyword name="PerfWatson" symbol="KEYWORD_PERFWATSON" mask="0x20" message="$(string.PerfWatson.Keyword)" />
+          <keyword name="Idle" symbol="KEYWORD_IDLE" mask="0x40" message="$(string.Idle.Keyword)"/>
+          <keyword name="SecureReader" symbol="KEYWORD_SECUREREADER" mask="0x80" message="$(string.SecureReader.Keyword)" />
+          <keyword name="Synchronization" symbol="KEYWORD_SYNCHRONIZATION" mask="0x0100" message="$(string.Synchronization.Keyword)" />
+          <keyword name="Met" symbol="KEYWORD_MET" mask="0x0200" message="$(string.Met.Keyword)" />
+          <keyword name="MSOLogging" symbol="KEYWORD_MSO_LOGGING" mask="0x0400" message="$(string.MSOLogging.Keyword)" />
+        </keywords>
+        <levels>
+          <level name="levelPlaceholder" symbol="LEVEL_PLACEHOLDER_MSOUTILSTAT" value="16" message="$(string.Placeholder.Level)" />
+        </levels>
+        <opcodes>
+          <opcode name="opcodeCallStack" symbol="OPCODE_CALLSTACK" value="10" message="$(string.CallStack.Opcode)" />
+          <opcode name="opcodeCallStackModule" symbol="OPCODE_CALLSTACK_MODULE" value="11" message="$(string.CallStackModule.Opcode)" />
+          <opcode name="opcodeBudgetCreate" symbol="OPCODE_BUDGET_CREATE" value="12" message="$(string.BudgetCreate.Opcode)" />
+          <opcode name="opcodeBudgetUpdate" symbol="OPCODE_BUDGET_UPDATE" value="13" message="$(string.BudgetUpdate.Opcode)" />
+          <opcode name="opcodeBudgetDelete" symbol="OPCODE_BUDGET_DELETE" value="14" message="$(string.BudgetDelete.Opcode)" />
+          <opcode name="opcodeBudgetOverflow" symbol="OPCODE_BUDGET_OVERFLOW" value="15" message="$(string.BudgetOverflow.Opcode)" />
+          <opcode name="opcodeCodeMarker" symbol="OPCODE_CODEMARKER" value="16" message="$(string.CodeMarker.Opcode)" />
+          <opcode name="opcodeSqmDatapoint" symbol="OPCODE_SQM_DATAPOINT" value="17" message="$(string.SqmDatapoint.Opcode)" />
+          <opcode name="opcodeSqmDatapointAvg" symbol="OPCODE_SQM_DATAPOINTAVG" value="18" message="$(string.SqmDatapointAvg.Opcode)" />
+          <opcode name="opcodeSqmStream" symbol="OPCODE_SQM_STREAM" value="19" message="$(string.SqmStream.Opcode)" />
+          <opcode name="opcodeBudgetSetRate" symbol="OPCODE_BUDGET_SETRATE" value="20" message="$(string.BudgetSetRate.Opcode)" />
+          <opcode name="opcodePCXGeneral" symbol="OPCODE_PCX_GENERAL" value="21" message="$(string.PCXGeneral.Opcode)" />
+          <opcode name="opcodePCXPersona" symbol="OPCODE_PCX_PERSONA" value="22" message="$(string.PCXPersona.Opcode)" />
+          <opcode name="opcodePCXPersonInfo" symbol="OPCODE_PCX_PERSONINFO" value="23" message="$(string.PCXPersonInfo.Opcode)" />
+          <opcode name="opcodePCXPresence" symbol="OPCODE_PCX_PRESENCE" value="24" message="$(string.PCXPresence.Opcode)" />
+          <opcode name="opcodePCXSearch" symbol="OPCODE_PCX_SEARCH" value="25" message="$(string.PCXSearch.Opcode)" />
+          <opcode name="opcodePCXContactCard" symbol="OPCODE_PCX_CONTACTCARD" value="26" message="$(string.PCXContactCard.Opcode)" />
+          <opcode name="opcodePerfWatson" symbol="OPCODE_PERFWATSON" value="27" message="$(string.PerfWatson.Opcode)" />
+          <opcode name="opcodeIdleRegisterTask" symbol="OPCODE_IDLE_REGISTERTASK" value="28" message="$(string.IdleRegisterTask.Opcode)"/>
+          <opcode name="opcodeIdleDeregisterTask" symbol="OPCODE_IDLE_DEREGISTERTASK" value="29" message="$(string.IdleDeregisterTask.Opcode)"/>
+          <opcode name="opcodeIdleModifyTask" symbol="OPCODE_IDLE_MODIFYTASK" value="30" message="$(string.IdleModifyTask.Opcode)"/>
+          <opcode name="opcodeIdleStartExecution" symbol="OPCODE_IDLE_STARTEXECUTION" value="31" message="$(string.IdleStartExecution.Opcode)"/>
+          <opcode name="opcodeIdleEndExecution" symbol="OPCODE_IDLE_ENDEXECUTION" value="32" message="$(string.IdleEndExecution.Opcode)"/>
+          <opcode name="opcodeIdlePreemption" symbol="OPCODE_IDLE_PREEMPTION" value="33" message="$(string.IdlePreemption.Opcode)"/>
+          <opcode name="opcodeIdleReleaseTask" symbol="OPCODE_IDLE_RELEASETASK" value="34" message="$(string.IdleReleaseTask.Opcode)"/>
+          <opcode name="opcodeIdleDemoteTask" symbol="OPCODE_IDLE_DEMOTETASK" value="35" message="$(string.IdleDemoteTask.Opcode)"/>
+          <opcode name="opcodeIdleExecuteTask" symbol="OPCODE_IDLE_EXECUTETASK" value="36" message="$(string.IdleExecuteTask.Opcode)"/>
+          <opcode name="opcodeIdleTimerFired" symbol="OPCODE_IDLE_TIMERFIRED" value="37" message="$(string.IdleTimerFired.Opcode)"/>
+          <opcode name="opcodeIdleScheduleTimer" symbol="OPCODE_IDLE_SCHEDULETIMER" value="38" message="$(string.IdleScheduleTimer.Opcode)"/>
+          <opcode name="opcodePCXContactInfo" symbol="OPCODE_PCX_CONTACTINFO" value="39" message="$(string.PCXContactInfo.Opcode)" />
+          <opcode name="opcodeIdleUpdateQueued" symbol="OPCODE_IDLE_UPDATEQUEUED" value="40" message="$(string.IdleUpdateQueued.Opcode)"/>
+          <opcode name="opcodeSecureReader" symbol="OPCODE_SECUREREADER" value="41" message="$(string.SecureReader.Opcode)" />
+          <opcode name="opcodeSynchronization" symbol="OPCODE_SYNCHRONIZATION" value="42" message="$(string.Synchronization.Opcode)" />
+          <opcode name="opcodePCXContactLinking" symbol="OPCODE_PCX_CONTACTLINKING" value="43" message="$(string.PCXContactLinking.Opcode)" />
+          <opcode name="opcodePCXFeed" symbol="OPCODE_PCX_FEED" value="44" message="$(string.PCXFeed.Opcode)" />
+          <opcode name="opcodePCXContactSync" symbol="OPCODE_PCX_CONTACTSYNC" value="45" message="$(string.PCXContactSync.Opcode)" />
+          <opcode name="opcodeMetGeneral" symbol="OPCODE_MET_GENERAL" value="46" message="$(string.MetGeneral.Opcode)" />
+          <opcode name="opcodePCXContactInfoPropertyUpdate" symbol="OPCODE_PCX_CONTACTINFOPROPERTYUPDATE" value="47" message="$(string.PCXContactInfoPropertyUpdate.Opcode)" />
+          <opcode name="opcodeMSOLogging" symbol="OPCODE_MSO_LOGGING" value="48" message="$(string.MSOLogging.Opcode)" />
+        </opcodes>
+        <tasks>
+          <task name="etwtaskCallStack" symbol="TASK_CALLSTACK" value="1" message="$(string.CallStack.Task)"
+            eventGUID="{AE85C46F-3306-4678-9369-16A2F244C7D5}" />
+          <task name="etwtaskPerformance" symbol="TASK_PERFORMANCE" value="2" message="$(string.Performance.Task)"
+            eventGUID="{42A56A09-E3B8-4361-BE53-73EF7351F151}" />
+          <task name="etwtaskPCX" symbol="TASK_PCX" value="3" message="$(string.PCX.Task)"
+            eventGUID="{C2C096EA-5AC6-4E09-A61A-FA1F9FEC020C}" />
+          <task name="etwtaskPerfWatson" symbol="TASK_PERFWATSON" value="4" message="$(string.PerfWatson.Task)"
+            eventGUID="{D50D30D9-E6F8-40be-A7E6-12D9AEEF6518}" />
+          <task name="etwtaskIdle" symbol="TASK_IDLE" value="5" message="$(string.Idle.Task)"
+            eventGUID="{4DEB062B-A9D9-402D-8330-E65CA0728257}"/>
+          <task name="etwtaskSecureReader" symbol="TASK_SECUREREADER" value="6" message="$(string.SecureReader.Task)"
+            eventGUID="{2DC3498E-AD59-47F2-B21D-65C80990C19D}" />
+          <task name="etwtaskSynchronization" symbol="TASK_SYNCHRONIZATION" value="7" message="$(string.Synchronization.Task)"
+            eventGUID="{E7729383-5FD8-44f4-BDB4-3FD0F5857C95}" />
+          <task name="etwtaskMet" symbol="TASK_MET" value="8" message="$(string.Met.Task)"
+            eventGUID="{533C1F72-B8D9-4F17-ACA4-62D2FC9817E0}" />
+          <task name="etwtaskMSOLogging" symbol="TASK_MSO_LOGGING" value="9" message="$(string.MSOLogging.Task)"
+            eventGUID="{4D6D98F1-C528-4cde-A1D7-43C1268D4CCB}" />
+        </tasks>
+        <templates>
+          <template tid="tidCallStack" >
+            <data name="cValue" inType="win:UInt32" />
+            <data name="Frame" inType="win:Pointer" count="60" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <Frame> %2 </Frame>
+                <cValue> %1 </cValue>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidCallStackModule" >
+            <data name="BaseAddress" inType="win:Pointer" />
+            <data name="TimeDateStamp" inType="win:UInt32" />
+            <data name="Size" inType="win:UInt32" />
+            <data name="wzName" inType="win:UnicodeString" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <wzName> %4 </wzName>
+                <Size> %3 </Size>
+                <TimeDateStamp> %2 </TimeDateStamp>
+                <BaseAddress> %1 </BaseAddress>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidBudgetCreate" >
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwID" inType="win:UInt32" />
+            <data name="dwBudgetType" inType="win:UInt32" />
+            <data name="dwFlags" inType="win:UInt32" />
+            <data name="Limit" inType="win:Int32" />
+            <data name="dwInterval" inType="win:UInt32" />
+            <data name="wzData" inType="win:UnicodeString" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <wzData> %7 </wzData>
+                <dwInterval> %6 </dwInterval>
+                <Limit> %5 </Limit>
+                <dwFlags> %4 </dwFlags>
+                <dwBudgetType> %3 </dwBudgetType>
+                <dwID> %2 </dwID>
+                <dwTag> %1 </dwTag>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidBudgetUpdate" >
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwID" inType="win:UInt32" />
+            <data name="dwBudgetType" inType="win:UInt32" />
+            <data name="Update" inType="win:Int32" />
+            <data name="dwTimeNow" inType="win:UInt32" />
+            <data name="wzData" inType="win:UnicodeString" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <wzData> %6 </wzData>
+                <dwTimeNow> %5 </dwTimeNow>
+                <Update> %4 </Update>
+                <dwBudgetType> %3 </dwBudgetType>
+                <dwID> %2 </dwID>
+                <dwTag> %1 </dwTag>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidBudgetOverflow" >
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwID" inType="win:UInt32" />
+            <data name="dwBudgetType" inType="win:UInt32" />
+            <data name="Update" inType="win:Int32" />
+            <data name="dwTimeNow" inType="win:UInt32" />
+            <data name="wzData" inType="win:UnicodeString" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <wzData> %6 </wzData>
+                <dwTimeNow> %5 </dwTimeNow>
+                <Update> %4 </Update>
+                <dwBudgetType> %3 </dwBudgetType>
+                <dwID> %2 </dwID>
+                <dwTag> %1 </dwTag>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidBudgetDelete" >
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwID" inType="win:UInt32" />
+            <data name="dwBudgetType" inType="win:UInt32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwBudgetType> %3 </dwBudgetType>
+                <dwID> %2 </dwID>
+                <dwTag> %1 </dwTag>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidCodeMarker" >
+            <data name="dwCodeMarker" inType="win:HexInt32" outType="win:HexInt32" map="mapCodeMarker" />
+            <data name="dwModuleId" inType="win:Int32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dmModuleId> %2 </dmModuleId>
+                <dwCodeMarker> %1 </dwCodeMarker>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidSqmDatapoint" >
+            <data name="dwDatapoint" inType="win:UInt32" />
+            <data name="dwTick" inType="win:UInt32" />
+            <data name="dwValue1" inType="win:UInt32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwValue1> %3 </dwValue1>
+                <dwTick> %2 </dwTick>
+                <dwDatapoint> %1 </dwDatapoint>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidSqmDatapointAvg" >
+            <data name="dwDatapoint" inType="win:UInt32" />
+            <data name="dwTick" inType="win:UInt32" />
+            <data name="dwValue1" inType="win:UInt32" />
+            <data name="dwCount" inType="win:UInt32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwCount> %4 </dwCount>
+                <dwValue1> %3 </dwValue1>
+                <dwTick> %2 </dwTick>
+                <dwDatapoint> %1 </dwDatapoint>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidSqmStream" >
+            <data name="dwDatapoint" inType="win:UInt32" />
+            <data name="dwTick" inType="win:UInt32" />
+            <data name="cValue" inType="win:UInt32" />
+            <data name="dwValue" inType="win:UInt32" count="9" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwValue> %4 </dwValue>
+                <cValue> %3 </cValue>
+                <dwTick> %2 </dwTick>
+                <dwDatapoint> %1 </dwDatapoint>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidBudgetSetRate" >
+            <data name="dwTag" inType="win:UInt32" />
+            <data name="dwID" inType="win:UInt32" />
+            <data name="dwBudgetType" inType="win:UInt32" />
+            <data name="Limit" inType="win:Int32" />
+            <data name="dwInterval" inType="win:UInt32" />
+            <UserData>
+              <EventData xmlns="ProviderNamespace">
+                <dwInterval> %5 </dwInterval>
+                <Limit> %4 </Limit>
+                <dwBudgetType> %3 </dwBudgetType>
+                <dwID> %2 </dwID>
+                <dwTag> %1 </dwTag>
+              </EventData>
+            </UserData>
+          </template>
+          <template tid="tidPCXGeneralEntry">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="dwLine" inType="win:UInt32" />
+            <data name="dwHResult" inType="win:Int32" />
+            <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidPCXCallStart">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="dwLine" inType="win:UInt32" />
+            <data name="szCall" inType="win:AnsiString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXCallStop">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="dwLine" inType="win:UInt32" />
+            <data name="szCall" inType="win:AnsiString" outType="xs:string" />
+            <data name="dwHResult" inType="win:Int32" />
+          </template>
+          <template tid="tidPCXFunctionStart">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="szTag" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzParameter" inType="win:UnicodeString" outType="xs:string" />
+            <data name="pPointer" inType="win:Pointer" />
+          </template>
+          <template tid="tidPCXFunctionStop">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="dwHResult" inType="win:Int32" />
+          </template>
+          <template tid="tidPCXJobStart">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzJob" inType="win:UnicodeString" outType="xs:string" />
+            <data name="szTag" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzParameter" inType="win:UnicodeString" outType="xs:string" />
+            <data name="pPointer" inType="win:Pointer" />
+          </template>
+          <template tid="tidPCXJobStop">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzJob" inType="win:UnicodeString" outType="xs:string" />
+            <data name="dwHResult" inType="win:Int32" />
+          </template>
+          <template tid="tidPCXCreatePersonaInfo">
+            <data name="wzFriendlyName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzAddressSMTP" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzSip" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzAlias" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzUserInfoId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzPhoneNumber" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzFlags" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzMuid" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzResID" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidPCXCreatePersonaNew">
+            <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXCreatePersonaLinked">
+            <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzAltEmail" inType="win:UnicodeString" outType="xs:string" />
+            <data name="dwStatus" inType="win:Int32" />
+            <data name="dwAvail" inType="win:Int32" />
+          </template>
+          <template tid="tidPCXPersonInfo">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="szMessage" inType="win:AnsiString" outType="xs:string"/>
+            <data name="pPointer" inType="win:Pointer" />
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzSPUserId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzSPServerInfo" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzDN" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzManager" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEntryId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzMuid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEmailAddress" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzSignInAddress" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzAlias" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzHashKey" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzResID" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXPersonContactType">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="szMessage" inType="win:AnsiString" outType="xs:string"/>
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="pPointer" inType="win:Pointer" />
+            <data name="wzContactType" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXResolutionProperties">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="szMessage" inType="win:AnsiString" outType="xs:string"/>
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="pPointer" inType="win:Pointer" />
+            <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="bSetFromDL" inType="win:Boolean" />
+            <data name="wzSMTPAddress" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzFriendlyName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzTitle" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzCompanyName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzDepartment" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzOfficeLocation" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzWorkPhone" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzMobilePhone" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzHomePhone" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzDescription" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXPropertyUpdate">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzProperty" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzOldValue" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzNewValue" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzKey" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="pPointer" inType="win:Pointer" />
+          </template>
+          <template tid="tidPCXContactCardInfo">
+            <data name="szString" inType="win:AnsiString" outType="xs:string" />
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="pCardHwnd" inType="win:Pointer" />
+            <data name="pPersona" inType="win:Pointer" />
+            <data name="pPersonInfo" inType="win:Pointer" />
+            <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzContactType" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzCardType" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidPCXPresenceInfo">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="szMessage" inType="win:AnsiString" outType="xs:string"/>
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzEmail" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzWPhone" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzMPhone" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzHPhone" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidPCXSearchResult">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="dwRank" inType="win:UInt32" />
+            <data name="wzSIPAddress" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzDataType" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzEmailAddress" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzPhoneNumber" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzTitle" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzEntryId" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidPCXSearchDedup">
+            <data name="wzC1Source" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC1EntryId" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC1PersonId" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC1StampedGalEId" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC1Email1" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC1Email2" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC1Email3" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC1DisplayName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2Source" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2EntryId" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2PersonId" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2StampedGalEId" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2Email1" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2Email2" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2Email3" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="wzC2DisplayName" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidPCXSearchResultBlock">
+            <data name="dwJobSequence" inType="win:UInt32" />
+            <data name="dwJobCount" inType="win:Int32" />
+            <data name="dwHrResult" inType="win:Int32" />
+            <data name="dwResultCount" inType="win:Int32" />
+            <data name="fLastBatch" inType="win:Boolean" />
+            <data name="fMoreResults" inType="win:Boolean" />
+          </template>
+          <template tid="tidPerfWatsonEntry">
+            <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidPerfWatsonEvent">
+            <data name="dwTag" inType="win:UInt32"/>
+            <data name="dwId" inType="win:UInt32"/>
+          </template>
+          <template tid="tidIdleRegisterTask">
+            <data name="cookie" inType="win:UInt64"/>
+            <data name="dwID" inType="win:UInt32"/>
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="priority" inType="win:UInt32"/>
+            <data name="scheduler" inType="win:UInt32"/>
+            <data name="grfTaskFlags" inType="win:UInt32"/>
+            <data name="msecRelease" inType="win:UInt32"/>
+            <data name="msecDeadline" inType="win:UInt32"/>
+          </template>
+          <template tid="tidIdleTaskName">
+            <data name="cookie" inType="win:UInt64"/>
+            <data name="dwID" inType="win:UInt32"/>
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidIdleExecuteTask">
+            <data name="cookie" inType="win:UInt64"/>
+            <data name="dwID" inType="win:UInt32"/>
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="msecsRunIntervalAvg" inType="win:UInt64"/>
+          </template>
+          <template tid="tidIdleModifyTask">
+            <data name="cookie" inType="win:Int64"/>
+            <data name="dwID" inType="win:UInt32"/>
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="grfModifyFlags" inType="win:UInt32"/>
+            <data name="priority" inType="win:UInt32"/>
+            <data name="scheduler" inType="win:UInt32"/>
+            <data name="grfTaskFlags" inType="win:UInt32"/>
+            <data name="msecRelease" inType="win:UInt32"/>
+            <data name="msecDeadline" inType="win:UInt32"/>
+          </template>
+          <template tid="tidIdleScheduleTimer">
+            <data name="msecDelay" inType="win:UInt32"/>
+            <data name="msecsTolerableDelay" inType="win:UInt32"/>
+            <data name="dwID" inType="win:UInt32"/>
+            <data name="wzFirstTaskName" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidIdleUpdateMessage">
+            <data name="cookie" inType="win:UInt64"/>
+            <data name="grfUpdateType" inType="win:UInt32"/>
+          </template>
+          <template tid="tidIdleStart">
+            <data name="fTimerOnly" inType="win:Boolean"/>
+            <data name="fTracking" inType="win:Boolean"/>
+            <data name="fResuming" inType="win:Boolean"/>
+          </template>
+          <template tid="tidPCXContactInfo">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"/>
+            <data name="pPointer" inType="win:Pointer" />
+            <data name="wzRootSourceType" inType="win:UnicodeString" outType="xs:string" />
+            <data name="szSourceType" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzKey" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzUserID" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzMuid" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzProviderId" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzCreationDate" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidSecureReaderEntry">
+            <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidSynchronizationRegisterMesasge">
+            <data name="wzMessageName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="dwValue" inType="win:UInt32" />
+          </template>
+          <template tid="tidPCXContactLinking">
+            <data name="szMessageName" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzPersonID" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEmail1" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEmail2" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEmail3" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzIM" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzLastModified" inType="win:UnicodeString" outType="xs:string" />
+            <data name="fLInked" inType="win:Boolean" />
+            <data name="wzGALEntryID" inType="win:UnicodeString" outType="xs:string" />
+            <data name="dwGALLinkState" inType="win:UInt32"/>
+            <data name="wzLinkRejectHistory" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzSMTPAddressCache" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXContactLinkingPair">
+            <data name="szMessageName" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzEntryID1" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzEntryID2" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXFeedItemInfo">
+            <data name="szComment" inType="win:AnsiString" outType="xs:string" />
+            <data name="szCallingFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzFeedProviderName" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzFeedHTML" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzFeedData" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzFeedPlainText" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzFeedIcon" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzTime" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXFeedProviderInfo">
+            <data name="szComment" inType="win:AnsiString" outType="xs:string" />
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzProviderXML" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXFeedSanitizedHTMLInfo">
+            <data name="szComment" inType="win:AnsiString" outType="xs:string" />
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzUnSanitizedHTML" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzSanitizedHTML" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXContactSyncFriendInfo">
+            <data name="szComment" inType="win:AnsiString" outType="xs:string" />
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzFriendInfo" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzRetrievalTime" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidPCXContactSyncScheduleInfo">
+            <data name="szComment" inType="win:AnsiString" outType="xs:string" />
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzCurrentTime" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzTimeInMinutesForNextSync" inType="win:UnicodeString" outType="xs:string" />
+          </template>
+          <template tid="tidMetGeneralEntry">
+            <data name="wzFunction" inType="win:UnicodeString" outType="xs:string" />
+            <data name="dwLine" inType="win:UInt32" />
+            <data name="dwHResult" inType="win:Int32" />
+            <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidMetCallStart">
+            <data name="wzFunction" inType="win:UnicodeString" outType="xs:string" />
+            <data name="dwLine" inType="win:UInt32" />
+          </template>
+          <template tid="tidMetCallStop">
+            <data name="wzFunction" inType="win:UnicodeString" outType="xs:string" />
+            <data name="dwLine" inType="win:UInt32" />
+            <data name="dwHResult" inType="win:Int32" />
+          </template>
+          <template tid="tidPCXContactInfoPropertyUpdate">
+            <data name="szFunction" inType="win:AnsiString" outType="xs:string" />
+            <data name="wzProperty" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzPrevValue" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzNewValue" inType="win:UnicodeString" outType="xs:string" />
+            <data name="wzUniqueKey" inType="win:UnicodeString" outType="xs:string" />
+            <data name="pPointer" inType="win:Pointer" />
+          </template>
+          <template tid="tidMSOLoggingEntry">
+            <data name="wzLogLine" inType="win:UnicodeString" outType="xs:string"/>
+          </template>
+          <template tid="tidNewUnifiedGroupDialogOpened">
+            <data name="dwEntrypoint" inType="win:UInt32" map="mapUnifiedGroupDialogEntryPoint"/>
+          </template>
+          <template tid="tidNewUnifiedGroup">
+            <data name="dwGroupNameLength" inType="win:UInt32" />
+            <data name="dwGroupIdLength" inType="win:UInt32" />
+            <data name="dwGroupType" inType="win:UInt32" />
+            <data name="fAliasChanged" inType="win:Boolean" />
+            <data name="fAutoSubscribeChecked" inType="win:Boolean" />
+          </template>
+          <template tid="tidGroupOperationFinished">
+            <data name="fResult" inType="win:Boolean" />
+            <data name="dwErrorType" inType="win:UInt32" />
+          </template>
+          <template tid="tidEditGroupOperationFinished">
+            <data name="operationType" inType="win:UInt32" map="mapEditGroupOperationType"/>
+            <data name="fResult" inType="win:Boolean" />
+            <data name="dwErrorType" inType="win:UInt32" />
+          </template>
+          <template tid="tidGroupIdCheckFinished">
+            <data name="fResult" inType="win:Boolean" />
+            <data name="dwErrorType" inType="win:UInt32" />
+            <data name="dwAvailbilityResult" inType="win:UInt32" />
+          </template>
+          <template tid="tidCheckNewGroupIdStarted">
+            <data name="dwGroupIdLength" inType="win:UInt32" />
+            <data name="fGroupIdManuallyEdited" inType="win:Boolean" />
+          </template>
+          <template tid="tidEditUnifiedGroup">
+            <data name="dwDialogType" inType="win:UInt32" map="mapEditUnifiedGroupDialogType"/>
+            <data name="dwAddedMembersCount" inType="win:UInt32" />
+            <data name="dwRemovedMembersCount" inType="win:UInt32" />
+            <data name="dwAddedAdminsCount" inType="win:UInt32" />
+            <data name="dwRemovedAdminsCount" inType="win:UInt32" />
+          </template>
+          <template tid="tidEditUnifiedGroupDialogOpened">
+            <data name="dwDialogType" inType="win:UInt32" map="mapEditUnifiedGroupDialogType"/>
+            <data name="dwEntrypoint" inType="win:UInt32" map="mapUnifiedGroupDialogEntryPoint"/>
+          </template>    
+          <template tid="tidGroupMembershipLoadOperationFinished">
+            <data name="fResult" inType="win:Boolean" />
+            <data name="dwErrorType" inType="win:UInt32" />
+            <data name="dwMemberCount" inType="win:UInt32" />
+            <data name="dwAdminCount" inType="win:UInt32" />
+          </template>
+          <template tid="tidGroupCardAction">
+            <data name="dwActionType" inType="win:UInt32" map="mapGroupCardActionType"/>
+            <data name="dwEnvironment" inType="win:UInt32" map="mapGroupCardEnvironment"/>
+            <data name="dwHResult" inType="win:UInt32" />
+          </template>
+          <template tid="tidBulkAddGroupMemberOperationFinished">
+            <data name="fResult" inType="win:Boolean" />
+            <data name="dwErrorType" inType="win:UInt32" />
+            <data name="dwMemberCount" inType="win:UInt32" />
+          </template>
+        </templates>
+        <events>
+          <event
+            value="1" version="0" symbol="CallStackEtw" template="tidCallStack" task="etwtaskCallStack"
+            opcode="opcodeCallStack" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.CallStack.Event)" keywords="CallStack"
+          />
+          <event
+            value="2" version="0" symbol="CallStackModuleEtw" template="tidCallStackModule" task="etwtaskCallStack"
+            opcode="opcodeCallStackModule" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.CallStackModule.Event)" keywords="CallStack"
+          />
+          <event
+            value="3" version="0" symbol="BudgetCreate" template="tidBudgetCreate" task="etwtaskPerformance"
+            opcode="opcodeBudgetCreate" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.BudgetCreate.Event)" keywords="Budget"
+          />
+          <event
+            value="4" version="0" symbol="BudgetUpdate" template="tidBudgetUpdate" task="etwtaskPerformance"
+            opcode="opcodeBudgetUpdate" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.BudgetUpdate.Event)" keywords="Budget"
+          />
+          <event
+            value="5" version="0" symbol="BudgetDelete" template="tidBudgetDelete" task="etwtaskPerformance"
+            opcode="opcodeBudgetDelete" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.BudgetDelete.Event)" keywords="Budget"
+          />
+          <event
+            value="6" version="0" symbol="CodeMarkerEtw" template="tidCodeMarker" task="etwtaskPerformance"
+            opcode="opcodeCodeMarker" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.CodeMarker.Event)" keywords="CodeMarker"
+          />
+          <event
+            value="7" version="0" symbol="SqmDEtw" template="tidSqmDatapoint" task="etwtaskPerformance"
+            opcode="opcodeSqmDatapoint" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.SqmD.Event)" keywords="Sqm"
+          />
+          <event
+            value="8" version="0" symbol="SqmDAEtw" template="tidSqmDatapointAvg" task="etwtaskPerformance"
+            opcode="opcodeSqmDatapointAvg" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.SqmDA.Event)" keywords="Sqm"
+          />
+          <event
+            value="9" version="0" symbol="SqmSEtw" template="tidSqmStream" task="etwtaskPerformance"
+            opcode="opcodeSqmStream" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.SqmS.Event)" keywords="Sqm"
+          />
+          <event
+            value="10" version="0" symbol="BudgetSetRate" template="tidBudgetSetRate" task="etwtaskPerformance"
+            opcode="opcodeBudgetSetRate" channel="OFFICE-CHANNEL" level="win:Informational"
+            message="$(string.BudgetSetRate.Event)" keywords="Budget"
+          />
+          <event
+            value="11" version="0" symbol="PCXDebug" template="tidPCXGeneralEntry" task="etwtaskPCX"
+            opcode="opcodePCXGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXDebug.Event)" keywords="PCX"
+          />
+          <event
+            value="12" version="0" symbol="PCXInfo" template="tidPCXGeneralEntry" task="etwtaskPCX"
+            opcode="opcodePCXGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXInfo.Event)" keywords="PCX"
+          />
+          <event
+            value="13" version="0" symbol="PCXWarning" template="tidPCXGeneralEntry" task="etwtaskPCX"
+            opcode="opcodePCXGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Warning"
+            message="$(string.PCXWarning.Event)" keywords="PCX"
+          />
+          <event
+            value="14" version="0" symbol="PCXError" template="tidPCXGeneralEntry" task="etwtaskPCX"
+            opcode="opcodePCXGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Error"
+            message="$(string.PCXError.Event)" keywords="PCX"
+          />
+          <event
+            value="15" version="0" symbol="PCXCallStart" template="tidPCXCallStart" task="etwtaskPCX"
+            opcode="win:Start" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXCallStart.Event)" keywords="PCX"
+          />
+          <event
+            value="16" version="0" symbol="PCXCallStop" template="tidPCXCallStop" task="etwtaskPCX"
+            opcode="win:Stop" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXCallStop.Event)" keywords="PCX"
+          />
+          <event
+            value="17" version="0" symbol="PCXFunctionStart" template="tidPCXFunctionStart" task="etwtaskPCX"
+            opcode="win:Start" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXFunctionStart.Event)" keywords="PCX"
+          />
+          <event
+            value="18" version="0" symbol="PCXFunctionStop" template="tidPCXFunctionStop" task="etwtaskPCX"
+            opcode="win:Stop" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXFunctionStop.Event)" keywords="PCX"
+          />
+          <event
+            value="19" version="0" symbol="PCXJobStart" template="tidPCXJobStart" task="etwtaskPCX"
+            opcode="win:Start" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXJobStart.Event)" keywords="PCX"
+          />
+          <event
+            value="20" version="0" symbol="PCXJobStop" template="tidPCXJobStop" task="etwtaskPCX"
+            opcode="win:Stop" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXJobStop.Event)" keywords="PCX"
+          />
+          <event
+            value="21" version="0" symbol="PCXCreatePersonaInfo" template="tidPCXCreatePersonaInfo" task="etwtaskPCX"
+            opcode="opcodePCXPersona" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXCreatePersonaInfo.Event)" keywords="PCX"
+          />
+          <event
+            value="22" version="0" symbol="PCXCreatePersonaNew" template="tidPCXCreatePersonaNew" task="etwtaskPCX"
+            opcode="opcodePCXPersona" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXCreatePersonaNew.Event)" keywords="PCX"
+          />
+          <event
+            value="23" version="0" symbol="PCXCreatePersonaLinked" template="tidPCXCreatePersonaLinked" task="etwtaskPCX"
+            opcode="opcodePCXPersona" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXCreatePersonaLinked.Event)" keywords="PCX"
+          />
+          <event
+            value="24" version="0" symbol="PCXPersonInfo" template="tidPCXPersonInfo" task="etwtaskPCX"
+            opcode="opcodePCXPersonInfo" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXPersonInfo.Event)" keywords="PCX"
+          />
+          <event
+            value="25" version="0" symbol="PCXPersonContactType" template="tidPCXPersonContactType" task="etwtaskPCX"
+            opcode="opcodePCXPersonInfo" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXPersonContactType.Event)" keywords="PCX"
+          />
+          <event
+            value="26" version="0" symbol="PCXResolutionProperties" template="tidPCXResolutionProperties" task="etwtaskPCX"
+            opcode="opcodePCXPersonInfo" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXResolutionProperties.Event)" keywords="PCX"
+          />
+          <event
+            value="27" version="0" symbol="PCXPersonPropertyUpdate" template="tidPCXPropertyUpdate" task="etwtaskPCX"
+            opcode="opcodePCXPersonInfo" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXPersonPropertyUpdate.Event)" keywords="PCX"
+          />
+          <event
+            value="28" version="0" symbol="PCXOLContactPropertyUpdate" template="tidPCXPropertyUpdate" task="etwtaskPCX"
+            opcode="opcodePCXPersonInfo" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXOLContactPropertyUpdate.Event)" keywords="PCX"
+          />
+          <event
+            value="29" version="0" symbol="PCXContactCardInfo" template="tidPCXContactCardInfo" task="etwtaskPCX"
+            opcode="opcodePCXContactCard" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXContactCardInfo.Event)" keywords="PCX"
+          />
+          <event
+            value="30" version="0" symbol="PCXPresenceInfo" template="tidPCXPresenceInfo" task="etwtaskPCX"
+            opcode="opcodePCXPresence" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXPresenceInfo.Event)" keywords="PCX"
+          />
+          <event
+            value="31" version="0" symbol="PCXPresencePropertyUpdate" template="tidPCXPropertyUpdate" task="etwtaskPCX"
+            opcode="opcodePCXPresence" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXPresencePropertyUpdate.Event)" keywords="PCX"
+          />
+          <event
+            value="32" version="0" symbol="PCXSearchResult" template="tidPCXSearchResult" task="etwtaskPCX"
+            opcode="opcodePCXPresence" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXSearchResult.Event)" keywords="PCX"
+          />
+          <event
+            value="33" version="0" symbol="PCXDebugCallStack" template="tidCallStack" task="etwtaskPCX"
+            opcode="opcodeCallStack" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.CallStack.Event)" keywords="PCX"
+          />
+          <event
+            value="34" version="0" symbol="PCXDebugCallStackModule" template="tidCallStackModule" task="etwtaskPCX"
+            opcode="opcodeCallStackModule" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.CallStackModule.Event)" keywords="PCX"
+          />
+          <event
+            value="35" version="0" symbol="PerfWatson" template="tidPerfWatsonEntry" task="etwtaskPerfWatson"
+            opcode="opcodePerfWatson" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PerfWatson.Event)" keywords="PerfWatson"
+          />
+          <event
+            value="36" version="0" symbol="IdleRegisterTask" template="tidIdleRegisterTask" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleRegisterTask" keywords="Idle" level="win:Informational"
+            message="$(string.IdleRegisterTask.Event)"
+          />
+          <event
+            value="37" version="0" symbol="IdleDeregisterTask" template="tidIdleTaskName" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleDeregisterTask" keywords="Idle" level="win:Informational"
+            message="$(string.IdleDeregisterTask.Event)"
+          />
+          <event
+            value="38" version="0" symbol="IdleModifyTask" template="tidIdleModifyTask" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleModifyTask" keywords="Idle" level="win:Informational"
+            message="$(string.IdleModifyTask.Event)"
+          />
+          <event
+            value="39" version="0" symbol="IdleStartExecution" template="tidIdleStart" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleStartExecution" keywords="Idle" level="win:Informational"
+            message="$(string.IdleStartExecution.Event)"
+          />
+          <event
+            value="40" version="0" symbol="IdleEndExecution" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleEndExecution" keywords="Idle" level="win:Informational"
+            message="$(string.IdleEndExecution.Event)"
+          />
+          <event
+            value="41" version="0" symbol="IdlePreemption" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdlePreemption" keywords="Idle" level="win:Informational"
+            message="$(string.IdlePreemption.Event)"
+          />
+          <event
+            value="42" version="0" symbol="IdleReleaseTask" template="tidIdleTaskName" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleReleaseTask" keywords="Idle" level="win:Informational"
+            message="$(string.IdleReleaseTask.Event)"
+          />
+          <event
+            value="43" version="0" symbol="IdleDemoteTask" template="tidIdleTaskName" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleDemoteTask" keywords="Idle" level="win:Informational"
+            message="$(string.IdleDemoteTask.Event)"
+          />
+          <event
+            value="44" version="0" symbol="IdleExecuteTask" template="tidIdleExecuteTask" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleExecuteTask" keywords="Idle" level="win:Informational"
+            message="$(string.IdleExecuteTask.Event)"
+          />
+          <event
+            value="45" version="0" symbol="IdleTimerFired" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleTimerFired" keywords="Idle" level="win:Informational"
+            message="$(string.IdleTimerFired.Event)"
+          />
+          <event
+            value="46" version="0" symbol="IdleScheduleTimer" template="tidIdleScheduleTimer" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleScheduleTimer" keywords="Idle" level="win:Informational"
+            message="$(string.IdleScheduleTimer.Event)"
+          />
+          <event
+            value="47" version="0" symbol="PCXSearchDedup" template="tidPCXSearchDedup" task="etwtaskPCX"
+            opcode="opcodePCXSearch" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXSearchDedup.Event)" keywords="PCX"
+          />
+          <event
+            value="48" version="0" symbol="PCXSearchPostResult" template="tidPCXSearchResultBlock" task="etwtaskPCX"
+            opcode="opcodePCXSearch" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXSearchPostResult.Event)" keywords="PCX"
+          />
+          <event
+            value="49" version="0" symbol="PCXContactInfo" template="tidPCXContactInfo" task="etwtaskPCX"
+            opcode="opcodePCXContactInfo" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXContactInfo.Event)" keywords="PCX"
+          />
+          <event
+            value="50" version="0" symbol="IdleUpdateQueued" template="tidIdleUpdateMessage" channel="OFFICE-CHANNEL-DEBUG"
+            task="etwtaskIdle" opcode="opcodeIdleUpdateQueued" keywords="Idle" level="win:Informational"
+            message="$(string.IdleUpdateQueued.Event)"
+          />
+          <event
+            value="51" version="0" symbol="SecureReader" template="tidSecureReaderEntry" task="etwtaskSecureReader"
+            opcode="opcodeSecureReader" channel="OFFICE-CHANNEL-DEBUG" level="win:Verbose"
+            message="$(string.SecureReader.Event)" keywords="SecureReader"
+         />
+          <event
+            value="52" version="0" symbol="LogRegisterWindowMessage" template="tidSynchronizationRegisterMesasge" task="etwtaskSynchronization"
+            opcode="opcodeSynchronization" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.Synchronization.RegisterWindowMessageEvent)" keywords="Synchronization"
+         />
+          <event
+            value="53" version="0" symbol="PCXContactLinking" template="tidPCXContactLinking" task="etwtaskPCX"
+            opcode="opcodePCXContactLinking" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXContactLinking.Event)" keywords="PCX"
+         />
+          <event
+            value="54" version="0" symbol="PCXContactLinkingPair" template="tidPCXContactLinkingPair" task="etwtaskPCX"
+            opcode="opcodePCXContactLinking" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXContactLinkingPair.Event)" keywords="PCX"
+         />
+          <event
+            value="55" version="0" symbol="PCXFeedItemInfo" template="tidPCXFeedItemInfo" task="etwtaskPCX"
+            opcode="opcodePCXFeed" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXFeedItemInfo.Event)" keywords="PCX"
+         />
+          <event
+            value="56" version="0" symbol="PCXFeedProviderInfo" template="tidPCXFeedProviderInfo" task="etwtaskPCX"
+            opcode="opcodePCXFeed" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXFeedProviderInfo.Event)" keywords="PCX"
+         />
+          <event
+            value="57" version="0" symbol="PCXFeedSanitizedHTMLInfo" template="tidPCXFeedSanitizedHTMLInfo" task="etwtaskPCX"
+            opcode="opcodePCXFeed" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXFeedSanitizedHTMLInfo.Event)" keywords="PCX"
+         />
+          <event
+            value="58" version="0" symbol="PCXContactSyncFriendInfo" template="tidPCXContactSyncFriendInfo" task="etwtaskPCX"
+            opcode="opcodePCXContactSync" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXContactSyncFriendInfo.Event)" keywords="PCX"
+         />
+          <event
+            value="59" version="0" symbol="PCXContactSyncScheduleInfo" template="tidPCXContactSyncScheduleInfo" task="etwtaskPCX"
+            opcode="opcodePCXContactSync" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXContactSyncScheduleInfo.Event)" keywords="PCX"
+         />
+          <event
+            value="60" version="0" symbol="PerfWatsonTimerStart" template="tidPerfWatsonEvent" task="etwtaskPerfWatson"
+            opcode="opcodePerfWatson" channel="OFFICE-CHANNEL-DEBUG" level="win:Verbose"
+            message="$(string.PerfWatson.Event)" keywords="PerfWatson"
+         />
+          <event
+            value="61" version="0" symbol="PerfWatsonTimerEnd" template="tidPerfWatsonEvent" task="etwtaskPerfWatson"
+            opcode="opcodePerfWatson" channel="OFFICE-CHANNEL-DEBUG" level="win:Verbose"
+            message="$(string.PerfWatson.Event)" keywords="PerfWatson"
+         />
+          <event
+            value="62" version="0" symbol="MetInfo" template="tidMetGeneralEntry" task="etwtaskMet"
+            opcode="opcodeMetGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.MetInfo.Event)" keywords="Met"
+         />
+          <event
+            value="63" version="0" symbol="MetWarning" template="tidMetGeneralEntry" task="etwtaskMet"
+            opcode="opcodeMetGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Warning"
+            message="$(string.MetWarning.Event)" keywords="Met"
+         />
+          <event
+            value="64" version="0" symbol="MetError" template="tidMetGeneralEntry" task="etwtaskMet"
+            opcode="opcodeMetGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Error"
+            message="$(string.MetError.Event)" keywords="Met"
+         />
+          <event
+            value="65" version="0" symbol="MetCallStart" template="tidMetCallStart" task="etwtaskMet"
+            opcode="win:Start" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.MetCallStart.Event)" keywords="Met"
+         />
+          <event
+            value="66" version="0" symbol="MetCallStop" template="tidMetCallStop" task="etwtaskMet"
+            opcode="win:Stop" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.MetCallStop.Event)" keywords="Met"
+         />
+          <event
+            value="67" version="0" symbol="MetDebugCallStack" template="tidCallStack" task="etwtaskMet"
+            opcode="opcodeCallStack" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.CallStack.Event)" keywords="Met"
+         />
+          <event
+            value="68" version="0" symbol="MetDebugCallStackModule" template="tidCallStackModule" task="etwtaskMet"
+            opcode="opcodeCallStackModule" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.CallStackModule.Event)" keywords="Met"
+         />
+          <event
+            value="69" version="0" symbol="PCXContactInfoPropertyUpdate" template="tidPCXContactInfoPropertyUpdate" task="etwtaskPCX"
+            opcode="opcodePCXContactInfoPropertyUpdate" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.PCXContactInfoPropertyUpdate.Event)" keywords="PCX"
+          />
+          <event
+            value="70" version="0" symbol="MSOLogging" template="tidMSOLoggingEntry" task="etwtaskMSOLogging"
+            opcode="opcodeMSOLogging" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.MSOLogging.Event)" keywords="MSOLogging"
+         />
+          <event
+            value="71" version="0" symbol="UGNewUnifiedGroupDialogOpened" template="tidNewUnifiedGroupDialogOpened" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.NewGroup.OpenDialog)" keywords="PCX"
+          />
+          <event
+            value="72" version="0" symbol="UGNewUnifiedGroupDialogCancelled" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.NewGroup.CancelDialog)" keywords="PCX"
+          />
+          <event
+            value="73" version="0" symbol="UGNewUnifiedGroupRequested" template="tidNewUnifiedGroup" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.NewGroup.CreateGroupRequested)" keywords="PCX"
+          />
+          <event
+            value="74" version="0" symbol="UGNewUnifiedGroupResult" template="tidGroupOperationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.NewGroup.CreateGroupOperationFinished)" keywords="PCX"
+          />
+          <event
+            value="75" version="0" symbol="UGNewGroupCheckGroupIdStarted" template="tidCheckNewGroupIdStarted" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.NewGroup.GroupIdCheckStarted)" keywords="PCX"
+          />
+          <event
+            value="76" version="0" symbol="UGNewGroupCheckGroupIdFinished" template="tidGroupIdCheckFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.NewGroup.GroupIdCheckStarted)" keywords="PCX"
+          />
+          <event
+            value="77" version="0" symbol="UGEditUnifiedGroupDialogOpened" template="tidEditUnifiedGroupDialogOpened" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.EditGroupDialogOpened)" keywords="PCX"
+          />
+          <event
+            value="78" version="0" symbol="UGEditUnifiedGroupDialogCancelled" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.EditGroupDialogCancelled)" keywords="PCX"
+          />
+          <event
+            value="79" version="0" symbol="UGEditUnifiedGroupRequested" template="tidEditUnifiedGroup" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.EditGroupRequested)" keywords="PCX"
+          />
+          <event
+            value="80" version="0" symbol="UGEditUnifiedGroupOperationFinished" template="tidEditGroupOperationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.EditGroupOperationFinished)" keywords="PCX"
+          />          
+          <event
+            value="81" version="0" symbol="UGEditUnifiedGroupResult" template="tidGroupOperationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.EditGroupFinished)" keywords="PCX"
+          />
+          <event
+            value="82" version="0" symbol="UGEditGroupPhotoClicked" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.EditGroupPhotoClicked)" keywords="PCX"
+          />
+          <event
+            value="83" version="0" symbol="UGEditGroupMembershipLoadFinished" template="tidGroupMembershipLoadOperationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.GroupMembershipLoadFinished)" keywords="PCX"
+          />            
+          <event
+            value="84" version="0" symbol="UGEditGroupDetailsLoadFinished" template="tidGroupOperationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.GroupDetailsLoadFinished)" keywords="PCX"
+          />            
+          <event
+            value="85" version="0" symbol="UGDeleteUnifiedGroupDialogOpened" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.DeleteGroup.DeleteGroupDialogOpened)" keywords="PCX"
+          />
+          <event
+            value="86" version="0" symbol="UGDeleteUnifiedGroupDialogCancelled" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.DeleteGroup.DeleteGroupDialogCancelled)" keywords="PCX"
+          />
+          <event
+            value="87" version="0" symbol="UGDeleteUnifiedGroupRequested" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.DeleteGroup.DeleteGroupRequested)" keywords="PCX"
+          />
+          <event
+            value="88" version="0" symbol="UGDeleteUnifiedGroupResult" template="tidGroupOperationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.DeleteGroup.DeleteGroupFinished)" keywords="PCX"
+          />
+          <event
+            value="89" version="0" symbol="GroupCardAction" template="tidGroupCardAction" task="etwtaskPCX"
+            opcode="opcodePCXGeneral" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.GroupCard.Action.Event)" keywords="PCX"
+          />
+          <event
+            value="90" version="0" symbol="UGNewGroupOfflineFolderCreationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.NewGroup.OfflineFolderCreationFinished)" keywords="PCX"
+          />
+          <event
+            value="91" version="0" symbol="UGBulkAddGroupMemberFinished" template="tidBulkAddGroupMemberOperationFinished" task="etwtaskPCX"
+            opcode="win:Info" channel="OFFICE-CHANNEL-DEBUG" level="win:Informational"
+            message="$(string.UnifiedGroups.EditGroup.BulkAddMembers)" keywords="PCX"
+          />
+        </events>
+        <maps>
+<!-- 
+  When this manfiest is copied into the timber library it will be automatically updated with the
+  perf marker values, as this is needed for correctly generating the timber parser. As this are
+  not needed for raising events we provide a placeholder value so the XML schema validates.
+-->          
+<!-- BEGIN_AUTOGENERATED_SECTION -->
+<!-- WARNING: The following section is automatically generated by UpdateCodeMarkers.bat -->
+          <valueMap name="mapCodeMarker">
+            <map value="0" message="$(string.CodeMarker.PlaceHolder)"/>
+          </valueMap>
+<!-- END_AUTOGENERATED_SECTION -->
+				
+          <valueMap name="mapUnifiedGroupDialogEntryPoint">
+            <map value="0" message="$(string.UnifiedGroups.EntryPoint.Ribbon)" symbol="GroupEntrypointRibbon" />
+            <map value="1" message="$(string.UnifiedGroups.EntryPoint.Navigation)" symbol="GroupEntrypointNav" />
+            <map value="2" message="$(string.UnifiedGroups.EntryPoint.GroupCreation)" symbol="GroupEntrypointGroupCreation" />
+            <map value="3" message="$(string.UnifiedGroups.EntryPoint.GroupCardOutlook)" symbol="GroupEntrypointGroupCardOutlook" />
+            <map value="4" message="$(string.UnifiedGroups.EntryPoint.GroupCardLync)" symbol="GroupEntrypointGroupCardLync" />
+            <map value="5" message="$(string.UnifiedGroups.EntryPoint.GroupRibbonOutlook)" symbol="GroupEntrypointGroupRibbon" />
+            <map value="6" message="$(string.UnifiedGroups.EntryPoint.AcceptGroupJoinRequest)" symbol="GroupEntrypointAcceptGroupJoinRequest" />
+          </valueMap>
+
+          <valueMap name="mapEditUnifiedGroupDialogType">
+            <map value="0" message="$(string.UnifiedGroups.EditGroup.DialogType.GroupCreation)" symbol="EditGroupDialogTypeCreation" />
+            <map value="1" message="$(string.UnifiedGroups.EditGroup.DialogType.AddMembers)" symbol="EditGroupDialogTypeAddMembers" />
+            <map value="2" message="$(string.UnifiedGroups.EditGroup.DialogType.Edit)" symbol="EditGroupDialogTypeEdit" />
+          </valueMap>
+
+          <valueMap name="mapEditGroupOperationType">
+            <map value="32768" message="$(string.UnifiedGroups.EditGroup.OperationType.AddMembers)" symbol="EditGroupOperationTypeAddMembers" />
+            <map value="32769" message="$(string.UnifiedGroups.EditGroup.OperationType.RemoveMembers)" symbol="EditGroupOperationTypeRemoveMembers" />
+            <map value="32770" message="$(string.UnifiedGroups.EditGroup.OperationType.PromoteMembers)" symbol="EditGroupOperationTypePromoteMembers" />
+            <map value="32771" message="$(string.UnifiedGroups.EditGroup.OperationType.DemoteMembers)" symbol="EditGroupOperationTypeDemoteMembers" />
+            <map value="32772" message="$(string.UnifiedGroups.EditGroup.OperationType.GetGroupPhoto)" symbol="EditGroupOperationGetGroupPhoto" />
+            <map value="32773" message="$(string.UnifiedGroups.EditGroup.OperationType.GetPhotoUpdateUrl)" symbol="EditGroupOperationGetPhotoUpdateUrl" />
+            <map value="32774" message="$(string.UnifiedGroups.EditGroup.OperationType.GetGroupMembership)" symbol="EditGroupOperationGetGroupMembership" />
+            <map value="32775" message="$(string.UnifiedGroups.EditGroup.OperationType.GetGroupDetails)" symbol="EditGroupOperationGetGroupDetails" />
+            <map value="32776" message="$(string.UnifiedGroups.EditGroup.OperationType.UpdateGroup)" symbol="EditGroupOperationTypeUpdateGroup" />
+            <map value="32777" message="$(string.UnifiedGroups.EditGroup.OperationType.GetAvailableCultures)" symbol="EditGroupOperationTypeGetAvailableCultures" />
+            <map value="32778" message="$(string.UnifiedGroups.EditGroup.OperationType.PinGroup)" symbol="EditGroupOperationTypePinGroup" />
+          </valueMap>
+          <valueMap name="mapGroupCardEnvironment">
+            <map value="1" message="$(string.UnifiedGroups.GroupCard.InOutlook)" symbol="GroupCardInOutlook" />
+            <map value="2" message="$(string.UnifiedGroups.GroupCard.InLync)" symbol="GroupCardInLync" />
+            <map value="3" message="$(string.UnifiedGroups.GroupCard.InNameCtrl)" symbol="GroupCardInNameCtrl" />
+          </valueMap>
+          <valueMap name="mapGroupCardActionType">
+            <map value="1" message="$(string.UnifiedGroups.GroupCard.Action.OpenContact)" symbol="GroupCardOpenContact" />
+            <map value="2" message="$(string.UnifiedGroups.GroupCard.Action.OpenMembers)" symbol="GroupCardOpenMembers" />
+            <map value="3" message="$(string.UnifiedGroups.GroupCard.Action.OpenMembership)" symbol="GroupCardOpenMembership" />
+            <map value="4" message="$(string.UnifiedGroups.GroupCard.Action.GetGroupInfo)" symbol="GroupCardGetGroupInfo" />
+            <map value="5" message="$(string.UnifiedGroups.GroupCard.Action.GetMembers)" symbol="GroupCardGetMembers" />
+            <map value="6" message="$(string.UnifiedGroups.GroupCard.Action.PublicJoin)" symbol="GroupCardPublicJoin" />
+            <map value="7" message="$(string.UnifiedGroups.GroupCard.Action.PrivateJoin)" symbol="GroupCardPrivateJoin" />
+            <map value="8" message="$(string.UnifiedGroups.GroupCard.Action.Leave)" symbol="GroupCardLeave" />
+            <map value="9" message="$(string.UnifiedGroups.GroupCard.Action.Subscribe)" symbol="GroupCardSubscribe" />
+            <map value="10" message="$(string.UnifiedGroups.GroupCard.Action.Unsubscribe)" symbol="GroupCardUnsubscribe" />
+            <map value="11" message="$(string.UnifiedGroups.GroupCard.Action.AddMembers)" symbol="GroupCardAddMembers" />
+            <map value="12" message="$(string.UnifiedGroups.GroupCard.Action.Edit)" symbol="GroupCardEdit" />
+            <map value="13" message="$(string.UnifiedGroups.GroupCard.Action.OpenConversation)" symbol="GroupCardOpenConversation" />
+            <map value="14" message="$(string.UnifiedGroups.GroupCard.Action.OpenCalendar)" symbol="GroupCardOpenCalendar" />
+            <map value="15" message="$(string.UnifiedGroups.GroupCard.Action.OpenOnedrive)" symbol="GroupCardOpenOnedrive" />
+            <map value="16" message="$(string.UnifiedGroups.GroupCard.Action.OpenNotebookWeb)" symbol="GroupCardOpenNotebookWeb" />
+            <map value="17" message="$(string.UnifiedGroups.GroupCard.Action.OpenNotebookDesktop)" symbol="GroupCardOpenNotebookDesktop" />
+        </valueMap>
+      </maps>
+      </provider>
+    </events>
+  </instrumentation>
+  <localization xmlns="http://schemas.microsoft.com/win/2004/08/events">
+    <resources culture="en-US">
+      <stringTable>
+        <string id="Placeholder.Level" value="Placeholder level" />
+        <string id="Placeholder.Foo" value="foo" />
+        
+        <string id="CallStack.Keyword" value="CallStack keyword" />
+        <string id="CallStack.Opcode" value="CallStack opcode" />
+        <string id="CallStackModule.Opcode" value="CallStackModule opcode" />
+        <string id="CallStack.Task" value="CallStack task" />
+        <string id="CallStack.Event" value="CallStack event description message: %1" />
+        <string id="CallStackModule.Event" value="CallStackModule event description message: %1" />
+        <string id="Budget.Keyword" value="Budget keyword" />
+        <string id="BudgetCreate.Opcode" value="BudgetCreate opcode" />
+        <string id="BudgetUpdate.Opcode" value="BudgetUpdate opcode" />
+        <string id="BudgetDelete.Opcode" value="BudgetDelete opcode" />
+        <string id="BudgetOverflow.Opcode" value="BudgetOverFlow opcode" />
+        <string id="BudgetSetRate.Opcode" value="BudgetSetRate opcode" />
+        <string id="Performance.Task" value="Performance task" />
+        <string id="BudgetCreate.Event" value="BudgetCreate event description message: %1" />
+        <string id="BudgetUpdate.Event" value="BudgetUpdate event description message: %1" />
+        <string id="BudgetDelete.Event" value="BudgetDelete event description message: %1" />
+        <string id="BudgetOverflow.Event" value="BudgetOverFlow event description message: %1" />
+        <string id="BudgetSetRate.Event" value="BudgetSetRate event description message: %1" />
+        <string id="Sqm.Keyword" value="Sqm keyword" />
+        <string id="SqmDatapoint.Opcode" value="SqmDatapoint opcode" />
+        <string id="SqmDatapointAvg.Opcode" value="SqmDatapointAvg opcode" />
+        <string id="SqmStream.Opcode" value="SqmStream opcode" />
+        <string id="SqmD.Event" value="SqmD event description message: %1" />
+        <string id="SqmDA.Event" value="SqmDA event description message: %1" />
+        <string id="SqmS.Event" value="SqmS event description message: %1" />
+        <string id="CodeMarker.Keyword" value="CodeMarker keyword" />
+        <string id="CodeMarker.Opcode" value="CodeMarker opcode" />
+        <string id="CodeMarker.Event" value="CodeMarker event description message: %1" />
+        <string id="PCX.Task" value="PCX task" />
+        <string id="PCXGeneral.Opcode" value="PCX General Opcode" />
+        <string id="PCXPersona.Opcode" value="PCX Persona Opcode" />
+        <string id="PCXPersonInfo.Opcode" value="PCX PersonInfo Opcode" />
+        <string id="PCXPresence.Opcode" value="PCX Presence Opcode" />
+        <string id="PCXSearch.Opcode" value="PCX Search Opcode" />
+        <string id="PCXContactCard.Opcode" value="PCX ContactCard Opcode" />
+        <string id="PCX.Keyword" value="PCX Keyword" />
+        <string id="PCXDebug.Event" value="PCX Debug" />
+        <string id="PCXInfo.Event" value="PCX Infomation" />
+        <string id="PCXWarning.Event" value="PCX Warning" />
+        <string id="PCXError.Event" value="PCX Error" />
+        <string id="PCXCallStart.Event" value="PCX Call Start" />
+        <string id="PCXCallStop.Event" value="PCX Call Stop" />
+        <string id="PCXFunctionStart.Event" value="PCX Function Start" />
+        <string id="PCXFunctionStop.Event" value="PCX Function Stop" />
+        <string id="PCXJobStart.Event" value="PCX Job Start" />
+        <string id="PCXJobStop.Event" value="PCX Job Stop" />
+        <string id="PCXCreatePersonaInfo.Event" value="PCX Create Persona" />
+        <string id="PCXCreatePersonaNew.Event" value="PCX Create New Persona " />
+        <string id="PCXCreatePersonaLinked.Event" value="PCX Create Persona Linked" />
+        <string id="PCXPersonInfo.Event" value="PCX PersonInfo" />
+        <string id="PCXPersonContactType.Event" value="PCX Person Contact Type" />
+        <string id="PCXResolutionProperties.Event" value="PCX Resolution Properties" />
+        <string id="PCXPersonPropertyUpdate.Event" value="PCX Person Property Update" />
+        <string id="PCXOLContactPropertyUpdate.Event" value="PCX OutLook Contact Property Update" />
+        <string id="PCXContactCardInfo.Event" value="PCX Contact Card Infomation" />
+        <string id="PCXPresenceInfo.Event" value="PCX Presence Infomation" />
+        <string id="PCXPresencePropertyUpdate.Event" value="PCX Presence Property Update" />
+        <string id="PCXSearchResult.Event" value="PCX Search Result" />
+        <string id="PCXSearchDedup.Event" value="PCX Search Result Dedupped" />
+        <string id="PCXSearchPostResult.Event" value="PCX Search Results Posted" />
+        <string id="PerfWatson.Event" value="PerfWatson Debug" />
+        <string id="PerfWatson.Keyword" value="PerfWatson Keyword" />
+        <string id="PerfWatson.Opcode" value="PerfWatson Opcode" />
+        <string id="PerfWatson.Task" value="PerfWatson Task" />
+        <string id="Idle.Task" value="Idle Task Scheduler"/>
+        <string id="Idle.Keyword" value="idle"/>
+        <string id="IdleRegisterTask.Opcode" value="Register idle task"/>
+        <string id="IdleRegisterTask.Event"  value="Register idle task '%1': priority %2, scheduler %3, flags %4, release %5, tolerable delay %6"/>
+        <string id="IdleDeregisterTask.Opcode" value="Deregister idle task"/>
+        <string id="IdleDeregisterTask.Event"  value="Deregister idle task '%1'"/>
+        <string id="IdleModifyTask.Opcode" value="Modify idle task"/>
+        <string id="IdleModifyTask.Event"  value="Modify idle task '%1': change flags %2, priority %3, scheduler %4, flags %5, release %6, tolerable delay %7"/>
+        <string id="IdleStartExecution.Opcode" value="Idle execution starting"/>
+        <string id="IdleStartExecution.Event"  value="Idle execution starting: timer only %1, tracking %2, resume %3"/>
+        <string id="IdleEndExecution.Opcode" value="Idle execution ending"/>
+        <string id="IdleEndExecution.Event"  value="Idle execution ending"/>
+        <string id="IdlePreemption.Opcode" value="Idle execution preempted"/>
+        <string id="IdlePreemption.Event"  value="Idle execution preempted"/>
+        <string id="IdleReleaseTask.Opcode" value="Idle task moved to run queue"/>
+        <string id="IdleReleaseTask.Event"  value="Idle task '%1' moved to run queue"/>
+        <string id="IdleDemoteTask.Opcode" value="Idle task demoted to wait queue"/>
+        <string id="IdleDemoteTask.Event"  value="Idle task '%1' demoted to wait queue"/>
+        <string id="IdleExecuteTask.Opcode" value="Idle task executing"/>
+        <string id="IdleExecuteTask.Event"  value="Idle task '%1' executing"/>
+        <string id="IdleTimerFired.Opcode" value="Idle timer message received"/>
+        <string id="IdleTimerFired.Event"  value="Idle timer message received"/>
+        <string id="IdleScheduleTimer.Opcode" value="Idle timer scheduled"/>
+        <string id="IdleScheduleTimer.Event"  value="Idle timer scheduled to %1 ms for task '%2'"/>
+        <string id="IdleUpdateQueued.Opcode" value="Idle update queued"/>
+        <string id="IdleUpdateQueued.Event"  value="Idle update queued for task '%1': type %2"/>
+        <string id="PCXContactInfo.Opcode" value="PCX ContactInfo Opcode" />
+        <string id="PCXContactInfo.Event" value="PCX ContactInfo" />
+        <string id="SecureReader.Event" value="SecureReader Debug" />
+        <string id="SecureReader.Keyword" value="SecureReader Keyword" />
+        <string id="SecureReader.Opcode" value="SecureReader Opcode" />
+        <string id="SecureReader.Task" value="SecureReader Task" />
+        <string id="Synchronization.RegisterWindowMessageEvent" value="Window Message %1(%2) registered" />
+        <string id="Synchronization.Keyword" value="Synchronization Keyword" />
+        <string id="Synchronization.Opcode" value="Synchronization Opcode" />
+        <string id="Synchronization.Task" value="Synchronization Task" />
+        <string id="PCXContactLinking.Opcode" value="PCX Contact Linking Opcode" />
+        <string id="PCXContactLinking.Event" value="PCX Contact Linking" />
+        <string id="PCXContactLinkingPair.Event" value="PCX Contact Linking Pair" />
+        <string id="PCXFeed.Opcode" value="PCX Feeds Opcode" />
+        <string id="PCXFeedItemInfo.Event" value="PCX Feed Item Info" />
+        <string id="PCXFeedProviderInfo.Event" value="PCX Feed Provider Info" />
+        <string id="PCXFeedSanitizedHTMLInfo.Event" value="PCX Feed Sanitized HTML Info" />
+        <string id="PCXContactSync.Opcode" value="PCX Contact Sync Opcode" />
+        <string id="PCXContactSyncFriendInfo.Event" value="PCX Contact Sync Friend Info" />
+        <string id="PCXContactSyncScheduleInfo.Event" value="PCX Contact Sync Schedule Info" />
+        <string id="Met.Keyword" value="Met Keyword" />
+        <string id="MetInfo.Event" value="Met Infomation" />
+        <string id="MetWarning.Event" value="Met Warning" />
+        <string id="MetError.Event" value="Met Error" />
+        <string id="Met.Task" value="Met task" />
+        <string id="MetGeneral.Opcode" value="Met General Opcode" />
+        <string id="MetCallStart.Event" value="Met Call Start" />
+        <string id="MetCallStop.Event" value="Met Call Stop" />
+        <string id="PCXContactInfoPropertyUpdate.Opcode" value="PCX ContactInfoPropertyUpdate Opcode" />
+        <string id="PCXContactInfoPropertyUpdate.Event" value="PCX ContactInfoPropertyUpdate" />
+        <string id="MSOLogging.Keyword" value="MSO Logging Keyword" />
+        <string id="MSOLogging.Event" value="MSO Logging" />
+        <string id="MSOLogging.Task" value="MSO Logging task" />
+        <string id="MSOLogging.Opcode" value="MSO Logging Opcode" />
+        <string id="LoggingScopeStart.Event" value="Mso Logging Scope start event" />
+        <string id="LoggingScopeStop.Event" value="Mso Logging Scope short stop event" />
+        <string id="LoggingScopeComplete.Event" value="Mso Logging Scope long stop event" />
+        <string id="LoggingScope.Keyword" value="Mso Logging Scope keyword" />
+        <string id="ScenarioStart.Event" value="Mso Scenario start event" />
+        <string id="ScenarioStop.Event" value="Mso Scenario short stop event" />
+        <string id="ScenarioComplete.Event" value="Mso Scenario long stop event" />
+        <string id="DiskIO.Keyword" value="Resouce Usage DiskIO keyword" />
+        <string id="NetworkUsage.Keyword" value="Resouce Usage Network Usage keyword" />
+        <string id="ResourceUsageDiagnostic.Keyword" value="Resouce Usage Diagnostic keyword" />
+        <string id="MemoryUsage.Keyword" value="Resouce Usage Memory Usage keyword" />
+        <string id="LoggingScope.Task" value="Mso Logging Scope task" />
+        <string id="ResourceUsage.Task" value="Resouce Usage task" />
+        <string id="Complete.Opcode" value="Mso Logging Scope long stop Opcode" />
+        <string id="UnifiedGroups.NewGroup.OpenDialog" value="User requested opening of the New Unified Group dialog" />
+        <string id="UnifiedGroups.NewGroup.CancelDialog" value="User dismissed the New Unified Group dialog" />
+        <string id="UnifiedGroups.NewGroup.CreateGroupRequested" value="User requested creation of a Unified Group" />
+        <string id="UnifiedGroups.NewGroup.CreateGroupOperationFinished" value="Create unified group operation finished" />
+        <string id="UnifiedGroups.NewGroup.GroupIdCheckStarted" value="Started check for group ID availability" />
+        <string id="UnifiedGroups.NewGroup.GroupIdCheckFinished" value="Check for group ID availability finished" />
+        <string id="UnifiedGroups.NewGroup.OfflineFolderCreationFinished" value="Group local folder creation finished" />
+        <string id="UnifiedGroups.EntryPoint.Ribbon" value="Ribbon" />
+        <string id="UnifiedGroups.EntryPoint.Navigation" value="Group navigation" />
+        <string id="UnifiedGroups.EntryPoint.GroupCreation" value="Group creation" />
+        <string id="UnifiedGroups.EntryPoint.GroupCardOutlook" value="Group card from Outlook" />
+        <string id="UnifiedGroups.EntryPoint.GroupCardLync" value="Group card from Lync" />
+        <string id="UnifiedGroups.EntryPoint.GroupRibbonOutlook" value="Group ribbon" />
+        <string id="UnifiedGroups.EntryPoint.AcceptGroupJoinRequest" value="Group join approval request" />
+        <string id="UnifiedGroups.EditGroup.EditGroupDialogOpened" value="User requested opening of the Edit Unified Group dialog" />
+        <string id="UnifiedGroups.EditGroup.EditGroupDialogCancelled" value="User dismissed the Edit Unified Group dialog" />
+        <string id="UnifiedGroups.EditGroup.EditGroupRequested" value="User started edit of a Unified Group" />
+        <string id="UnifiedGroups.EditGroup.EditGroupFinished" value="Edit Unified Group operation finished" />
+        <string id="UnifiedGroups.EditGroup.EditGroupOperationFinished" value="One of the operations involved in updating the group finished" />
+        <string id="UnifiedGroups.EditGroup.EditGroupPhotoClicked" value="Edit group photo button was clicked" />
+        <string id="UnifiedGroups.EditGroup.GroupMembershipLoadFinished" value="Group membership finished loading" />
+        <string id="UnifiedGroups.EditGroup.GroupDetailsLoadFinished" value="Group details finished loading" />
+        <string id="UnifiedGroups.EditGroup.BulkAddMembers" value="Bulk add members" />
+        <string id="UnifiedGroups.EditGroup.DialogType.GroupCreation" value="Add members after group creation" />
+        <string id="UnifiedGroups.EditGroup.DialogType.AddMembers" value="Add members" />
+        <string id="UnifiedGroups.EditGroup.DialogType.Edit" value="Edit group" />
+        <string id="UnifiedGroups.EditGroup.OperationType.AddMembers" value="Add members" />
+        <string id="UnifiedGroups.EditGroup.OperationType.RemoveMembers" value="Remove members" />
+        <string id="UnifiedGroups.EditGroup.OperationType.PromoteMembers" value="Promote members" />
+        <string id="UnifiedGroups.EditGroup.OperationType.DemoteMembers" value="Demote members" />
+        <string id="UnifiedGroups.EditGroup.OperationType.GetGroupPhoto" value="Get group photo" />
+        <string id="UnifiedGroups.EditGroup.OperationType.GetPhotoUpdateUrl" value="Get photo update URL" />
+        <string id="UnifiedGroups.EditGroup.OperationType.GetGroupMembership" value="Get group membership" />
+        <string id="UnifiedGroups.EditGroup.OperationType.GetGroupDetails" value="Get group details" />
+        <string id="UnifiedGroups.EditGroup.OperationType.UpdateGroup" value="Update group" />
+        <string id="UnifiedGroups.EditGroup.OperationType.GetAvailableCultures" value="Get available cultures" />
+        <string id="UnifiedGroups.EditGroup.OperationType.PinGroup" value="Pin group" />
+        <string id="UnifiedGroups.DeleteGroup.DeleteGroupDialogOpened" value="User requested opening of the Edit Unified Group dialog" />
+        <string id="UnifiedGroups.DeleteGroup.DeleteGroupDialogCancelled" value="User dismissed the Edit Unified Group dialog" />
+        <string id="UnifiedGroups.DeleteGroup.DeleteGroupRequested" value="User started edit of a Unified Group" />
+        <string id="UnifiedGroups.DeleteGroup.DeleteGroupFinished" value="Edit Unified Group operation finished" />
+        <string id="UnifiedGroups.GroupCard.Action.Event" value="Group card actions event, including open card, switch to members tab, and all actions on group cards" />
+        <string id="UnifiedGroups.GroupCard.InOutlook" value="Group card is running in Outlook" />
+        <string id="UnifiedGroups.GroupCard.InLync" value="Group card is running in Lync" />
+        <string id="UnifiedGroups.GroupCard.InNameCtrl" value="Group card is running in Name Control" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenContact" value="Open group card contact tab" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenMembers" value="Open group card members tab" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenMembership" value="Open group card membership tab" />
+        <string id="UnifiedGroups.GroupCard.Action.GetGroupInfo" value="Call group info EWS API" />
+        <string id="UnifiedGroups.GroupCard.Action.GetMembers" value="Call group members EWS API" />
+        <string id="UnifiedGroups.GroupCard.Action.PublicJoin" value="Call group join EWS API" />
+        <string id="UnifiedGroups.GroupCard.Action.PrivateJoin" value="Open group private join dialog" />
+        <string id="UnifiedGroups.GroupCard.Action.Leave" value="Call group leave EWS API" />
+        <string id="UnifiedGroups.GroupCard.Action.Subscribe" value="Call group subscribe EWS API" />
+        <string id="UnifiedGroups.GroupCard.Action.Unsubscribe" value="Call group unsubscribe EWS API" />
+        <string id="UnifiedGroups.GroupCard.Action.AddMembers" value="Open group add members dialog" />
+        <string id="UnifiedGroups.GroupCard.Action.Edit" value="Open group edit dialog" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenConversation" value="Open group conversation" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenCalendar" value="Open group calendar" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenOnedrive" value="Open group Onedrive" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenNotebookWeb" value="Open group Notebook in browser" />
+        <string id="UnifiedGroups.GroupCard.Action.OpenNotebookDesktop" value="Open group Notebook in desktop client" />
+        <string id="LoggingLiblet.Keyword" value="Logging Liblet keyword" />
+
+<!-- BEGIN_AUTOGENERATED_SECTION -->
+<!-- WARNING: The following section is automatically generated by UpdateCodeMarkers.bat -->
+        <string id="CodeMarker.PlaceHolder" value="Place Holder" />
+<!-- END_AUTOGENERATED_SECTION -->
+      </stringTable>
+    </resources>
+  </localization>
+</instrumentationManifest>

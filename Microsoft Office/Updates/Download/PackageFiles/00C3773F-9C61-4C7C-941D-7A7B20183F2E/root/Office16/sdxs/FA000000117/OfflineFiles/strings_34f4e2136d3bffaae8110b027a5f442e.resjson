@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Vyzkoušejte Python v Excelu (Preview)",
+  "premiumHubMessageTextForPythonInExcel": "Zkombinujte vzorce Pythonu s excelovou mřížkou a vyčistěte, prozkoumejte a analyzujte svá data. Zabezpečeno skrze Microsoft Cloud, můžete vytvářet a sdílet pokročilou analýzu přímo v Excelu.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Klepněte na knihovny",
+  "premiumHubSectionOneMessageForPythonInExcel": "Zjednodušte a urychlete analýzu pomocí běžných knihoven Pythonu.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Najít vzory",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Pomocí vzorců Pythonu můžete zjišťovat skryté přehledy v datech a vizualizovat je pomocí diagramů.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Nepožaduje se žádné nastavení",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Zjednodušte pracovní postupy pomocí zabezpečených prostředí připravených k použití.",
+  "premiumHubTermsOfUseForPythonInExcel": "Když je Python v Excelu ve verzi public preview, budete moct tuto funkci používat jako součást předplatného. Po verzi Preview si budete muset koupit další licenci, abyste ji mohli používat. Umožňuje zobrazit {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Další informace",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Ukázat, jak to funguje",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Vyzkoušet verzi Preview",
+  "termsOfUseLinkForPreview": "podmínky použití ve verzi Preview"
+}

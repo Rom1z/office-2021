@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <Id>e063a7f4-0869-4e65-97d1-c3658ef9f856</Id>
+
+  <Version>1.0.2307.6004</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="MeControl"/>
+  <Description DefaultValue="Open MeControl" />
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="assets/images/mecontrol.png" />
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://aka.ms/mecontrol" />
+
+
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <!-- The Hosts node is required. -->
+    <Hosts>
+        <Host Name="Presentation"/>
+    </Hosts>
+
+   <DefaultSettings>
+    <SourceLocation DefaultValue="https://jackychen.azurewebsites.net/agaves/testapps/app/home/HomeAppCmds.html" />
+  </DefaultSettings>
+
+  <!-- End Add-in Commands Mode integration. -->
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+</OfficeApp>

@@ -1,0 +1,37 @@
+<svg id="eAEWlDUK5Gz1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin slice" viewBox="0 0 634 220" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <style>#eAEWlDUK5Gz17_to {animation: eAEWlDUK5Gz17_to__to 2000ms linear infinite normal forwards}@keyframes eAEWlDUK5Gz17_to__to { 0% {transform: translate(-317px,110px)} 100% {transform: translate(951px,110px)}}</style>
+  <defs>
+    <linearGradient id="eAEWlDUK5Gz17-fill" x1="0" y1="0.5" x2="1" y2="0.5" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
+      <stop id="eAEWlDUK5Gz17-fill-0" offset="0%" stop-color="rgba(242,242,242,0)"/>
+      <stop id="eAEWlDUK5Gz17-fill-1" offset="51%" stop-color="#dbdbdb"/>
+      <stop id="eAEWlDUK5Gz17-fill-2" offset="100%" stop-color="rgba(242,242,242,0)"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect width="182" height="12" rx="3" ry="3" transform="translate(28 63)" fill="#f2f2f2"/>
+    <rect width="318" height="12" rx="3" ry="3" transform="translate(28 105)" fill="#f2f2f2"/>
+    <rect width="386" height="12" rx="3" ry="3" transform="translate(28 129)" fill="#f2f2f2"/>
+    <rect width="244" height="12" rx="3" ry="3" transform="translate(28 153)" fill="#f2f2f2"/>
+    <rect width="339" height="12" rx="3" ry="3" transform="translate(28 177)" fill="#f2f2f2"/>
+    <rect width="69" height="10" rx="3" ry="3" transform="translate(46 17)" fill="#f2f2f2"/>
+    <rect width="16" height="16" rx="8" ry="8" transform="translate(22 14)" fill="#f2f2f2"/>
+    <g mask="url(#eAEWlDUK5Gz18)">
+      <g id="eAEWlDUK5Gz17_to" transform="translate(-317,110)">
+        <rect width="634" height="220" rx="0" ry="0" transform="translate(-317,-110)" fill="url(#eAEWlDUK5Gz17-fill)"/>
+      </g>
+      <mask id="eAEWlDUK5Gz18" mask-type="luminance">
+        <g>
+          <rect width="16" height="16" rx="8" ry="8" transform="translate(22 14)" fill="#f2f2f2"/>
+          <rect width="182" height="12" rx="3" ry="3" transform="translate(28 63)" fill="#f2f2f2"/>
+          <rect width="318" height="12" rx="3" ry="3" transform="translate(28 105)" fill="#f2f2f2"/>
+          <rect width="386" height="12" rx="3" ry="3" transform="translate(28 129)" fill="#f2f2f2"/>
+          <rect width="244" height="12" rx="3" ry="3" transform="translate(28 153)" fill="#f2f2f2"/>
+          <rect width="339" height="12" rx="3" ry="3" transform="translate(28 177)" fill="#f2f2f2"/>
+          <rect width="69" height="10" rx="3" ry="3" transform="translate(46 17)" fill="#f2f2f2"/>
+        </g>
+      </mask>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp"
+>
+  <Id>D949F36B-4EB7-4269-8EAE-DB0A399B7CA2</Id>
+  <Version>1.1.2307.20003</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Transcribe" />
+  <Description DefaultValue="Generates Transcript from an Audio File" />
+  <IconUrl DefaultValue="assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="assets/icon-80.png" />
+  <AppDomains>
+    <AppDomain>https://fa000000051.resources.office.net</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation
+      DefaultValue="https://fa000000051.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.1.2307.17001/en-us_web/taskpane.html"
+    />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides
+    xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+    xsi:type="VersionOverridesV1_0"
+  >
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="assets/icon-16.png" />
+        <bt:Image id="Icon.32x32" DefaultValue="assets/icon-32.png" />
+        <bt:Image id="Icon.80x80" DefaultValue="assets/icon-80.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url
+          id="Taskpane.Url"
+          DefaultValue="https://aka.ms/sdx_transcript_generator_dogfood"
+        />
+        <bt:Url
+          id="Taskpane_Dogfood.Url"
+          DefaultValue="https://aka.ms/sdx_transcript_generator_dogfood"
+        />
+        <bt:Url
+          id="Taskpane_Prod.Url"
+          DefaultValue="https://fa000000051.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.1.2307.17001/en-us_web/taskpane.html"
+        />
+        <bt:Url
+          id="Taskpane_OneNote_Dogfood.Url"
+          DefaultValue="https://aka.ms/sdx_transcript_generator_onenote_dogfood"
+        />
+        <bt:Url
+          id="Taskpane_OneNote_Prod.Url"
+          DefaultValue="https://fa000000051.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.1.2307.17001/en-us_web/taskpane_onenote.html"
+        />
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Transcribe" />
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String
+          id="TaskpaneButton.Tooltip"
+          DefaultValue="Click to show transcription taskpane."
+        />
+      </bt:LongStrings>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>d2eb9fef-f34c-40ec-b6a3-4bf524065158</Id>
+      <MsaId>30a95bd8-0fc6-4b1d-b5c9-40dd10df6b4d</MsaId>
+      <Resource>https://graph.microsoft.com</Resource>
+      <Scopes>
+        <Scope>files.readwrite.all</Scope>
+        <Scope>sites.readwrite.all</Scope>
+      </Scopes>
+      <Authorizations>
+        <Authorization>
+          <Resource>https://graph.microsoft.com</Resource>
+          <Scopes>
+            <Scope>files.readwrite.all</Scope>
+            <Scope>sites.readwrite.all</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>

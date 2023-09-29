@@ -1,0 +1,17 @@
+{
+  "CustomerInterceptLink": "Қолжетімді уақыттарды қараңыз.",
+  "CustomerInterceptPrompt": "Microsoft маманына \"Редактор\" функциясымен жұмыс істеу тәжірибеңіз туралы айтып беріңіз.",
+  "GiveFeedbackCardTitle": "Microsoft корпорациясына пікір жіберу",
+  "GiveFeedbackButton": "\"Редактор\" функциясы туралы ойыңызбен бөлісіңіз",
+  "GiveFeedbackButtonAriaLabel": "\"Редактор\" функциясы туралы ойыңызбен бөлісіңіз",
+  "GiveFeedbackButtonHelpText": "Пікірді жібергеннен кейін \"Редактор\" бетіне оралу үшін, CTRL+F6 пернелерін пайдаланыңыз",
+  "CardAriaLabel": "\"Редактор\" функциясын жақсартуға көмектесіңіз. Пікір қалдырыңыз",
+  "FeedbackSurveyCommentQuestion": "Неліктен бұл жауапты таңдадыңыз?",
+  "FeedbackSurveyRatingQuestion": "Құжаттарды жақсарту бойынша ұсыныстар алу үшін Редакторды пайдаланудан алған әсеріңіз қандай?",
+  "FeedbackSurveyRatingValues1of5": "Өте нашар",
+  "FeedbackSurveyRatingValues2of5": "Біршама жаман",
+  "FeedbackSurveyRatingValues3of5": "Жаман да емес, жақсы да емес",
+  "FeedbackSurveyRatingValues4of5": "Біршама жақсы",
+  "FeedbackSurveyRatingValues5of5": "Өте жақсы",
+  "FeedbackSurveyTitle": "\"Редактор\" функциясын пайдаланғаныңыз үшін рақмет!"
+}

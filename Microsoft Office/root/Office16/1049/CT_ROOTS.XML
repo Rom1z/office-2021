@@ -1,0 +1,87 @@
+﻿ <?xml version="1.0" encoding="utf-8" ?> <categories>
+  <word>
+    <ct assetid="ZZ100000349991" name="Бланки" icon="37" />
+    <ct assetid="ZZ100000039991" name="Брошюры" icon="1" />
+    <ct assetid="ZZ100000259991" name="Бюллетени" icon="11" />
+    <ct assetid="ZZ100000339991" name="Ведомости" icon="31" />
+    <ct assetid="ZZ100000059991" name="Визитные карточки" icon="2" />
+    <ct assetid="ZZ100000239991" name="Записки" icon="25" />
+    <ct assetid="ZZ100000069991" name="Календари" icon="3" />
+    <ct assetid="ZZ100000289991" name="Квитанции" icon="36" />
+    <ct assetid="ZZ100000099991" name="Конверты" icon="4" />
+    <ct assetid="ZZ100000079991" name="Контракты" icon="18" />
+    <ct assetid="ZZ100000209991" name="Наклейки" icon="10" />
+    <ct assetid="ZZ100000359991" name="Наряды на работу" icon="32" />
+    <ct assetid="ZZ100000129991" name="Объявления" icon="5" />
+    <ct assetid="ZZ100000159991" name="Открытки" icon="8" />
+    <ct assetid="ZZ100000299991" name="Отчеты" icon="13" />
+    <ct assetid="ZZ100000109991" name="Отчеты о расходах" icon="33" />
+    <ct assetid="ZZ100000219991" name="Письма" icon="23" />
+    <ct assetid="ZZ100000279991" name="Планировщики" icon="35" />
+    <ct assetid="ZZ100000269991" name="Планы" icon="17" />
+    <ct assetid="ZZ100000019991" name="Повестки дня" icon="15" />
+    <ct assetid="ZZ100000149991" name="Подарочные сертификаты" icon="7" />
+    <ct assetid="ZZ100000179991" name="Приглашения" icon="9" />
+    <ct assetid="ZZ100000249991" name="Протоколы" icon="26" />
+    <ct assetid="ZZ100000329991" name="Расписания" icon="30" />
+    <ct assetid="ZZ100000319991" name="Резюме" icon="14" />
+    <ct assetid="ZZ100000029991" name="Грамоты и сертификаты" icon="0" />
+    <ct assetid="ZZ100000229991" name="Списки" icon="24" />
+    <ct assetid="ZZ100000189991" name="Счета" icon="22" />
+    <ct assetid="ZZ100000169991" name="Учет" icon="21" />
+    <ct assetid="ZZ100000119991" name="Факсы" icon="20" />
+    <ct assetid="ZZ100000139991" name="Формы" icon="6" />
+    <ct assetid="ZZ100000369991" name="Другие категории" icon="41" />
+    <ct assetid="ZZ100001019991" name="Расписания занятий и уроков" icon="" />
+  </word>
+  <excel>
+    <ct assetid="ZZ100000349991" name="Бланки" icon="37" />
+    <ct assetid="ZZ100000049991" name="Бюджеты" icon="16" />
+    <ct assetid="ZZ100000339991" name="Ведомости" icon="31" />
+    <ct assetid="ZZ100000069991" name="Календари" icon="3" />
+    <ct assetid="ZZ100000359991" name="Наряды на работу" icon="32" />
+    <ct assetid="ZZ100000299991" name="Отчеты" icon="13" />
+    <ct assetid="ZZ100000109991" name="Отчеты о расходах" icon="33" />
+    <ct assetid="ZZ100000279991" name="Планировщики" icon="35" />
+    <ct assetid="ZZ100000269991" name="Планы" icon="17" />
+    <ct assetid="ZZ100000019991" name="Повестки дня" icon="15" />
+    <ct assetid="ZZ100000329991" name="Расписания" icon="30" />
+    <ct assetid="ZZ100000229991" name="Списки" icon="24" />
+    <ct assetid="ZZ100000189991" name="Счета" icon="22" />
+    <ct assetid="ZZ100000169991" name="Учет" icon="21" />
+    <ct assetid="ZZ100000139991" name="Формы" icon="6" />
+    <ct assetid="ZZ100000369991" name="Другие категории" icon="41" />
+    <ct assetid="ZZ100001019991" name="Расписания занятий и уроков" icon="" />
+  </excel>
+  <powerpoint>
+    <ct assetid="ZZ100000389991" name="Шаблоны оформления и слайды" icon="27" />
+    <ct assetid="ZZ100000089991" name="Диаграммы" icon="19" />
+    <ct assetid="ZZ100000069991" name="Календари" icon="3" />
+    <ct assetid="ZZ100000399991" name="Презентации" icon="28" />
+    <ct assetid="ZZ100000329991" name="Расписания" icon="30" />
+    <ct assetid="ZZ100000029991" name="Грамоты и сертификаты" icon="0" />
+    <ct assetid="ZZ100000379991" name="Тематические слайды" icon="34" />
+    <ct assetid="ZZ100000369991" name="Другие категории" icon="41" />
+  </powerpoint>
+  <access>
+    <ct assetid="ZZ100001049991" name="Активы" icon="42" />
+    <ct assetid="ZZ100001059991" name="Контакты" icon="43" />
+    <ct assetid="ZZ100001069991" name="Вопросы и задачи" icon="44" />
+    <ct assetid="ZZ100001079991" name="Некоммерческие" icon="45" />
+    <ct assetid="ZZ100001089991" name="Проекты" icon="46" />
+  </access>
+  <project>
+    <ct assetid="ZZ100000269991" name="Планы" icon="17" />
+    <ct assetid="ZZ100000279991" name="Планировщики" icon="35" />
+    <ct assetid="ZZ100000329991" name="Расписания" icon="30" />
+    <ct assetid="ZZ100000369991" name="Другие категории" icon="41" />
+  </project>
+  <visio>
+    <ct assetid="ZZ100000069991" name="Календари" icon="3" />
+    <ct assetid="ZZ100000089991" name="Схемы" icon="19" />
+    <ct assetid="ZZ100000269991" name="Планы" icon="17" />
+    <ct assetid="ZZ100000279991" name="Планировщики" icon="35" />
+    <ct assetid="ZZ100000329991" name="Расписания" icon="30" />
+    <ct assetid="ZZ100000369991" name="Другие категории" icon="41" />
+  </visio>
+</categories>

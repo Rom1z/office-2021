@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Essayer Python dans Excel (préversion)",
+  "premiumHubMessageTextForPythonInExcel": "Combinez les formules Python avec la grille Excel pour nettoyer, explorer et analyser vos données. Sécurisé par Microsoft Cloud, créez et partagez des analyses avancées directement dans Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Consulter les bibliothèques",
+  "premiumHubSectionOneMessageForPythonInExcel": "Simplifiez et accélérez vos analyses grâce aux bibliothèques Python courantes.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Trouver des modèles",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Utilisez des formules Python pour découvrir des informations cachées dans vos données et les visualiser à l'aide de graphiques.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Aucune configuration n'est nécessaire",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Rationaliser les flux de travail grâce à des environnements sécurisés prêts à l'emploi.",
+  "premiumHubTermsOfUseForPythonInExcel": "Lorsque Python dans Excel est en préversion publique, vous pouvez utiliser cette fonctionnalité dans le cadre de votre abonnement. Après la prévisualisation, vous devrez acheter une licence supplémentaire pour l’utiliser. Affichez le {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "En savoir plus",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Montrez-moi comment cela fonctionne",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Essayer l'aperçu",
+  "termsOfUseLinkForPreview": "conditions d'utilisation de l'aperçu"
+}

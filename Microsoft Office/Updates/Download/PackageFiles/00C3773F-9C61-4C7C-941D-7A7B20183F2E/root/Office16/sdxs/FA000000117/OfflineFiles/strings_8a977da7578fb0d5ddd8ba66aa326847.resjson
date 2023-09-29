@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Изпробвайте Python в Excel (предварителен преглед)",
+  "premiumHubMessageTextForPythonInExcel": "Комбинирайте формулите на Python с мрежата на Excel, за да изчиствате, проучвате и анализирате данните си. Защитена от облака на Microsoft, създавайте и споделяйте разширен анализ направо в Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Докоснете в библиотеките",
+  "premiumHubSectionOneMessageForPythonInExcel": "Опростете и ускорете анализа си с често срещани библиотеки на Python.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Намиране на модели",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Използвайте формули на Python, за да откриете скрити прозрения във вашите данни и да ги визуализирате с чертежи.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Не е необходимо инсталиране",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Опростете работните потоци с готови за използване защитени среди.",
+  "premiumHubTermsOfUseForPythonInExcel": "Докато Python в Excel е в публичен предварителен преглед, ще можете да използвате тази функция като част от вашия абонамент. След предварителния преглед ще трябва да закупите допълнителен лиценз, за да го използвате. Преглед на {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Научете повече",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Покажете ми как работи това",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Изпробване на предварителен преглед",
+  "termsOfUseLinkForPreview": "предварителен преглед на условията на използване"
+}

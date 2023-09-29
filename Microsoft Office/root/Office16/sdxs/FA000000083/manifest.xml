@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+  <Id>1ec51869-a19d-4171-8915-63c55f66a9b8</Id>
+  <Version>1.0.2212.9006</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="sdx_collabml"/>
+  <Description DefaultValue="The FIO collabml SDX" />
+  <IconUrl DefaultValue="assets/StoreLogo.png" />
+  <SupportUrl DefaultValue="https://aka.ms/sdx" />
+  <Hosts>
+    <Host Name="Document"/>
+    <Host Name="Presentation"/>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

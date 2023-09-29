@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>42CEE6CD-98A1-4A32-BD2E-084C451C95E5</Id>
+  <!--Version. Updates from the store only get triggered if there is a version change. -->
+  <Version>1.0.0.6</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Search" />
+  <Description DefaultValue="Search" />
+  <IconUrl DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/images/smartLookupIcon.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
+  <!--End Basic Settings. -->
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <Hosts>
+    <Host Name="Document" />
+    <Host Name="Presentation" />
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://cdn.uci.officeapps.live.com/mirrored/smartlookup/current/main_ssr.html?isAgave" />
+  </DefaultSettings>
+  <!-- End TaskPane Mode integration.  -->
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="TeamDogfood.URL" DefaultValue="https://uciserviceintcdnwus.blob.core.windows.net/mirrored/smartlookup/current/main_ssr.html?isAgave" />
+        <bt:Url id="Dogfood.URL" DefaultValue="https://uci.edog.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?isAgave" />
+        <bt:Url id="PROD_COLORFUL.Next.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/next/main_ssr.html?apptheme=0&amp;isAgave" />
+        <bt:Url id="PROD_PRECISION.Next.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/next/main_ssr.html?apptheme=1&amp;isAgave" />
+        <bt:Url id="PROD_DARK.Next.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/next/main_ssr.html?apptheme=2&amp;isAgave" />
+        <bt:Url id="PROD_VERYDARK.Next.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/next/main_ssr.html?apptheme=3&amp;isAgave" />
+        <bt:Url id="PROD_BLACK.Next.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/next/main_ssr.html?apptheme=4&amp;isAgave" />
+        <bt:Url id="PROD_FRESH.Next.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/next/main_ssr.html?apptheme=5&amp;isAgave" />
+        <bt:Url id="PROD_COLORFUL.Current" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?apptheme=0&amp;isAgave" />
+        <bt:Url id="PROD_PRECISION.Current.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?apptheme=1&amp;isAgave" />
+        <bt:Url id="PROD_DARK.Current.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?apptheme=2&amp;isAgave" />
+        <bt:Url id="PROD_VERYDARK.Current.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?apptheme=3&amp;isAgave" />
+        <bt:Url id="PROD_BLACK.Current.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?apptheme=4&amp;isAgave" />
+        <bt:Url id="PROD_FRESH.Current.URL" DefaultValue="https://uci.cdn.office.net/mirrored/smartlookup/current/main_ssr.html?apptheme=5&amp;isAgave" />
+      </bt:Urls>
+    </Resources>
+    <ConnectedServiceControls>
+      <Scopes>
+        <Scope>AnalyzeUserContent</Scope>
+      </Scopes>
+    </ConnectedServiceControls>
+  </VersionOverrides>
+</OfficeApp>

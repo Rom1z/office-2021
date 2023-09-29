@@ -1,0 +1,14 @@
+{
+  "oneOfManyChoiceButtonAccessibilityLabelAugment": "{0}, {1}/{2}",
+  "defaultOverflowButtonAccessibilityLabel": "Қосымша қарау:",
+  "defaultSplitButtonOverflowAccessibilityLabel": "{0} үшін қосымша опциялар",
+  "voiceOverSplitButton2AccessibilityHint": "Басқа параметрлерді қарау үшін, Control+Option+Shift+M пернелерін басыңыз",
+  "cancelButton": "Бас тарту",
+  "closeButton": "Жабу",
+  "nextButton": "Келесі",
+  "submitButton": "Жіберу",
+  "doneButton": "Дайын",
+  "backButton": "Артқа",
+  "suggestionsGroupLoadingSuggestionsText": "Ұсыныстар жүктелуде",
+  "suggestionsGroupNoSuggestionsText": "Қолжетімді ұсыныс жоқ"
+}

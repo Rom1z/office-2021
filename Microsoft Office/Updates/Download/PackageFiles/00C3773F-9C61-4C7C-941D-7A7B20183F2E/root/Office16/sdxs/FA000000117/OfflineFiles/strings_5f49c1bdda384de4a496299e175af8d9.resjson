@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel دىكى Python (كۆرەك) نى سىناش",
+  "premiumHubMessageTextForPythonInExcel": "Python فورمۇلالىرىنى Excel تورى بىلەن بىرلەشتۈرۈپ، سانلىق مەلۇماتلىرىڭىزنى تازىلاش ۋە ئۇلار ئۈستىدە تەتقىقات يۈرگۈزۈشكە بولىدۇ. Microsoft بۇلۇتى ئارقىلىق بىخەتەرلەشتۈرۈلگەن. Excel ئارقىلىقلا ئالىي ئانالىز قوراللىرىنى ئىشلىتەلەيسىز.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "ئامبارغا كىرىش",
+  "premiumHubSectionOneMessageForPythonInExcel": "ئورتاق Python ئامبارلىرى ئارقىلىق ئانالىزنى ئاددىيلاشتۇرۇش ۋە تېزلەشتۈرۈشكە بولىدۇ.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "ئوخشاشلىق تېپىش",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Python فورمۇلالىرى ئارقىلىق مەلۇماتتىكى يوشۇرۇن كۆزقاراش ۋە نۇقتىنەزەرلەرنى بايقاپ، ئۇلارنى كۆرۈنمە ھالەتكە كەلتۈرەلەيسىز.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "قاچىلاش تەلەپ قىلىنمايدۇ",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ئىشلىتىشكە تەييار ۋە بىخەتەر مۇھىت ئارقىلىق ئىش ئېقىمىنى راۋانلاشتۇرۇڭ.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel دىكى Python ئوچۇق كۆرۈنمە يۈزىدە بولسىمۇ، بۇ ئىقتىدارنى مۇشتەرى بولۇشنىڭ بىر قىسمى سۈپىتىدە ئىشلىتەلەيسىز. كۆرۈنمە يۈزىنى كۆرۈپ بولغاندىن كېيىن، ئىشلىتىش ئۈچۈن قوشۇمچە ئىجازەتنامە سېتىۋېلىشىڭىز كېرەك. كۆرۈش {0}",
+  "premiumHubLearnMoreLinkForPythonInExcel": "تەپسىلات",
+  "premiumHubPythonCenterButtonForPythonInExcel": "ئۇنىڭ قانداق ئىشلەيدىغانلىقىنى ماڭا كۆرسىتىڭ",
+  "premiumHubTryPreviewButtonForPythonInExcel": "كۆرەكنى سىناپ بېقىش",
+  "termsOfUseLinkForPreview": "كۆرەك ئىشلىتىش شەرتلىرى"
+}

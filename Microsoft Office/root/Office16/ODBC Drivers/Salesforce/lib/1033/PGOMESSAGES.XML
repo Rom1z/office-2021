@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- Package ID corresponds to the PGO_ERROR constant defined in PostgreSQLODBC.h -->
+    <Package ID="101" DefaultComponent="RedShift ODBC">
+        <Error Key="PGOResultSetTraverseDirNotSupported" NativeErrorCode="3"><!-- _locID=PGOResultSetTraverseDirNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when result set traversal direction is not supported." -->Result set traversal direction is not supported.</Error>
+      
+        <Error Key="PGOConnectionError" Params="1" NativeErrorCode="10"><!-- _locID=PGOConnectionError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to connect." -->Error occurred while trying to connect: %1%</Error>
+
+        <Error Key="PGOPrepareError" Params="1" NativeErrorCode="20"><!-- _locID=PGOPrepareError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to prepare." -->Error occurred while trying to prepare a query: %1%</Error>
+
+        <Error Key="PGOExecuteError" Params="1" NativeErrorCode="30"><!-- _locID=PGOExecuteError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs when execution of a query fails." -->Error occurred while trying to execute a query: %1%</Error>
+        
+        <Error Key="PGOUnknownType" Params="2" NativeErrorCode="40"><!-- _locID=PGOUnknownType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs when an unknown data type is used." -->Unknown data type: %1% at column %2%.</Error>
+
+      <!-- Configuration dialog error messages. -->
+        <!-- Error thrown when an unknown error occurs while trying to connect. -->
+        <Error Key="PGOStringResourceError" Params="1" NativeErrorCode="1020"><!-- _locID=PGOStringResourceError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to load a string resource for the dialog." -->String resource %1% not found.</Error>
+
+        <Error Key="PGOCursorResourceError" Params="1" NativeErrorCode="1030"><!-- _locID=PGOCursorResourceError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to load a cursor resource.." -->An error occurred while attempting to load a cursor: %1%</Error>
+      
+        <Error Key="SSLModeInvalidError" Params="0" NativeErrorCode="50"><!-- _locID=SSLModeInvalidError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to load a cursor resource.." -->An invalid SSL Mode was provided</Error>
+      
+        <Error Key="PGOConnectionDead" Params="1" NativeErrorCode="50"><!-- _locID=PGOConnectionDead _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown if the connection is dead" -->The connection has timed out, please reconnect. Current connection status is: %1%</Error>
+
+        <Error Key="PGOCancelError" Params="1" NativeErrorCode="60"><!-- _locID=PGOCancelError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown if the cancel request failed" -->The cancel request failed: %1%</Error>
+
+        <Error Key="PGOEmptyDatabaseNameError" Params="0" NativeErrorCode="70"><!-- _locID=PGOEmptyDatabaseNameError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when connecting with an empty database name" -->Cannot establish a connection with empty database name.</Error>
+
+        <Error Key="PGOOptionsGetResultSetsWarning" Params="2" NativeErrorCode="80"><!-- _locID=PGOOptionsGetResultSetsWarning _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when enable more than one mode" -->Cannot set both %1% and %2% to 1</Error>
+
+        <Error Key="PGOOptionsValueOutOfRangeWarning" Params="1" NativeErrorCode="90"><!-- _locID=PGOOptionsValueOutOfRangeWarning _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when insert value is out of bound" -->%1% is out of range. Insert value should be between 1 and 2147483647</Error>
+      
+        <Error Key="PGOUnsupportedEncryptionMethod" Params="1" NativeErrorCode="100"><!-- _locID=PGOUnsupportedEncryptionMethod _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when encryption method is not supported"-->Encryption method is not supported: %1%</Error>
+
+        <Error Key="PGOUnsupportedEncryptionMethodDPAPIIsWindowsOnly" Params="1" NativeErrorCode="100"><!-- _locID=PGOUnsupportedEncryptionMethodDPAPIIsWindowsOnly _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when encryption method is not supported (suberror of PGOUnsupportedEncryptionMethod)" -->Encryption method is not supported: %1%. DPAPI Encryption is only supported on Windows.</Error>
+
+        <Error Key="PGOEncryptError" Params="1" NativeErrorCode="110"><!-- _locID=PGOEncryptError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to encrypt data." -->An error occurred while attempting to encrypt data: %1%</Error>
+
+        <Error Key="PGODecryptError" Params="1" NativeErrorCode="120"><!-- _locID=PGODecryptError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs while trying to decrypt data." -->Failed to decrypt data: %1%</Error>
+    </Package>
+</Messages>

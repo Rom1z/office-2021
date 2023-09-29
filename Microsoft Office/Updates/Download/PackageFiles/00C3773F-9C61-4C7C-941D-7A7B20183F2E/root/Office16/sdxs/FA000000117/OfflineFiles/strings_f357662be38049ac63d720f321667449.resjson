@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Python az Excelben (előzetes verzió) kipróbálása",
+  "premiumHubMessageTextForPythonInExcel": "Egyesítse a Python-képleteket az Excel-ráccsal az adatok megtisztításához, felfedezéséhez és elemzéséhez. A Microsoft Cloud védelme alatt speciális elemzéseket hozhat létre és oszthat meg közvetlenül az Excelben.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Koppintson a könyvtárakra",
+  "premiumHubSectionOneMessageForPythonInExcel": "Egyszerűsítheti és gyorsíthatja az elemzést a gyakori Python könyvtárakkal.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Minták keresése",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Python-képletek használatával derítheti fel az adatok rejtett elemzéseit, és ábrázolhatja őket ábrákkal.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Telepítés nem szükséges",
+  "premiumHubSectionThreeMessageForPythonInExcel": "A használatra kész, biztonságos környezetekkel egyszerűsítheti a munkafolyamatokat.",
+  "premiumHubTermsOfUseForPythonInExcel": "Amíg a Python az Excelben nyilvános előzetes verzióban érhető el, előfizetése részeként használhatja ezt a funkciót. Az előzetes verzió után további licencet kell vásárolnia a használatához. A {0} megtekintése.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "További információ",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Mutassa meg, hogyan működik",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Előzetes verzió kipróbálása",
+  "termsOfUseLinkForPreview": "az előzetes verzió használati feltételei"
+}

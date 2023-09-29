@@ -1,0 +1,64 @@
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={EA1F5310-EDFD-11ce-8D13-00AA0051BF96}
+Path="olmapi32.dll"
+Entry Point=269
+Client Version=4.0
+Extension Version=1.0
+Service Provider=MSEMS
+Misc Flags=NoOptimizeInterfaceMap;RemoteAlso;WarnIfNoDLL;DllFromDarwin
+
+[Exchange Client Compatibility]
+Exchange Registry=0
+Exchange Extension Key="Exchange Extensions"
+Exchange Context Map=010111111110000
+Exchange Interface Map=1101011
+
+[Folder]
+Events=OnExtCommand;OnOOFNotification
+Views=Explorer;Remote
+Commands=SFlAddFav;SFlRmFav;SInboxAsst;SOOFAsst;SAppDsn;SAppCopyFldDsn
+Outlook Commands=ToolsInboxAsst;ToolsOOFAsst;FolderCopyDesign;FolderAddToFav;FolderRemoveFromFav
+Extension Outlook Commands=50020;50021;50012;50004;50005
+
+[Item]
+Contexts=Modal
+
+[Modal]
+Item States=Modal
+Message Class=IPM.Note;IPM.Post;IPM.Resend;REPORT
+Events=OnWrite;OnCheckNamesInbox
+Commands=SFileSaveAndClose;SToolbarSaveAndClose
+Outlook Commands=FileSaveAndClose;FileSaveAndClose
+Extension Outlook Commands=50030;50031
+
+[Command]
+SFlAddFav=50004;#30210;File Suppress Scope
+SFlRmFav=50005;#30211;File Suppress Scope
+
+SAppDsn=50010;#30221;Tools Before ToolsServices Separator SubMenu Suppress
+SAppCopyFldDsn=50012;#30218;50010 Suppress Scope
+
+SInboxAsst=50020;#23007;Tools Suppress
+SOOFAsst=50021;#23008;Tools Suppress
+
+SFileSaveAndClose=50030;#23023;File Suppress
+SToolbarSaveAndClose=50031;#23025;Toolbar Suppress
+
+[Strings]
+DisplayName=Команды расширений Exchange
+Description=Структура папки, Формы
+
+; STR 30210 - FlAddFav=Add to Favori&tes
+; STR 30211 - FlRmFav=Remove from Favori&tes
+
+; STR 30221 - AppDsn=Applicatio&n Design
+; STR 30218 - AppCopyFldDsn=Cop&y Folder Design...
+
+; STR 23007 - InboxAsst=Inbo&x Assistant...
+; STR 23008 - OOFAsst=O&ut of Office Assistant...
+
+; STR 23023 - FileSaveAndClose=Save && Cl&ose
+; STR 23025 - ToolbarSaveAndClose=Save && Cl&ose
+

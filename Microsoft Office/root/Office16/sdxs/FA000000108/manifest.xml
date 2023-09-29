@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+
+  <!-- Manifest documation here: https://docs.microsoft.com/en-us/office/dev/add-ins/reference/manifest/officeapp -->
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>0FF1CE22-931C-403F-95D5-31567E16CEF5</Id>
+
+  <Version>1.0.1.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="UXPP Task Pane"/>
+  <Description DefaultValue="Desktop Task Panes SDX" />
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="https://uxpp/Unknown.png" />
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://aka.ms/sdx" />
+
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://uxpp/index.html" />
+  </DefaultSettings>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="0" DefaultValue="https://uxpp/index.html?tp=0" />
+        <bt:Url id="1" DefaultValue="https://uxpp/index.html?tp=1" />
+        <bt:Url id="2" DefaultValue="https://uxpp/index.html?tp=2" />
+        <bt:Url id="10000" DefaultValue="http://localhost:3000/index.html?tp=0" />
+        <bt:Url id="10001" DefaultValue="http://localhost:3000/index.html?tp=1" />
+        <bt:Url id="10002" DefaultValue="http://localhost:3000/index.html?tp=2" />
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

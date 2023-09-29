@@ -1,0 +1,498 @@
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+ html,
+ body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    display: block;
+    left: 0;
+    right: 0;
+    height: 100%;
+    min-height: 300px;
+ }
+
+.app-main {
+  left: 0;
+  right: 0;
+  height:100%;
+  padding-top: 10px;
+}
+
+.app-container {
+  left: 0;
+  right: 0;
+  height:100%;
+}
+
+ .main-dataset-grid {
+  padding: 0;
+  display: block;
+  align-items: center;
+  height:100%;
+ }
+
+ .welcome {
+  display: block;
+  white-space: 'nowrap';
+  overflow: 'hidden';
+ }
+
+.bold {
+    font-weight: bold;
+}
+
+.selected-dataset {
+    background-color: #b3b3b3;
+}
+
+.hover-dataset {
+    background-color: #ececec;
+}
+
+.content-group {
+  padding: 10px 0 10px 0;
+}
+
+/* Search, Description, Titles */
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.search-style {
+    height: 32px;
+    width: 100%;
+    top: 54px;
+    left: 16px;
+    right: 16px;
+    padding: 5px 0px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.search-style::-ms-clear {  display: none; width : 0; height: 0; }
+.search-style::-ms-reveal {  display: none; width : 0; height: 0; }
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-container-internal {
+  width: calc(100% - 38px) !important;
+}
+
+.envChoice {
+  position: absolute !important;
+  color: #969696 !important;
+}
+
+.ms-ContextualMenu-header span {
+  color: black !important;
+}
+
+@media (max-width: 150px) {
+  .search-container {
+    display: none;
+  }
+
+  .envChoice {
+    display: none;
+  }
+}
+
+.search_clear {
+  position: absolute !important;
+}
+
+.search_clear:hover {
+  background-color: #D2D0CE;
+  border: 1px solid #969696;
+}
+
+.search_clear:focus {
+  background-color: #D2D0CE;
+  border: 1px solid #969696;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  /* All high contrast styling rules */
+  .search_clear:hover {
+    background-color: #D2D0CE;
+  }
+
+  .search_clear:focus {
+    background-color: #D2D0CE;
+  }
+}
+
+.search_img {
+  position: absolute;
+}
+
+.description {
+  width: 100%;
+  height: 18px;
+  margin-left: 6px;
+  top: 102px;
+  font-size: 14px;
+  margin: 0px;
+  text-overflow: 'ellipsis';
+  white-space: 'nowrap';
+  overflow: 'hidden'
+}
+
+@media (max-width: 230px) {
+  .description {
+    display: none;
+  }
+}
+
+/* Error Screen */
+
+.error-text {
+  line-height: 20px;
+  font-size: 14px;
+  text-overflow: 'ellipsis';
+  display: 'flex';
+  align-items: center;
+  padding: 4px;
+}
+
+.error-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.error-link:hover {
+  text-decoration: underline;
+}
+
+.error-link:focus {
+  text-decoration: underline;
+}
+
+.error-header {
+  padding: 5px 2px 5px 2px;
+  font-size: '14px';
+  text-overflow: 'ellipsis';
+  white-space: 'nowrap';
+  overflow: 'hidden';
+}
+
+.main-error-grid {
+  padding: 0;
+  display: block;
+  align-items: center;
+ }
+
+.dataset-title-row {
+  margin-left: 6px;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+@media (max-width: 290px) {
+  .dataset-title-row {
+    display: none;
+  }
+}
+
+.dataset-label {
+  flex: 100%;
+  height: 20px;
+}
+
+.error-group-start {
+  padding-top: 10px;
+}
+
+.expandable-header::before {
+  content: '▶';
+  padding: 4px;
+}
+
+.expandable-header:hover {
+  text-decoration: underline;
+}
+
+.expandable-header:focus {
+  text-decoration: underline;
+}
+
+/* Endorsement label */
+
+.endorsement-label {
+  flex: none;
+  width: 115px;
+  height: 20px;
+}
+
+.endorsement-badge-left {
+  position: absolute;
+  line-height: initial;
+  display: inline-block;
+  border-radius: 20px;
+  height: 24px;
+  width: auto;
+  max-width: 140px;
+  right: 200px;
+  overflow: hidden;
+  text-overflow: clip;
+  top: 12px;
+
+  z-index: 100;
+}
+
+.endorsement-badge-right {
+  position: absolute;
+  line-height: initial;
+  display: inline-block;
+  border-radius: 20px;
+  height: 24px;
+  width: auto;
+  max-width: 140px;
+  right: 14px;
+  overflow: hidden;
+  text-overflow: clip;
+  top: 12px;
+
+  z-index: 100;
+}
+
+.endorsement-type {
+  font-size: 12px;
+  position: relative;
+  vertical-align: middle;
+  padding-left: 4px;
+}
+
+.promoted {
+  border: 1px solid #4668C5;
+  padding-right: 12px;
+  padding-left: 10px;
+}
+
+.certified {
+  border: 1px solid #25891C;
+  padding-right: 12px;
+  padding-left: 8px;
+}
+
+/* Dataset Entry Card */
+
+.datasetEntry-card {
+  border: 1px solid #c6c6c6;
+  color:  #323130;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  padding: 5px 4px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  width: calc(100% - 20px);
+  left: 16px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.datasetEntry-card:hover {
+  background-color: #D2D0CE;
+  border: 1px solid #969696;
+}
+
+.datasetEntry-card:focus {
+  background-color: #D2D0CE;
+  border: 1px solid #969696;
+}
+
+/* Hiding card labels */
+@media (max-width: 250px) {
+  .datasetEntry-label {
+    display: none;
+  }
+
+  .datasetEntry-value {
+    width: 100% !important;
+  }
+}
+
+.datasetEntry-card-inner {
+  padding: '0px'
+}
+
+.datasetEntry-card-title {
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  max-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.datasetEntry-card-title-no-label {
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  max-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.dataset-card-details-row {
+  overflow: hidden;
+  max-height: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Hiding endorsement labels */
+@media (max-width: 290px) {
+  .datasetEntry-card-title {
+    width: calc(100% - 10px);
+  }
+
+  .workspace-row {
+    width: calc(100% - 10px);
+  }
+
+  .endorsement-badge-left {
+    display: none;
+  }
+
+  .endorsement-badge-right {
+    display: none;
+  }
+}
+
+/* Showing endorsement labels */
+@media (min-width: 291px) {
+  .datasetEntry-card-title {
+    width: calc(100% - 130px);
+  }
+}
+
+.datasetEntry-card-title-no-label {
+  width: calc(100% - 10px);
+}
+
+.datasetEntry-card-inner {
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.fontColor-datasetEntry-category {
+  color: #605E5C;
+  font-size: 12px;
+}
+
+.fontColor-datasetEntry-value {
+  color: #000000;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.datasetEntry-sensitivity-value {
+  width: calc(100% - 20px);
+  float: left;
+  margin-bottom: '4px';
+}
+
+hr.divider {
+  border: none;
+  border-top: 1px solid #E1DFDD;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  left: 12px;
+  right: 12px;
+  top: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+}
+
+/* Loading Screen */
+
+.versionLabel {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+
+  color: #969696;
+}
+
+/* Pagination */
+
+.ArrowKeyStepperWrapper {
+  flex: 1 1 auto;
+  height: calc(100% - 145px);
+}
+
+.ArrowKeyStepperWrapper > div {
+  height:100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FocusedCell {
+  background-color: #D2D0CE;
+  border: 1px solid #969696;
+}
+
+.splashMessage {
+  text-align: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Endorsement Icons */
+
+@font-face {
+  font-family: 'FabricMDL2Icons';
+  src: url('data:application/octet-stream;base64,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') format('truetype');
+}
+
+.ms-Icon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: 'FabricMDL2Icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.ms-Icon--ChevronDown:before { content: "\E70D"; }
+.ms-Icon--ChoiceColumn:before { content: "\E4AE"; }
+.ms-Icon--Clear:before { content: "\E894"; }
+.ms-Icon--Info:before { content: "\E946"; }
+.ms-Icon--Ribbon:before { content: "\E9D1"; }
+.ms-Icon--Search:before { content: "\E721"; }

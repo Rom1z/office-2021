@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp">
+  <!-- Manifest documation here: https://docs.microsoft.com/en-us/office/dev/add-ins/reference/manifest/officeapp -->
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>bd7dc2cb-8f38-4a4a-9449-1957b4e3e88a</Id>
+
+  <Version>1.0.2212.13005</Version>
+  <ProviderName>Excel</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Data Types Refresh Options"/>
+  <Description DefaultValue="SDX Taskpane"/>
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="assets/StoreLogo.png"/>
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://aka.ms/sdx"/>
+
+  <!-- Hosts is used to specify which app the SDX should run in
+            Document (Word)
+            Database (Access)
+            Mailbox (Outlook)
+            Notebook (OneNote)
+            Presentation (PowerPoint)
+            Project (Project)
+            Workbook (Excel)
+  -->
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <!-- Host must support LinkedEntityRefresh version or higher -->
+      <!-- Only major.minor is supported. Do NOT add .patch -->
+      <!-- For minor, we use a convention of YYMMX, where X is the capability change # for such month -->
+      <!-- Useful links https://office.visualstudio.com/OC/_wiki/wikis/SDX%20Developer%20Center/29149/Service-Delivery-Version-Update-Guidelines and https://office.visualstudio.com/OC/_wiki/wikis/office-js-api/6460/capability-or-requirements-set-guidance -->
+      <Set Name="LinkedEntityRefresh" MinVersion="1.21091.0" />
+    </Sets>
+  </Requirements>
+
+</OfficeApp>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="TaskPaneApp">
+  <Id>d7879bde-0f99-475d-9060-a56657abd745</Id>
+  <Version>1.0.0.6</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Acronyms" />
+  <Description DefaultValue="Displays definitions found for acronyms in the document" />
+  <IconUrl DefaultValue="https://nleditor.osi.office.net/NlApps/Content/Images/taskpane_32x.png" />
+  <SupportUrl DefaultValue="https://support.office.com/en-us " />
+  <Hosts>
+    <Host Name="Document" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://nleditor.osi.office.net/NlApps/Acronyms" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="PPE.URL" DefaultValue="https://nleditor.osi.officeppe.net/NlApps/Acronyms" />
+        <bt:Url id="DF-FF.URL" DefaultValue="https://nleditor.osi.officeppe.net/NlApps/Acronyms" />
+        <bt:Url id="TEST.PPE.URL" DefaultValue="https://nleditor.osi.officeppe.net/NlApps/Acronyms/Test" />
+        <bt:Url id="TEST.DF-FF.URL" DefaultValue="https://nleditor.osi.officeppe.net/NlApps/Acronyms/Test" />
+        <bt:Url id="TEST.PROD.URL" DefaultValue="https://nleditor.osi.office.net/NlApps/Acronyms/Test" />
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>1eff577d-b871-4ec2-a30f-b7d43c927d20</Id>
+      <Resource>https://nleditor.osi.office.net/NlEditor</Resource>
+      <Scopes>
+        <Scope>openid</Scope>
+        <Scope>profile</Scope>
+      </Scopes>
+      <Authorizations>
+        <Authorization>
+          <Resource>https://nleditor.osi.office.net/NlEditor</Resource>
+          <Scopes>
+            <Scope>openid</Scope>
+            <Scope>profile</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+    <ConnectedServiceControls>
+        <Scopes>
+            <Scope>AnalyzeUserContent</Scope>
+        </Scopes>
+    </ConnectedServiceControls>
+  </VersionOverrides>
+</OfficeApp>

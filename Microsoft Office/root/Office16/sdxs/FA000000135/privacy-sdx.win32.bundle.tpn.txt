@@ -1,0 +1,310 @@
+================================================
+@babel/runtime 7.20.6
+--
+MIT License
+
+Copyright (c) 2014-present Sebastian McKenzie and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+================================================
+
+================================================
+@fluentui-react-native/adapters 0.11.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/button 0.33.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/checkbox 0.20.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/component-cache 1.5.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/composition 0.9.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/default-theme 0.19.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/design-tokens-win32 0.50.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/design-tokens-windows 0.50.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/experimental-activity-indicator 0.8.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/experimental-native-font-metrics 0.4.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/focus-trap-zone 0.10.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/framework 0.10.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/icon 0.18.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/immutable-merge 1.2.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/interactive-hooks 0.23.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/link 0.19.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/memo-cache 1.2.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/merge-props 0.6.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/styling-utils 0.5.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/text 0.20.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theme 0.9.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theme-tokens 0.25.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theme-types 0.32.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theming-utils 0.24.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/tokens 0.21.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-slot 0.4.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-slots 0.8.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-styling 0.10.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-tokens 0.4.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/win32-theme 0.26.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/foundation-composable 0.12.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/foundation-compose 1.14.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/foundation-settings 0.13.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/foundation-tokens 0.13.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/theme-registry 0.10.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/themed-settings 0.10.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/themed-stylesheet 0.3.70
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/theming-ramp 0.18.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/theming-react-native 0.17.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+assert-never 1.2.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+invariant 2.2.4
+--
+MIT License
+
+Copyright (c) 2013-present, Facebook, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+================================================
+
+================================================
+tslib 2.4.1
+--
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+================================================
+

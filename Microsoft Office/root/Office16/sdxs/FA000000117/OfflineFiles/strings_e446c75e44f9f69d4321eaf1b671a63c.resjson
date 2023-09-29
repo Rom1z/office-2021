@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Kokeile Pythonia Excelissä (esikatselu)",
+  "premiumHubMessageTextForPythonInExcel": "Yhdistä Python-kaavat Excel-ruudukkoon, jotta voit puhdistaa, tutkia ja analysoida tietojasi. Microsoft Cloudin suojaama, luo ja jaa kehittyneitä analyysejä suoraan Excelissä.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Napauta kirjastoihin",
+  "premiumHubSectionOneMessageForPythonInExcel": "Yksinkertaista ja nopeuta analyysiäsi yleisten Python-kirjastojen avulla.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Etsi kuvioita",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Python-kaavojen avulla voit löytää piilotettuja merkityksellisiä tietoja tiedoistasi ja visualisoida ne piirtojen avulla.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Asetuksia ei tarvitse määrittää",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Virtaviivaista työnkulkuja käyttövalmiiden ja suojattujen ympäristöjen avulla.",
+  "premiumHubTermsOfUseForPythonInExcel": "Kun Python Excelissä on julkisessa esikatselussa, pystyt käyttämään tätä ominaisuutta osana tilaustasi. Esikatselun jälkeen sinun on ostettava lisäkäyttöoikeus, jotta voit käyttää sitä. Näytä {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Lisätietoja",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Näytä, miten se toimii",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Kokeile esiversiota",
+  "termsOfUseLinkForPreview": "esikatselun käyttöehdot"
+}

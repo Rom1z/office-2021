@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>14c4d781-faf5-4d26-bb9a-b5672474332a</Id>
+  <Version>1.0.2308.21009</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Copilot (Preview)"/>
+  <Description DefaultValue="Copilot (Preview)"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <AppDomains>
+    <AppDomain>https://www.onenote.com</AppDomain>
+    <AppDomain>https://fa000000128.resources.office.net</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Notebook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="index.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="CdnUrlSupport" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="omronenoteproduction" DefaultValue="index.html" />
+        <bt:Url id="omronenotedogfood" DefaultValue="index.html" />
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

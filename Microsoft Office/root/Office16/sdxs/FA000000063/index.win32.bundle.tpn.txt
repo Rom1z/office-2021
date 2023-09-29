@@ -1,0 +1,422 @@
+================================================
+@fluentui-react-native/adapters 0.10.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/button 0.32.2
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/callout 0.21.38
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/checkbox 0.17.6
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/component-cache 1.4.2
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/composition 0.8.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/contextual-menu 0.20.5
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/default-theme 0.16.12
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/experimental-activity-indicator 0.6.21
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/experimental-native-font-metrics 0.3.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/focus-trap-zone 0.9.37
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/focus-zone 0.11.8
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/framework 0.8.21
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/icon 0.15.3
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/immutable-merge 1.1.7
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/interactive-hooks 0.21.2
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/link 0.17.10
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/memo-cache 1.1.7
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/menu-button 0.9.6
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/merge-props 0.5.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/persona 0.13.22
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/persona-coin 0.12.3
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/pressable 0.9.35
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/radio-group 0.16.9
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/separator 0.13.4
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/styling-utils 0.4.4
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/tabs 0.11.5
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/text 0.17.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theme 0.7.8
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theme-tokens 0.21.3
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theme-types 0.23.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/theming-utils 0.18.3
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/tokens 0.18.0
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-slot 0.3.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-slots 0.7.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-styling 0.9.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/use-tokens 0.3.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui-react-native/win32-theme 0.23.2
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@fluentui/react-native 0.33.6
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@haul-bundler/preset-0.59 0.18.0
+--
+MIT License
+
+Copyright (c) 2017 Mike Grabowski
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+================================================
+
+================================================
+@uifabricshared/foundation-composable 0.11.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/foundation-compose 1.12.22
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/foundation-settings 0.12.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/foundation-tokens 0.12.12
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/themed-settings 0.9.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+@uifabricshared/theming-ramp 0.17.8
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+assert-never 1.2.1
+--
+MIT (https://spdx.org/licenses/MIT.html)
+================================================
+
+================================================
+invariant 2.2.4
+--
+MIT License
+
+Copyright (c) 2013-present, Facebook, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+================================================
+
+================================================
+prop-types 15.7.2
+--
+MIT License
+
+Copyright (c) 2013-present, Facebook, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+================================================
+
+================================================
+tslib 2.4.1
+--
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+================================================
+
+================================================
+webpack 4.46.0
+--
+Copyright JS Foundation and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+================================================
+
+================================================
+relative-time-format
+=====
+(The MIT License)
+
+Copyright (c) 2016 @catamphetamine <purecatamphetamine@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+================================================

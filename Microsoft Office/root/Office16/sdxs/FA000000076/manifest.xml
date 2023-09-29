@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>103541e3-1264-4532-9598-d69c6310562f</Id>
+  <Version>1.0.2103.1003</Version>
+  <ProviderName>Microsoft Office Services</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Math"/>
+  <Description DefaultValue="Math Assistant"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+
+  <Hosts>
+    <Host Name="Notebook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://www.onenote.com/officeaddins/mathassistant"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

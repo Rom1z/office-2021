@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- Package ID corresponds to the PGO_ERROR constant defined in PostgreSQLODBC.h -->
+    <Package ID="101" DefaultComponent="RedShift ODBC">
+        <Error Key="PGOResultSetTraverseDirNotSupported" NativeErrorCode="3">Направление обхода результирующего набора не поддерживается.</Error>
+      
+        <Error Key="PGOConnectionError" Params="1" NativeErrorCode="10">При попытке подключения возникла неизвестная ошибка: %1%</Error>
+
+        <Error Key="PGOPrepareError" Params="1" NativeErrorCode="20">При попытке подготовить запрос возникла ошибка: %1%</Error>
+
+        <Error Key="PGOExecuteError" Params="1" NativeErrorCode="30">При попытке выполнить запрос возникла ошибка: %1%</Error>
+        
+        <Error Key="PGOUnknownType" Params="2" NativeErrorCode="40">Неизвестный тип данных: %1% в столбце %2%.</Error>
+
+      <!-- Configuration dialog error messages. -->
+        <!-- Error thrown when an unknown error occurs while trying to connect. -->
+        <Error Key="PGOStringResourceError" Params="1" NativeErrorCode="1020">Строковый ресурс %1% не найден.</Error>
+
+        <Error Key="PGOCursorResourceError" Params="1" NativeErrorCode="1030">При попытке загрузить курсор возникла ошибка: %1%</Error>
+      
+        <Error Key="SSLModeInvalidError" Params="0" NativeErrorCode="50">Указан недопустимый режим SSL</Error>
+      
+        <Error Key="PGOConnectionDead" Params="1" NativeErrorCode="50">Превышено время ожидания для подключения. Выполните повторное подключение. Текущее состояние подключения: %1%</Error>
+
+        <Error Key="PGOCancelError" Params="1" NativeErrorCode="60">Не удалось выполнить запрос на отмену: %1%</Error>
+
+        <Error Key="PGOEmptyDatabaseNameError" Params="0" NativeErrorCode="70">Не удается создать подключение с использованием пустого имени базы данных.</Error>
+
+        <Error Key="PGOOptionsGetResultSetsWarning" Params="2" NativeErrorCode="80">Не удается присвоить значение 1 и параметру %1%, и параметру %2% 1</Error>
+
+        <Error Key="PGOOptionsValueOutOfRangeWarning" Params="1" NativeErrorCode="90">%1% is out of range. Insert value should be between 1 and 2147483647</Error>
+      
+        <Error Key="PGOUnsupportedEncryptionMethod" Params="1" NativeErrorCode="100">Метод шифрования не поддерживается: %1%</Error>
+
+        <Error Key="PGOUnsupportedEncryptionMethodDPAPIIsWindowsOnly" Params="1" NativeErrorCode="100">Метод шифрования не поддерживается: %1%. Шифрование DPAPI поддерживается только в ОС Windows.</Error>
+
+        <Error Key="PGOEncryptError" Params="1" NativeErrorCode="110">При попытке зашифровать данные возникла ошибка: %1%</Error>
+
+        <Error Key="PGODecryptError" Params="1" NativeErrorCode="120">Не удалось расшифровать данные: %1%</Error>
+    </Package>
+</Messages>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentFile
+  xmlns="urn:schemas-microsoft-com:tabletpc:content.v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:schemas-microsoft-com:tabletpc:content.v1 Content.xsd"
+>
+  <Wizard name="MainWIZ" module="HUB">
+    <Page resID="IDR_DUI_LANGUAGE_PICKER" type="languagePicker"
+      backAction="NONE" nextAction="NONE">
+      <Item name="ccSysLink" action="HELP('mshelp://windows/?id=9a111497-b562-403e-961f-643c56cca412', 'learnMore')" />
+      <Item name="OptIn" action="OPT_IN" hide="IsAutoLearningRestricted() OR IsPersonalizationRestricted()" />
+      <Item name="Migration" action="HELP('mshelp://windows/?id=eaee7ae5-c4db-4988-ad04-03fa6ca31b8b', 'migration')" />
+    </Page>
+    <Page resID="IDR_DUI_HUB_MAIN" nextAction="NONE" backAction="NONE">
+      <Item name="group1Link" action="GOTO TroubleshootWIZ.IDR_DUI_HUB_USERDRIVENTROUBLESHOOT" />
+      <Item name="group1Img" action="GOTO TroubleshootWIZ.IDR_DUI_HUB_USERDRIVENTROUBLESHOOT" />
+      <Item name="group2Link" action="GOTO ScriptedWIZ.IDR_DUI_HUB_SCRIPTED" />
+      <Item name="group2Img" action="GOTO ScriptedWIZ.IDR_DUI_HUB_SCRIPTED" />
+      <Item name="OptIn" action="OPT_IN" hide="IsMultiLanguage()" />
+      <Item name="Migration" action="HELP('mshelp://windows/?id=eaee7ae5-c4db-4988-ad04-03fa6ca31b8b', 'migration')"
+            hide="IsMultiLanguage() OR IsAutoLearningRestricted() OR IsPersonalizationRestricted()" />
+      <Item name="ResetRecognizer" action="RESET_RECOGNIZER" />
+      <Item name="LanguagePicker" action="SwitchLanguage" hide="NOT IsMultiLanguage()" />
+      <Item name="Help" action="HELP('mshelp://windows/?id=9a111497-b562-403e-961f-643c56cca412', 'learnMore')"
+            hide="IsMultiLanguage()" />
+    </Page>
+  </Wizard>
+  <Wizard name="MainWIZ_EA" module="HUB">
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_0_EA" type="userChar" backAction="NONE"
+      onNext="SetValue(conf, SubStr(BoxedConfusables(UserPrompt()), 0, 5))"
+      nextAction="(StrLen(UserPrompt()) > 1) ? (GOTO IDR_DUI_TROUBLESHOOT_USER_CHAR_4_EA) : (NEXT)"
+    >
+      <Item name="editBox" font="font" />
+      <Item name="charCount" data="7" hide="true" />
+      <Item name="clearButton" action="CLEAR editBox" />
+      <Item name="pText" />
+      <Item name="OptIn" action="OPT_IN" hide="IsMultiLanguage()" />
+      <Item name="Migration" action="HELP('mshelp://windows/?id=eaee7ae5-c4db-4988-ad04-03fa6ca31b8b', 'migration')"
+            hide="IsMultiLanguage() OR IsAutoLearningRestricted() OR IsPersonalizationRestricted()" />
+      <Item name="ResetRecognizer" action="RESET_RECOGNIZER" />
+      <Item name="LanguagePicker" action="SwitchLanguage" hide="NOT IsMultiLanguage()" />
+      <Item name="Help" action="HELP('mshelp://windows/?id=9a111497-b562-403e-961f-643c56cca412', 'learnMore')"
+            hide="IsMultiLanguage()" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_1" module="TARGET_CHAR"
+      onNext="SetValue(pageCount, ItemContent(pageCount))"
+      nextText="(StrLen(GetValue(conf)) > 0) ? ('Next') : ('Save')"
+      nextAction="(StrLen(GetValue(conf)) > 0) ? (GOTO IDR_DUI_TROUBLESHOOT_USER_CHAR_2) : (JUMP IDR_DUI_SHARING_OPTIONS)"
+    >
+      <Item name="toolTip_Title" data="CharName(UserPrompt())" />
+      <Item name="labelLetter1_1" data="UserPrompt()" font="font" />
+      <Item name="labelLetter1_2" data="UserPrompt()" font="font" />
+      <Item name="labelLetter1_3" data="UserPrompt()" font="font" />
+      <Item name="labelLetter1_4" data="UserPrompt()" font="font" />
+      <Item name="labelLetter1_5" hide="true" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="4"
+        data="RepChar(UserPrompt(), 4)" inkItemType="boxOriginal" />
+      <Item name="pageIndex" data="1" />
+      <Item name="pageCount" data="StrIsEmpty(GetValue(conf)) ? 1 : 2" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_4_EA" module="TARGET_WORD"
+      backAction="JUMP IDR_DUI_TROUBLESHOOT_USER_CHAR_0_EA"
+      onNext="SetValue(pageCount, ItemContent(pageCount))" loop="2"
+      nextText="(StrLen(GetValue(conf)) > 0) ? ('Next') : ('Save')"
+      nextAction="(StrLen(GetValue(conf)) > 0) ? (NEXT) : (JUMP IDR_DUI_SHARING_OPTIONS)">
+      <Item name="initialPara_2" hide="true"/>
+      <Item name="labelLetter1_1" data="StrChar(UserPrompt(), 0)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_2" data="StrChar(UserPrompt(), 1)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_3" data="StrChar(UserPrompt(), 2)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_4" data="StrChar(UserPrompt(), 3)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_5" data="StrChar(UserPrompt(), 4)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_6" data="StrChar(UserPrompt(), 5)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_7" data="StrChar(UserPrompt(), 6)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="StrLen(ItemContent())"
+        data="UserPrompt()" inkItemType="boxOriginal" />
+      <Item name="labelLetter2_1" data="ItemContent(labelLetter1_1)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter2_2" data="ItemContent(labelLetter1_2)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter2_3" data="ItemContent(labelLetter1_3)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter2_4" data="ItemContent(labelLetter1_4)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter2_5" data="ItemContent(labelLetter1_5)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter2_6" data="ItemContent(labelLetter1_6)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter2_7" data="ItemContent(labelLetter1_7)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="InkCollectorHost2" guideType="boxed" guideCols="StrLen(ItemContent())"
+        data="UserPrompt()" inkItemType="boxOriginal" />
+      <Item name="pageIndex" data="LoopIndex() + 1" />
+      <Item name="pageCount" data="StrIsEmpty(GetValue(conf)) ? 2 : 3" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_2" module="(StrLen(GetValue(conf)) > 0) ? ((StrLen(UserPrompt()) > 1) ? TARGET_WORD : TARGET_CHAR) : NO_MODULE"
+      nextText="Save" nextAction="NEXT">
+      <Item name="labelLetter1_1" data="StrChar(GetValue(conf), 0)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_2" data="StrChar(GetValue(conf), 1)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_3" data="StrChar(GetValue(conf), 2)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_4" data="StrChar(GetValue(conf), 3)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="labelLetter1_5" data="StrChar(GetValue(conf), 4)"
+        accDesc="CharName(ItemContent())" hide="StrIsEmpty(ItemContent())"
+        font="font" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="StrLen(ItemContent())"
+        data="GetValue(conf)" inkItemType="boxConfusion" />
+      <Item name="pageIndex" data="GetValue(pageCount)" />
+      <Item name="pageCount" data="GetValue(pageCount)" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+    <Page resID="IDR_DUI_SHARING_OPTIONS" type="sharingOptionsPage" backAction="NONE" cancelAction="CLOSE" />
+    <Page resID="IDR_DUI_SAVED" type="savedPage" nextAction="NONE" backAction="NONE" cancelAction="NONE" finishAction="CLOSE" >
+      <Item name="group1Link" action="RESET_CONTENT; JUMP IDR_DUI_TROUBLESHOOT_USER_CHAR_0_EA" />
+      <Item name="group1Img" action="RESET_CONTENT; JUMP IDR_DUI_TROUBLESHOOT_USER_CHAR_0_EA" />
+      <Item name="group2Link" action="TRAIN; CLOSE" enabled="NOT IsPersonalizationRestricted()" />
+      <Item name="group2Img" action="TRAIN; CLOSE" enabled="NOT IsPersonalizationRestricted()" />
+      <Item name="group2Subtext" enabled="NOT IsPersonalizationRestricted()" />
+      <Item name="sharingOptionsLink" action="JUMP MainWIZ_EA.IDR_DUI_SHARING_OPTIONS" />
+      <Item name="Updating_warningText" action="OPT_IN" hide="NOT IsPersonalizationDisabled()" />
+      <Item name="Updating_warningText_GP" hide="NOT IsPersonalizationRestricted()" />
+    </Page>
+  </Wizard>  
+  <Wizard name="SavedWIZ" module="NO_MODULE">
+    <Page resID="IDR_DUI_SHARING_OPTIONS" type="sharingOptionsPage" backAction="NONE" cancelAction="CLOSE" />
+    <Page resID="IDR_DUI_SAVED" type="savedPage" nextAction="NONE" backAction="NONE"  cancelAction="NONE" finishAction="CLOSE">
+      <Item name="group1Link" action="RESET_CONTENT; JUMP MainWIZ.IDR_DUI_HUB_MAIN" />
+      <Item name="group1Img" action="RESET_CONTENT; JUMP MainWIZ.IDR_DUI_HUB_MAIN" />
+      <Item name="group2Link" action="TRAIN; CLOSE" enabled="NOT IsPersonalizationRestricted()" />
+      <Item name="group2Img" action="TRAIN; CLOSE" enabled="NOT IsPersonalizationRestricted()" />
+      <Item name="group2Subtext" enabled="NOT IsPersonalizationRestricted()" />
+      <Item name="sharingOptionsLink" action="JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS" />
+      <Item name="Updating_warningText" action="OPT_IN" hide="NOT IsPersonalizationDisabled()" />
+      <Item name="Updating_warningText_GP" hide="NOT IsPersonalizationRestricted()" />
+    </Page>
+  </Wizard>
+  <Wizard name="ScriptedWIZ" module="TEACH_CHARS">
+    <Page resID="IDR_DUI_HUB_SCRIPTED" nextAction="NONE"
+      backAction="JUMP MainWIZ.IDR_DUI_HUB_MAIN" module="TEACH_HUB">
+      <Item name="ccSysLink" action="HELP('mshelp://windows/?id=9a111497-b562-403e-961f-643c56cca412#teach_table', 'teach_table')" />
+      <Item name="group1Img" action="JUMP PhrasesWIZ.IDR_DUI_SCRIPTED_INTRO" />
+      <Item name="group1Link" action="JUMP PhrasesWIZ.IDR_DUI_SCRIPTED_INTRO" />
+      <Item name="group2Img" action="NEXT" />
+      <Item name="group2Link" action="NEXT" />
+    </Page>
+    <Page resID="IDR_DUI_SCRIPTED_NUMBERS" backAction="JUMP IDR_DUI_HUB_SCRIPTED">
+      <Item name="labelLetter1_1" data="0" />
+      <Item name="labelLetter1_2" data="1" />
+      <Item name="labelLetter1_3" data="2" />
+      <Item name="labelLetter1_4" data="3" />
+      <Item name="labelLetter1_5" data="4" />
+      <Item name="labelLetter1_6" data="5" />
+      <Item name="labelLetter1_7" data="6" />
+      <Item name="labelLetter1_8" data="7" />
+      <Item name="labelLetter1_9" data="8" />
+      <Item name="labelLetter1_10" data="9" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="10"
+        inkItemType="boxScript" data="'0123456789'" />
+      <Item name="pageIndex" data="1" />
+      <Item name="pageCount" data="PageCount() - 1" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+    <Page
+      resID="IDR_DUI_SCRIPTED_SYMBOLS"
+      loop="CeilDiv(StrLen(SymbolSet('Symbols')), 10)"
+      onSetActive="SetValue(symbols, SubStr(SymbolSet('Symbols'), LoopIndex() * 10, 10))"
+    >
+      <Item name="labelLetter1_1" data="StrChar(GetValue(symbols), 0)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_2" data="StrChar(GetValue(symbols), 1)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_3" data="StrChar(GetValue(symbols), 2)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_4" data="StrChar(GetValue(symbols), 3)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_5" data="StrChar(GetValue(symbols), 4)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_6" data="StrChar(GetValue(symbols), 5)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_7" data="StrChar(GetValue(symbols), 6)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_8" data="StrChar(GetValue(symbols), 7)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_9" data="StrChar(GetValue(symbols), 8)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="labelLetter1_10" data="StrChar(GetValue(symbols), 9)" hide="StrIsEmpty(ItemContent())"
+        accDesc="CharName(ItemContent())" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="StrLen(ItemContent())"
+        inkItemType="boxScript" data="GetValue(symbols)" />
+      <Item name="pageIndex" data="PageIndex()" />
+      <Item name="pageCount" data="PageCount() - 1" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+    <Page resID="IDR_DUI_SCRIPTED_LETTERS"
+      nextText="Save" nextAction="JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS" 
+      loop="CeilDiv(StrLen(SymbolSet('Letters')), 12)"
+      onSetActive="SetValue(letters, SymbolSet('Letters')); SetValue(prompt, SubStr(GetValue(letters), LoopIndex()*12, 12))"
+    >
+      <Item name="labelLetter1_1" data="StrChar(GetValue(prompt), 0)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_2" data="StrChar(GetValue(prompt), 1)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_3" data="StrChar(GetValue(prompt), 2)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_4" data="StrChar(GetValue(prompt), 3)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_5" data="StrChar(GetValue(prompt), 4)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_6" data="StrChar(GetValue(prompt), 5)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_7" data="StrChar(GetValue(prompt), 6)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_8" data="StrChar(GetValue(prompt), 7)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_9" data="StrChar(GetValue(prompt), 8)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_10" data="StrChar(GetValue(prompt), 9)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_11" data="StrChar(GetValue(prompt), 10)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="labelLetter1_12" data="StrChar(GetValue(prompt), 11)" hide="StrIsEmpty(ItemContent())" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="StrLen(ItemContent())"
+        inkItemType="boxScript" data="GetValue(prompt)" />
+      <Item name="pageIndex" data="PageIndex()" />
+      <Item name="pageCount" data="PageCount() - 1" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+  </Wizard>
+  <Wizard name="PhrasesWIZ" module="NO_MODULE">
+    <Page resID="IDR_DUI_SCRIPTED_INTRO"
+      nextAction="GOTO IDR_DUI_SCRIPTED_PHRASES"
+      backAction="JUMP ScriptedWIZ.IDR_DUI_HUB_SCRIPTED">
+    </Page>
+    <Page resID="IDR_DUI_SCRIPTED_PHRASES" module="TEACH_PHRASES"
+      nextText="Save" nextAction="JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS"
+      finishText="Save for later" finishAction="JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS"
+      loop="(PhrasesPerSet() > 0) ? (PhrasesPerSet() - PhraseIndex()) : 0"
+      onInkSaved="UpdatePhraseIndex()">
+      <Item name="labelLetter1" data="Phrase(PhraseSet() - 1, PhraseIndex() + LoopIndex())" />
+      <Item name="InkCollectorHost1" guideType="lined" guideRows="2"
+        inkItemType="lineScript" data="ItemContent(labelLetter1)" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT; EDITMODE INK" />
+      <Item name="pageIndex" data="PhraseIndex() + LoopIndex() + 1" />
+      <Item name="pageCount" data="PhrasesPerSet()" />
+      <Item name="pText" />
+    </Page>
+  </Wizard>
+  <Wizard name="TroubleshootWIZ" module="NO_MODULE">
+    <Page resID="IDR_DUI_HUB_USERDRIVENTROUBLESHOOT" module="TARGET_HUB"
+      nextAction="NONE" backAction="JUMP MainWIZ.IDR_DUI_HUB_MAIN">
+      <Item name="ccSysLink" action="HELP('mshelp://windows/?id=9a111497-b562-403e-961f-643c56cca412#target_table', 'target_table')" />
+      <Item name="group1Link" action="JUMP IDR_DUI_TROUBLESHOOT_USER_CHAR_0" />
+      <Item name="group1Img" action="JUMP IDR_DUI_TROUBLESHOOT_USER_CHAR_0" />
+      <Item name="group2Link" action="JUMP ConfusablesWIZ.IDR_DUI_SCRIPTED_CONFUSABLES" />
+      <Item name="group2Img" action="JUMP ConfusablesWIZ.IDR_DUI_SCRIPTED_CONFUSABLES" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_0" type="userChar"
+      nextAction="(StrLen(UserPrompt()) > 1) ? (GOTO IDR_DUI_TROUBLESHOOT_USER_CHAR_4) : (NEXT)">
+      <Item name="editBox" />
+      <Item name="clearButton" action="CLEAR editBox" />
+      <Item name="pText" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_1" module="TARGET_CHAR"
+      onSetActive="SetValue(conf, Confusables(UserPrompt()))"
+      nextAction="(StrLen(GetValue(conf)) > 0) ? (NEXT) : (JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS)">
+      <Item name="toolTip_Title" data="CharName(UserPrompt())" />
+      <Item name="labelLetter1_1" data="UserPrompt()" />
+      <Item name="labelLetter1_2" data="UserPrompt()" />
+      <Item name="labelLetter1_3" data="UserPrompt()" />
+      <Item name="labelLetter1_4" data="UserPrompt()" />
+      <Item name="labelLetter1_5" data="UserPrompt()" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="5"
+        inkItemType="boxOriginal" data="RepChar(UserPrompt(), 5)" />
+      <Item name="pageIndex" data="1" />
+      <Item name="pageCount" data="1 + CeilDiv(StrLen(GetValue(conf)), 2)" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_3" module="TARGET_CHAR"
+      loop="2" nextText="Save" nextAction="JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS"
+      onSetActive="SetValue(base, LoopIndex() * 2); SetValue(conf1, StrChar(GetValue(conf), GetValue(base))); SetValue(conf2, StrChar(GetValue(conf), GetValue(base) + 1))">
+      <Item name="toolTip1_Title" data="CharName(GetValue(conf1))" />
+      <Item name="labelLetter1_1" data="GetValue(conf1)" />
+      <Item name="labelLetter1_2" data="GetValue(conf1)" />
+      <Item name="labelLetter1_3" data="GetValue(conf1)" />
+      <Item name="labelLetter1_4" data="GetValue(conf1)" />
+      <Item name="labelLetter1_5" data="GetValue(conf1)" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="5"
+        inkItemType="boxOriginal" data="RepChar(GetValue(conf1), 5)" />
+      <Item name="toolTip2_Title" data="CharName(GetValue(conf2))" />
+      <Item name="labelLetter2_1" data="GetValue(conf2)" />
+      <Item name="labelLetter2_2" data="GetValue(conf2)" />
+      <Item name="labelLetter2_3" data="GetValue(conf2)" />
+      <Item name="labelLetter2_4" data="GetValue(conf2)" />
+      <Item name="labelLetter2_5" data="GetValue(conf2)" />
+      <Item name="InkCollectorHost2" guideType="boxed" guideCols="5"
+        inkItemType="boxConfusion" data="RepChar(GetValue(conf2), 5)" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pageIndex" data="LoopIndex() + 2" />
+      <Item name="pageCount" data="ItemContent(IDR_DUI_TROUBLESHOOT_USER_CHAR_1, pageCount)" />
+      <Item name="pText" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_4" module="TARGET_WORD"
+      loop="2" nextText="Save" nextAction="JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS"
+    >
+      <Item name="initialPara_2" hide="true"/>
+      <Item name="labelLetter1" data="UserPrompt()" />
+      <Item name="labelLetter2" data="UserPrompt()" />
+      <Item name="InkCollectorHost1" guideType="lined" guideRows="1"
+        inkItemType="lineOriginal" data="UserPrompt()" />
+      <Item name="InkCollectorHost2" guideType="lined" guideRows="1"
+        inkItemType="lineOriginal" data="UserPrompt()" />
+      <Item name="pageIndex" data="LoopIndex() + 1" />
+      <Item name="pageCount" data="2" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pText" />
+    </Page>
+  </Wizard>
+  <Wizard name="ConfusablesWIZ" module="NO_MODULE">
+    <Page resID="IDR_DUI_SCRIPTED_CONFUSABLES" nextAction="NONE"
+      backAction="JUMP TroubleshootWIZ.IDR_DUI_HUB_USERDRIVENTROUBLESHOOT">
+      <Item name="group1Link" linkIndex="1"
+        data="StrSpacify(SymbolSet('PredefinedSet1'))"
+        action="SetValue(set, SymbolSet('PredefinedSet1')); NEXT" />
+      <Item name="group1Img" linkIndex="1"
+        action="SetValue(set, SymbolSet('PredefinedSet1')); NEXT"
+        accName="ItemContent(group1Link)" />
+      <Item name="group2Link" linkIndex="2"
+        data="StrSpacify(SymbolSet('PredefinedSet2'))" 
+        action="SetValue(set, SymbolSet('PredefinedSet2')); NEXT" />
+      <Item name="group2Img" linkIndex="2"
+        action="SetValue(set, SymbolSet('PredefinedSet2')); NEXT"
+        accName="ItemContent(group2Link)" />
+      <Item name="group3Link" linkIndex="3"
+        data="StrSpacify(SymbolSet('PredefinedSet3'))" 
+        action="SetValue(set, SymbolSet('PredefinedSet3')); NEXT" />
+      <Item name="group3Img" linkIndex="3"
+        action="SetValue(set, SymbolSet('PredefinedSet3')); NEXT"
+        accName="ItemContent(group3Link)" />
+      <Item name="group4Link" linkIndex="4"
+        data="StrSpacify(SymbolSet('PredefinedSet4'))" 
+        action="SetValue(set, SymbolSet('PredefinedSet4')); NEXT" />
+      <Item name="group4Img" linkIndex="4"
+        action="SetValue(set, SymbolSet('PredefinedSet4')); NEXT"
+        accName="ItemContent(group4Link)" />
+      <Item name="group5Link" linkIndex="5"
+        data="StrSpacify(SymbolSet('PredefinedSet5'))" 
+        action="SetValue(set, SymbolSet('PredefinedSet5')); NEXT" />
+      <Item name="group5Img" linkIndex="5"
+        action="SetValue(set, SymbolSet('PredefinedSet5')); NEXT"
+        accName="ItemContent(group5Link)" />
+      <Item name="group6Link" linkIndex="6"
+        data="StrSpacify(SymbolSet('PredefinedSet6'))" 
+        action="SetValue(set, SymbolSet('PredefinedSet6')); NEXT" />
+      <Item name="group6Img" linkIndex="6"
+        action="SetValue(set, SymbolSet('PredefinedSet6')); NEXT"
+        accName="ItemContent(group6Link)" />
+    </Page>
+    <Page resID="IDR_DUI_TROUBLESHOOT_USER_CHAR_3" module="TARGET_CONFUSABLES"
+      onSetActive="SetValue(base, LoopIndex() * 2)" loop="2"
+      backAction="JUMP ConfusablesWIZ.IDR_DUI_SCRIPTED_CONFUSABLES"
+      nextText="Save" nextAction="JUMP SavedWIZ.IDR_DUI_SHARING_OPTIONS">
+      <Item name="labelLetter1_1" data="StrChar(GetValue(set), GetValue(base))" />
+      <Item name="labelLetter1_2" data="ItemContent(labelLetter1_1)" />
+      <Item name="labelLetter1_3" data="ItemContent(labelLetter1_1)" />
+      <Item name="labelLetter1_4" data="ItemContent(labelLetter1_1)" />
+      <Item name="labelLetter1_5" data="ItemContent(labelLetter1_1)" />
+      <Item name="toolTip1_Title" data="CharName(ItemContent(labelLetter1_1))" />
+      <Item name="InkCollectorHost1" guideType="boxed" guideCols="5"
+        inkItemType="boxOriginal" data="RepChar(ItemContent(labelLetter1_1), 5)" />
+      <Item name="labelLetter2_1" data="StrChar(GetValue(set), GetValue(base) + 1)" />
+      <Item name="labelLetter2_2" data="ItemContent(labelLetter2_1)" />
+      <Item name="labelLetter2_3" data="ItemContent(labelLetter2_1)" />
+      <Item name="labelLetter2_4" data="ItemContent(labelLetter2_1)" />
+      <Item name="labelLetter2_5" data="ItemContent(labelLetter2_1)" />
+      <Item name="toolTip2_Title" data="CharName(ItemContent(labelLetter2_1))" />
+      <Item name="InkCollectorHost2" guideType="boxed" guideCols="5"
+        inkItemType="boxOriginal" data="RepChar(ItemContent(labelLetter2_1), 5)" />
+      <Item name="inkButton" action="EDITMODE INK" />
+      <Item name="eraseButton" action="EDITMODE ERASE" />
+      <Item name="clearButton" action="CLEAR CURRENT;EDITMODE INK" />
+      <Item name="pageIndex" data="LoopIndex() + 1" />
+      <Item name="pageCount" data="2" />
+      <Item name="pText" />
+    </Page>
+  </Wizard>
+</ContentFile>

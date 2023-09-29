@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+
+  <Id>c46b744a-0d1b-4444-b6cd-03b8891f1f1c</Id>
+  <Version>1.0.2308.30012</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Canvas Cards"/>
+  <Description DefaultValue="Check grammar, spelling, and more in Word" />
+  <IconUrl DefaultValue="assets/StoreLogo.png" />
+  <SupportUrl DefaultValue="https://support.office.com/en-us" />
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  <DefaultSettings>
+    <!--Currently source location url is irrelevant, since we are using a separately configurable url in native. We should look to see if
+    it makes sense to use url from here (so that it can be updated along with the package with matching urlmap.)-->
+    <SourceLocation DefaultValue="https://fa000000058.resources.office.net/index.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <!--DefaultMinVersion is required for office-build-tools to populate Requirements in config.json-->
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="ReactNative" MinVersion="64.0" />
+      <Set Name="CanvasContextualSdx" MinVersion="4.0" />
+    </Sets>
+  </Requirements>
+</OfficeApp>

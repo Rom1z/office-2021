@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+
+  <!-- Manifest documation here: https://docs.microsoft.com/en-us/office/dev/add-ins/reference/manifest/officeapp -->
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>6EAC3671-5086-44E9-9C25-F2FAC1D07B55</Id>
+
+  <Version>1.0.2308.8007</Version>
+  <ProviderName>Excel</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="sdx_excel_optimizeworkbook"/>
+  <Description DefaultValue="optimize workbook" />
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="assets/WorkbookPerformance-80.png"/>
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://aka.ms/sdx" />
+
+  <!-- Hosts is used to specify which app the SDX should run in
+            Document (Word)
+            Database (Access)
+            Mailbox (Outlook)
+            Notebook (OneNote)
+            Presentation (PowerPoint)
+            Project (Project)
+            Workbook (Excel)
+  -->
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <!-- This Requirements Set is being used to disable Service Delivery for OptimizeWorkbook Win32 SDX -->
+      <!-- We specify in Host to support OptimizeWorkbook version 2.XXXXX -->
+      <!-- Below we specify version required for the OptimizeWorkbook SDX in 1.XXXXX format -->
+      <!-- Only major.minor is supported. Do NOT add .patch -->
+      <!-- For minor, we use a convention of YYMMX, where X is the capability change # for such month -->
+      <Set Name="OptimizeWorkbook" MinVersion="2.23031.0" />
+    </Sets>
+  </Requirements>
+
+</OfficeApp>

@@ -1,0 +1,15 @@
+{
+  "cardDismissButtonLabel": "Картаны жабу",
+  "errorCardText": "Бұл деректерді қазір алу мүмкін емес.",
+  "navBarBackButtonLabel": "Артқа",
+  "navBarOverflowButtonLabel": "Иерархиялық толып кету мәзірі",
+  "arrayControlCopyToGridTooltip": "Ұяшықты торға шығарып алу",
+  "arrayControlRow": "Жол",
+  "arrayControlColumn": "Баған",
+  "arrayControlContainsDataType": "Деректер түрін қамтиды",
+  "copyCardToGridTooltip": "Картаны торға шығарып алу",
+  "reportConfirmationTooltip": "Рақмет!",
+  "buttonShowImageAttributionTooltip": "Кескін атрибуциясын көрсету",
+  "buttonHideImageAttributionTooltip": "Кескін атрибуциясын жасыру",
+  "navBarIPhoneBreadCrumbCancel": "Бас тарту"
+}

@@ -1,0 +1,12 @@
+{
+  "clear": "Очистить диагностику",
+  "navigateTo": "Перейти к {0}",
+  "executionStartTime": "Время начала выполнения кода",
+  "runningDuration": "Длительность выполнения: {0} мс",
+  "stdout": "Стандартные выходные данные",
+  "stderr": "Стандартный вывод ошибок",
+  "serviceError": "Ошибка интерпретатора Python",
+  "diagnosticsEntryDescription": "Вывод диагностики из {0}",
+  "autoShowCheckboxText": "Показывать автоматически",
+  "autoShowCheckboxToolTip": "Отображать панель автоматически в любое время при наличии новых журналов."
+}

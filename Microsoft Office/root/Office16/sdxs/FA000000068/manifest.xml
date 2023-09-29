@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>74014061-2f57-4505-a997-bc84b58e46af</Id>
+  <Version>0.0.2202.25004</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Stickers"/>
+    <Override Locale="af-ZA" Value="Plakkers" />
+    <Override Locale="am-ET" Value="ማጣበቂያዎች" />
+    <Override Locale="ar-SA" Value="ملصقات" />
+    <Override Locale="as-IN" Value="ষ্টিকাৰসমূহ" />
+    <Override Locale="az-Latn-AZ" Value="Stikerlər" />
+    <Override Locale="be-BY" Value="Наклейкі" />
+    <Override Locale="bg-BG" Value="Стикери" />
+    <Override Locale="bn-BD" Value="স্টিকারগুলো" />
+    <Override Locale="bn-IN" Value="স্টিকার" />
+    <Override Locale="bs-Latn-BA" Value="Nalјepnice" />
+    <Override Locale="ca-ES" Value="Adhesius" />
+    <Override Locale="ca-ES-valencia" Value="Adhesius" />
+    <Override Locale="cs-CZ" Value="Nálepky" />
+    <Override Locale="cy-GB" Value="Sticeri" />
+    <Override Locale="da-DK" Value="Klistermærker" />
+    <Override Locale="de-DE" Value="Aufkleber" />
+    <Override Locale="el-GR" Value="Αυτοκόλλητα" />
+    <Override Locale="es-ES" Value="Adhesivos" />
+    <Override Locale="et-EE" Value="Kleebised" />
+    <Override Locale="eu-ES" Value="Eranskailuak" />
+    <Override Locale="fa-IR" Value="برچسب‌ها" />
+    <Override Locale="fi-FI" Value="Tarrat" />
+    <Override Locale="fil-PH" Value="Mga Sticker" />
+    <Override Locale="fr-FR" Value="Autocollants" />
+    <Override Locale="ga-IE" Value="Greamáin" />
+    <Override Locale="gd-GB" Value="Steigearan" />
+    <Override Locale="gl-ES" Value="Adhesivos" />
+    <Override Locale="gu-IN" Value="સ્ટીકર્સ" />
+    <Override Locale="ha-Latn-NG" Value="Maliƙu" />
+    <Override Locale="he-IL" Value="מדבקות" />
+    <Override Locale="hi-IN" Value="स्टीकर" />
+    <Override Locale="hr-HR" Value="Naljepnice" />
+    <Override Locale="hu-HU" Value="Matricák" />
+    <Override Locale="hy-AM" Value="Պիտակներ" />
+    <Override Locale="id-ID" Value="Stiker" />
+    <Override Locale="ig-NG" Value="Ihe nnyanye gasị" />
+    <Override Locale="is-IS" Value="Límmiðar" />
+    <Override Locale="it-IT" Value="Adesivi" />
+    <Override Locale="ja-JP" Value="ステッカー" />
+    <Override Locale="ka-GE" Value="სტიკერები" />
+    <Override Locale="kk-KZ" Value="Жапсырмалар" />
+    <Override Locale="km-KH" Value="រូបបិទ" />
+    <Override Locale="kn-IN" Value="ಸ್ಟಿಕ್ಕರ್‌ಗಳು" />
+    <Override Locale="kok-IN" Value="स्टिकर्स" />
+    <Override Locale="ko-KR" Value="스티커" />
+    <Override Locale="ku-Arab-IQ" Value="ستیکەر" />
+    <Override Locale="ky-KG" Value="Чаптоочтор" />
+    <Override Locale="lb-LU" Value="Stickeren" />
+    <Override Locale="lt-LT" Value="Lipdukai" />
+    <Override Locale="lv-LV" Value="Uzlīmes" />
+    <Override Locale="mi-NZ" Value="Ngā Whakapiri" />
+    <Override Locale="mk-MK" Value="Налепници" />
+    <Override Locale="ml-IN" Value="സ്റ്റിക്കറുകൾ" />
+    <Override Locale="mn-MN" Value="Наалтууд" />
+    <Override Locale="mr-IN" Value="स्टिकर्स" />
+    <Override Locale="ms-MY" Value="Pelekat" />
+    <Override Locale="mt-MT" Value="Stikers" />
+    <Override Locale="nb-NO" Value="Merkelapper" />
+    <Override Locale="ne-NP" Value="स्टिकरहरू" />
+    <Override Locale="nl-NL" Value="Stickers" />
+    <Override Locale="nn-NO" Value="Merkelappar" />
+    <Override Locale="nso-ZA" Value="Setikara" />
+    <Override Locale="or-IN" Value="ଷ୍ଟିକର୍‌ଗୁଡିକ" />
+    <Override Locale="pa-Arab-PK" Value="سٹیکرز" />
+    <Override Locale="pa-IN" Value="ਸਟਿੱਕਰ" />
+    <Override Locale="pl-PL" Value="Nalepki" />
+    <Override Locale="prs-AF" Value="برچسپ ها" />
+    <Override Locale="pt-BR" Value="Adesivos" />
+    <Override Locale="pt-PT" Value="Autocolantes" />
+    <Override Locale="quz-PE" Value="Ratakuqkuna" />
+    <Override Locale="ro-RO" Value="Autocolante" />
+    <Override Locale="ru-RU" Value="Наклейки" />
+    <Override Locale="rw-RW" Value="Mwifatisha" />
+    <Override Locale="sd-Arab-PK" Value="اسٽيڪر" />
+    <Override Locale="si-LK" Value="ස්ටිකර්" />
+    <Override Locale="sk-SK" Value="Nálepky" />
+    <Override Locale="sl-SI" Value="Nalepke" />
+    <Override Locale="sq-AL" Value="Ngjitëset" />
+    <Override Locale="sr-Cyrl-BA" Value="Наљепнице" />
+    <Override Locale="sr-Cyrl-RS" Value="Налепнице" />
+    <Override Locale="sr-Latn-RS" Value="Nalepnice" />
+    <Override Locale="sv-SE" Value="Klistermärken" />
+    <Override Locale="sw-KE" Value="Vibandiko" />
+    <Override Locale="ta-IN" Value="ஸ்டிக்கர்கள்" />
+    <Override Locale="te-IN" Value="స్టిక్కర్‌లు" />
+    <Override Locale="tg-Cyrl-TJ" Value="Барчаспҳо" />
+    <Override Locale="th-TH" Value="สติกเกอร์" />
+    <Override Locale="ti-ET" Value="መላገቢታት" />
+    <Override Locale="tk-TM" Value="Stikerler" />
+    <Override Locale="tn-ZA" Value="Disitikara" />
+    <Override Locale="tr-TR" Value="Çıkartmalar" />
+    <Override Locale="tt-RU" Value="Ябыштырмалар" />
+    <Override Locale="ug-CN" Value="چاپلاق" />
+    <Override Locale="uk-UA" Value="Наклейки" />
+    <Override Locale="ur-PK" Value="اسٹیکرز" />
+    <Override Locale="uz-Latn-UZ" Value="Stikerlar" />
+    <Override Locale="vi-VN" Value="Nhãn dán" />
+    <Override Locale="wo-SN" Value="Stikër yi" />
+    <Override Locale="xh-ZA" Value="Izitikha" />
+    <Override Locale="yo-NG" Value="Èlò àkọlé" />
+    <Override Locale="zh-CN" Value="贴纸" />
+    <Override Locale="zh-TW" Value="貼紙" />
+    <Override Locale="zu-ZA" Value="Izitikha" />
+  <Description DefaultValue="Stickers in OneNote allow educators to put default or custom stickers on students pages in a Class Notebook"/>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+  <Hosts>
+    <Host Name="Notebook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://www.onenote.com/officeaddins/stickers?clientlogging=false"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Stickers.ClassNotebook" DefaultValue="https://www.onenote.com/officeaddins/stickers?filter=teacher&amp;clientlogging=false" />
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+  <Id>F8D88BC3-571C-46FF-9A45-3DD06BB85AB9</Id>
+  <Version>1.1.2308.303</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Fluid SDX"/>
+  <Description DefaultValue="Fluid Host Web App"/>
+  <IconUrl DefaultValue="https://fa000000084.resources.office.net/assets/icon.png"/>
+  <SupportUrl DefaultValue="https://support.office.com/en-us"/>
+  <Hosts>
+    <Host Name="Document" />
+  </Hosts>
+  <Requirements>
+    <!--DefaultMinVersion is required for office-build-tools to populate Requirements in config.json-->
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="FluidHostSdx" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://fa000000084.resources.office.net/index.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

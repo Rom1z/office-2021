@@ -1,0 +1,17 @@
+{
+  "CustomerInterceptLink": "Просмотрите доступное время.",
+  "CustomerInterceptPrompt": "Расскажите специалисту Майкрософт о вашем опыте использования Корректора.",
+  "GiveFeedbackCardTitle": "Отправить отзыв в корпорацию Майкрософт",
+  "GiveFeedbackButton": "Расскажите нам, что вы думаете о Корректоре",
+  "GiveFeedbackButtonAriaLabel": "Расскажите нам, что вы думаете о Корректоре",
+  "GiveFeedbackButtonHelpText": "Нажмите клавиши CTRL + F6 для возврата в Корректор после отправки отзыва",
+  "CardAriaLabel": "Помогите усовершенствовать Корректор. Отправьте отзыв",
+  "FeedbackSurveyCommentQuestion": "Почему вы выбрали этот ответ?",
+  "FeedbackSurveyRatingQuestion": "Какое впечатление у вас в целом о получении рекомендаций по улучшению документа от Корректора?",
+  "FeedbackSurveyRatingValues1of5": "Крайне отрицательное",
+  "FeedbackSurveyRatingValues2of5": "Скорее отрицательное",
+  "FeedbackSurveyRatingValues3of5": "Ни отрицательное, ни положительное",
+  "FeedbackSurveyRatingValues4of5": "Скорее положительное",
+  "FeedbackSurveyRatingValues5of5": "Крайне положительное",
+  "FeedbackSurveyTitle": "Благодарим за использование Корректора"
+}

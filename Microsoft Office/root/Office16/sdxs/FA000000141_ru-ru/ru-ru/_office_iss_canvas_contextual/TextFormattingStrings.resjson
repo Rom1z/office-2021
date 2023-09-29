@@ -1,0 +1,7 @@
+{
+  "contextAccessibilityLabelForSpelling": "Ошибка правописания, {0}, {1}",
+  "contextAccessibilityLabelForRepeatedWord": "Повторяющееся слово, {0}, {1}",
+  "contextAccessibilityLabelForGrammar": "Грамматическая ошибка, {0}, {1}",
+  "contextAccessibilityLabelForRefinement": "Усовершенствование стиля, {0}, {1}",
+  "contextAccessibilityLabelForCorrection": "Исправление, {0}, {1}"
+}

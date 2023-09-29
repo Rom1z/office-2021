@@ -1,0 +1,155 @@
+﻿<Package IgnorableNamespaces="appv appv1.1 appv1.2" appv:IgnorableNamespaces="appv1.1 appv1.2" xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:appv="http://schemas.microsoft.com/appv/2010/manifest" xmlns:appv1.1="http://schemas.microsoft.com/appv/2013/manifest" xmlns:appv1.2="http://schemas.microsoft.com/appv/2014/manifest">
+  <Identity Name="Reserved" Publisher="CN=Reserved" Version="16.0.16827.20130" appv:PackageId="90160000-006E-0419-1000-0000000FF1CE" appv:VersionId="eadef5e4-2ca9-4aa0-834d-3bdecdbfeddd" />
+  <Properties>
+    <DisplayName>Microsoft Office 15</DisplayName>
+    <PublisherDisplayName>Reserved</PublisherDisplayName>
+    <Description>Reserved</Description>
+    <Logo>Reserved.jpeg</Logo>
+    <appv:AppVPackageDescription>No description entered</appv:AppVPackageDescription>
+    <appv:AppVInProcExt>true</appv:AppVInProcExt>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+    <appv:TargetOSes SequencingStationProcessorArchitecture="x64" />
+  </Prerequisites>
+  <appv:Extensions>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:FileExtension MimeAssociation="true">
+          <appv:Name>.odc</appv:Name>
+          <appv:ProgId>odcfile</appv:ProgId>
+          <appv:ContentType>text/x-ms-odc</appv:ContentType>
+        </appv:FileExtension>
+        <appv:ProgId>
+          <appv:Name>odcfile</appv:Name>
+          <appv:Description>Microsoft Office Data Connection</appv:Description>
+          <appv:DefaultIcon>"%1"</appv:DefaultIcon>
+          <appv:ShellCommands>
+            <appv:DefaultCommand>Analyze</appv:DefaultCommand>
+            <appv:ShellCommand>
+              <appv:Name>EditText</appv:Name>
+              <appv:FriendlyName>Edit in &amp;Notepad</appv:FriendlyName>
+            </appv:ShellCommand>
+          </appv:ShellCommands>
+        </appv:ProgId>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:FileExtension>
+          <appv:Name>.odccubefile</appv:Name>
+          <appv:ProgId>odccubefile</appv:ProgId>
+        </appv:FileExtension>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:FileExtension>
+          <appv:Name>.odcdatabasefile</appv:Name>
+          <appv:ProgId>odcdatabasefile</appv:ProgId>
+        </appv:FileExtension>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:FileExtension>
+          <appv:Name>.odcnewfile</appv:Name>
+          <appv:ProgId>odcnewfile</appv:ProgId>
+        </appv:FileExtension>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:FileExtension>
+          <appv:Name>.odctablecollectionfile</appv:Name>
+          <appv:ProgId>odctablecollectionfile</appv:ProgId>
+        </appv:FileExtension>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:FileExtension>
+          <appv:Name>.odctablefile</appv:Name>
+          <appv:ProgId>odctablefile</appv:ProgId>
+        </appv:FileExtension>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:ProgId>
+          <appv:Name>odc.cube</appv:Name>
+          <appv:CurrentVersionProgId>odccube.1</appv:CurrentVersionProgId>
+        </appv:ProgId>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:ProgId>
+          <appv:Name>odc.database</appv:Name>
+          <appv:CurrentVersionProgId>odcdatabase.1</appv:CurrentVersionProgId>
+        </appv:ProgId>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:ProgId>
+          <appv:Name>odc.new</appv:Name>
+          <appv:CurrentVersionProgId>odcnew.1</appv:CurrentVersionProgId>
+        </appv:ProgId>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:ProgId>
+          <appv:Name>odc.table</appv:Name>
+          <appv:CurrentVersionProgId>odctable.1</appv:CurrentVersionProgId>
+        </appv:ProgId>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.FileTypeAssociation">
+      <appv:FileTypeAssociation>
+        <appv:ProgId>
+          <appv:Name>odc.tablecollection</appv:Name>
+          <appv:CurrentVersionProgId>odctablecollection.1</appv:CurrentVersionProgId>
+        </appv:ProgId>
+      </appv:FileTypeAssociation>
+    </appv:Extension>
+    <appv:Extension Category="AppV.COM">
+      <appv:COM>
+        <appv:x86>
+          <appv:Class>
+            <appv:ClassId>{0002CE02-0000-0000-C000-000000000046}</appv:ClassId>
+            <appv:LocalServer>
+              <appv:CommandLine>[{ProgramFilesCommonX64}]\Microsoft Shared\EQUATION\EQNEDT32.EXE</appv:CommandLine>
+            </appv:LocalServer>
+          </appv:Class>
+        </appv:x86>
+      </appv:COM>
+    </appv:Extension>
+    <appv:Extension Category="AppV.Fonts">
+      <appv:Fonts>
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsym.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsymt.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsymsl.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsyml.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsymxl.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsymsb.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsymb.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsymxb.ttf" DelayLoad="true" />
+        <appv:Font Path="[{AppVPackageRoot}]\Office16\1049\offsymk.ttf" DelayLoad="true" />
+      </appv:Fonts>
+    </appv:Extension>
+  </appv:Extensions>
+  <Applications xmlns="http://schemas.microsoft.com/appv/2010/manifest" />
+  <appv:UsedKnownFolders>
+    <appv:KnownFolder ID="{6365D5A7-0F0D-45E5-87F6-0DA56B6A4F7D}" />
+    <appv:KnownFolder ID="{D65231B0-B2F1-4857-A4CE-A8E7C6EA7D27}" />
+    <appv:KnownFolder ID="{F7F1ED05-9F6D-47A2-AAAE-29D317C6F066}" />
+    <appv:KnownFolder ID="{905e63b6-c1bf-494e-b29c-65b732d3d21a}" />
+    <appv:KnownFolder ID="{F38BF404-1D43-42F2-9305-67DE0B28FC23}" />
+  </appv:UsedKnownFolders>
+</Package>

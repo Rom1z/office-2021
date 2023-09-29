@@ -1,0 +1,12 @@
+{
+    "1.0": [
+        "app.json",
+        "assets\\assets\\images\\ExcelIllustration.png",
+        "assets\\assets\\images\\PPTIllustration.png",
+        "assets\\assets\\images\\WordIllustration.png",
+        "licensing.win32.bundle",
+        "strings.resjson",
+        "msft.png",
+        "manifest.xml"
+    ]
+}

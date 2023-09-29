@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "试用 Excel 中的 Python (预览版)",
+  "premiumHubMessageTextForPythonInExcel": "将 Python 公式与 Excel 网格结合使用，以清理、浏览和分析数据。受 Microsoft 云保护，直接在 Excel 中创建和共享高级分析。",
+  "premiumHubSectionOneHeaderForPythonInExcel": "点击库",
+  "premiumHubSectionOneMessageForPythonInExcel": "使用常用 Python 库简化和加快分析。",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "查找模式",
+  "premiumHubSectionTwoMessageForPythonInExcel": "使用 Python 公式发现数据中隐藏的见解，并使用绘图对其进行可视化。",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "不需要安装程序",
+  "premiumHubSectionThreeMessageForPythonInExcel": "使用现成的安全环境简化工作流。",
+  "premiumHubTermsOfUseForPythonInExcel": "当 Excel 中的 Python 处于公共预览阶段时，你将能够将此功能用作订阅的一部分。预览后，你需要购买其他许可证才能使用它。查看 {0}。",
+  "premiumHubLearnMoreLinkForPythonInExcel": "了解详细信息",
+  "premiumHubPythonCenterButtonForPythonInExcel": "向我展示其工作原理",
+  "premiumHubTryPreviewButtonForPythonInExcel": "试用预览版",
+  "termsOfUseLinkForPreview": "预览版使用条款"
+}

@@ -1,0 +1,355 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -o-user-select: none;
+  user-select: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-size: 10px;
+  text-decoration: none;
+}
+
+a.legal-notice-light-ltr {
+  color: #005a9e;
+  text-decoration: underline;
+  float: right;
+  margin-top: 4px;
+  margin-right: 5%;
+}
+
+a.legal-notice-dark-ltr {
+  color: white;
+  text-decoration: underline;
+  float: right;
+  margin-top: 4px;
+  margin-right: 5%;
+}
+
+a.legal-notice-light-rtl {
+  color: #005a9e;
+  text-decoration: underline;
+  float: left;
+  margin-top: 4px;
+  margin-left: 5%;
+}
+
+a.legal-notice-dark-rtl {
+  color: white;
+  text-decoration: underline;
+  float: left;
+  margin-top: 4px;
+  margin-left: 4%;
+}
+
+a.learn-more-link-light-rtl {
+  color: #005a9e;
+  text-decoration: underline;
+  float: right;
+  margin-top: 4px;
+  margin-right: 2%;
+}
+
+a.learn-more-link-light-ltr {
+  color: #005a9e;
+  text-decoration: underline;
+  float: left;
+  margin-top: 4px;
+}
+
+a.learn-more-link-dark-ltr {
+  color: white;
+  text-decoration: underline;
+  float: left;
+  margin-top: 4px;
+}
+
+a.learn-more-link-dark-rtl {
+  color: white;
+  text-decoration: underline;
+  float: right;
+  margin-top: 4px;
+  margin-right: 2%;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 3.25rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.3rem;
+  text-align: left;
+  margin-left: 7px;
+}
+
+#footer-editmode {
+  width: 100%;
+  text-align: left;
+  margin-left: 7px;
+}
+
+.ms-welcome__header {
+  padding: 20px;
+  padding-bottom: 30px;
+  padding-top: 100px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ms-welcome__main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 10px 20px;
+}
+
+.ms-welcome__main > h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.ms-welcome__features {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem {
+  padding-bottom: 20px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+  margin-right: 10px;
+}
+
+.ms-welcome__action.ms-Button--hero {
+  margin-top: 30px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.buttonActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+[dir='ltr'] .insert-data-button {
+  margin-right: 20px;
+}
+
+[dir='rtl'] .insert-data-button {
+  margin-left: 20px;
+}
+
+[dir='ltr'] .info-button {
+  margin-left: 20px;
+}
+
+[dir='rtl'] .info-button {
+  margin-right: 20px;
+}
+
+.info-button-text {
+  padding: 7px;
+}
+
+.prev-review-button {
+  float: left;
+  width: 30%;
+  height: 30px;
+}
+
+.next-review-button {
+  float: right;
+  width: 30%;
+  height: 30px;
+}
+
+.review-descriptive-text {
+  margin-left: 5px;
+  margin-bottom: 8px;
+  vertical-align: 15%;
+  display: inline-block;
+}
+
+.insert-descriptive-text1 {
+  width: 91%;
+  float: right;
+  margin-bottom: 8px;
+}
+
+.insert-descriptive-text2 {
+  margin-left: 5px;
+  margin-bottom: 8px;
+  vertical-align: 15%;
+  display: inline-block;
+}
+
+.review-iteration-text {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.review-popup-first-row,
+.insert-popup-first-row {
+  text-align: center;
+}
+
+.review-popup-second-row {
+  text-align: center;
+}
+
+.insert-popup1-second-row {
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.insert-popup2-second-row {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.insert-popup2-second-row-part2 {
+  text-align: center;
+}
+
+.review-popup-third-row {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.insert-popup-third-row {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 7px;
+}
+
+.review-popup-fourth-row {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.review-warning-icon {
+  display: inline-block;
+}
+
+.insert-warning-icon1-rtl {
+  width: 9%;
+  float: right;
+  margin-top: 2px;
+}
+
+.insert-warning-icon1-ltr {
+  width: 9%;
+  float: left;
+  margin-top: 2px;
+}
+
+.insert-warning-icon2 {
+  display: inline-block;
+}
+
+.insertpopup-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.insertpopup-close-button-ie {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background: none;
+  border: none;
+}
+
+.edit-popup-close-button-ie {
+  margin-left: 5px;
+}
+
+input {
+  font-size: 15px;
+  border: 2px solid rgb(1, 120, 212);
+  border-radius: 2px;
+}
+
+.edit-popup-second-row {
+  text-align: center;
+  margin: 8px auto;
+  margin-bottom: 0px;
+}
+
+.ms-Button.ms-Button--hero .ms-Button-label {
+  color: #0078d7;
+}
+
+.ms-Button.ms-Button--hero:hover .ms-Button-label,
+.ms-Button.ms-Button--hero:focus .ms-Button-label {
+  color: #005a9e;
+  cursor: pointer;
+}
+
+.ms-welcome__progress {
+  margin-top: 30px;
+}
+
+.errormessage-ltr {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.errormessage-rtl {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.progress_spinner {
+  margin-top: 200px;
+}
+b {
+  font-weight: bold;
+}

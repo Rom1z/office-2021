@@ -1,0 +1,7 @@
+{
+  "explanationTableBefore": "Вместо:",
+  "explanationTableAfter": "Рассмотрите:",
+  "explanationTableSeparator": "или",
+  "explanationTableAccessibilityLabel": "Примеры",
+  "exampleText": "тест"
+}

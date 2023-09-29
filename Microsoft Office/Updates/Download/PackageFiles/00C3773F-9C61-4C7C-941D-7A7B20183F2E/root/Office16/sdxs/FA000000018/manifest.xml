@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="ContentApp">
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>8C69335C-5AAF-414C-903B-12CA1B8B494A</Id>
+
+  <Version>1.0.2308.4005</Version>
+  <ProviderName>Excel</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="CardView"/>
+  <Description DefaultValue="Card view for data types in Excel"/>
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="src/assets/CardViewIcon.png" />
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://aka.ms/sdx" />
+
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <!-- End TaskPane Mode integration.  -->
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <!-- Host must support CardViewHost version or higher -->
+      <!-- Only major.minor is supported. Do NOT add .patch -->
+      <!-- For minor, we use a convention of YYMMX, where X is the capability change # for such month -->
+      <Set Name="CardViewHost" MinVersion="1.21021" />
+    </Sets>
+  </Requirements>
+
+</OfficeApp>

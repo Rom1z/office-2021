@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>a461341d-a650-485f-ad6a-38eb2921bc07</Id>
+  <Version>1.0.2308.2011</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Initialization"/>
+  <Description DefaultValue="Initialization"/>
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
+  <AppDomains>
+    <AppDomain>https://localhost:3000/</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000/messageBoxDialog.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+	  <Resources>
+      <bt:Urls>
+        <bt:Url id="MessageBox.Url" DefaultValue="https://localhost:3000/messageBoxDialog.html"/>
+      </bt:Urls>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

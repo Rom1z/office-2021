@@ -1,0 +1,52 @@
+<AppXManifestLocalization>
+  <String Id="WW_Shell_Verb_Edit" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Edit']">&amp;Өңдеу</String>
+  <String Id="WW_Shell_Verb_New" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;New']">&amp;Жаңа</String>
+  <String Id="WW_Shell_Verb_Open" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Open']">&amp;Ашу</String>
+  <String Id="WW_Shell_Verb_OpenAsReadOnly" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Open as Read-Only'] ">Тек оқу үшін</String>
+  <String Id="WW_Shell_Verb_Print" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Print'] ">Басып &amp;шығару</String>
+  <String Id="WW_Shell_Verb_PrintTo" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Print &amp;To'] ">&amp;Басып шығару</String>
+  <String Id="WW_Shell_Verb_Show" xpath="//appv:ShellCommand//appv:FriendlyName[text()='S&amp;how'] ">&amp;Көрсету</String>
+  <String Id="WW_Shell_Verb_Design" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Design'] ">&amp;Құрастырушы</String>
+  <String Id="WW_Shell_Verb_Browse" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Browse'] ">&amp;Шолу</String>
+  <String Id="WW_Shell_Verb_Preview" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Pre&amp;view'] ">&amp;Алдын ала қарау</String>
+  <String Id="WW_Shell_Verb_Run" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Run'] ">&amp;Іске қосу</String>
+  <String Id="WW_Shell_Verb_ProtectedView" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Open in Protected &amp;View'] ">Қорғалған &amp;көріністе ашу</String>
+  <String Id="WW_Shell_XL_OpenInExcel" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Open in Excel']">Excel бағдарламасында &amp;ашу</String>
+  <String Id="WW_Shell_XL_OpenInMSExcel" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Open in Microsoft Office Excel']">Microsoft Excel бағдарламасында &amp;ашу</String>
+  <String Id="WW_Shell_XL_EditInExcel" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Edit in Excel']">Excel бағдарламасында &amp;өңдеу</String>
+  <String Id="WW_Shell_XL_EditInNotepad" xpath="//appv:ShellCommand//appv:FriendlyName[text()='&amp;Edit with Notepad']">&amp;Блокнотта өңдеу</String>
+  <String Id="WW_Shell_Acc_Datasheet" xpath="//appv:ShellCommand//appv:FriendlyName[text()='Data&amp;sheet']">Д&amp;еректер парағы</String>
+  <String Id="WW_ACC_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Access')]]//appv:Description">Деректерді басқару үшін жылдам кәсіби бағдарлама жасаңыз.</String>
+  <String Id="WW_XL_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Excel')]]//appv:Description">Деректерден пайдалы мәліметтерді оңай табыңыз, көріңіз және ортақ пайдаланыңыз.</String>
+  <String Id="WW_XD_Editor_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'InfoPath Filler')]]//appv:Description">Ұйым бойынша ақпаратты жинап, қайта пайдалану үшін динамикалық формаларды Microsoft InfoPath бағдарламасын қолдана отырып толтырыңыз.</String>
+  <String Id="WW_XD_Designer_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'InfoPath Designer')]]//appv:Description">Ұйым бойынша ақпаратты жинап, қайта пайдалану үшін динамикалық формаларды Microsoft InfoPath бағдарламасын қолдана отырып жасақтаңыз.</String>
+  <String Id="WW_Lync_Shortcut_Record_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'OcPubMgr')]]//appv:Description">Барлық Бизнеске арналған Skype жазбаларыңызды бір орында басқарыңыз.</String>
+  <String Id="WW_Lync_Shortcut_Record_name" xpath="//appv:Shortcut//appv:File[contains(text(),'Skype for Business Recording Manager')]" replace="Skype for Business Recording Manager">Бизнеске арналған Skype жазбаларын реттеуші</String>
+  <String Id="WW_Lync_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'lync.exe')]]//appv:Description">Дауыстық және бейне қоңыраулар, Skype жиналыстары және жылдам хабарлар арқылы кез келген жердегі адамдармен байланыс орнатыңыз.</String>
+  <String Id="Lync_Exe_Title" xpath="//appv:Shortcut//appv:File[contains(text(),'Skype for Business')]" replace="Skype for Business">Бизнеске арналған Skype</String>
+  <String Id="OfficeHub_Exe_Title" xpath="//appv:Shortcut[appv:File[contains(text(),'OfficeHubWin32')]]//appv:Description">Microsoft Office орталығы</String>
+  <String Id="WW_ON_MainShortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'ONENOTE.EXE')]]//appv:Description">Жазбалар жасап, оларды қажет кезде қол астында ұстаңыз.</String>
+  <String Id="WW_ONM_MainShortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'ONENOTEM.EXE')]]//appv:Description">Қиынды тақтасын көрсету (Windows+N) немесе экран қиындысын алу (Windows+S)</String>
+  <String Id="WW_ONoteM_ShortcutName" xpath="//appv:Shortcut//appv:File[contains(text(),'Send to OneNote')]" replace="Send to OneNote 2016">OneNote (жұмыс үстелі)</String>
+  <String Id="WW_OUT_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Outlook')]]//appv:Description">Электрондық поштаны, кестелерді, контактілер мен тапсырмаларды басқарыңыз.</String>
+  <String Id="WW_PPT_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'PowerPoint')]]//appv:Description">Көрікті презентацияларды оңай және сенімділікпен жасаңыз және жеткізіңіз.</String>
+  <String Id="WW_PRJ_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Project')]]//appv:Description">Ұтысты жобаларды жылдам бастау және жеткізу үшін басқалармен оңай бірлесіп жұмыс істеңіз.</String>
+  <String Id="WW_PUB_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Publisher')]]//appv:Description">Әсерлі кәсіби сападағы жарияланымдар жасаңыз.</String>
+  <String Id="WW_VIS_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Visio')]]//appv:Description">Күрделі ақпаратты оңайлататын кәсіби және әмбебап диаграммалар жасаңыз.</String>
+  <String Id="WW_WRD_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Word')]]//appv:Description">Көрікті құжаттар жасаңыз, басқалармен оңай жұмыс істеңіз және оқудан ләззат алыңыз.</String>
+  <String Id="WW_DIR_ToolsMenu" xpath="//appv:Shortcut//appv:File[contains(text(),'Microsoft Office Tools')]" replace="Microsoft Office Tools">Microsoft Office құралдары</String>
+  <String Id="WW_DigSig_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'SELFCERT')]]//appv:Description">This program creates a self-signed digital certificate that can be used for personal macros on this machine only.</String>
+  <String Id="WW_DigSig_Shortcut" xpath="//appv:Shortcut//appv:File[contains(text(),'Digital Certificate for VBA Projects')]" replace="Digital Certificate for VBA Projects">Digital Certificate for VBA Projects</String>
+  <String Id="WW_SetLang_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'SETLANG')]]//appv:Description">Office бағдарламаларындағы тіл теңшелімдерін өзгерту.</String>
+  <String Id="WW_SetLang_Shortcut" xpath="//appv:Shortcut//appv:File[contains(text(),'Office Language Preferences')]" replace="Office Language Preferences">Office тіл параметрлері</String>
+  <String Id="WW_DCF_SSC_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'SPREADSHEETCOMPARE')]]//appv:Description">Excel жұмыс кітабының нұсқаларын салыстырыңыз.</String>
+  <String Id="WW_DCF_DBC_Shortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'DATABASECOMPARE')]]//appv:Description">Access дерекқорының нұсқаларын салыстырыңыз.</String>
+  <String Id="OSM_AdminUXShortcut_EVDescription" xpath="//appv:Shortcut[appv:Target[contains(text(),'msoev')]]//appv:Description">Office шешімдері үшін критикалық қателерді, үйлесімділік ақауларын және айналып өту мәліметтерін Office телеметрия журналымен көріңіз.</String>
+  <String Id="OSM_AdminUXShortcut_EVName" xpath="//appv:Shortcut//appv:File[contains(text(),'Telemetry Log for Office')]" replace="Telemetry Log for Office">Office телеметрия журналы</String>
+  <String Id="WW_PRJ_SrvAcct_Shortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'Project Server')]]//appv:Description">Microsoft Project Server қызметіне қосылған кезде, Microsoft Project пайдаланатын тіркелгі профайлдарын жасау және оларды өңдеу.</String>
+  <String Id="WW_PRJ_SrvAcct_Shortcut" xpath="//appv:Shortcut//appv:File[contains(text(),'Project Server 2016')]" replace="Accounts">Жазбалар</String>
+  <String Id="WW_SPDESIGN_MainShortcut_tip" xpath="//appv:Shortcut[appv:File[contains(text(),'SharePoint Designer')]]//appv:Description">Microsoft SharePoint Designer бағдарламасын Microsoft SharePoint веб-сайттарын жасау мен реттеу үшін және жұмыс процестерін пайдаланатын бағдарламалар жасау үшін пайдаланыңыз.</String>
+  <String Id="WW_GRV_SPFS_MainShortcut_tip" xpath="//appv:Shortcut[appv:Target[contains(text(),'GROOVE.EXE')]]//appv:Description">Егер қосылсаңыз, SharePoint құжаттарын компьютеріңізге синхрондаңыз және мазмұнмен жұмыс істеңіз.</String>
+  <String Id="WW_SPFS_FriendlyAppName" xpath="//appv:Shortcut//appv:File[contains(text(),'OneDrive for Business')]" replace="OneDrive for Business">Бизнеске арналған OneDrive</String>
+  <String Id="WW_FriendlyAppName_Desktop_Tag" xpath="//appv:ApplicationCapabilities//appv:CapabilityGroup//appv:Capabilities//appv:Name[contains(text(),'(desktop)')]" replace="(desktop)">(жұмыс үстелі)</String>
+</AppXManifestLocalization>

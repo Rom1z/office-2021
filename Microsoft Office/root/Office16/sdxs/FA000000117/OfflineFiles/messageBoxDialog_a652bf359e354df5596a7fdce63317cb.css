@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: block;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+    background-color: var(--white);
+}
+
+#loading {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    opacity: 0.8;
+    z-index: 99;
+  }
+  
+  #loading-image {
+    z-index: 100;
+  }
+
+.messagebox-main {
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.messagebox-body {
+    height: 100%;
+    padding: 20px;
+}
+
+.messagebox-text {
+    width: 80%;
+}

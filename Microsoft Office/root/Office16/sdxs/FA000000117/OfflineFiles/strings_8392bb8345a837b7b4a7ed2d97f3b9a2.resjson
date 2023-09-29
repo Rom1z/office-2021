@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Vyskúšajte jazyk Python v Exceli (verzia preview)",
+  "premiumHubMessageTextForPythonInExcel": "Skombinujte vzorce jazyka Python s mriežkou Excelu a vyčistite, preskúmajte a analyzujte svoje údaje. Zabezpečené službou Microsoft Cloud, môžete vytvárať a zdieľať pokročilé prehľady priamo v Exceli.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Využite knižnice",
+  "premiumHubSectionOneMessageForPythonInExcel": "Zjednodušte a urýchlite analýzu pomocou bežných knižníc jazyka Python.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Nájsť vzory",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Pomocou vzorcov jazyka Python môžete objavovať skryté prehľady vo svojich údajoch a vizualizovať ich pomocou diagramov.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Nepožaduje sa žiadne nastavenie",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Zjednodušte pracovné postupy pomocou zabezpečených prostredí pripravených na použitie.",
+  "premiumHubTermsOfUseForPythonInExcel": "Keď je jazyk Python v Exceli vo verzii public preview, túto funkciu budete môcť používať ako súčasť predplatného. Po uplynutí ukážky si budete musieť zakúpiť ďalšiu licenciu, aby ste ju mohli používať. Zobraziť {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Ďalšie informácie",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Ukážte mi, ako to funguje",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Vyskúšať ukážku",
+  "termsOfUseLinkForPreview": "podmienky používania verzie preview"
+}

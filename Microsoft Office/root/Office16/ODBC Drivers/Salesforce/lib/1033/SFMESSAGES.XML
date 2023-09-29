@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+  <!ELEMENT Messages (Package*)>
+
+  <!ELEMENT Package (Error*)>
+  <!ATTLIST Package ID CDATA #REQUIRED>
+  <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+  <!ELEMENT Error (#PCDATA)>
+  <!ATTLIST Error Key ID #REQUIRED>
+  <!ATTLIST Error Component CDATA #IMPLIED>
+  <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+  <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- Package SF_ERROR. ID corresponds to the SF_ERROR constant defined in Salesforce.h -->
+    <Package ID="100" DefaultComponent="Salesforce">
+        <Error Key="SFLicenseFailure" Params="1" NativeErrorCode="0"><!-- _locID=SFLicenseFailure _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the license check fails." -->License validation error: %1%. Please contact Simba Technologies Inc. at sales@simba.com.</Error>
+
+        <Error Key="SFUnknownType" Params="1" NativeErrorCode="5"><!-- _locID=SFUnknownType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when attempting to map SF type to SQL type." -->Unknown Salesforce data type: %1%</Error>
+
+        <Error Key="SFXMLResultParseFormatError" Params="1" NativeErrorCode="22"><!-- _locID=SFXMLResultParseFormatError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an XML parse error occurs." -->Error parsing XML response from Salesforce: %1%</Error>
+
+        <Error Key="SFHTTPError" Params="1" NativeErrorCode="23"><!-- _locID=SFHTTPError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an HTTP error occurs." -->Error in Http Request: %1%</Error>
+
+        <Error Key="SFNoSessionId" NativeErrorCode="24"><!-- _locID=SFNoSessionId _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a session ID isn't available." -->No session ID available. Try to reconnect.</Error>
+
+        <Error Key="SFSoqlParseError" NativeErrorCode="30"><!-- _locID=SFSoqlParseError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a syntax error occurs parsing SOQL." -->Syntax error or access violation when parsing SOQL.</Error>
+
+        <Error Key="JSONParseError" Params="1" NativeErrorCode="56"><!-- _locID=JSONParseError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when invalid JSON is returned by the Analytics API." -->JSON parsing error: %1%.</Error>
+
+        <Error Key="SFUnknownSqlType" Params="1" NativeErrorCode="57"><!-- _locID=SFUnknownSqlType _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when unknown SQL type encountered." -->Unknown SQL type %1%.</Error>
+
+        <Error Key="SFInvalidURL" Params="1" NativeErrorCode="60"><!-- _locID=SFInvalidURL _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid URL is used for the connection." -->Invalid Salesforce URL used for connection: %1%. Only URLs connecting to salesforce.com or visual.force.com are allowed.</Error>
+
+        <Error Key="SFReportError" Params="2" NativeErrorCode="70"><!-- _locID=SFReportError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs executing a stored procedure." -->[%1%] %2%</Error>
+
+        <Error Key="SFUnknownSoapError" NativeErrorCode="80"><!-- _locID=SFUnknownSoapError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an unknown error occurs executing a SOAP call." -->Unknown error received from SOAP response, potentially a problem with user privileges.</Error>
+
+        <Error Key="SFUnknownRestError" NativeErrorCode="81"><!-- _locID=SFUnknownRestError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an unknown error occurs executing a REST call." -->Unknown error received from REST response, potentially a problem with user privileges.</Error>
+
+        <Error Key="SFBulkApiError" Params="1" NativeErrorCode="90"><!-- _locID=SFBulkApiError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an error occurs executing a Bulk API call." -->Error from Bulk API: %1%</Error>
+
+        <Error Key="SFColumnWriteError" Params="1" NativeErrorCode="100"><!-- _locID=SFColumnWriteError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when trying to write to an unwritable column." -->Cannot write to column: %1%</Error>
+
+        <Error Key="SFMaxFieldsError" NativeErrorCode="110"><!-- _locID=SFMaxFieldsError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when trying to write to too many columns." -->Number of fields may not exceed 5,000.</Error>
+
+        <Error Key="SFFieldsCharError" NativeErrorCode="111"><!-- _locID=SFFieldsCharError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a record has too many characters." -->Characters of a record may not exceed 400,000.</Error>
+
+        <Error Key="SFBatchCharError" NativeErrorCode="112"><!-- _locID=SFBatchCharError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when the batch has too many records." -->Characters of a batch may not exceed 10,000,000. Try reducing BulkBatchSize.</Error>
+
+        <Error Key="SFFieldCharError" NativeErrorCode="113"><!-- _locID=SFFieldCharError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when a field has too many characters." -->Characters of a field may not exceed 32,000.</Error>
+
+        <Error Key="SFBatchSizeError" NativeErrorCode="114"><!-- _locID=SFBatchSizeError _locComment="[Tag:CALC-ACC-ODBCDrivers]Warning showns when BulkBatchSize is set greater than 10000" -->BulkBatchSize cannot be greater than 10,000.</Error>
+
+        <Error Key="SFMissingServicePath" NativeErrorCode="115"><!-- _locID=SFMissingServicePath _locComment="[Tag:CALC-ACC-ODBCDrivers]Warning showns when the ServicePath setting cannot be read for the driver." -->ServicePath setting is missing, please reinstall the driver or check the driver configuration.</Error>
+		
+        <Error Key="SFPKChunkSizeError" NativeErrorCode="116"><!-- _locID=SFPKChunkSizeError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when PKChunkSize is set incorrectly." -->PKChunkSize must be a positive integer less than or equal to 250,000.</Error>
+
+        <Error Key="SFSOQLFirstError" Params="2" NativeErrorCode="120"><!-- _locID=SFSOQLFirstError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error combining SOQL error thrown and SQL error thrown for SOQL first mode." -->SOQL_FIRST mode prepare failure:
+SOQL error: %1%
+SQL error: %2%</Error>
+
+        <Error Key="SFSQLFirstError" Params="2" NativeErrorCode="121"><!-- _locID=SFSQLFirstError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error combining SOQL error thrown and SQL error thrown for SQL first mode." -->SQL_FIRST mode prepare failure:
+SQL error: %1%
+SOQL error: %2%</Error>
+
+        <Error Key="SFError" Params="1" NativeErrorCode="148"><!-- _locID=SFError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error from Salesforce, no additional formatting requred. Error code from old SOAP ApiFault__ExceptionCode__UNKNOWN_USCOREEXCEPTION value to maintain compatability." -->%1%</Error>
+
+        <Error Key="SFkParseErrorNone" NativeErrorCode="200"><!-- _locID=SFkParseErrorNone _locComment="[Tag:CALC-ACC-ODBCDrivers]Errors from rapidjson, rapidjson enum value is NativeErrorCode minus 200. Messages from error.h in rapidjson library." -->JSON parsing error: No error.</Error>
+        <Error Key="SFkParseErrorDocumentEmpty" NativeErrorCode="201"><!-- _locID=SFkParseErrorDocumentEmpty -->JSON parsing error: The document is empty.</Error>
+        <Error Key="SFkParseErrorDocumentRootNotSingular" NativeErrorCode="202"><!-- _locID=SFkParseErrorDocumentRootNotSingular -->JSON parsing error: The document root must not follow by other values.</Error>
+        <Error Key="SFkParseErrorValueInvalid" NativeErrorCode="203"><!-- _locID=SFkParseErrorValueInvalid -->JSON parsing error: Invalid value.</Error>
+        <Error Key="SFkParseErrorObjectMissName" NativeErrorCode="204"><!-- _locID=SFkParseErrorObjectMissName -->JSON parsing error: Missing a name for object member.</Error>
+        <Error Key="SFkParseErrorObjectMissColon" NativeErrorCode="205"><!-- _locID=SFkParseErrorObjectMissColon -->JSON parsing error: Missing a colon after a name of object member.</Error>
+        <Error Key="SFkParseErrorObjectMissCommaOrCurlyBracket" NativeErrorCode="206"><!-- _locID=SFkParseErrorObjectMissCommaOrCurlyBracket -->JSON parsing error: Missing a comma or '}' after an object member.</Error>
+        <Error Key="SFkParseErrorArrayMissCommaOrSquareBracket" NativeErrorCode="207"><!-- _locID=SFkParseErrorArrayMissCommaOrSquareBracket -->JSON parsing error: Missing a comma or ']' after an array element.</Error>
+        <Error Key="SFkParseErrorStringUnicodeEscapeInvalidHex" NativeErrorCode="208"><!-- _locID=SFkParseErrorStringUnicodeEscapeInvalidHex -->JSON parsing error: Incorrect hex digit after \\u escape in string.</Error>
+        <Error Key="SFkParseErrorStringUnicodeSurrogateInvalid" NativeErrorCode="209"><!-- _locID=SFkParseErrorStringUnicodeSurrogateInvalid -->JSON parsing error: The surrogate pair in string is invalid.</Error>
+        <Error Key="SFkParseErrorStringEscapeInvalid" NativeErrorCode="210"><!-- _locID=SFkParseErrorStringEscapeInvalid -->JSON parsing error: Invalid escape character in string.</Error>
+        <Error Key="SFkParseErrorStringMissQuotationMark" NativeErrorCode="211"><!-- _locID=SFkParseErrorStringMissQuotationMark -->JSON parsing error: Missing a closing quotation mark in string.</Error>
+        <Error Key="SFkParseErrorStringInvalidEncoding" NativeErrorCode="212"><!-- _locID=SFkParseErrorStringInvalidEncoding -->JSON parsing error: Invalid encoding in string.</Error>
+        <Error Key="SFkParseErrorNumberTooBig" NativeErrorCode="213"><!-- _locID=SFkParseErrorNumberTooBig -->JSON parsing error: Number too big to be stored in double.</Error>
+        <Error Key="SFkParseErrorNumberMissFraction" NativeErrorCode="214"><!-- _locID=SFkParseErrorNumberMissFraction -->JSON parsing error: Miss fraction part in number.</Error>
+        <Error Key="SFkParseErrorNumberMissExponent" NativeErrorCode="215"><!-- _locID=SFkParseErrorNumberMissExponent -->JSON parsing error: Miss exponent in number.</Error>
+        <Error Key="SFkParseErrorTermination" NativeErrorCode="216"><!-- _locID=SFkParseErrorTermination -->JSON parsing error: Parsing was terminated.</Error>
+        <Error Key="SFkParseErrorUnspecificSyntaxError" NativeErrorCode="217"><!-- _locID=SFkParseErrorUnspecificSyntaxError -->JSON parsing error: Unspecific syntax error.</Error>
+
+        <Error Key="SFJSONTypeError" NativeErrorCode="230"><!-- _locID=SFJSONTypeError _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when unexpected JSON type is encountered." -->Unexpected JSON type in data conversion.</Error>
+
+      <!-- Configuration dialog error messages. -->
+        <Error Key="SFInvalidPort" Params="1" NativeErrorCode="1060"><!-- _locID=SFInvalidPort _locComment="[Tag:CALC-ACC-ODBCDrivers]Error thrown when an invalid port is used." -->Invalid port: '%1%'. Valid values are in the range [0, 65535].</Error>
+    </Package>
+</Messages>

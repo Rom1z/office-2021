@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+
+	<Id>364e5a30-d567-44aa-afb6-1c929362ad29</Id>
+	<Version>1.0.0.4</Version>
+	<ProviderName>Microsoft Corporation</ProviderName>
+	<DefaultLocale>en-US</DefaultLocale>
+	<DisplayName DefaultValue="Transform to Web Page">
+		<Override Locale="en-US" Value="Transform to Web Page" />
+	</DisplayName>
+	<Description DefaultValue="Transform your document into an interactive, easy-to-share Sway web page that looks great on any device."/>
+	<IconUrl DefaultValue="https://sway.com/Content/printtoweb.32x32.png" />
+	<HighResolutionIconUrl DefaultValue="https://sway.com/Content/printtoweb.80x80.png" />
+	<SupportUrl DefaultValue="https://support.office.com/en-us/sway" />
+	<AppDomains>
+		<AppDomain>https://login.live.com</AppDomain>
+		<AppDomain>https://login.windows.net</AppDomain>
+		<AppDomain>https://sway.com</AppDomain>
+	</AppDomains>
+	<Hosts>
+		<Host Name="Document" />
+	</Hosts>
+	<Requirements>
+		<Sets DefaultMinVersion="1.1">
+			<Set Name="AddinCommands" />
+		</Sets>
+	</Requirements>
+
+	<DefaultSettings>
+		<SourceLocation DefaultValue="https://sway.com/publishtosway" />
+	</DefaultSettings>
+	
+	<Permissions>ReadWriteDocument</Permissions>
+	
+	<VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+		<WebApplicationInfo>
+			<Id>905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba</Id>
+			<Resource>905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba,https://sway.com/</Resource>
+			<Scopes>
+				<Scope>openid</Scope>
+				<Scope>profile</Scope>
+			</Scopes>
+			<Authorizations>
+				<Authorization>
+					<Resource>905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba</Resource>
+					<Scopes>
+						<Scope>openid</Scope>
+						<Scope>profile</Scope>
+					</Scopes>
+				</Authorization>
+				<Authorization>
+					<Resource>https://sway.com/</Resource>
+					<Scopes>
+						<Scope>openid</Scope>
+						<Scope>profile</Scope>
+					</Scopes>
+				</Authorization>
+			</Authorizations>
+		</WebApplicationInfo>
+		<ConnectedServiceControls>
+			<Scopes>
+				<Scope>AnalyzeUserContent</Scope>
+			</Scopes>
+		</ConnectedServiceControls>
+	</VersionOverrides>
+</OfficeApp>

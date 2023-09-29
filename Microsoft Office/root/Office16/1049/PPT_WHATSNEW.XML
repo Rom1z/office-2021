@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhatsNewCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://whatsNewSchemaUri">
+  <Product>PowerPoint</Product>
+  <Platform>Desktop</Platform>
+  <Locale>ru-RU</Locale>
+  <Release>1706 JUNE</Release>
+  <WhatsNewItem>
+    <ItemId>17071</ItemId>
+    <Title>Трехмерные модели для обзора во всех ракурсах</Title>
+    <Description>Проявите свои творческие способности, создавая визуально привлекательные и динамичные презентации с трехмерными изображениями. Добавляйте трехмерные модели в презентации с переходами, например трансформацией, чтобы создать эффект кинематографической анимации между слайдами.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>Insert3DModelDropdown</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.Model3D</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17072</ItemId>
+    <Title>Автоматическое сохранение в PowerPoint</Title>
+    <Description>Изменения в презентациях, хранящихся в облаке, сохраняются автоматически. Благодаря этому изменения, внесенные другими пользователями, отображаются за считаные секунды.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SaveAttachToOneDrive</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.PowerPoint.AutoSaveCloudFile</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17073</ItemId>
+    <Title>Изменения за время вашего отсутствия</Title>
+    <Description>PowerPoint показывает, кто вносил изменения в общую презентацию со времени вашего последнего визита.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>CollaborateActivity</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Docs.UnseenActivity</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17074</ItemId>
+    <Title>Просмотр изменений</Title>
+    <Description>Слайды, измененные другими пользователями, выделяются.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SharingPresenceMoreUsersBackground</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.PowerPoint.RevisionTracking.Editing</ExperimentalName>
+    <FeatureGateScope>Audience::Automation &amp;&amp; !Plat::MacOS</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17075</ItemId>
+    <Title>Новые эффекты рукописного ввода</Title>
+    <Description>Выражайте свои идеи, используя перья с эффектом "металлик" и эффекты рукописного ввода (радуга, галактика, лава, океан, золото, серебро и др.).</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>HighlightNew</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.Graphics.OartInkEffects</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>true</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17076</ItemId>
+    <Title>Звуковые подсказки</Title>
+    <Description>Включите звуковые подсказки, чтобы упростить работу с приложением, в меню "Параметры", раздел "Специальные возможности". Для использования не нужны надстройки.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>SoundInsertFromFile</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.UXPlatform.ModernOfficeSoundsSettingEnabled</ExperimentalName>
+    <FeatureGateScope>Audience::Automation</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+  <WhatsNewItem>
+    <ItemId>17077</ItemId>
+    <Title>Шрифт Dubai — современный как мегаполис</Title>
+    <Description>Выражайте свои мысли с помощью шрифта Dubai, разработанного корпорацией Майкрософт совместно с эмиратом Дубай. Незавсимо от того, на каком языке вы печатаете: арабском или западноевропейском языке, вам понравится результат.</Description>
+    <HyperlinkLabel />
+    <HyperlinkUrl />
+    <IconId>0</IconId>
+    <IconTcidNameX>DubaiFont</IconTcidNameX>
+    <ActionTcidNameX />
+    <ExperimentalName>Microsoft.Office.WhatsNew.ShowDubaiFont</ExperimentalName>
+    <FeatureGateScope>Audience::None</FeatureGateScope>
+    <ApplicableFormFactor>15</ApplicableFormFactor>
+    <SubscriptionOnlyFeature>false</SubscriptionOnlyFeature>
+  </WhatsNewItem>
+</WhatsNewCollection>

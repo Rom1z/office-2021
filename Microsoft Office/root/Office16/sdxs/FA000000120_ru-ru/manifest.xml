@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+
+  <!-- Manifest documation here: https://docs.microsoft.com/en-us/office/dev/add-ins/reference/manifest/officeapp -->
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <!-- IMPORTANT! Id must be unique for your add-in, if you reuse this manifest ensure that you change this id to a new GUID. -->
+  <Id>0B561262-60A7-4B77-8467-9F49DBF0B4EF</Id>
+
+  <Version>1.0.2308.18004</Version>
+  <ProviderName>Contoso</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="External Code Service Diagnostics"/>
+  <Description DefaultValue="External Code Service Diagnostics SDX Taskpane"/>
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="assets/StoreLogo.png"/>
+  <SupportUrl DefaultValue="https://aka.ms/sdx"/>
+
+  <!-- Hosts is used to specify which app the SDX should run in
+            Document (Word)
+            Database (Access)
+            Mailbox (Outlook)
+            Notebook (OneNote)
+            Presentation (PowerPoint)
+            Project (Project)
+            Workbook (Excel)
+  -->
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <!-- Host must support ExternalCodeServiceDiagnostics version or higher -->
+      <!-- Only major.minor is supported. Do NOT add .patch -->
+      <!-- For minor, we use a convention of YYMMX, where X is the capability change # for such month -->
+      <!-- Useful links https://office.visualstudio.com/OC/_wiki/wikis/SDX%20Developer%20Center/29149/Service-Delivery-Version-Update-Guidelines and https://office.visualstudio.com/OC/_wiki/wikis/office-js-api/6460/capability-or-requirements-set-guidance -->
+      <Set Name="ExternalCodeServiceDiagnostics" MinVersion="1.23021.0"/>
+    </Sets>
+  </Requirements>
+
+</OfficeApp>

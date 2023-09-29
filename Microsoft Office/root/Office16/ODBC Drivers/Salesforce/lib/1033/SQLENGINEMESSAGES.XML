@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- SQL_ENGINE_ERROR ERRORS (30000 to 39999) -->
+    <Package ID="4" DefaultComponent="SQLEngine">
+
+        <!-- GENERAL ERRORS (30000 to 30999) -->
+
+        <Error Key="LogicError" Params="2" NativeErrorCode="30000"><!-- _locID=LogicError _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: General logic error." -->Logic error [%1%: %2%].</Error>
+
+        <Error Key="InvalidAET" Params="2" NativeErrorCode="30010"><!-- _locID=InvalidAET _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid AE tree found." -->Invalid AE tree [%1%: %2%].</Error>
+
+        <Error Key="InvalidParseTree" Params="2" NativeErrorCode="30040"><!-- _locID=InvalidParseTree _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid parse tree found." -->Invalid parse tree [%1%: %2%].</Error>
+
+        <Error Key="LexerScannerInitFail" NativeErrorCode="30050"><!-- _locID=LexerScannerInitFail _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Lexer/Scanner initialization failure." -->Lexer/Scanner initialization failure.</Error>
+
+        <Error Key="StoredProcedureNotFound" Params="1" NativeErrorCode="30070"><!-- _locID=StoredProcedureNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Stored procedure not found." -->Stored procedure not found: %1%</Error>
+
+        <Error Key="DuplicateParameterIndex" Params="1" NativeErrorCode="30080"><!-- _locID=DuplicateParameterIndex _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Duplicate parameter index registered." -->Duplicate parameter index registered for stored procedure: %1%</Error>
+
+        <Error Key="InvalidParameterIndex" Params="1" NativeErrorCode="30090"><!-- _locID=InvalidParameterIndex _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid parameter index registered." -->Invalid parameter index registered for stored procedure: %1%</Error>
+
+        <Error Key="InvalidReturnValueIndex" NativeErrorCode="30100"><!-- _locID=InvalidReturnValueIndex _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Return value is registered at a position that isn't the first." -->Return values must have an index of 0.</Error>
+
+        <Error Key="InvalidNumberProcedureParameters" Params="3" NativeErrorCode="30110"><!-- _locID=InvalidNumberProcedureParameters _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid number of parameters supplied for stored procedure." -->Invalid number of parameters for stored procedure '%1%'. Expected: %2%; Received: %3%</Error>
+
+        <Error Key="InvalidNumberStoredProcedureResults" NativeErrorCode="30120"><!-- _locID=InvalidNumberStoredProcedureResults _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid number of results supplied by stored procedure." -->Stored procedures may only return one result.</Error>
+      
+        <Error Key="InvalidDefaultParam" Params="1" NativeErrorCode="30130"><!-- _locID=InvalidDefaultParam _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Output parameter cannot be a default parameter." -->Stored procedure argument %1% cannot be default. Only input and input_output parameters can be default.</Error>
+      
+        <Error Key="DefaultSpecForNonDefaultParam" Params="1" NativeErrorCode="30140"><!-- _locID=DefaultSpecForNonDefaultParam _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: SQL_DEFAULT_PARAM cannot be specified for a parameter that does not have a default value." -->Parameter %1% cannot be default because it does not have a default value.</Error>
+
+        <Error Key="InvalidDataEngineProp" Params="1" NativeErrorCode="30141"><!-- _locID=InvalidDataEngineProp _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Error thrown when an invalid data engine property is specified" -->Invalid data engine property: %1%</Error>
+
+        <Error Key="CannotCreateCollator" Params="1" NativeErrorCode="30142"><!-- _locID=CannotCreateCollator _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Cannot create collator for language." -->Cannot create collator for language: %1%</Error>
+
+        <Error Key="TypeUnsupported" Params="1" NativeErrorCode="30160"><!-- _locID=TypeUnsupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Unsupported type found." -->%1% is unsupported.</Error>
+
+        <Error Key="CantPushFixedLengthDataInParts" NativeErrorCode="30170"><!-- _locID=CantPushFixedLengthDataInParts _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Trying to push fixed length data in parts." -->Fixed length parameter data cannot be pushed in parts.</Error>
+
+        <Error Key="PushedParamDataTooLarge" NativeErrorCode="30180"><!-- _locID=PushedParamDataTooLarge _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: The pushed parameter data length exceeds the maximum." -->Pushed parameter data exceeds the maximum length.</Error>
+
+        <Error Key="InvalidPushedParamConversion" NativeErrorCode="30190"><!-- _locID=InvalidPushedParamConversion _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Cannot convert the pushed parameter value." -->Error converting pushed parameter value.</Error>
+
+        <Error Key="CannotQueryParameterValueDuringPassdown" NativeErrorCode="30200"><!-- _locID=CannotQueryParameterValueDuringPassdown _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Cannot query parameter values which may change during execution." -->Cannot query parameter value during passdown, as it may vary during execution.</Error>
+
+        <!-- SQL Errors. (31000 to 39999) -->
+        <!-- Sorted by SQLState and the keys. -->
+      
+        <Error Key="RestrictedDataTypeViolation" NativeErrorCode="31020"><!-- _locID=RestrictedDataTypeViolation _locComment="[Tag:CALC-ACC-ODBCDrivers][07006]: General Restricted data type attribute violation errors." -->Restricted data type attribute violation.</Error>
+
+        <Error Key="ConvertConversionNotSupported" Params="2" NativeErrorCode="31040"><!-- _locID=ConvertConversionNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][07006]: Scalar function CONVERT does not support the specified conversion." -->CONVERT does not support the specified conversion from %1% to %2%.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CastConversionNotSupported" Params="2" NativeErrorCode="31041"><!-- _locID=CastConversionNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][07006]: Scalar function CONVERT does not support the specified conversion." -->CAST does not support the specified conversion from %1% to %2%.</Error>
+
+        <Error Key="InvalidValueSubQuery" NativeErrorCode="31050"><!-- _locID=InvalidValueSubQuery _locComment="[Tag:CALC-ACC-ODBCDrivers][21000]: Cardinality violation - Value SubQuery returns more than 1 value." -->Cardinality violation - value subquery returned more than 1 value.</Error>
+
+        <Error Key="InvalidNumberInsertValues" Params="2" NativeErrorCode="31051"><!-- _locID=InvalidNumberInsertValues _locComment="[Tag:CALC-ACC-ODBCDrivers][21S01]: Insert value list degree doesn't match insert table degree." -->The number of values to be inserted (%1%) doesn't match the number of columns (%2%) in the insert table.</Error>
+
+        <Error Key="RightDataTruncation" NativeErrorCode="31052"><!-- _locID=RightDataTruncation _locComment="[Tag:CALC-ACC-ODBCDrivers][22001]: String or binary data right truncation." -->String or binary data right truncation.</Error>
+
+        <Error Key="MaxPrecisionExceeded" Params="2" NativeErrorCode="31060"><!-- _locID=MaxPrecisionExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][22003]: Max precision exceeded." -->The number '%1%' exceeds the maximum precision allowed (%2%).</Error>
+
+        <Error Key="ScalarFnDomainError" Params="1" NativeErrorCode="31070"><!-- _locID=ScalarFnDomainError _locComment="[Tag:CALC-ACC-ODBCDrivers][22003]: Domain value error for a scalar function." -->Domain value out of range for '%1%' scalar function.</Error>
+
+        <Error Key="ScalarFnRangeError" Params="1" NativeErrorCode="31080"><!-- _locID=ScalarFnRangeError _locComment="[Tag:CALC-ACC-ODBCDrivers][22003]: Range value error for a scalar function." -->Result value out of range for '%1%' scalar function.</Error>
+
+        <Error Key="ScalarFnYearRangeError" Params="1" NativeErrorCode="31090"><!-- _locID=ScalarFnYearRangeError _locComment="[Tag:CALC-ACC-ODBCDrivers][22003]: Year range value error for a scalar function." -->Year value of %1% is out of range, allowable range is [-9999, 9999].</Error>
+
+        <Error Key="DivisionByZero" NativeErrorCode="31100"><!-- _locID=DivisionByZero _locComment="[Tag:CALC-ACC-ODBCDrivers][22012]: Division By Zero." -->Division by zero.</Error>
+
+        <Error Key="LeadingPrecisionExceeded" Params="1" NativeErrorCode="31101"><!-- _locID=LeadingPrecisionExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][22015]: Leading interval precision exceeded." -->Leading interval precision of %1% exceeded.</Error>
+
+        <Error Key="LeadingPrecisionRangeError" NativeErrorCode="31102"><!-- _locID=LeadingPrecisionRangeError _locComment="[Tag:CALC-ACC-ODBCDrivers][22015]: Leading interval precision out of range." -->The leading interval precision value must be in the range [0, 9].</Error>
+
+        <Error Key="FractionalPrecisionRangeError" NativeErrorCode="31103"><!-- _locID=FractionalPrecisionRangeError _locComment="[Tag:CALC-ACC-ODBCDrivers][22015]: Fractional seconds precision out of range." -->The fractional seconds precision value must be in the range [1, 9].</Error>
+
+        <Error Key="CompareBinaryTypesNotSupported" NativeErrorCode="31110"><!-- _locID=CompareBinaryTypesNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Comparing binary types are not supported." -->Comparing binary types are not supported.</Error>
+
+        <Error Key="IncompatibleArgTypeForScalarFn" Params="3" NativeErrorCode="31120"><!-- _locID=IncompatibleArgTypeForScalarFn _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Incompatible argument type for scalar function." -->Incompatible argument type %1% for argument %2% of scalar function %3%.</Error>
+
+        <Error Key="IncompatibleCollations" NativeErrorCode="31130"><!-- _locID=IncompatibleCollations _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Incompatible collations found." -->Incompatible collations found.</Error>
+
+        <Error Key="IncompatibleTypeInPredicate" NativeErrorCode="31140"><!-- _locID=IncompatibleTypeInPredicate _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Incompatible types in predicate" -->Incompatible types in predicate.</Error>
+
+        <Error Key="LikePredicateRequiresCharTypes" NativeErrorCode="31150"><!-- _locID=LikePredicateRequiresCharTypes _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: LIKE predicates requires character data types." -->LIKE predicates requires character data types.</Error>
+
+        <Error Key="IncompatibleInsertType" Params="2" NativeErrorCode="31151"><!-- _locID=IncompatibleInsertType _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Incompatible types in INSERT list." -->Incompatible type for insertion: expected %1%, actual %2%.</Error>
+
+        <Error Key="LOBInOrderByOrGroupBy" NativeErrorCode="31160"><!-- _locID=LOBInOrderByOrGroupBy _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Long data types in GROUP BY or ORDER BY are not supported." -->Long data types in GROUP BY or ORDER BY are not supported.</Error>
+
+        <Error Key="ScalarFnLiteralConvError" Params="1" NativeErrorCode="31161"><!-- _locID=ScalarFnLiteralConvError _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Literal conversion error for a scalar function." -->Error converting '%1%' to numeric value for scalar function.</Error>
+
+        <Error Key="ScalarFnIntegerLiteralConvError" Params="1" NativeErrorCode="31162"><!-- _locID=ScalarFnIntegerLiteralConvError _locComment="[Tag:CALC-ACC-ODBCDrivers][22018]: Integer literal conversion error for a scalar function." -->Error converting '%1%' to integer numeric value for scalar function.</Error>
+
+        <Error Key="InvalidEscapeChar" Params="1" NativeErrorCode="31166"><!-- _locID=InvalidEscapeChar _locComment="[Tag:CALC-ACC-ODBCDrivers][22019]: Invalid LIKE escape character." -->Invalid LIKE ESCAPE clause '%1%'. It must consist of exactly 1 character.</Error>
+
+        <Error Key="InvalidEscapeSequence" NativeErrorCode="31167"><!-- _locID=InvalidEscapeSequence _locComment="[Tag:CALC-ACC-ODBCDrivers][22025]: Invalid LIKE escape sequence." -->Invalid LIKE ESCAPE sequence. Escape character must be followed be a '%', '_', or another escape character.</Error>
+
+        <Error Key="AggrFnAndSubQueryInGroupBy" NativeErrorCode="31180"><!-- _locID=AggrFnAndSubQueryInGroupBy _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Aggregate functions and subqueries are not allowed in the GROUP BY clause." -->Aggregate functions and subqueries are not allowed in the GROUP BY clause.</Error>
+
+        <Error Key="AggrFunctionInOn" NativeErrorCode="31190"><!-- _locID=AggrFunctionInOn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Aggregate functions in an ON clause not allowed." -->An aggregate function in an ON clause is not allowed unless it is in a sub-query contained in the SELECT LIST or the HAVING clause and the column aggregating is an outer reference.</Error>
+
+        <Error Key="AggrFunctionInWhere" NativeErrorCode="31200"><!-- _locID=AggrFunctionInWhere _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Aggregate functions in the WHERE clause not allowed." -->An aggregate function in the WHERE clause is not allowed unless it is in a sub-query contained in the SELECT LIST or the HAVING clause and the column aggregating is an outer reference.</Error>
+
+        <Error Key="AggrFunctionNotInSelListOrHaving" NativeErrorCode="31210"><!-- _locID=AggrFunctionNotInSelListOrHaving _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Aggregate functions in neither the SELECT LIST nor the HAVING clause." -->An aggregate function containing an outer reference must be in a contained in the SELECT LIST or the HAVING clause.</Error>
+
+        <Error Key="ConstantOrderByExpression" NativeErrorCode="31220"><!-- _locID=ConstantOrderByExpression _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Constant order by expression(s)." -->At least one ORDER BY key is a constant expression.</Error>
+
+        <Error Key="CorrSubQueryNotAllowedInHaving" NativeErrorCode="31230"><!-- _locID=CorrSubQueryNotAllowedInHaving _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Correlated sub-query not allowed in HAVING." -->Correlated sub-query is not allowed in HAVING clause.</Error>
+
+        <Error Key="DuplicatedColumnName" Params="2" NativeErrorCode="31240"><!-- _locID=DuplicatedColumnName _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Duplicated column name for table." -->Duplicated column name '%1%' was specified in '%2%'.</Error>
+
+        <Error Key="DuplicatedUpdateColumnName" Params="1" NativeErrorCode="31241"><!-- _locID=DuplicatedUpdateColumnName _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Duplicated column name for update list." -->Duplicate column name '%1%' was specified in update list.</Error>
+
+        <Error Key="DynParamNotAllowed" Params="1" NativeErrorCode="31250"><!-- _locID=DynParamNotAllowed _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Dynamic parameter not allowed." -->Dynamic parameter not allowed in %1%.</Error>
+
+        <Error Key="ExprInGroupByNotRowBased" NativeErrorCode="31260"><!-- _locID=ExprInGroupByNotRowBased _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Expression Not Row-based in GROUP BY clause." -->Every expression in the GROUP BY clause must contain at least one column reference. All column references cannot refer to an outer scope.</Error>
+
+        <Error Key="IfCondInNonSelectList" Params="1" NativeErrorCode="31270"><!-- _locID=IfCondInNonSelectList _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: IF conditions are found in non-select list." -->IF conditions must be in select list.</Error>
+
+        <Error Key="IncompatibleBinaryOperandTypes" Params="3" NativeErrorCode="31280"><!-- _locID=IncompatibleBinaryOperandTypes _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Incompatible binary operand types." -->Operand types %1% and %2% are incompatible for the %3% operator.</Error>
+
+        <Error Key="IncompatibleUnionColumnTypes" Params="2" NativeErrorCode="31281"><!-- _locID=IncompatibleUnionColumnTypes _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Incompatible union column types." -->Union columns %1% and %2% have incompatible types.</Error>
+
+        <Error Key="IncompatibleSetColumnTypes" Params="2" NativeErrorCode="31282"><!-- _locID=IncompatibleSetColumnTypes _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Incompatible set column types." -->Matched columns must be convertible in result sets combined with %1%. %2% and %3% are not convertible.</Error>
+
+        <Error Key="IncompatibleCaseResultTypes" Params="1" NativeErrorCode="31283"><!-- _locID=IncompatibleCaseResultTypes _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Incompatible CASE result types." -->Result types for CASE statements must be convertible. The types %1% are not mutually convertible.</Error>
+
+        <Error Key="InvalidCollationName" Params="1" NativeErrorCode="31290"><!-- _locID=InvalidCollationName _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid collation name found." -->'%1%' is not a valid collation name.</Error>
+
+        <Error Key="InvalidColumnPrefix" Params="1" NativeErrorCode="31300"><!-- _locID=InvalidColumnPrefix _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid column prefix." -->Invalid column prefix: %1%.</Error>
+
+        <Error Key="InvalidOperandTypeForSetFn" Params="2" NativeErrorCode="31310"><!-- _locID=InvalidOperandTypeForSetFn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid operand type for SET function." -->Operand type %1% is invalid for the SET operator '%2%'.</Error>
+
+        <Error Key="InvalidOrderByExpression" NativeErrorCode="31320"><!-- _locID=InvalidOrderByExpression _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid order by expression(s)." -->Invalid ORDER BY key. Keys should be unsigned integers, or expressions that are not case expressions, IF conditions, parameters or sub-queries.</Error>
+
+        <Error Key="InvalidOrderByColumn" NativeErrorCode="31321"><!-- _locID=InvalidOrderByColumn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid sort column." -->ORDER BY is not allowed for %1%.</Error>
+
+        <Error Key="InvalidScalarFnArgCount" Params ="1" NativeErrorCode="31330"><!-- _locID=InvalidScalarFnArgCount _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid number of arguments for a scalar function." -->Invalid argument count for scalar function %1%.</Error>
+
+        <Error Key="InvalidScalarFnName" Params="1" NativeErrorCode="31340"><!-- _locID=InvalidScalarFnName _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid scalar function or procedure name." -->%1% is not a valid scalar function or procedure call.</Error>
+
+        <Error Key="InvalidSecondArgForConvertFn" NativeErrorCode="31350"><!-- _locID=InvalidSecondArgForConvertFn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Second argument invalid for CONVERT." -->The second argument for CONVERT is not a valid SQL_* type name.</Error>
+
+        <Error Key="InvalidFirstArgForTSAddFn" NativeErrorCode="31351"><!-- _locID=InvalidFirstArgForTSAddFn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: First argument invalid for TIMESTAMPADD." -->The first argument for TIMESTAMPADD is invalid. Expected one of SQL_TSI_FRAC_SECOND, SQL_TSI_SECOND, SQL_TSI_MINUTE, SQL_TSI_HOUR, SQL_TSI_DAY, SQL_TSI_WEEK, SQL_TSI_MONTH, SQL_TSI_QUARTER, or SQL_TSI_YEAR.</Error>
+
+        <Error Key="InvalidFirstArgForTSDiffFn" NativeErrorCode="31352"><!-- _locID=InvalidFirstArgForTSDiffFn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: First argument invalid for TIMESTAMPDIFF." -->The second argument for TIMESTAMPDIFF is invalid. Expected one of SQL_TSI_FRAC_SECOND, SQL_TSI_SECOND, SQL_TSI_MINUTE, SQL_TSI_HOUR, SQL_TSI_DAY, SQL_TSI_WEEK, SQL_TSI_MONTH, SQL_TSI_QUARTER, or SQL_TSI_YEAR.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidSecondArgForCastFn" NativeErrorCode="31353"><!-- _locID=InvalidSecondArgForCastFn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Second argument invalid for CAST." -->The second argument for CAST is not a valid SQL_* type name.</Error>
+
+        <Error Key="InvalidArithmeticOperandType" Params="2" NativeErrorCode="31360"><!-- _locID=InvalidArithmeticOperandType _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid arithmetic expression operand type." -->Type %1% is invalid for the %2% operator.</Error>
+
+        <Error Key="InvalidBinaryArithmeticOperandType" Params="3" NativeErrorCode="31361"><!-- _locID=InvalidBinaryArithmeticOperandType _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid binary arithmetic expression operand type." -->Types %1% and %2% are invalid for the %3% operator.</Error>
+
+        <Error Key="InvalidValueInValueList" NativeErrorCode="31370"><!-- _locID=InvalidValueInValueList _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid value in value list." -->Invalid value in value list.</Error>
+
+        <Error Key="InvalidValueForTopN" Params="0" NativeErrorCode="31371"><!-- _locID=InvalidValueForTopN _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid value for TOP N." -->Invalid value for TOP. Value must be a positive integer.</Error>
+
+        <Error Key="InvalidValueForTopPercent" Params="0" NativeErrorCode="31372"><!-- _locID=InvalidValueForTopPercent _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid value for TOP PERCENT." -->Invalid value for TOP PERCENT. Value must be a positive number between 0 and 100.</Error>
+
+        <Error Key="TopPercentCantComputeRowCount" Params="0" NativeErrorCode="31373"><!-- _locID=TopPercentCantComputeRowCount _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Can't compute row count for TOP PERCENT." -->Could not compute row count for TOP PERCENT.</Error>
+
+        <Error Key="MultiColumnsInAggrFn" Params="1" NativeErrorCode="31380"><!-- _locID=MultiColumnsInAggrFn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Multiple columns from different query scope are found in an aggregate function." -->Multiple columns are specified in an aggregated function containing an outer reference. If an aggregate function contains an outer reference, then that outer reference must be the only column reference.</Error>
+
+        <Error Key="MultiExprsInSubQuery" Params="1" NativeErrorCode="31390"><!-- _locID=MultiExprsInSubQuery _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Multiple expressions in the select list of a sub-query." -->Multiple expressions found in the select list of a subquery not introduced by EXISTS.</Error>
+
+        <Error Key="MultiPartColNameNotBound" Params="1" NativeErrorCode="31400"><!-- _locID=MultiPartColNameNotBound _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Multi-part column could not be bound." -->Qualified column could not be bound: %1%.</Error>
+
+        <Error Key="NestedAggrFunctionNotAllowed" NativeErrorCode="31410"><!-- _locID=NestedAggrFunctionNotAllowed _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Nested aggregate function not allowed." -->An aggregate function can contain neither an aggregate function nor a subquery.</Error>
+
+        <Error Key="NoColumnNameSpecified" Params="2" NativeErrorCode="31420"><!-- _locID=NoColumnNameSpecified _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: No column name specified for a column." -->No column name is specified on column %1% of table/sub-query '%2%'.</Error>
+		
+		<Error Key="NoMergeOperationSpecified" Params="0" NativeErrorCode="31421"><!-- _locID=NoMergeOperationSpecified _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: No Merge operation specified (either an insert or update statement required)" -->No operation is specified for MERGE, WHEN MATCHED and WHEN NOT MATCHED clauses are both missing.</Error>
+        
+		<Error Key="NonGroupingColInSelList" Params="1" NativeErrorCode="31430"><!-- _locID=NonGroupingColInSelList _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: A column is neither in an aggregate function nor from the GROUP BY clause." -->Column '%1%' is neither in an aggregate function nor from the GROUP BY clause.</Error>
+
+        <Error Key="NonUniqueColRef" Params="1" NativeErrorCode="31440"><!-- _locID=NonUniqueColRef _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Non-unique Column Reference." -->Non-unique column reference: %1%.</Error>
+
+        <Error Key="OrderByExprNotInSelectDistinct" NativeErrorCode="31450"><!-- _locID=OrderByExprNotInSelectDistinct _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: ORDER BY expressions must appear in the select list when SELECT DISTINCT is present." -->ORDER BY expressions must appear in the select list when SELECT DISTINCT is present.</Error>
+
+        <Error Key="OrderByExprNotInSelectList" NativeErrorCode="31460"><!-- _locID=OrderByExprNotInSelectList _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: ORDER BY expressions must appear in the select list when EXCEPT, INTERSECT or UNION is present." -->ORDER BY expressions must appear in the select list of the first query specification when EXCEPT, INTERSECT or UNION is present.</Error>
+
+        <!-- [42000]: ORDER BY position number out of range.-->
+        <Error Key="OrderByPositionNumberOutOfRange" NativeErrorCode="31470"><!-- _locID=OrderByPositionNumberOutOfRange -->The position number in ORDER BY is out of range.</Error>
+
+        <!-- [42000]: GROUP BY position number out of range.-->
+        <Error Key="GroupByPositionNumberOutOfRange" NativeErrorCode="31473"><!-- _locID=GroupByPositionNumberOutOfRange -->The position number in GROUP BY is out of range.</Error>
+
+        <!-- [42000]: GROUP BY position number out of range.-->
+        <Error Key="GroupByPositionNumberWithStar" NativeErrorCode="31474"><!-- _locID=GroupByPositionNumberWithStar -->GROUP BY may not refer to the SELECT list using a column ordinal when the SELECT list contains a '*'.</Error>
+
+        <!-- [42000]: ORDER BY occurs in a subquery without an accompanying TOP.-->
+        <Error Key="OrderByInSubQueryWithoutTop" NativeErrorCode="31475"><!-- _locID=OrderByInSubQueryWithoutTop -->ORDER BY may only occur in a subquery when accompanied by TOP or LIMIT.</Error>
+
+        <Error Key="ParsingFailure" Params="2" NativeErrorCode="31480"><!-- _locID=ParsingFailure _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Parsing failure." -->%1% near '%2%'.</Error>
+
+        <Error Key="UknownParsingFailure" Params="2" NativeErrorCode="31490"><!-- _locID=UknownParsingFailure _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Unknown parsing failure." -->Unknown parsing failure.</Error>
+
+        <Error Key="RowConstructorNotSupported" NativeErrorCode="31500"><!-- _locID=RowConstructorNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Row value constructor not supported in predicates." -->Row value constructor not supported in predicates such as (quantified) comparisons, IN, BETWEEN.</Error>
+
+        <Error Key="TableOrCorNameNotUnique" Params="1" NativeErrorCode="31510"><!-- _locID=TableOrCorNameNotUnique _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Table or correlation name not unique." -->Table/correlation name not unique: %1%.</Error>
+
+        <Error Key="SetFnInIFCond" Params="1" NativeErrorCode="31520"><!-- _locID=SetFnInIFCond _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Set functions are found in an IF condition." -->Set functions are not allowed in IF condition.</Error>
+
+        <Error Key="SubQueryInIFCond" Params="1" NativeErrorCode="31530"><!-- _locID=SubQueryInIFCond _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Sub-queries are found in an IF condition." -->Sub-queries are not allowed in IF condition.</Error>
+      
+        <Error Key="MaxBinaryLiteralLenExceeded" Params="2" NativeErrorCode="31540"><!-- _locID=MaxBinaryLiteralLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the given binary literal exceeds the maximum." -->The length of the binary literal '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxCharLiteralLenExceeded" Params="2" NativeErrorCode="31550"><!-- _locID=MaxCharLiteralLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the given character literal exceeds the maximum." -->The length of the character literal '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxIndexSizeExceeded" Params="1" NativeErrorCode="31560"><!-- _locID=MaxIndexSizeExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The size of the index exceeds the maximum." -->The size of the index exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxRowSizeExceeded" Params="1" NativeErrorCode="31570"><!-- _locID=MaxRowSizeExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The row size exceeds the maximum." -->The size of the row exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxStatementLenExceeded" Params="1" NativeErrorCode="31580"><!-- _locID=MaxStatementLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the statement exceeds the maximum." -->The length of the statement exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxCatalogNameLenExceeded" Params="2" NativeErrorCode="31590"><!-- _locID=MaxCatalogNameLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the catalog name exceeds the maximum." -->The length of the catalog name '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxColumnNameLenExceeded" Params="2" NativeErrorCode="31600"><!-- _locID=MaxColumnNameLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the column name exceeds the maximum." -->The length of the column name '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxColumnsInGroupByExceeded" Params="1" NativeErrorCode="31610"><!-- _locID=MaxColumnsInGroupByExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The number of columns in the GROUP BY clause exceeds the maximum." -->The number of columns in the GROUP BY clause exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxColumnsInIndexExceeded" Params="1" NativeErrorCode="31620"><!-- _locID=MaxColumnsInIndexExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The number of columns in the index exceeds the maximum." -->The number of columns in the index exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxColumnsInOrderByExceeded" Params="1" NativeErrorCode="31630"><!-- _locID=MaxColumnsInOrderByExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The number of columns in the ORDER BY clause exceeds the maximum." -->The number of columns in the ORDER BY clause exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxColumnsInSelectExceeded" Params="1" NativeErrorCode="31640"><!-- _locID=MaxColumnsInSelectExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The number of columns in the select list exceeds the maximum." -->The number of columns in the select list exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxColumnsInTableExceeded" Params="1" NativeErrorCode="31650"><!-- _locID=MaxColumnsInTableExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The number of columns in the table exceeds the maximum." -->The number of columns in the table exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxCursorNameLenExceeded" Params="2" NativeErrorCode="31660"><!-- _locID=MaxCursorNameLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the cursor name exceeds the maximum." -->The length of the cursor name '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxIdentifierLenExceeded" Params="2" NativeErrorCode="31670"><!-- _locID=MaxIdentifierLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the identifier exceeds the maximum." -->The length of the identifier '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxProcedureNameLenExceeded" Params="2" NativeErrorCode="31680"><!-- _locID=MaxProcedureNameLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the procedure name exceeds the maximum." -->The length of the procedure name '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxSchemaNameLenExceeded" Params="2" NativeErrorCode="31690"><!-- _locID=MaxSchemaNameLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the schema name exceeds the maximum." -->The length of the schema name '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxTableNameLenExceeded" Params="2" NativeErrorCode="31700"><!-- _locID=MaxTableNameLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the table name exceeds the maximum." -->The length of the table name '%1%' exceeds the maximum: %2%.</Error>
+      
+        <Error Key="MaxTablesInSelectExceeded" Params="1" NativeErrorCode="31710"><!-- _locID=MaxTablesInSelectExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The number of tables in the select statement exceeds the maximum." -->The number of tables in the select statement exceeds the maximum: %1%.</Error>
+      
+        <Error Key="MaxUserNameLenExceeded" Params="2" NativeErrorCode="31720"><!-- _locID=MaxUserNameLenExceeded _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The length of the user name exceeds the maximum." -->The length of the user name exceeds the maximum.</Error>
+
+        <Error Key="InvalidExtractType" Params="2" NativeErrorCode="31721"><!-- _locID=InvalidExtractType _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid type for EXTRACT" -->"Invalid call to scalar function EXTRACT: Argument of type %1% has no field %2%.</Error>
+
+        <Error Key="ReservedKeywordUsed" Params="1" NativeErrorCode="31730"><!-- _locID=ReservedKeywordUsed _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: A reserved keyword was used in the SQL statement." -->'%1%' is a reserved keyword.</Error>
+      
+        <Error Key="InvalidSqlDataTypeSpecified" Params="1" NativeErrorCode="31731"><!-- _locID=InvalidSqlDataTypeSpecified _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Invalid SQL Data Type specified." -->Invalid SQL Data type specified: %1%.</Error>
+
+        <Error Key="InvalidNumberColumnsSet" Params="1" NativeErrorCode="31731"><!-- _locID=InvalidNumberColumnsSet _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The number of columns in the comibned result sets do not match." -->Mismatched number of columns. The number of columns in all result sets combined with %1% must be equal.</Error>
+
+        <Error Key="InvalidOpDriverReadOnly" Params="1" NativeErrorCode="31732"><!-- _locID=InvalidOpDriverReadOnly _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: The driver is read-only and DDL or DML was attempted." -->Driver is read-only and does not permit %1% operations.</Error>
+
+        <Error Key="DuplicateInsertColumn" Params="1" NativeErrorCode="31733"><!-- _locID=DuplicateInsertColumn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: A column appeared more than once in the insert column list." -->Column '%1%' appeared more than once in the insert column list.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TopAndLimit" NativeErrorCode="31734"><!-- _locID=TopAndLimit _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Both TOP and LIMIT are present in a SELECT query.." -->Only one of TOP and LIMIT may be used in a SELECT query.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CorrelationSpecNonUniqueColumns" Params="2" NativeErrorCode="31735"><!-- _locID=CorrelationSpecNonUniqueColumns _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: A correlation specification contains non-unique column names in the list of renamed columns." -->The correlation specification '%1%' contains the column name '%2%' more than once.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CorrelationSpecInvalidNumColumns" Params="3" NativeErrorCode="31736"><!-- _locID=CorrelationSpecInvalidNumColumns _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: A correlation specification contains an invalid number of columns." -->The correlation specification '%1%' contains an invalid number of columns : Expected %2%, Got %3%.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidSetFn" Params="1" NativeErrorCode="31737"><!-- _locID=InvalidSetFn _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: An invalid set (aggregate) function was specified." -->Unsupported aggregate function '%1%' specified in the query.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CustomSetFnNotSupported" Params="1" NativeErrorCode="31739"><!-- _locID=CustomSetFnNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][42000]: Custom set (aggregate) functions are not supported for execution." -->Custom aggregate functions (%1%) are not currently supported in the ETree.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TableOrViewAlreadyExists" Params="1" NativeErrorCode="31738"><!-- _locID=TableOrViewAlreadyExists _locComment="[Tag:CALC-ACC-ODBCDrivers][42S01]: Table or view not found." -->Table or view already exists: %1%</Error>
+
+        <Error Key="TableOrViewNotFound" Params="1" NativeErrorCode="31740"><!-- _locID=TableOrViewNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers][42S02]: Table or view not found." -->Table or view not found: %1%</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="IndexAlreadyExists" Params="1" NativeErrorCode="31745"><!-- _locID=IndexAlreadyExists _locComment="[Tag:CALC-ACC-ODBCDrivers][42S11]: Index already exists." -->Index already exists: %1%</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="IndexNotFound" Params="1" NativeErrorCode="31746"><!-- _locID=IndexNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers][42S12]: Index not found." -->Index not found: %1%</Error>
+
+        <Error Key="ColumnNotFound" Params="1" NativeErrorCode="31750"><!-- _locID=ColumnNotFound _locComment="[Tag:CALC-ACC-ODBCDrivers][42S22]: Column not found." -->Column not found: %1%</Error>
+
+        <Error Key="InvalidSqlDataType" Params="3" NativeErrorCode="31760"><!-- _locID=InvalidSqlDataType _locComment="[Tag:CALC-ACC-ODBCDrivers][HY004]: Invalid SQL Data Type." -->Invalid SQL data type: %1% [%2%: %3%].</Error>
+
+        <Error Key="OperationCanceled" NativeErrorCode="31765"><!-- _locID=OperationCanceled _locComment="[Tag:CALC-ACC-ODBCDrivers][HY008]: Error thrown when an operation is canceled." -->Operation canceled.</Error>
+
+        <Error Key="InvalidOutputParameter" Params="1" NativeErrorCode="31770"><!-- _locID=InvalidOutputParameter _locComment="[Tag:CALC-ACC-ODBCDrivers][HY105]: Parameter type is output with a non-parameter node." -->Stored procedure argument %1% must be bound as an output parameter.</Error>
+
+        <Error Key="CatalogNotSupported" NativeErrorCode="31771"><!-- _locID=CatalogNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Catalog support not implemented." -->Catalogs are not supported for table identifiers.</Error>
+
+        <Error Key="SchemaNotSupported" NativeErrorCode="31772"><!-- _locID=SchemaNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Schema support not implemented." -->Schemas are not supported for table identifiers.</Error>
+      
+        <Error Key="FeatureNotSupported" NativeErrorCode="31780"><!-- _locID=FeatureNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Optional feature not implemented." -->The action is not supported.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CreateTableNotSupported" NativeErrorCode="31781"><!-- _locID=CreateTableNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Create table statements are not supported." -->Create table statements are not supported.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CreateIndexNotSupported" NativeErrorCode="31785"><!-- _locID=CreateIndexNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Create index statements are not supported." -->Create index statements are not supported.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="DropTableNotSupported" NativeErrorCode="31790"><!-- _locID=DropTableNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Drop table statements are not supported." -->Drop table statements are not supported.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="DropIndexNotSupported" NativeErrorCode="31795"><!-- _locID=DropIndexNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Drop index statements are not supported." -->Drop index statements are not supported.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TableConstraintNotSupported" NativeErrorCode="31800"><!-- _locID=TableConstraintNotSupported _locComment="[Tag:CALC-ACC-ODBCDrivers][HYC00]: Table constraints are not supported." -->Table constraints are not supported.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidNumberTypeParameters" NativeErrorCode="31820"><!-- _locID=InvalidNumberTypeParameters _locComment="[Tag:CALC-ACC-ODBCDrivers][HY000]: Invalid number of parameters specified for the data type." -->Invalid number of parameters for data type %1%.</Error>
+
+    </Package> 
+</Messages>

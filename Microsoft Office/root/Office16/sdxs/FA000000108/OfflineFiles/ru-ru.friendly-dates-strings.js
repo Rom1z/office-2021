@@ -1,0 +1,3 @@
+/* tslint:disable */
+var FriendlyDatesStrings = { "JustNow": "Только что", "MinutesAgo": "{mins, plural, one {1 минуту назад} few {# минуты назад} many {# минут назад} other {# минуты назад}}", "MinAgo": "{0} мин назад", "MinAgoShort": "{mins, plural, one {1 минуту назад} few {# мин. назад} many {# мин. назад} other {# мин. назад}}", "HoursAgo": "{hours, plural, one {1 час назад} few {# часа назад} many {# часов назад} other {# часа назад}}", "HrAgo": "{0} ч. назад", "HrAgoShort": "{hrs, plural, one {1 час назад} few {# ч. назад} many {# ч. назад} other {# ч. назад}}", "YesterdayAt": "Вчера в {0}", "DateTimeCombo": "{0} в {1}", "YesterdayWithTime": "Вчера, {0}", "DateTimeComboNoAt": "{0}, {1}" };
+//# sourceMappingURL=friendly-dates-strings.js.map

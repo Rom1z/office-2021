@@ -1,0 +1,40 @@
+[info]
+readonly=true
+codepage=65001
+version=5.00
+format=2.00
+title=Watermark
+refcount=0
+
+[titles]
+1032=Υδατογράφημα
+1040=Filigrana
+1053=Vattenstämpel
+1036=Filigrane
+1031=Wasserzeichen
+1044=Vannmerke
+1049=Филигрань
+1028=浮水印
+2052=水印
+1033=Watermark
+1046=Marca d'água
+2070=Marca de água
+1048=Inscripţionare
+1060=Vodni žig
+1041=ウォーターマーク
+1054=ลายน้ำ
+1025=علامة مائية
+1069=Ur-marka
+1029=Vodotisk
+1030=Vandmærke
+1043=Watermerk
+1035=Vesileima
+1045=Znak wodny
+1051=Vodotlač
+3082=Marca de agua
+1037=סימן מים
+1055=Sulu Boya
+1050=Vodeni žig
+1038=Vízjeles
+1042=물방울
+

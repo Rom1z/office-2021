@@ -1,0 +1,37 @@
+[General]
+Display Name=<DisplayName>
+Description=<Description>
+GUID={EA1F7310-EDFD-11ce-8D13-00AA0051BF96}
+Path="faxext32.dll"
+Entry Point=1
+Client Version=4.0
+Extension Version=1.0
+Service Provider=MSFAX XP
+
+[Exchange Client Compatibility]
+Exchange Registry=1
+Exchange Extension Key="FaxExtension"
+
+; Exchange Context Map is SENDNOTEMESSAGE
+Exchange Context Map=00000100000000
+
+; Exchange Interface Map is IExchExtCommands, IExchExtUserEvents (ignored)
+Exchange Interface Map=1100000
+
+[Item]
+Message Class=IPM.Note
+Item States=Compose
+Events=OnExtCommand
+Commands=FaxAttributes
+Outlook Commands=FaxextAttributes
+Extension Outlook Commands=50001
+
+[Command]
+FaxAttributes=50001;#902;Tools Suppress
+
+[Strings]
+DisplayName=Расширение Fax
+Description=Расширение Fax
+
+; STR 902 - Fa&x Attributes...
+

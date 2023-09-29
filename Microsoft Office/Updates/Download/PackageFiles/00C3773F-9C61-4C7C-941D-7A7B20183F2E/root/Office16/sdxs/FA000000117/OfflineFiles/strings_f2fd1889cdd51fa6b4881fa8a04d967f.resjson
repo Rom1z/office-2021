@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "ລອງໃຊ້ Python ໃນ Excel (ເບິ່ງຕົວຢ່າງ)",
+  "premiumHubMessageTextForPythonInExcel": "ລວມສູດ Python ກັບເສັ້ນຕາຕະລາງ Excel ເພື່ອລຶບລ້າງ, ສຳຫຼວດ ແລະ ວິເຄາະຂໍ້ມູນລຶບຂອງທ່ານ. ຮັກສາຄວາມປອດໄພໂດຍ Microsoft Cloud, ສ້າງ ແລະ ແບ່ງປັນການວິເຄາະຂັ້ນສູງທັນທີພາຍໃນ Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "ແຕະລົງໃນຫ້ອງສະໝຸດ",
+  "premiumHubSectionOneMessageForPythonInExcel": "ຫຼຸດຄວາມຊັບຊ້ອນ ແລະ ເລັ່ງການວິເຄາະຂອງທ່ານດ້ວຍຫ້ອງສະໝຸດ Python ທົ່ວໄປ.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "ຊອກ​ຫາຮູບແບບ",
+  "premiumHubSectionTwoMessageForPythonInExcel": "ໃຊ້ສູດ Python ເພື່ອຄົ້ນຫາຂໍ້ມູນເຈາະເລິກທີ່ຖືກເຊື່ອງຢູ່ໃນຂໍ້ມູນຂອງທ່ານ ແລະ ສະແດງຂໍ້ມູນດັ່ງກ່າວດ້ວຍພາບ.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "ບໍ່ຈຳເປັນຕ້ອງຕັ້ງຄ່າ",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ປັບປຸງຂັ້ນຕອນການເຮັດວຽກດ້ວຍສະພາບແວດລ້ອມທີ່ພ້ອມໃຊ້ງານ ແລະ ປອດໄພ.",
+  "premiumHubTermsOfUseForPythonInExcel": "ໃນຂະນະທີ່ Python ໃນ Excel ແມ່ນຢູ່ໃນການເບິ່ງລ່ວງຫນ້າສາທາລະນະ, ທ່ານຈະສາມາດນໍາໃຊ້ລັກສະນະນີ້ເປັນສ່ວນຫນຶ່ງຂອງການສະຫມັກຂອງທ່ານ. ຫຼັງຈາກການເບິ່ງລ່ວງຫນ້າ, ທ່ານຈະຕ້ອງຊື້ໃບອະນຸຍາດເພີ່ມເຕີມເພື່ອໃຊ້. ເບິ່ງ {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "ຮຽນຮູ້ເພີ່ມເຕີມ",
+  "premiumHubPythonCenterButtonForPythonInExcel": "ສະແດງໃຫ້ຂ້ອຍເຫັນວ່າມັນເຮັດວຽກແນວໃດ",
+  "premiumHubTryPreviewButtonForPythonInExcel": "ລອງໃຊ້ການເບິ່ງຕົວຢ່າງ",
+  "termsOfUseLinkForPreview": "ຂໍ້ກຳນົດການໃຊ້ການເບິ່ງຕົວຢ່າງ"
+}

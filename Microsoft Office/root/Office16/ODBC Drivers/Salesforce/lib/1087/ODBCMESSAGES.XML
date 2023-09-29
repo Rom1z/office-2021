@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- #################################################################################### -->
+    <Package ID="1" DefaultComponent="ODBC">
+
+      <!-- Errors and warnings in general operation. --> 
+      <Error Key="GenErr" NativeErrorCode="10000">Жалпы қате: күтпеген ерекше жағдай орын алды.</Error>
+
+      <Error Key="GenErr1" Params="1" NativeErrorCode="10001">Жалпы қате: %1%</Error>
+
+      <Error Key="MemAllocErr" NativeErrorCode="10010">Жадты үлестіру қатесі: std::bad_alloc ерекше жағдайы пайда болды.</Error>
+
+      <Error Key="FuncSeqErr" NativeErrorCode="10020">ODBC функция(лар)ы рұқсат етілмеген ретпен орындалды.</Error>
+
+      <Error Key="InvalidStmt" NativeErrorCode="10040">Мәлімдеме дұрыс емес немесе ол табылмады.</Error>
+
+      <Error Key="InvalidConn" NativeErrorCode="10050">Байланыс жарамсыз немесе ол табылмады.</Error>
+
+      <Error Key="InvalidAppDesc" NativeErrorCode="10060">Бағдарлама дескрипторы жарамсыз немесе табылмады.</Error>
+
+      <Error Key="InvalidExplAppDesc" NativeErrorCode="10070">Анық бағдарлама дискрипторы жарамсыз немесе ол табылмады.</Error>
+
+      <Error Key="InvalidQueryMgr" NativeErrorCode="10080">Сұрау менеджері дұрыс емес немесе табылмады.</Error>
+
+      <Error Key="InvalidExecResults" NativeErrorCode="10090">Орындау нәтижелері жарамсыз немесе ол табылмады.</Error>
+
+      <!-- Errors and warnings with diagnostics reporting. --> 
+      <Error Key="InvalidDiagIdent" NativeErrorCode="10110">Дұрыс емес диагностикалық идентификатор қолданылды.</Error>
+
+      <Error Key="NoBinaryDiagFields" NativeErrorCode="10120">Екілік диагностикалық өрістер жоқ. Диагностикалық өрісті екілік пішімге қайтару мүмкін емес.</Error>
+
+
+      <!-- Errors and warnings with the provided buffer and buffer length. --> 
+      <Error Key="InvalidStrOrBuffLen" NativeErrorCode="10130">Бағдарлама тарапынан жарамсыз жол немесе буфер ұзындығы көрсетілді.</Error>
+
+      <Error Key="StrRightTruncWarn" NativeErrorCode="10160">Жол дерегінің оң жақ қиылуы: шығыс дерек буфері үшін жол дерегі өте үлкен және ол қиылды.</Error>
+
+      <Error Key="StrRightTruncErr" NativeErrorCode="10170">Дерек көзіндегі деректе жол дерегінің оң жағы қиылды: драйвердің дерек буфері үшін жол дерегі өте үлкен.</Error>
+
+      <Error Key="InvalidOutputBuff" NativeErrorCode="10180">Жарамсыз шығыс буфері көрсетілді.</Error>
+
+      <Error Key="InvalidStrTrunc" NativeErrorCode="10190">Жарамсыз жол қиылуы.</Error>
+
+
+      <!-- Error and warnings with Attributes. --> 
+      <Error Key="AttrTypeNotSupported" NativeErrorCode="10200">Ағымдағы операция үшін мұндай атрибут түріне қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidAttrIdent" Params="1" NativeErrorCode="10210">Атрибут идентификаторы жарамсыз немесе оған қолдау көрсетілмейді: %1%</Error>
+
+      <Error Key="CannotSetReadOnlyAttr" NativeErrorCode="10220">Тек оқуға арналған атрибутты орнату мүмкін емес.</Error>
+
+      <Error Key="AttrValNotFound" NativeErrorCode="10230">Атрибут мәнін алу мүмкін емес.</Error>
+
+      <Error Key="CannotSetImpDescHandle" NativeErrorCode="10240">Мәлімдемені іске асыру дескрипторын өзгерте алмайсыз.</Error>
+
+      <Error Key="SetAsyncEnabNotSupported" NativeErrorCode="10250">SQL_ATTR_ASYNC_ENABLE жолының атрибутына қолдау көрсетілмейді.</Error>
+
+      <Error Key="ObtainCheckingConnAttrFailed" NativeErrorCode="10260">Ағымдағы операцияның жарамды екенін тексеруге қажетті байланыс атрибутын алу мүмкін байланыс.</Error>
+
+      <Error Key="AutoPopIpdNotSupported" NativeErrorCode="10270">IPD (Іске асыру параметрінің дескрипторы) автоматты толтыру функциясына қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidAttrVal" NativeErrorCode="10280">Атрибут мәні жарамсыз.</Error>
+
+      <Error Key="OptAttrValChangedWarn" NativeErrorCode="10290">Атрибут мәніне қолдак көрсетілмейді немесе ол жарамсыз, сондықтан дәл сондай атрибут мәнімен алмастырылды. Алмастырылғанды көру үшін, атрибут мәнін біліңіз.</Error>
+
+      <Error Key="RevertAttrValueToOrigFailed" NativeErrorCode="10300">Уақытша атрибут мәнін түпнұсқа мәнге қайтару мүмкін емес.</Error>
+
+      <Error Key="ObtainDefaultStmtAttrValueFailed" NativeErrorCode="10310">Әдепкі мәлімдеме атрибутының мәнін алу мүмкін болмады.</Error>
+
+      <Error Key="ExplAppDescHandleNotFromSameConn" NativeErrorCode="10320">Анық бағдарлама дискрипторы мақсатты мәлімдемемен бір байланыстан емес.</Error>
+
+      <Error Key="ImplicitAppDescHandleNotOrig" NativeErrorCode="10330">Анық емес бағдарлама дескрипторы мақсатты мәлімдеменің түпнұсқа анық емес бағдарлама дескрипторы емес.</Error>
+
+      <Error Key="BufLenTooSmallForBinaryAttrData" NativeErrorCode="10340">Екілік атрибут дерегін қайтару үшін буфер ұзындығы өте қысқа.</Error>
+
+      <Error Key="AttrDataTypeNotRecog" NativeErrorCode="10350">Атрибут деректерінің түрі анықталмады.</Error>
+
+
+      <!-- Error and warnings with establishing connection to data source. -->
+      <Error Key="InvalidConnStr" NativeErrorCode="10360">Жарамсыз байланыс жолы.</Error>
+
+      <Error Key="InvalidConnStrAttr" NativeErrorCode="10370">Драйвер тарапынан сұралған ақпаратқа сәйкес келмейтін жарамсыз байланыс жолының атрибуты.</Error>
+
+      <Error Key="UnableToEstConn" Params="1" NativeErrorCode="10380">Дерек көзімен байланыс орнату мүмкін емес. Жоқ параметрлер: %1%</Error>
+
+      <Error Key="UpdateConnSettingsWithDiaglogFailed" NativeErrorCode="10390">Диалогтық терезе нұсқауымен байланыс параметрлерін жаңарту сәтсіз аяқталды.</Error>
+
+      <Error Key="NoEstConn" NativeErrorCode="10400">Ағымдағы операция байланыстың орнатылғанын талап етеді, бірақ әлі байланыс орнатылмады.</Error>
+
+      <Error Key="ConnAlreadyEst" NativeErrorCode="10410">Байланыс орнатылып қойған.</Error>
+
+      <Error Key="DataSourceDidNotGiveProperResp" NativeErrorCode="10420">Дерек көзі тиісті жауапты қамтамасыз етпеді.</Error>
+
+      <Error Key="NotEnoughConnInfoButDriverNoPrompt" Params="1" NativeErrorCode="10430">Дерек көзіне байланыс орнату үшін берілген ақпарат жеткіліксіз және қосымша ақпаратты көрсетпейтіндей орнатылды. Қажетті, бірақ жоқ параметрлер: %1%</Error>
+
+      <Error Key="InvalidDriverComplFlag" NativeErrorCode="10440">Драйверді аяқтау жалаушасы жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="NullIndPtrNotSupplied" NativeErrorCode="10450">NULL шығыс дерегін көрсету үшін драйвер индикатор көрсеткішін қажет етеді, бірақ ол берілмеген.</Error>
+
+      <Error Key="DataConvError" NativeErrorCode="10460">Дерек түрлендіру қатесі.</Error>
+
+      <Error Key="DataConvNotSupported" NativeErrorCode="10470">Деректерді түрлендіруге қолдау көрсетілмейді.</Error>
+
+      <Error Key="FetchTypeNotSupported" NativeErrorCode="10480">Таңдау түріне қолдау көрсетілмейді, себебі таңдау бағдары ағымдағы параметрлермен үйлесімді емес.</Error>
+
+      <Error Key="InvalidCursorPos" NativeErrorCode="10490">Курсор нәтижелер жинағының басынан бұрын немесе соңынан кейін орналастырылды.</Error>
+
+      <Error Key="InvalidForwardSetPosOper" NativeErrorCode="10495">Курсор тек алға бағытталғанда SQLSetPos дұрыс операция болмайды.</Error>
+
+      <Error Key="InvalidCursorType" NativeErrorCode="10500">Курсор түрі жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidCursorState" NativeErrorCode="10510">Курсор күйі жарамсыз.</Error>
+
+      <Error Key="NoMoreDataToFetch" NativeErrorCode="10530">Таңдалатын дерек қалмады.</Error>
+
+      <Error Key="NotAllowedToGetSpecifiedColumn" NativeErrorCode="10540">Таңдалып қойған баған үшін деректі алуға рұқсат етілмейді.</Error>
+
+      <Error Key="InvalidColNumInResultSet" NativeErrorCode="10550">Жарамсыз нәтиже жинағының баған нөмірі, сәйкес келетін баған табылмады.</Error>
+
+      <Error Key="InvalidRowStatus" NativeErrorCode="10560">Таңдау операциясынан кейін жарамсыз қатар күйі анықталды.</Error>
+
+      <Error Key="ChangeTypesInMultipartSQLGetDataNotSupported" NativeErrorCode="10570">Көп бөлікті SQLGetData() шақыруларының арасында түрлерді өзгерту мүмкін емес.</Error>
+
+      <Error Key="InvalidSrcData" NativeErrorCode="10580">Бастапқы дерек жарамсыз.</Error>
+
+      <Error Key="NoMoreDataToGet" NativeErrorCode="10590">Алатын басқа дерек жоқ.</Error>
+
+      <Error Key="InvalidStrategy" NativeErrorCode="10600">Түрлендіру стратегиясы жарамсыз.</Error>
+
+      <Error Key="StrategyNotSupported" NativeErrorCode="10610">Түрлендіру стратегиясына қолдау көрсетілмейді.</Error>
+
+      <Error Key="CannotConvWhileHasMoreData" NativeErrorCode="10620">Басқа дерек болған жағдайда түрлендіру мүмкін емес.</Error>
+
+      <Error Key="InvalidConvResult" NativeErrorCode="10630">Жарамсыз түрлендіру нәтижесі.</Error>
+
+      <Error Key="FlushFailed" NativeErrorCode="10640">Деректерді тазалау үшін тазарту процесі сәтсіз аяқталды.</Error>
+
+      <Error Key="NoAvailableResultSet" NativeErrorCode="10651">Орындау процесінен кейін нәтижелер жинағы қолжетімсіз, бірақ дайындау процесінен кейін біреуі қолжетімді болды.</Error>
+
+
+      <!-- Error and warnings with descriptors. -->
+      <Error Key="BookmarkColumnNotSupported" NativeErrorCode="10660">Бетбелгі бағанына қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidDescIndex" NativeErrorCode="10670">Жарамсыз дескриптор индексі, дескриптор жазбасы жоқ немесе дұрыс іске қосылмады.</Error>
+
+      <Error Key="InvalidDescFieldIdent" NativeErrorCode="10680">Дескриптор өрісінің идентификаторы жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="DescRecNotSeq" NativeErrorCode="10690">Сұрауды орындау барысында кемінде бір дескриптор жазбасы болмады.</Error>
+
+      <Error Key="InvalidDescCount" NativeErrorCode="10700">Дескриптор санының өрісі дұрыс емес, бірде-бір сан қайтарылмауы крек.</Error>
+
+      <Error Key="ReadOnlyDescField" NativeErrorCode="10710">Тек оқуға болатын дескриптор өрісі.</Error>
+
+      <Error Key="CannotAssocNonExpDescWithDeleteListener" NativeErrorCode="10720">Анық емес дескрипторларды жою, тазарту үшін қолданылған дескриптор тыңдаушыларымен байланыстыру мүмкін емес.</Error>
+
+      <Error Key="CannotGetParentConnOnNonExpDesc" NativeErrorCode="10730">Анық емес дескриптордағы басты байланысты алу мүмкін емес.</Error>
+
+      <Error Key="CannotDropRecOfImplRowDesc" NativeErrorCode="10740">Іске асыру қатары дескрипторының жазбасын жою мүмкін емес.</Error>
+
+      <Error Key="InvalidDatetimeSubcodeIdent" NativeErrorCode="10750">Күн/уақыт ішкі кодының идентификаторы жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidIntevalSubcodeIdent" NativeErrorCode="10760">Аралық ішкі код идентификаторы дұрыс емес немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="DescFieldNotSupported" NativeErrorCode="10770">Дескриптор өрісі жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="CannotGetStrDescFieldInNonStrMethod" NativeErrorCode="10780">Жол дескрипторының өрісін алу үшін жолға қатысы жоқ әдіс дұрыс қолданылмады.</Error>
+
+      <Error Key="InvalidDescFieldType" NativeErrorCode="10790">Дескриптор өрісінің түрі жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="DescRecNotFound" NativeErrorCode="10800">Дескриптор жазбасы табылмады.</Error>
+
+      <Error Key="DescUnnamedNotAllowed" NativeErrorCode="10810">SQL_DESC_UNNAMED to SQL_NAMED параметрін орнатуға рұқсат етілмейді.</Error>
+
+      <Error Key="StmtNotPrep" NativeErrorCode="10820">Мәлімдеме дайын емес.</Error>
+
+      <Error Key="DescFieldValueNotSupported" Params="2" NativeErrorCode="10830">%1% дескриптор өрісі %2% мәніне қолдау көрсетпейді.</Error>
+
+      <Error Key="CannotModImpRowDesc" NativeErrorCode="10840">Іске асыру қатарларының дескрипторларын өзгерту мүмкін емес.</Error>
+
+      <Error Key="CannotSetDescAllocType" NativeErrorCode="10850">SQL_DESC_ALLOC_TYPE дескипторын орнату мүмкін емес.</Error>
+
+      <Error Key="IllegalDescType" NativeErrorCode="10860">Жарамсыз дескриптор түрі анықталды.</Error>
+
+      <Error Key="IllegalDescConciseType" NativeErrorCode="10870">Дескриптордың қысқарған түрі жарамсыз.</Error>
+
+      <Error Key="InvalidDatetimeCodeIdent" NativeErrorCode="10880">Күн/уақыт аралығының коды жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidIntervalCode" NativeErrorCode="10890">Аралық коды жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+
+      <!-- Error and warnings with SQL statement execution. -->
+      <Error Key="CannotReadFromOutputParam" NativeErrorCode="10900">Шығыс параметрден оқу мүмкін емес.</Error>
+
+      <Error Key="CannotReadFromDefaultParam" NativeErrorCode="10910">Әдепкі кіріс параметрінен дерек алу мүмкін емес.</Error>
+
+      <Error Key="CannotReadFromPushedParam" NativeErrorCode="10920">Мәні тасымалданған кіріс параметрінен дерек алу мүмкін емес.</Error>
+
+      <Error Key="WriteToDefaultParam" NativeErrorCode="10930">Әдепкі параметрле жазу мүмкін емес.</Error>
+
+      <Error Key="WriteToInputParam" NativeErrorCode="10940">Кіріс параметрге жазу мүмкін емес.</Error>
+
+      <Error Key="InvalidExecStatusCode" NativeErrorCode="10950">Орындау нәтижесі күйінің коды жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="SendNonCharBinaryConcatData" NativeErrorCode="10970">Таңба емес немесе екілік мәні жоқ деректі байланыстыру және жіберу мүмкін емес.</Error>
+
+      <Error Key="SendConcatDataForDefaultOrNullParam" NativeErrorCode="10980">Әдепкі және null параметрі үшін деректерді байланыстыру және бөліп жіберу мүмкін емес.</Error>
+
+      <Error Key="InvalidGetInfoField" NativeErrorCode="10990">SQLGetInfo өрісі дұрыс емес немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="NoQueryExecutor" NativeErrorCode="11000">Каталог сұрауының менеджері үшін сұрауды орындаушы жоқ.</Error>
+
+      <Error Key="NoDataAtExecParameter" NativeErrorCode="11010">Орындалып жатқан дерек параметрі жоқ.</Error>
+
+      <Error Key="CannotQueryParmSrcDuringPopulate" NativeErrorCode="11020">Параметрлерді автоматты түрде толтыру кезінде параметр көзі туралы ақпаратты сұрау мүмкін емес.</Error>
+
+      <Error Key="CannotSetParmSrcAttrDuringPushData" NativeErrorCode="11030">Параметр дерегін тасымалдау кезінде параметрдің бастапқы атрибуттарын орнату мүмкін емес.</Error>
+
+      <Error Key="PushValueStatusUnknown" NativeErrorCode="11040">Push мәнінің күйін тек орындау барысында ғана сұрауға болады.</Error>
+
+      <Error Key="ParamRegistNotPermit" NativeErrorCode="11050">Параметрді тіркеуге рұқсат етілмейді.</Error>
+
+      <Error Key="InvalidParamRegistIndex" NativeErrorCode="11060">Тіркеу үшін жарамсыз параметр индексі қолданылды.</Error>
+
+      <Error Key="DescFieldNotRecg" NativeErrorCode="11070">Дескриптор өрісінің мәні – анықталмаған мән.</Error>
+
+      <Error Key="InvalidParameterType" NativeErrorCode="11080">Параметр түрі дұрыс емес немесе оған қолдау көрсетілмейді.</Error>
+
+
+      <!-- Error and warnings with connection and statement. -->
+      <Error Key="CursorNameTooLong" NativeErrorCode="11100">Курсор аты өте ұзын.</Error>
+
+      <Error Key="DuplicateCursorName" NativeErrorCode="11110">Жүгіргінің қайталанатын атауы</Error>
+
+      <Error Key="OutstandingTransDuringDisconn" NativeErrorCode="11120">Ажырау барысында орындалмай қалған транзакциялар бар.</Error>
+
+      <Error Key="AllocNonStmtDescInConn" NativeErrorCode="11130">Мәлімдемеге және дескрипторға жатпайтын ресурсты тағайындау үшін, қосылымды пайдалану мүмкін емес.</Error>
+
+      <Error Key="FreeNonStmtDescInConn" NativeErrorCode="11140">Мәлімдемеге және дескрипторға жатпайтын ресурсты босату үшін байланысты қолдану мүмкін емес.</Error>
+
+      <Error Key="FreeImplicitAppDesc" NativeErrorCode="11150">Анық емес бағдарлама дескрипторын босату мүмкін емес.</Error>
+
+      <Error Key="DropImplicitAppDesc" NativeErrorCode="11160">Анық емес бағдарлама дескрипторын басты мәлімдемеден жою мүмкін емес.</Error>
+
+      <!-- MAINTENANCE NOTE: This error message needs to manually be duplicated in the other locales, since it has not be translated -->
+      <Error Key="GetInfoPropNotFound" NativeErrorCode="11180" Params="1">SQLGetInfo сипаты табылмады: %1%</Error>
+
+      <Error Key="FreeStmtWithoutAllocStmt" NativeErrorCode="11190">Бөлінген мәлімдемесі жоқ мәлімдемені босату мүмкін емес.</Error>
+
+      <Error Key="AttrCantBeSetNow" NativeErrorCode="11200">Атрибутты қазір орнату мүмкін емес.</Error>
+
+      <Error Key="InvalidTransState" NativeErrorCode="11210">Транзакция күйі дұрыс емес: транзакция күйінде операцияға рұқсат етілмейді.</Error>
+
+      <Error Key="PreparedStmtNotCursorSpec" NativeErrorCode="11220">Дайындалған мәлімдеме курсордың сипаттамасы емес.</Error>
+
+      <Error Key="CancelTreatedAsCloseWarn" NativeErrorCode="11230">Бас тарту функциясы курсорды жабу ретінде қарастырылды.</Error>
+
+      <Error Key="InvalidFreeStmtOptionIdent" NativeErrorCode="11240">Еркін мәлімдеме опциясының идентификаторы жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidColAttrFieldIdent" NativeErrorCode="11250">Баға атрибутының өріс идентификаторы жарамсыз немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidStmtResultType" NativeErrorCode="11270">Мәлімдеме нәтижесінің түрі дұрыс емес немесе оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidCursorStateSetCatalog" NativeErrorCode="11280">Курсор күйі жарамсыз. Нәтижелер күтіп тұрғанда ағымдағы каталогты орнату мүмкін емес.</Error>
+
+
+      <!-- Error and warnings with environment. -->
+      <Error Key="AllocNonConnInEnv" NativeErrorCode="11290">Байланыссыз ресурсты тағайындау үшін ортаны пайдалану мүмкін емес.</Error>
+
+      <Error Key="InvalidFreeHandleOperationInEnvAllocState" NativeErrorCode="11300">Үлестірілген орта күйінде бос дескриптор операциясы дұрыс емес.</Error>
+
+      <Error Key="SqlCTypeNotSupported" NativeErrorCode="11310">SQL C түріне қолдау көрсетілмейді.</Error>
+
+      <Error Key="SqlTypeNotSupported" NativeErrorCode="11320">SQL түріне қолдау көрсетілмейді.</Error>
+
+      <Error Key="CursorNameBeginWithReservedPrefix" NativeErrorCode="11330">Курсордың аты резервтелген префикстен басталмауы керек.</Error>
+
+
+      <!-- Error and warnings with catalog functions. -->
+      <Error Key="MetadataTableIDNotFoundForCatalogFunctionId" NativeErrorCode="11360">Каталог функциясының идентификаторына сәйкес метадерек кестесінің ид. табу мүмкін емес.</Error>
+
+      <Error Key="InvalidNullCatalogName" NativeErrorCode="11370">Каталог аты үшін NULL көрсеткіші дұрыс қолданылмады.</Error>
+
+      <Error Key="InvalidNullSchemaName" NativeErrorCode="11371">Схема аты үшін NULL көрсеткішінің дұрыс қолданылмады.</Error>
+
+      <Error Key="InvalidNullTableName" NativeErrorCode="11375">Кесте аты үшін NULL көрсеткіші дұрыс қолданылмады.</Error>
+
+      <Error Key="InvalidNullColumnName" NativeErrorCode="11376">Баған аты үшін NULL көрсеткіші дұрыс қолданылмады.</Error>
+
+      <Error Key="InvalidNullProcName" NativeErrorCode="11377">Процедура аты үшін NULL көрсеткіші дұрыс қолданылмады.</Error>
+
+      <Error Key="CatalogNameTooLong" NativeErrorCode="11380">Каталог аты өте ұзын.</Error>
+
+      <Error Key="SchemaNameTooLong" NativeErrorCode="11390">Схема аты тым ұзын.</Error>
+
+      <Error Key="TableNameTooLong" NativeErrorCode="11400">Кесте аты тым ұзын.</Error>
+
+      <Error Key="ProcNameTooLong" NativeErrorCode="11410">Процедура аты тым ұзын.</Error>
+
+      <Error Key="ColumnNameTooLong" NativeErrorCode="11420">Бағанның аты тым ұзын.</Error>
+
+      <Error Key="CatalogNameNotSupported" NativeErrorCode="11430">Каталог атына қолдау көрсетілмейді.</Error>
+
+      <Error Key="SchemaNotSupported" NativeErrorCode="11440">Схемаға қолдау көрсетілмейді.</Error>
+
+      <Error Key="BookmarkNotSupportedForCursorType" NativeErrorCode="11450">Курсор түрі үшін бетбелгіге қолдау көрсетілмейді.</Error>
+
+      <Error Key="InvalidCatalogFuncID" NativeErrorCode="11460">Каталог функциясының идентификаторы жарамсыз және оған қолдау көрсетілмейді.</Error>
+
+      <Error Key="TransNotSupported" NativeErrorCode="11470">Транзакцияларға қолдау көрсетілмейді.</Error>
+
+      <!-- Error and warnings with driver functions. -->
+      <Error Key="TooManyHandles" NativeErrorCode="11480">Дескрипторлар өте көп. Басқаларын жасау үшін дескрипторларды босатыңыз.</Error>
+
+      <Error Key="OperationCanceled" NativeErrorCode="11490">Әрекет тоқтатылды.</Error>
+
+
+      <!-- Error and warnings with driver functions. -->
+      <Error Key="DriverConfigurationWarningEncoding" NativeErrorCode="11510">DriverManagerEncoding үшін драйвер конфигурациясы дұрыс емес.</Error>
+
+      <Error Key="NoSQLGetPrivateProfileString" NativeErrorCode="11560">SQLGetPrivateProfileString функциясын табу мүмкін емес.</Error>
+
+      <Error Key="CredentialMissing" NativeErrorCode="11570" Params="1">Қажетті тіркелгі деректерінің параметрлері жоқ: %1%. </Error>
+    </Package>
+    
+    <!-- #################################################################################### -->
+    <Package ID="2" DefaultComponent="DSI">
+
+      <Error Key="DSIConnPropNotFound" Params="1" NativeErrorCode="20000">Байланыс сипаты DSI ішінде табылмады: %1%</Error>
+
+      <Error Key="DSIDriverPropNotFound" Params="1" NativeErrorCode="20001">DSI ішінде драйвер сипаты табылмады: %1%</Error>
+
+      <Error Key="DSIEnvPropNotFound" Params="1" NativeErrorCode="20002">Орта сипаты DSI ішінде табылмады: %1%</Error>
+
+      <Error Key="DSIStmtPropNotFound" Params="1" NativeErrorCode="20003">DSI ішінде мәлімдеме сипаты табылмады: %1%</Error>
+
+      <Error Key="EnvAttrOutputNtsNotSupported" NativeErrorCode="20004">Домен null мәні арқылы тоқтатылған жолдарды қайтармайды.</Error>
+
+      <Error Key="DSIStmtPropLimitNotFound" Params="1" NativeErrorCode="20005">Мәлімдеме сипатының шегі табалмады: %1%</Error>
+
+      <Error Key="ResultSetTraverseDirNotSupported" Params="1" NativeErrorCode="20006">Нәтижелер жинағының айналма бағытына қолдау көрсетілмейді: %1%</Error>
+
+      <Error Key="InvalidMetadataTableID" Params="1" NativeErrorCode="20007">Метадерек кестесінің идентификаторы дұрыс емес: %1%</Error>
+
+      <Error Key="InvalidFilterInMetadataRestrictionGenerator" NativeErrorCode="20008">Метадерек шектеуінің генераторында жарамсыз сүзгі қолданылып жатыр.</Error>
+
+      <Error Key="NoColumnsNeededDuringDataRetrieval" NativeErrorCode="20012">Баған дерегі сұралмағанмен, деректі алу процесі орындалды.</Error>
+
+      <Error Key="InvalidColumnNum" Params="1" NativeErrorCode="20013">Баған нөмірі дұрыс емес: %1%</Error>
+
+      <Error Key="MetadataSourceNotFound" NativeErrorCode="20014">Метадерек көзі дұрыс емес немесе ол табылмады.</Error>
+
+      <Error Key="CursorTypeNotSupported" Params="1" NativeErrorCode="20016">Курсор түріне қолдау көрсетілмейді: %1%</Error>
+
+      <Error Key="CannotGetDerivedDataOnBasicResult" NativeErrorCode="20017">Негізгі сүзгіден өткізілген метадерек нәтижесіндегі туынды деректі алу мүмкін емес.</Error>
+
+      <Error Key="InvalidDerivedColumnID" NativeErrorCode="20018">Туынды метадеректің баған идентификаторы дұрыс емес.</Error>
+
+      <Error Key="DefaultParamNotAllowed" NativeErrorCode="20020">Ағымдағы параметрдің әдепкі мәні жоқ және ол әдепкі мән бола алмайды.</Error>
+
+      <Error Key="InvalidColumnName" Params="1" NativeErrorCode="20021">Бағанның аты дұрыс емес: %1%</Error>
+
+      <Error Key="InvalidFilterVal" NativeErrorCode="20023">Сүзгі мәні дұрыс емес - сүзгі мәндерінде null жолдарын пайдаланбаңыз, сүзгіден өткізбеу үшін, бос векторды пайдаланыңыз.</Error>
+      
+      <Error Key="CannotPerformCursorOrDataRetrievalOperationOnRowCountResult" NativeErrorCode="20027">Қатар санының нәтижесіне курсорды немесе деректі алуға қатысты операцияларды орындау мүмкін емес.</Error>
+      
+      <Error Key="FuncNotSupported" NativeErrorCode="20029">Функцияға қолдау көрсетілмейді.</Error>
+      
+      <Error Key="DSIMemAllocErr" NativeErrorCode="20030">Жадты басқару қатесі.</Error>
+
+      <Error Key="CustomPropNotFound" Params="1" NativeErrorCode="20031">Реттелмелі сипат табылмады: %1%</Error>
+
+      <Error Key="DSIReqSettingNotFound" Params="1" NativeErrorCode="20032">Байланыс параметрлерінде қажетті "%1%" параметрі жоқ.</Error>
+
+      <Error Key="IncompatibleParameterTypes" Params="1" NativeErrorCode="20033">Параметр үшін үйлесім таппайтын параметр түрі көрсетілді: %1%.</Error>
+
+      <Error Key="IncompatibleParameterSqlTypes" Params="3" NativeErrorCode="20034">Параметр үшін үйлесім таппайтын параметрдің SQL түрі көрсетілді: %1%. Байланыс түрі: %2%. Күтілген түр: %3%</Error>
+
+      <Error Key="InvalidCurrentCatalog" Params="1" NativeErrorCode="20035">Дұрыс емес каталог көрсетілді: %1%</Error>
+
+      <Error Key="DSIHexToBinaryConversionOddLengthError" NativeErrorCode="20036">Он алтылық жолдан екілік жолға түрлендіру кезінде қате пайда болды: берілген он алтылық жолдың ұзындығы тақ сан болды.</Error>
+
+      <Error Key="DSIHexToBinaryConversionInvalidCharacterError" Params="1" NativeErrorCode="20037">Он алтылық жолдан екілік жолға түрлендіру кезінде қате пайда болды: Берілген алтылық жолда алтылық емес, "%1%" таңбасы бар.</Error>
+
+      <Error Key="IncorrectPropertyAttributeType" Params="3" NativeErrorCode="20038">%1% сипат коды үшін сипаттың атрибут дерегінің түрі дұрыс емес. Күтілгені: %2%, Нақтысы: %3%</Error>
+      
+      <Error Key="ICUUFailureStatus" Params="3" NativeErrorCode="20039">ICU функциясын іске қосу кезінде қате пайда болды, %1%, оның UErrorCode коды – %2%.</Error>
+
+      <Error Key="SwapLimitErr" NativeErrorCode="20040">Жалпы свопинг файлдары дискісінің бос орны шегіне жетті.</Error>
+    
+      <Error Key="LibLoadErr" NativeErrorCode="20041">Динамикалық немесе ортақ "%1%" кітапханасын жүктеу кезінде қате пайда болы: "%2%".</Error>
+    
+      <Error Key="LibFunctLoadErr" NativeErrorCode="20042">"%2%" функциясын динамикалық немесе ортақ "%1%" кітапханасынан жүктеу кезінде қате пайда болды.</Error>
+    
+      <Error Key="SwapFileEncryptErr" NativeErrorCode="20043">Свопинг файлының мазмұнын шифрлау немесе шифрын шешу кезінде ішкі қате пайда болды: "%1%" шақырыңыз - себебі "%2%".</Error>
+    
+      <Error Key="InvalidEscapeChar" Params="1" NativeErrorCode="22019">"%1%" LIKE ESCAPE сөйлемі жарамсыз. Ол тек 1 таңбадан тұруы керек.</Error>
+
+      <Error Key="InvalidEscapeSequence" NativeErrorCode="22025">LIKE ESCAPE реті дұрыс емес. Escape таңбасынан кейін "%", "_" немесе басқа escape таңбасы болуы керек.</Error>
+
+    </Package>
+
+    <!-- #################################################################################### -->
+    <Package ID="3" DefaultComponent="Support">
+
+      <Error Key="AttrDataTypeNotRecog" NativeErrorCode="40020">Атрибут деректерінің түрі анықталмады.</Error>
+
+      <Error Key="BufLenTooSmallForBinaryAttrData" NativeErrorCode="40070">Екілік атрибут дерегін қайтару үшін буфер ұзындығы өте қысқа.</Error>
+
+      <Error Key="WarningListenerNotValid" NativeErrorCode="40090">Ескерту тыңдаушысы дұрыс емес.</Error>
+
+      <Error Key="InvalidStrBufLen" NativeErrorCode="40100">Жол буферінің ұзындығы дұрыс емес.</Error>
+
+      <Error Key="IllegalDataConvFromCToCType" NativeErrorCode="40110">Деректі SQL C түрінен SQL C түріне түрлендіруге болмайды.</Error>
+
+      <Error Key="IllegalDataConvFromSQLToSQLType" NativeErrorCode="40120">Деректі SQL түрінен SQL түріне түрлендіруге болмайды.</Error>
+
+      <Error Key="PrecLessThanZero" NativeErrorCode="40130">Дәлдігі нөлден аз болмауы керек.</Error>
+
+      <Error Key="MaxPrecisionExceeded" Params="2" NativeErrorCode="40131">"%1%" саны рұқсат етілген максималды дәлдіктен асып кетеді (%2%).</Error>
+
+      <Error Key="ScaleLessThanZero" NativeErrorCode="40140">Масштаб нөлден аз болмауы керек.</Error>
+
+      <Error Key="SQLCTypeNotSupported" Params="2" NativeErrorCode="40150">SQL C түріне қолдау көрсетілмейді: %1% (%2%)</Error>
+
+      <Error Key="SQLTypeNotSupported" Params="2" NativeErrorCode="40160">SQL түріне қолдау көрсетілмейді: %1% (%2%)</Error>
+
+      <Error Key="SQLTDWTypeNotSupported" Params="1" NativeErrorCode="40170">SQL TDW түріне қолдау көрсетілмейді (%1%).</Error>
+
+      <Error Key="DataConvAlgorithmError" NativeErrorCode="40180">Деректерді түрлендіру алгоритмінің қатесі.</Error>
+
+      <Error Key="DataConvAlgorithmMemError" NativeErrorCode="40181">Деректерді түрлендіру алгоритмінің жадын үлестіру қатесі.</Error>
+
+      <Error Key="DataConvAlgorithmNotSupported" Params="2" NativeErrorCode="40190">%1% – %2% үшін деректі түрлендіру алгоритміне қолдау көрсетілмейді.</Error>
+
+      <Error Key="TDWTypeNotFoundForCType" Params="2" NativeErrorCode="40450">%1% (%2%) SQL түріне арналған тиісті TDW түрін табу мүмкін емес.</Error>
+
+      <Error Key="TDWTypeNotFoundForSqlType" Params="2" NativeErrorCode="40460">%1% (%2%) SQL түріне арналған тиісті TDW түрін табу мүмкін емес.</Error>
+
+      <Error Key="DefaultCForTDWTypeNotFound" Params="2" NativeErrorCode="40210">%1% (%2%) TDW түрі үшін әдепкі SQL C түрін табу мүмкін емес.</Error>
+
+      <Error Key="InvalidTDWTimestampType" NativeErrorCode="40220">TDW уақыт белгісінің түрі дұрыс емес.</Error>
+
+      <Error Key="DetectedBufferDescriptorLoop" NativeErrorCode="40240">Екі буфер дескрипторын біріктіру кезінде цикл анықталды.</Error>
+
+      <Error Key="CannotAllocateMemoryForString" NativeErrorCode="40250">Жолдарын оқу үшін жад үлестіру мүмкін емес.</Error>
+
+      <Error Key="CannotGenerateHandle" NativeErrorCode="40260">Дескрипторлар өте көп. Басқаларын жасау үшін дескрипторларды босатыңыз.</Error>
+
+      <Error Key="IllegalArgument" NativeErrorCode="40280">Функцияға жарамсыз аргумент өткізілді.</Error>
+
+      <Error Key="HandleInsertionFailed" NativeErrorCode="40290">Дескриптор басқарушысына дескриптор сәтті кірістірілмеді.</Error>
+
+      <Error Key="BadAttrType" NativeErrorCode="40300">Атрибутты сұралған түр ретінде алу мүмкін емес.</Error>
+
+      <Error Key="InvalidBufferStrategyOperation" NativeErrorCode="40310">Таңдалған буфер меншігінің стратегиясына арналған операция дұрыс емес.</Error>
+
+      <Error Key="TDWNumericArithmeticError" Params="1" NativeErrorCode="40320">"%1%" сандық операциясының нәтижесінде дұрыс емес сан пайда болды.</Error>
+
+      <Error Key="TDWNumericStringError" Params="1" NativeErrorCode="40321">"%1%" жол мәнінің нәтижесінде дұрыс емес сан пайда болды.</Error>
+
+      <Error Key="TDWNumericValueError" Params="1" NativeErrorCode="40322">"%1%" мәнінің нәтижесінде дұрыс емес сан пайда болды.</Error>
+
+      <Error Key="TDWNumericOperationOnInvalid" Params="1" NativeErrorCode="40323">Орындағыңыз келген '%1%' операциясының нөмірі жарамсыз.</Error>
+
+      <Error Key="TDWNumericOutOfRangeError" Params="2" NativeErrorCode="40324">%2% ауқымнан тыс болғандықтан, "%1%" мәні таңдалды.</Error>
+
+      <Error Key="SwapInvalidColumnNum" NativeErrorCode="40340">Ішкі қате - SwapInvalidRowColumnNum.</Error>
+
+      <Error Key="SwapInvalidOffset" NativeErrorCode="40350">Ішкі қате - SwapInvalidOffset.</Error>
+
+      <Error Key="SwapInvalidRowNum" NativeErrorCode="40360">Ішкі қате - SwapInvalidRowNum.</Error>
+
+      <Error Key="SwapReadError" NativeErrorCode="40370">Ішкі қате - SwapReadError.</Error>
+
+      <Error Key="SwapSeekError" NativeErrorCode="40380">Ішкі қате - SwapSeekError.</Error>
+
+      <Error Key="SwapWriteError" NativeErrorCode="40390">Ішкі қате - SwapWriteError.</Error>
+
+      <Error Key="UnexpectedBufferEnd" NativeErrorCode="40400">Күтпеген жерден мазмұн буферінің соңына жетті.</Error>
+
+      <Error Key="OutOfMemToSerialize" NativeErrorCode="40410">Мазмұнды сериялау үшін жад жеткіліксіз.</Error>
+
+      <Error Key="TempTableTraverseDirNotSupported" NativeErrorCode="40430">Уақытша кесте үшін айналма бағытқа қолдау көрсетілмейді.</Error>
+
+      <Error Key="CannotAccessDataWithCursor" NativeErrorCode="40440">Ашық курсорсыз уақытша кестеге қатынасу мүмкін емес.</Error>
+
+      <Error Key="StrRightTrunc" NativeErrorCode="40450">Түрлендіру кезінде жол дерегі қиылды.</Error>
+
+      <Error Key="FractionalTrunc" NativeErrorCode="40460">Түрлендіру процесін орындағанда бөлшектік дерек қиылды.</Error>
+
+      <Error Key="RestrictedDataTypeAttrViolation" NativeErrorCode="40461">Шектелген деректер түрінің төлнұсқасының бұзылуы</Error>
+
+      <Error Key="InvalidMultiFieldIntervalConversion" NativeErrorCode="40462">Түрлендіру дұрыс емес. Көп өрісті аралықтарды бір нөмірге түрлендіру мүмкін емес.</Error>
+
+      <Error Key="StrRightTruncErr" NativeErrorCode="40465">Түрлендіру кезінде жол дерегі қиылды.</Error>
+
+      <Error Key="NumericValOutOfRange" Params="2" NativeErrorCode="40470">%1% бағаны мен%2% қатарындағы түрлендіру қатесі: Сандық мән ауқымнан тыс.</Error>
+
+      <Error Key="InvalidDatetimeFormat" NativeErrorCode="40480">Күн, уақыт немесе уақыт белгісінің пішімі дұрыс емес.</Error>
+
+      <Error Key="InvalidDateFormat" Params="1" NativeErrorCode="40481">"%1%" үшін күн пішімі дұрыс емес. Пішімі [-]ЖЖЖЖ-АА-КК болуы керек.</Error>
+
+      <Error Key="InvalidTimeFormat" Params="1" NativeErrorCode="40482">"%1%" үшін уақыт пішімі дұрыс емес. Пішімі сс:мм:сс[.fffffffff] болуы керек.</Error>
+
+      <Error Key="InvalidTimestampFormat" Params="1" NativeErrorCode="40483">"%1%" үшін уақыт белгісінің пішімі дұрыс емес. Пішімі [-]ЖЖЖЖ-АА-КК сс:мм:сс[.fffffffff] болуы керек.</Error>
+
+      <Error Key="InvalidDatetimeValue" NativeErrorCode="40490">Күн, уақыт немесе уақыт белгісінің мәні дұрыс емес.</Error>
+
+      <Error Key="InvalidDateValue" Params="1" NativeErrorCode="40500">"%1%" күн мәні дұрыс емес. Көрсетілген ай мен жыл үшін күндер ауқымын сәйкестендіру кезінде жыл [-9999, 9999] ауқымында, ай [1, 12] ауқымында, ал күн [1, 31] ауқымында болуы керек. </Error>
+
+      <Error Key="InvalidTimeValue" Params="1" NativeErrorCode="40501">"%1%" уақыт мәні дұрыс емес. Сағат [0, 23] ауқымында болуы керек, минут [0, 59] ауқымында болуы керек, ал секунд [0, 61] ауқымында, сонымен қатар 60 және 61 түзету секундтары ретінде қолданылуы керек.</Error>
+
+      <Error Key="InvalidTimestampValue" Params="1" NativeErrorCode="40502">"%1%" уақыт белгісінің мәні дұрыс емес. Жыл 0-ді қоспағанда [-9999, 9999] ауқымында болуы керек, ай [1, 12] ауқымында болуы керек, күн көрсетілген ай мен жылдың күндер ауқымына сәйкес келе отырып, [1, 31] ауқымында болуы керек, сағат [0, 23] ауқымында болуы керек, минут [0, 59] ауқымында болуы керек, ал секунд [0, 61] ауқымында, ондағы 60 және 61 түзету секундтары үшін қолданылады.</Error>
+
+      <Error Key="InvalidYearMonthIntervalValue" Params="1" NativeErrorCode="40491">Жылдан айға дейінгі аралық мәні дұрыс емес: %1%. Жыл [0, 999999999] ауқымында және ай [0, 11] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidDayHourIntervalValue" Params="1" NativeErrorCode="40492">Күннен сағатқа дейінгі аралық мәні дұрыс емес: %1%. Күн [0, 999999999] ауқымында болуы керек, ал сағат [0, 23] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidDayMinuteIntervalValue" Params="1" NativeErrorCode="40493">Күннен минутқа дейінгі аралық дұрыс емес: %1%. Күн [0, 999999999] ауқымында, сағат [0, 23] ауқымында, ал минут [0, 59] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidDaySecondIntervalValue" Params="1" NativeErrorCode="40494">Күннен секундқа дейінгі аралық дұрыс емес: %1%. Күн [0, 999999999] ауқымында, сағат [0, 23] ауқымында, ал минут пен секунд [0, 59] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidHourMinuteIntervalValue" Params="1" NativeErrorCode="40495">Сағаттан минутқа дейінгі аралық дұрыс емес: %1%. Сағат [0, 999999999] ауқымында, ал минут [0, 59] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidHourSecondIntervalValue" Params="1" NativeErrorCode="40496">Сағаттан секундқа дейінгі аралық дұрыс емес: %1%. Сағат [0, 999999999] ауқымында, ал минут пен секунд [0, 59] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidMinuteSecondIntervalValue" Params="1" NativeErrorCode="40497">Минуттан секундқа дейінгі аралық мәні дұрыс емес: %1%. Минут [0, 999999999] ауқымында, ал секунд [0, 59] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidSecondIntervalValue" Params="1" NativeErrorCode="40498">Секунд аралығының мәні дұрыс емес: %1%. Секунд [0, 999999999] ауқымында болуы керек.</Error>
+
+      <Error Key="InvalidSingleFieldIntervalValue" Params="1" NativeErrorCode="40499">Бір өріс аралығының мәні дұрыс емес: %1%. Мән [0, 999999999] ауқымында болуы керек.</Error>
+
+      <Error Key="IntervalArithOverflow" Params="1" NativeErrorCode="40519">"%1%" операциясының нәтижесінде аралық өрісі толып кетті.</Error>
+
+      <Error Key="DatetimeFieldOverflow" NativeErrorCode="40520">Жарамсыз күн/уақыт мәндерінің болуынан күн/уақыт өрісі толып кетті.</Error>
+
+      <Error Key="IntervalFieldOverflow" NativeErrorCode="40530">Аралық өрістің толып кетуі</Error>
+
+      <Error Key="InvalidLeadingPrecision" NativeErrorCode="40540">Бастапқы дәлдік бастапқы аралық мәнінің ділдігінен кіші.</Error>
+
+      <Error Key="LeadingPrecisionExceeded" Params="1" NativeErrorCode="40541">%1% бастапқы аралық дәлдігі шамадан асты.</Error>
+
+      <Error Key="FractionalPrecisionExceeded" Params="1" NativeErrorCode="40542">%1% бөлшектік секунд дәлдігі шамадан асты.</Error>
+
+      <Error Key="InvalidCharValForCast" NativeErrorCode="40550">Ауытқуды көрсету үшін таңба мәні дұрыс емес.</Error>
+
+      <Error Key="InvalidGuidValue" Params="1" NativeErrorCode="40560">GUID дерегінің мәні дұрыс емес: %1%. Дерек {} жақшаларымен қоршалған XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX пішімінде болуы керек.</Error>
+
+      <Error Key="OutOfMemoryError" NativeErrorCode="40600">Жадтың жеткіліксіздігі туралы қате.</Error>
+      
+      <Error Key="ConvInvalidData" NativeErrorCode="40610">Түрлендіруге арналған дерек дұрыс емес.</Error>
+      
+      <Error Key="ConvLogicError" NativeErrorCode="40620">Түрлендіру кезінде логикалық қате пайда болды.</Error>
+
+      <Error Key="InvalidArgument" Params="2" NativeErrorCode="30020">Функцияға дұрыс емес аргумент(тер) өткізілді [%1%: %2%].</Error>
+
+      <Error Key="InvalidArgumentParam" Params="3" NativeErrorCode="30021">Функцияға жарамсыз аргумент (%1%) өткізілді [%2%: %3%].</Error>
+
+      <Error Key="InvalidOperation" Params="3" NativeErrorCode="30030">%1% [%2%: %3%] функциясын шақыру кезінде, логикалық қате пайда болды. Операцияға қолдау көрсетілетінін және функцияны жүзеге асыруға болатынын тексеріңіз.</Error>
+
+      <Error Key="ErrSemaphoreMaxValue" NativeErrorCode="40621">SEMAPHORE_MAX_VALUE мәнінен үлкен мәнге семафор орнату мүмкін емес.</Error>
+
+      <Error Key="ErrSemaphoreInit" Params="1" NativeErrorCode="40622">Семафорды іске қосу кезіндегі қате: %1%</Error>
+
+      <Error Key="IOError" NativeErrorCode="40630">К/Ш қатесі пайда болды.</Error>
+
+      <Error Key="RegKeyNotFound" NativeErrorCode="50010">Тізбе кілті табылмады.</Error>
+
+      <Error Key="CannotOpenRegistry" NativeErrorCode="50020">Тізбені ашу мүмкін емес.</Error>
+
+      <Error Key="CannotOpenIniFile" NativeErrorCode="50040">Ini файлды ашу мүмкін емес.</Error>
+
+      <Error Key="EnvVarNotFound" Params="1" NativeErrorCode="50050">Орта айнымалысы табылмады: '%1%'.</Error>
+
+      <Error Key="CannotOpenFile" Params="2" NativeErrorCode="50070">"%1%" файлын ашу мүмкін емес - Қате: %2%</Error>
+
+      <Error Key="EncodingNotRecog" NativeErrorCode="50080">Кодтау анықталмады.</Error>
+
+      <Error Key="StrToNumConvFailed" Params="1" NativeErrorCode="50090">Жолдан нөмірге түрлендіру сәтсіз аяқталды, шыққан мән: "%1%"</Error>
+
+      <Error Key="StrToNumConvFailedUnsigned" Params="1" NativeErrorCode="50100">Жолдан таңбасыз санға түрлендіру сәтсіз аяқталды, шыққан мән: "%1%"</Error>
+
+      <Error Key="StrToNumConvFailedOverflow" Params="1" NativeErrorCode="50110">Мәндердің көптігіне байланысты жолдан нөмірге түрлендіру сәтсіз аяқталды: '%1%'</Error>
+
+      <Error Key="StrToNumConvFailedUnderflow" Params="1" NativeErrorCode="50120">Мәнінің жоғалуына байланысты "%1%" мәнін жолдан нөмірге түрлендіру сәтсіз аяқталды</Error>
+
+      <Error Key="NumToStrConvFailed" NativeErrorCode="50130">Таңба буферінің өлшемі кіші болғандықтан, нөмірден жолға түрлендіру сәтсіз аяқталды.</Error>
+
+      <Error Key="NotImplYet" NativeErrorCode="50140">Әдіс әлі іске асырылмады.</Error>
+
+      <Error Key="ThreadInvalidStateAction" NativeErrorCode="50160">Ағымдағы күйде тізбек әрекеті дұрыс емес.</Error>
+
+      <Error Key="ThreadCreationFailed" NativeErrorCode="50170">Жаңа ағын жасау процесі сәтсіз аяқталды.</Error>
+
+      <Error Key="ThreadAttributeCreationFailed" NativeErrorCode="50175">Жаңа ағын атрибуттарын жасау сәтсіз аяқталды.</Error>
+
+      <Error Key="ThreadWaitFailed" NativeErrorCode="50180">Тізбекті күту сәтсіз аяқталды.</Error>
+
+      <Error Key="ThreadAlreadyStarted" NativeErrorCode="50185">Тізбек іске қосылып қойған, оны бірнеше рет іске қосу мүмкін емес.</Error>
+
+      <Error Key="CannotGenerateTempFileName" Params="1" NativeErrorCode="50190">Уақытша алмастыру файлының атын жасау кезіндегі қате: %1%</Error>
+
+      <Error Key="InvalidFileName" NativeErrorCode="50200">Файл аты жарамсыз.</Error>
+
+      <Error Key="CannotSetFilePosition" NativeErrorCode="50210">Файл позициясын орнату мүмкін емес.</Error>
+
+      <Error Key="InvalidCodePtMaxSize" NativeErrorCode="50220">Код нүктесі үшін жарамсыз максималды өлшем.</Error>
+
+      <Error Key="InvalidNumCodePtInBuffer" NativeErrorCode="50230">Буфердегі код нүктелерінің саны дұрыс емес.</Error>
+
+      <Error Key="InvalidBuffPos" NativeErrorCode="50240">Буфер позициясы дұрыс емес.</Error>
+
+      <Error Key="StrByteAlignErr" NativeErrorCode="50250">Жол байттары дұрыс тураланбайды.</Error>
+
+      <Error Key="InvalidEncodingEndianForPlatform" NativeErrorCode="50260">Платформа үшін шифрлау байттарының реті дұрыс емес.</Error>
+
+      <Error Key="SetBuffErr" NativeErrorCode="50270">Толықтай қолданылмаған буферді орнату немесе оны жарамсыз буфермен орнату.</Error>
+
+      <Error Key="InvalidNullParam" NativeErrorCode="50280">Параметрлер бос болмауы керек</Error>
+
+      <Error Key="ICUCreateUConverterErr" Params="1" NativeErrorCode="50290">"%1%" кодтауы үшін ICU Юникод түрлендіргішінің нысанын жасау кезінде қате пайда болды.</Error>
+
+      <Error Key="ICUConvErr" NativeErrorCode="50300">ICU мәні бар жолды түрлендіру кезінде қате пайда болды.</Error>
+
+      <Error Key="ICUConvErrNotRecog" NativeErrorCode="50310">Белгісіз ICU түрлендіру қатесі.</Error>
+
+      <Error Key="ICURegexError" Params="1" NativeErrorCode="50315">Кәдуілгі өрнекті пайдалану кезінде қате пайда болды: %1%.</Error>
+
+      <Error Key="UnsupportedCodeUnitSize" Params="1" NativeErrorCode="50320">Деректерді алу үшін қолдау көрсетілмейтін код бірлігінің өлшемі (%1%).</Error>
+
+      <!-- Product License Errors and Warnings -->
+
+      <Error Key="LicFileNotFound" Params="1" NativeErrorCode="50320">"%1%" лицензия файлын табу мүмкін болмады. Әкімшіңізге немесе sales@simba.com мекенжайы бойынша Simba Technologies Inc. компаниясына хабарласыңыз.</Error>
+
+      <Error Key="LicFileCorrupt" Params="1" NativeErrorCode="50330">"%1%" лицензия файлы бүлінген. Әкімшіңізге немесе sales@simba.com мекенжайы бойынша Simba Technologies Inc. компаниясына хабарласыңыз.</Error>
+
+      <Error Key="TrialPeriodExp" Params="1" NativeErrorCode="50340">Сіздің лицензияңыздың мерзімі %1% күні аяқталады. Simba Technologies Inc. компаниясына sales@simba.com мекенжайы бойынша хабарласыңыз.</Error>
+      
+      <Error Key="TrialPeriodNotBegun" Params="1" NativeErrorCode="50341">Бағалау мерзіміңіз әлі басталмады, ол %1% күні басталады. Simba Technologies Inc. компаниясына sales@simba.com мекенжайы бойынша хабарласыңыз.</Error>
+
+      <Error Key="TrialPeriodExpSoon" Params="1" NativeErrorCode="50342">Сізідң бағалау мерзіміңіз %1% күні аяқталады. Simba Technologies Inc. компаниясына sales@simba.com мекенжайы бойынша хабарласыңыз.</Error>
+
+      <Error Key="IniParseError" Params="2" NativeErrorCode="50350">%1% / %2% жолындағы INI талдауының қатесі.</Error>
+
+      <Error Key="LicenseValidationFailure" Params="1" NativeErrorCode="50351">Лицензия жарамдылығын тексеру қатесі: %1%. Simba Technologies Inc. компаниясына sales@simba.com мекенжайы бойынша хабарласыңыз.</Error>
+      
+      <Error Key="IntegratedSecurityAuthFailed" NativeErrorCode="50360" Params="1">Ендірілген қауіпсіздік жүйесінің аутентификациясы сәтсіз аяқталды. (%1%)</Error>
+
+      <Error Key="FailedToAcquireCredentials" NativeErrorCode="50361" Params="1">Ендірілген қауіпсіздік жүйесі жергілікті тіркелгі деректерін ала алмады. (%1%)</Error>
+
+      <Error Key="FailedToGetUsername" NativeErrorCode="50363" Params="1">Пайдаланушы атын алу сәтсіз аяқталды. (%1%)</Error>
+
+      <Error Key="SecurityContextInProgress" NativeErrorCode="50364">Қауіпсіздік мәнмәтінінің сипаттарын өзгерту мүмкін емес, себебі ол орындалып жатыр.</Error>
+
+      <Error Key="ThreadImpersonationFailed" NativeErrorCode="50365" Params="1">Ағын имитациясын іске қосу кезінде қате пайда болды. (%1%)</Error>
+
+      <Error Key="GSSAPILoadFailed" NativeErrorCode="50366" Params="1">Қауіпсіздік кітапханасын жүктеу процесі сәтсіз аяқталды: (%1%)</Error>
+      
+      <Error Key="NoSecurityAPI" NativeErrorCode="50367" Params="0">Бұл платформада қолдау көрсетілетін қауіпсіздік API жоқ. </Error>
+      <Error Key="InvalidNumeric" NativeErrorCode="50368" Params="0">TDWExactNumericType нысанының жарамдылығын тексеру сәтсіз аяқталды.</Error>
+
+      <Error Key="LibLoadErr" Params="2" NativeErrorCode="50400">Динамикалық немесе ортақ "%1%" кітапханасын жүктеу кезінде қате пайда болы: "%2%".</Error>
+	  
+      <Error Key="LibFunctLoadErr" Params="2" NativeErrorCode="50401">"%2%" функциясын динамикалық немесе ортақ "%1%" кітапханасынан жүктеу кезінде қате пайда болды.</Error>
+	  
+      <Error Key="SwapFileEncryptErr"  Params="2" NativeErrorCode="50402">Свопинг файлының мазмұнын шифрлау немесе шифрын шешу кезінде ішкі қате пайда болды: "%1%" шақырыңыз - себебі "%2%".</Error>
+	  
+      <Error Key="SwapLimitErr" NativeErrorCode="50403">Жалпы свопинг файлдары дискісінің бос орны шегіне жетті.</Error>
+	  
+    </Package>
+</Messages>

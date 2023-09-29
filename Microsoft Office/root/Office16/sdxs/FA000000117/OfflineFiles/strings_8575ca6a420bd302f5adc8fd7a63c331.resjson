@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel ನಲ್ಲಿ Python (ಪೂರ್ವವೀಕ್ಷಣೆ) ಅನ್ನು ಪ್ರಯತ್ನಿಸಿ",
+  "premiumHubMessageTextForPythonInExcel": "ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಲು, ಅನ್ವೇಷಿಸಲು ಮತ್ತು ವಿಶ್ಲೇಷಿಸಲು Excel ಗ್ರಿಡ್‌ನೊಂದಿಗೆ Python ಸೂತ್ರಗಳನ್ನು ಸಂಯೋಜಿಸಿ. Microsoft Cloud ‌ನಿಂದ ಸುರಕ್ಷಿತಗೊಳಿಸಲಾಗಿರುವ Excel ನಲ್ಲಿಯೇ ಸುಧಾರಿತ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ರಚಿಸಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಿ.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "ಲೈಬ್ರರಿಗಳನ್ನು ಪ್ರವೇಶಿಸಿ",
+  "premiumHubSectionOneMessageForPythonInExcel": "ಸಾಮಾನ್ಯ Python ಲೈಬ್ರರಿಗಳೊಂದಿಗೆ ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಯನ್ನು ಸರಳಗೊಳಿಸಿ ಮತ್ತು ವೇಗಗೊಳಿಸಿ.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "ಮಾದರಿಗಳನ್ನು ಹುಡುಕಿ",
+  "premiumHubSectionTwoMessageForPythonInExcel": "ನಿಮ್ಮ ಡೇಟಾದಲ್ಲಿನ ಗುಪ್ತ ಒಳನೋಟಗಳನ್ನು ಕಂಡುಹಿಡಿಯಲು ಮತ್ತು ಅವುಗಳನ್ನು ಪ್ಲಾಟ್‌ಗಳೊಂದಿಗೆ ದೃಶ್ಯೀಕರಿಸಲು Python ಸೂತ್ರಗಳನ್ನು ಬಳಸಿ.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "ಯಾವುದೇ ಸೆಟಪ್ ಅಗತ್ಯವಿಲ್ಲ",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ಬಳಕೆಗೆ ಸಿದ್ಧವಾದ, ಸುರಕ್ಷಿತ ಪರಿಸರಗಳೊಂದಿಗೆ ಕೆಲಸದ ಹರಿವುಗಳನ್ನು ಸುಗಮಗೊಳಿಸಿ.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel ನಲ್ಲಿ Python ಸಾರ್ವಜನಿಕ ಪೂರ್ವವೀಕ್ಷಣೆಯಲ್ಲಿರುವಾಗ, ನೀವು ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆಯ ಭಾಗವಾಗಿ ಉಚಿತವಾಗಿ ಬಳಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ಪೂರ್ವವೀಕ್ಷಣೆಯ ನಂತರ, ಅದನ್ನು ಬಳಸಲು ನೀವು ಹೆಚ್ಚುವರಿ ಪರವಾನಗಿಯನ್ನು ಖರೀದಿಸಬೇಕಾಗಬಹುದು. {0} ಅನ್ನು ವೀಕ್ಷಿಸಿ.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ",
+  "premiumHubPythonCenterButtonForPythonInExcel": "ಅದು ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ನನಗೆ ತೋರಿಸಿ",
+  "premiumHubTryPreviewButtonForPythonInExcel": "ಪೂರ್ವವೀಕ್ಷಣೆ ಪ್ರಯತ್ನಿಸಿ",
+  "termsOfUseLinkForPreview": "ಬಳಕೆಯ ನಿಯಮಗಳ ಪೂರ್ವವೀಕ್ಷಣೆ ಮಾಡಿ"
+}

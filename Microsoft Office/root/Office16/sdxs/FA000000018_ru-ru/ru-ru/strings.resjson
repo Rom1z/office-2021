@@ -1,0 +1,15 @@
+{
+  "cardDismissButtonLabel": "Закрыть карточку",
+  "errorCardText": "Извините, мы не можем получить эти данные прямо сейчас.",
+  "navBarBackButtonLabel": "Сзади",
+  "navBarOverflowButtonLabel": "иерархия меню переполнения",
+  "arrayControlCopyToGridTooltip": "Извлечь ячейку в сетку",
+  "arrayControlRow": "Строка",
+  "arrayControlColumn": "Столбец",
+  "arrayControlContainsDataType": "Содержит тип данных",
+  "copyCardToGridTooltip": "Извлечь карточку в таблицу",
+  "reportConfirmationTooltip": "Спасибо!",
+  "buttonShowImageAttributionTooltip": "Показать атрибуты изображения",
+  "buttonHideImageAttributionTooltip": "Скрыть атрибуты изображения",
+  "navBarIPhoneBreadCrumbCancel": "Отмена"
+}

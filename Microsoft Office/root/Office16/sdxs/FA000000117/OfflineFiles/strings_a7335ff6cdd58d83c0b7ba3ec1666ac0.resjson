@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excelda Python sinash (sinov versiyasi)",
+  "premiumHubMessageTextForPythonInExcel": "Maʼlumotlaringizni tozalash, tanishish va tahlil qilish uchun Python formulalarini Excel katagi bilan birlashtiring. Bevosita Excel ichida Microsoft Cloud tomonidan himoyalangan kengaytrilgan axborotni yarating va ulashing.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Kutubxonalarga bosing",
+  "premiumHubSectionOneMessageForPythonInExcel": "Umumiy Python kutubxonalari yordamida tahlilingizni soddalashtiring va tezlashtiring.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Namunalar topish",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Maʼlumotlaringizda berkitilgan tahlillarni aniqlash va ularni grafikalar bilan vizuallashtirishda foydalaning.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Sozlash talab etilmaydi",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Foydalanishga tayyor, xavfsiz muhitlar bilan ish jarayonlarini soddalashtiring.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excelʼdagi Python sinov muddatida boʻlsa-da, siz ushbu xususiyatdan obunangizning bir qismi sifatida foydalana olasiz. Sinov muddatidan soʻng uni ishlatish uchun qoʻshimcha litsenziya sotib olishingiz kerak boʻladi. {0} ni koʻrish.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Batafsil",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Qanday ishlashini koʻrsating",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Sinov versiyasidan foydalanish",
+  "termsOfUseLinkForPreview": "foydalanish shartlarining sinov versiyasi"
+}

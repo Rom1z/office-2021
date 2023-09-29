@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>3f1dc3ae-6d85-4fa3-a2a3-69e70d6bba36</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Data from Picture"/>
+  <Description DefaultValue="Importing Tabular Data Into Excel Using Images"/>
+  <IconUrl DefaultValue="assets/icon-56.png"/>
+  <HighResolutionIconUrl DefaultValue="assets/icon-84.png"/>
+  <AppDomains>
+    <AppDomain>https://fa000000050.resources.office.net</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://fa000000050.resources.office.net/f7024bdc-7caf-4ca8-807d-2908f09640d6/1.0.2307.13004/en-us_web/taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <!-- Disable Service Delivery on Win32 and Mac completely for future SDX releases due to backwards compatibility reasons. -->
+      <!-- On Excel Web however, we want Service Delivery because we don't need to worry about old Excel Web builds. -->
+      <!-- Current Capabilities and Requirement Set: -->
+      <!--    Excel Web Office host - 1.1  -->
+      <!--    Excel Win32/Mac Office host - 2.1.0  -->
+      <!--    JavaScript side Requirement includes lesser major version (something less than major version 2, which is 1.1) -->
+      <Set Name="DataFromPicture" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+        <bt:Urls>
+          <bt:Url id="ImageToDoc.Dogfood.Url" DefaultValue="https://aka.ms/sdx_imagetodoc_FI_DF" />
+          <bt:Url id="ImageToDoc.Production.Url" DefaultValue="https://aka.ms/sdx_imagetodoc_FI_PROD" />
+          <bt:Url id="ImageToDoc.Develop.Url" DefaultValue="https://aka.ms/sdx_imagetodoc_DEVELOP" />
+        </bt:Urls>
+      </Resources>
+</VersionOverrides>
+</OfficeApp>

@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Probar Python en Excel (versión preliminar)",
+  "premiumHubMessageTextForPythonInExcel": "Combina fórmulas Python coa grella de Excel para limpar, explorar e analizar os teus datos. Coa protección da nube de Microsoft, crea e comparte análise avanzada xusto dentro de Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Aproveitar bibliotecas",
+  "premiumHubSectionOneMessageForPythonInExcel": "Simplifica e axiliza a túa análise con bibliotecas comúns de Python.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Buscar padróns",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Usa fórmulas de Python para descubrir ideas ocultas nos teus datos e visualizalas con tramas.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Non se require configuración",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Simplificar fluxos de traballo con ambientes listos para usar e seguros.",
+  "premiumHubTermsOfUseForPythonInExcel": "Mentres Python en Excel está en vista previa pública, poderá usar esta función como parte da súa subscrición. Despois da vista previa, terás que mercar unha licenza adicional para usala. Vexa o {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Máis información",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Móstrame como funciona",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Probar a versión preliminar",
+  "termsOfUseLinkForPreview": "condicións de uso da versión preliminar"
+}

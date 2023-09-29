@@ -1,0 +1,34 @@
+[info]
+codepage=65001
+readonly=true
+version=5.00
+format=2.00
+title=Blueprint
+refcount=0
+
+[titles]
+1040=Progetto
+1053=Skiss
+1032=Βιομηχανικό σχέδιο
+1036=Géomètre
+1031=Blaupause
+1044=Blårutet
+2052=蓝图
+1028=藍圖
+1042=파란 격자
+1038=Tervrajz
+1049=Копирка
+1046=Gráfico
+1041=青写真
+2070=Arquitecto
+1054=แบบพิมพ์เขียว
+1025=مخطط
+3082=Plano técnico
+1035=Sinikopio
+1030=Opgavepapir
+1043=Blauwdruk
+1029=Modrotisk
+1045=Projekt
+1037=שרטוט
+1055=Ozalit
+

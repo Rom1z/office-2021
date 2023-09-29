@@ -1,0 +1,9 @@
+﻿<appv:Extensions xmlns:appv="http://schemas.microsoft.com/appv/2010/manifest">
+  <appv:Extension Category="AppV.EnvironmentVariables">
+    <appv:EnvironmentVariables>
+      <appv:Include>
+        <appv:Variable Name="PATH" Value="%PATH%;[{AppVPackageRoot}]\Client"/>
+      </appv:Include>
+    </appv:EnvironmentVariables>
+  </appv:Extension>
+</appv:Extensions>

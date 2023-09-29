@@ -1,0 +1,24 @@
+﻿<Package IgnorableNamespaces="appv appv1.1 appv1.2" appv:IgnorableNamespaces="appv1.1 appv1.2" xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:appv="http://schemas.microsoft.com/appv/2010/manifest" xmlns:appv1.1="http://schemas.microsoft.com/appv/2013/manifest" xmlns:appv1.2="http://schemas.microsoft.com/appv/2014/manifest">
+  <Identity Name="Reserved" Publisher="CN=Reserved" Version="16.0.16827.20130" appv:PackageId="90160000-00A1-0419-1000-0000000FF1CE" appv:VersionId="06fe366e-60fa-4aec-9e35-623a122265ba" />
+  <Properties>
+    <DisplayName>Microsoft Office 15</DisplayName>
+    <PublisherDisplayName>Reserved</PublisherDisplayName>
+    <Description>Reserved</Description>
+    <Logo>Reserved.jpeg</Logo>
+    <appv:AppVPackageDescription>No description entered</appv:AppVPackageDescription>
+    <appv:AppVInProcExt>true</appv:AppVInProcExt>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+    <appv:TargetOSes SequencingStationProcessorArchitecture="x64" />
+  </Prerequisites>
+  <Applications xmlns="http://schemas.microsoft.com/appv/2010/manifest" />
+  <appv:Extensions />
+  <appv:UsedKnownFolders>
+    <appv:KnownFolder ID="{6365D5A7-0F0D-45E5-87F6-0DA56B6A4F7D}" />
+  </appv:UsedKnownFolders>
+</Package>

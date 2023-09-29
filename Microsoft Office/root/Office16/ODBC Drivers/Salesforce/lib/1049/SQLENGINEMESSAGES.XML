@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- SQL_ENGINE_ERROR ERRORS (30000 to 39999) -->
+    <Package ID="4" DefaultComponent="SQLEngine">
+
+        <!-- GENERAL ERRORS (30000 to 30999) -->
+
+        <Error Key="LogicError" Params="2" NativeErrorCode="30000">Логическая ошибка [%1%: %2%].</Error>
+
+        <Error Key="InvalidAET" Params="2" NativeErrorCode="30010">Недопустимое дерево AE [%1%: %2%].</Error>
+
+        <Error Key="InvalidParseTree" Params="2" NativeErrorCode="30040">Недопустимое дерево анализа [%1%: %2%].</Error>
+
+        <Error Key="LexerScannerInitFail" NativeErrorCode="30050">Сбой инициализации лексического анализатора или сканера.</Error>
+
+        <Error Key="StoredProcedureNotFound" Params="1" NativeErrorCode="30070">Хранимая процедура не найдена: %1%</Error>
+
+        <Error Key="DuplicateParameterIndex" Params="1" NativeErrorCode="30080">Для хранимой процедуры зарегистрирован дублирующийся индекс параметра: %1%</Error>
+
+        <Error Key="InvalidParameterIndex" Params="1" NativeErrorCode="30090">Для хранимой процедуры зарегистрирован недопустимый индекс параметра: %1%</Error>
+
+        <Error Key="InvalidReturnValueIndex" NativeErrorCode="30100">Возвращаемые значения должны иметь индекс 0.</Error>
+
+        <Error Key="InvalidNumberProcedureParameters" Params="3" NativeErrorCode="30110">Недопустимое количество параметров для хранимой процедуры %1%. Ожидаемое количество параметров: %2%; получено параметров: %3%</Error>
+
+        <Error Key="InvalidNumberStoredProcedureResults" NativeErrorCode="30120">Хранимые процедуры могут возвращать только один результат.</Error>
+      
+        <Error Key="InvalidDefaultParam" Params="1" NativeErrorCode="30130">Аргумент %1% хранимой процедуры не должен использоваться по умолчанию. Только параметры input и input_output можно использовать по умолчанию.</Error>
+      
+        <Error Key="DefaultSpecForNonDefaultParam" Params="1" NativeErrorCode="30140">Параметр %1% не должен быть параметром, используемым по умолчанию, так как у него нет значения, используемого по умолчанию.</Error>
+
+        <Error Key="InvalidDataEngineProp" Params="1" NativeErrorCode="30141">Недопустимое свойство ядра СУБД: %1%</Error>
+
+        <Error Key="CannotCreateCollator" Params="1" NativeErrorCode="30142">Не удается создать средство упорядочения для языка: %1%</Error>
+
+        <Error Key="TypeUnsupported" Params="1" NativeErrorCode="30160">%1% is unsupported.</Error>
+
+        <Error Key="CantPushFixedLengthDataInParts" NativeErrorCode="30170">Не удается отправить данные параметра фиксированной длины по частям.</Error>
+
+        <Error Key="PushedParamDataTooLarge" NativeErrorCode="30180">Длина отправленных данных параметра превышает максимально допустимую.</Error>
+
+        <Error Key="InvalidPushedParamConversion" NativeErrorCode="30190">Ошибка при преобразовании отправленного значения параметра.</Error>
+
+        <Error Key="CannotQueryParameterValueDuringPassdown" NativeErrorCode="30200">Не удается запросить значение параметра во время передачи, так как в процессе выполнения оно может изменяться.</Error>
+
+        <!-- SQL Errors. (31000 to 39999) -->
+        <!-- Sorted by SQLState and the keys. -->
+      
+        <Error Key="RestrictedDataTypeViolation" NativeErrorCode="31020">Нарушение атрибута ограниченного типа данных.</Error>
+
+        <Error Key="ConvertConversionNotSupported" Params="2" NativeErrorCode="31040">Скалярная функция CONVERT не поддерживает указанное преобразование из %1% в %2%.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CastConversionNotSupported" Params="2" NativeErrorCode="31041">Скалярная функция CAST не поддерживает указанное преобразование из %1% в %2%.</Error>
+
+        <Error Key="InvalidValueSubQuery" NativeErrorCode="31050">Нарушение кратности: вложенный запрос значения возвратил несколько значений.</Error>
+
+        <Error Key="InvalidNumberInsertValues" Params="2" NativeErrorCode="31051">Количество значений (%1%), которые необходимо вставить в таблицу, не совпадает с количеством столбцов (%2%) в ней.</Error>
+
+        <Error Key="RightDataTruncation" NativeErrorCode="31052">Усечение строковых или двоичных данных справа.</Error>
+
+        <Error Key="MaxPrecisionExceeded" Params="2" NativeErrorCode="31060">Число %1% имеет точность, превосходящую максимально разрешенную (%2%).</Error>
+
+        <Error Key="ScalarFnDomainError" Params="1" NativeErrorCode="31070">Значение домена для скалярной функции %1% выходит за пределы допустимого диапазона.</Error>
+
+        <Error Key="ScalarFnRangeError" Params="1" NativeErrorCode="31080">Значение результата для скалярной функции %1% выходит за пределы допустимого диапазона.</Error>
+
+        <Error Key="ScalarFnYearRangeError" Params="1" NativeErrorCode="31090">Значение года %1% выходит за пределы допустимого диапазона. Разрешенный диапазон: [–9999, 9999].</Error>
+
+        <Error Key="DivisionByZero" NativeErrorCode="31100">Деление на ноль.</Error>
+
+        <Error Key="LeadingPrecisionExceeded" Params="1" NativeErrorCode="31101">Превышена точность начального интервала, равная %1%.</Error>
+
+        <Error Key="LeadingPrecisionRangeError" NativeErrorCode="31102">Значение точности начального интервала должно находиться в диапазоне [0, 9].</Error>
+
+        <Error Key="FractionalPrecisionRangeError" NativeErrorCode="31103">Значение точности долей секунды должно находиться в диапазоне [1, 9].</Error>
+
+        <Error Key="CompareBinaryTypesNotSupported" NativeErrorCode="31110">Функция сравнения двоичных типов не поддерживается.</Error>
+
+        <Error Key="IncompatibleArgTypeForScalarFn" Params="3" NativeErrorCode="31120">Несовместимый тип аргумента %1% для аргумента %2% скалярной функции %3%.</Error>
+
+        <Error Key="IncompatibleCollations" NativeErrorCode="31130">Найдены несовместимые параметры сортировки.</Error>
+
+        <Error Key="IncompatibleTypeInPredicate" NativeErrorCode="31140">Несовместимые типы в предикате.</Error>
+
+        <Error Key="LikePredicateRequiresCharTypes" NativeErrorCode="31150">В предикатах LIKE используются символьные типы данных.</Error>
+
+        <Error Key="IncompatibleInsertType" Params="2" NativeErrorCode="31151">Несовместимый тип для вставки. Ожидаемый тип: %1%, фактический тип: %2%.</Error>
+
+        <Error Key="LOBInOrderByOrGroupBy" NativeErrorCode="31160">Типы данных long не поддерживаются в предложениях GROUP BY и ORDER BY.</Error>
+
+        <Error Key="ScalarFnLiteralConvError" Params="1" NativeErrorCode="31161">Ошибка при преобразовании значения %1% в числовое значение для скалярной функции.</Error>
+
+        <Error Key="ScalarFnIntegerLiteralConvError" Params="1" NativeErrorCode="31162">Ошибка при преобразовании значения %1% в целочисленное значение для скалярной функции.</Error>
+
+        <Error Key="InvalidEscapeChar" Params="1" NativeErrorCode="31166">Недопустимое предложение LIKE ESCAPE %1%. Оно должно состоять только из одного символа.</Error>
+
+        <Error Key="InvalidEscapeSequence" NativeErrorCode="31167">Недопустимая escape-последовательность LIKE. За escape-символом должен следовать символ %, _ или другой escape-символ.</Error>
+
+        <Error Key="AggrFnAndSubQueryInGroupBy" NativeErrorCode="31180">Агрегатные функции и вложенные запросы не разрешены в предложении GROUP BY.</Error>
+
+        <Error Key="AggrFunctionInOn" NativeErrorCode="31190">В предложении ON агрегатная функция не разрешена за исключением тех случаев, когда она находится во вложенном запросе, содержащемся в предложении SELECT LIST или HAVING, а сводный столбец представляет собой внешнюю ссылку.</Error>
+
+        <Error Key="AggrFunctionInWhere" NativeErrorCode="31200">В предложении WHERE агрегатная функция не разрешена за исключением тех случаев, когда она находится во вложенном запросе, содержащемся в предложении SELECT LIST или HAVING, а сводный столбец представляет собой внешнюю ссылку.</Error>
+
+        <Error Key="AggrFunctionNotInSelListOrHaving" NativeErrorCode="31210">Агрегатная функция, содержащая внешнюю ссылку, должна находиться в предложении SELECT LIST или HAVING.</Error>
+
+        <Error Key="ConstantOrderByExpression" NativeErrorCode="31220">По крайней мере один ключ ORDER BY представляет собой константное выражение.</Error>
+
+        <Error Key="CorrSubQueryNotAllowedInHaving" NativeErrorCode="31230">Связанный вложенный запрос не разрешен в предложении HAVING.</Error>
+
+        <Error Key="DuplicatedColumnName" Params="2" NativeErrorCode="31240">В таблице "%2%" указано дублирующееся имя столбца "%1%".</Error>
+
+        <Error Key="DuplicatedUpdateColumnName" Params="1" NativeErrorCode="31241">В списке обновления указано дублирующееся имя столбца "%1%".</Error>
+
+        <Error Key="DynParamNotAllowed" Params="1" NativeErrorCode="31250">Динамический параметр не разрешен в %1%.</Error>
+
+        <Error Key="ExprInGroupByNotRowBased" NativeErrorCode="31260">Каждое выражение в предложении GROUP BY должно содержать не менее одной ссылки на столбец. Ни одна ссылка на столбец не должна указывать на внешнюю область.</Error>
+
+        <Error Key="IfCondInNonSelectList" Params="1" NativeErrorCode="31270">Условия IF должны находиться в списке SELECT.</Error>
+
+        <Error Key="IncompatibleBinaryOperandTypes" Params="3" NativeErrorCode="31280">Типы операндов %1% и %2% несовместимы для оператора %3%.</Error>
+
+        <Error Key="IncompatibleUnionColumnTypes" Params="2" NativeErrorCode="31281">Столбцы объединения %1% и %2% имеют несовместимые типы.</Error>
+
+        <Error Key="IncompatibleSetColumnTypes" Params="2" NativeErrorCode="31282">Сопоставленные столбцы должны быть конвертируемыми в результирующих наборах, объединенных с %1%. Типы %2% и %3% не являются конвертируемыми.</Error>
+
+        <Error Key="IncompatibleCaseResultTypes" Params="1" NativeErrorCode="31283">Типы результатов для инструкций CASE должны быть конвертируемыми. Типы %1% не являются взаимно конвертируемыми.</Error>
+
+        <Error Key="InvalidCollationName" Params="1" NativeErrorCode="31290">'%1%' is not a valid collation name.</Error>
+
+        <Error Key="InvalidColumnPrefix" Params="1" NativeErrorCode="31300">Недопустимый префикс столбца: %1%.</Error>
+
+        <Error Key="InvalidOperandTypeForSetFn" Params="2" NativeErrorCode="31310">Тип операнда %1% является недопустимым для оператора SET %2%.</Error>
+
+        <Error Key="InvalidOrderByExpression" NativeErrorCode="31320">Недопустимый ключ ORDER BY. Ключи должны быть целыми числами без знака или выражениями, не являющимися выражениями CASE, условиями IF, параметрами или вложенными запросами.</Error>
+
+        <Error Key="InvalidOrderByColumn" NativeErrorCode="31321">Предложение ORDER BY не разрешено для %1%.</Error>
+
+        <Error Key="InvalidScalarFnArgCount" Params ="1" NativeErrorCode="31330">Недопустимое количество аргументов для скалярной функции %1%.</Error>
+
+        <Error Key="InvalidScalarFnName" Params="1" NativeErrorCode="31340">%1% is not a valid scalar function or procedure call.</Error>
+
+        <Error Key="InvalidSecondArgForConvertFn" NativeErrorCode="31350">Второй аргумент функции CONVERT не является допустимым именем типа SQL_*.</Error>
+
+        <Error Key="InvalidFirstArgForTSAddFn" NativeErrorCode="31351">Недопустимый первый аргумент для инструкции TIMESTAMPADD. Ожидается один из аргументов SQL_TSI_FRAC_SECOND, SQL_TSI_SECOND, SQL_TSI_MINUTE, SQL_TSI_HOUR, SQL_TSI_DAY, SQL_TSI_WEEK, SQL_TSI_MONTH, SQL_TSI_QUARTER или SQL_TSI_YEAR.</Error>
+
+        <Error Key="InvalidFirstArgForTSDiffFn" NativeErrorCode="31352">Недопустимый второй аргумент для инструкции TIMESTAMPDIFF. Ожидается один из аргументов SQL_TSI_FRAC_SECOND, SQL_TSI_SECOND, SQL_TSI_MINUTE, SQL_TSI_HOUR, SQL_TSI_DAY, SQL_TSI_WEEK, SQL_TSI_MONTH, SQL_TSI_QUARTER или SQL_TSI_YEAR.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidSecondArgForCastFn" NativeErrorCode="31353">Второй аргумент функции CAST не является допустимым именем типа SQL_*.</Error>
+
+        <Error Key="InvalidArithmeticOperandType" Params="2" NativeErrorCode="31360">Тип %1% является недопустимым для оператора %2%.</Error>
+
+        <Error Key="InvalidBinaryArithmeticOperandType" Params="3" NativeErrorCode="31361">Типы %1% и %2% являются недопустимыми для оператора %3%.</Error>
+
+        <Error Key="InvalidValueInValueList" NativeErrorCode="31370">Недопустимое значение в списке значений.</Error>
+
+        <Error Key="InvalidValueForTopN" Params="0" NativeErrorCode="31371">Недопустимое значение TOP. Оно должно быть положительным целым числом.</Error>
+
+        <Error Key="InvalidValueForTopPercent" Params="0" NativeErrorCode="31372">Недопустимое значение TOP PERCENT. Оно должно быть положительным числом от 0 до 100.</Error>
+
+        <Error Key="TopPercentCantComputeRowCount" Params="0" NativeErrorCode="31373">Не удалось вычислить количество строк для TOP PERCENT.</Error>
+
+        <Error Key="MultiColumnsInAggrFn" Params="1" NativeErrorCode="31380">В агрегатной функции, содержащей внешнюю ссылку, указано несколько столбцов. Если агрегатная функция содержит внешнюю ссылку, то эта ссылка должна быть единственной ссылкой на столбец.</Error>
+
+        <Error Key="MultiExprsInSubQuery" Params="1" NativeErrorCode="31390">В списке SELECT вложенного запроса, не представленного инструкцией EXISTS, найдено несколько выражений.</Error>
+
+        <Error Key="MultiPartColNameNotBound" Params="1" NativeErrorCode="31400">Не удается привязать классифицированный столбец: %1%.</Error>
+
+        <Error Key="NestedAggrFunctionNotAllowed" NativeErrorCode="31410">Агрегатная функция не должна содержать ни агрегатную функцию, ни вложенный запрос.</Error>
+
+        <Error Key="NoColumnNameSpecified" Params="2" NativeErrorCode="31420">В столбце "%1%" таблицы или вложенного запроса "%2%" не указано имя столбца.</Error>
+		
+		<Error Key="NoMergeOperationSpecified" Params="0" NativeErrorCode="31421">Не указана операция для предложения MERGE. Предложения WHEN MATCHED и WHEN NOT MATCHED отсутствуют.</Error>
+        
+		<Error Key="NonGroupingColInSelList" Params="1" NativeErrorCode="31430">Столбец "%1%" не входит ни в агрегатную функцию, ни в предложение GROUP BY.</Error>
+
+        <Error Key="NonUniqueColRef" Params="1" NativeErrorCode="31440">Неуникальная ссылка на столбец: %1%.</Error>
+
+        <Error Key="OrderByExprNotInSelectDistinct" NativeErrorCode="31450">Если имеется инструкция SELECT DISTINCT, в списке выбора должны быть выражения ORDER BY.</Error>
+
+        <Error Key="OrderByExprNotInSelectList" NativeErrorCode="31460">Если имеется инструкция EXCEPT, INTERSECT или UNION, то в списке выбора первой спецификации запроса должны быть выражения ORDER BY.</Error>
+
+        <!-- [42000]: ORDER BY position number out of range.-->
+        <Error Key="OrderByPositionNumberOutOfRange" NativeErrorCode="31470">Номер позиции в предложении ORDER BY выходит за пределы допустимого диапазона.</Error>
+
+        <!-- [42000]: GROUP BY position number out of range.-->
+        <Error Key="GroupByPositionNumberOutOfRange" NativeErrorCode="31473">Номер позиции в предложении GROUP BY выходит за пределы допустимого диапазона.</Error>
+
+        <!-- [42000]: GROUP BY position number out of range.-->
+        <Error Key="GroupByPositionNumberWithStar" NativeErrorCode="31474">Если в списке SELECT имеется символ *, предложение GROUP BY не должно ссылаться на список SELECT с помощью порядкового номера столбца.</Error>
+
+        <!-- [42000]: ORDER BY occurs in a subquery without an accompanying TOP.-->
+        <Error Key="OrderByInSubQueryWithoutTop" NativeErrorCode="31475">Предложение ORDER BY можно использовать во вложенном запросе только тогда, когда вместе с ним используется значение TOP или LIMIT.</Error>
+
+        <Error Key="ParsingFailure" Params="2" NativeErrorCode="31480">%1% near '%2%'.</Error>
+
+        <Error Key="UknownParsingFailure" Params="2" NativeErrorCode="31490">Неизвестная ошибка анализа.</Error>
+
+        <Error Key="RowConstructorNotSupported" NativeErrorCode="31500">Конструктор значений строк не поддерживается в некоторых предикатах, например в (количественных) сравнениях, а также в предикатах IN и BETWEEN.</Error>
+
+        <Error Key="TableOrCorNameNotUnique" Params="1" NativeErrorCode="31510">Неуникальное имя таблицы или корреляции: %1%.</Error>
+
+        <Error Key="SetFnInIFCond" Params="1" NativeErrorCode="31520">Функции SET не разрешены в условии IF.</Error>
+
+        <Error Key="SubQueryInIFCond" Params="1" NativeErrorCode="31530">Вложенные запросы не разрешены в условии IF.</Error>
+      
+        <Error Key="MaxBinaryLiteralLenExceeded" Params="2" NativeErrorCode="31540">Длина двоичного литерала %1% превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxCharLiteralLenExceeded" Params="2" NativeErrorCode="31550">Длина символьного литерала "%1%" превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxIndexSizeExceeded" Params="1" NativeErrorCode="31560">Размер индекса превышает максимально допустимый: %1%.</Error>
+      
+        <Error Key="MaxRowSizeExceeded" Params="1" NativeErrorCode="31570">Размер строки превышает максимально допустимый: %1%.</Error>
+      
+        <Error Key="MaxStatementLenExceeded" Params="1" NativeErrorCode="31580">Длина инструкции превышает максимально допустимую: %1%.</Error>
+      
+        <Error Key="MaxCatalogNameLenExceeded" Params="2" NativeErrorCode="31590">Длина имени каталога "%1%" превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxColumnNameLenExceeded" Params="2" NativeErrorCode="31600">Длина имени столбца "%1%" превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxColumnsInGroupByExceeded" Params="1" NativeErrorCode="31610">Количество столбцов в предложении GROUP BY превышает максимально допустимое: %1%.</Error>
+      
+        <Error Key="MaxColumnsInIndexExceeded" Params="1" NativeErrorCode="31620">Количество столбцов в индексе превышает максимально допустимое: %1%.</Error>
+      
+        <Error Key="MaxColumnsInOrderByExceeded" Params="1" NativeErrorCode="31630">Количество столбцов в предложении ORDER BY превышает максимально допустимое: %1%.</Error>
+      
+        <Error Key="MaxColumnsInSelectExceeded" Params="1" NativeErrorCode="31640">Количество столбцов в списке SELECT превышает максимально допустимое: %1%.</Error>
+      
+        <Error Key="MaxColumnsInTableExceeded" Params="1" NativeErrorCode="31650">Количество столбцов в таблице превышает максимально допустимое: %1%.</Error>
+      
+        <Error Key="MaxCursorNameLenExceeded" Params="2" NativeErrorCode="31660">Длина имени курсора "%1%" превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxIdentifierLenExceeded" Params="2" NativeErrorCode="31670">Длина идентификатора %1% превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxProcedureNameLenExceeded" Params="2" NativeErrorCode="31680">Длина имени процедуры "%1%" превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxSchemaNameLenExceeded" Params="2" NativeErrorCode="31690">Длина имени схемы "%1%" превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxTableNameLenExceeded" Params="2" NativeErrorCode="31700">Длина имени таблицы "%1%" превышает максимально допустимую: %2%.</Error>
+      
+        <Error Key="MaxTablesInSelectExceeded" Params="1" NativeErrorCode="31710">Количество таблиц в инструкции SELECT превышает максимально допустимое: %1%.</Error>
+      
+        <Error Key="MaxUserNameLenExceeded" Params="2" NativeErrorCode="31720">Длина имени пользователя превышает максимально допустимую.</Error>
+
+        <Error Key="InvalidExtractType" Params="2" NativeErrorCode="31721">"Invalid call to scalar function EXTRACT: Argument of type %1% has no field %2%.</Error>
+
+        <Error Key="ReservedKeywordUsed" Params="1" NativeErrorCode="31730">'%1%' is a reserved keyword.</Error>
+      
+        <Error Key="InvalidSqlDataTypeSpecified" Params="1" NativeErrorCode="31731">Указан недопустимый тип данных SQL: %1%.</Error>
+
+        <Error Key="InvalidNumberColumnsSet" Params="1" NativeErrorCode="31731">Несовпадающее количество столбцов. Количество столбцов во всех результирующих наборах, объединенных с %1%, должно быть одинаковым.</Error>
+
+        <Error Key="InvalidOpDriverReadOnly" Params="1" NativeErrorCode="31732">Драйвер доступен только для чтения, поэтому он не разрешает выполнять операции %1%.</Error>
+
+        <Error Key="DuplicateInsertColumn" Params="1" NativeErrorCode="31733">Столбец "%1%" несколько раз указан в списке вставляемых столбцов.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TopAndLimit" NativeErrorCode="31734">В запросе SELECT можно использовать только одно значение TOP или LIMIT.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CorrelationSpecNonUniqueColumns" Params="2" NativeErrorCode="31735">В спецификации корреляции %1% несколько раз указано имя столбца %2%.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CorrelationSpecInvalidNumColumns" Params="3" NativeErrorCode="31736">В спецификации корреляции %1% содержится недопустимое количество столбцов. Ожидаемое количество: %2%, фактическое количество: %3%.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidSetFn" Params="1" NativeErrorCode="31737">В запросе указана неподдерживаемая агрегатная функция %1%.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CustomSetFnNotSupported" Params="1" NativeErrorCode="31739">В настоящее время настраиваемые агрегатные функции (%1%) не поддерживаются в ETree.</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TableOrViewAlreadyExists" Params="1" NativeErrorCode="31738">Таблица или представление уже существует: %1%</Error>
+
+        <Error Key="TableOrViewNotFound" Params="1" NativeErrorCode="31740">Таблица или представление не найдены: %1%</Error>
+
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="IndexAlreadyExists" Params="1" NativeErrorCode="31745">Индекс уже существует: %1%</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="IndexNotFound" Params="1" NativeErrorCode="31746">Индекс не найден: %1%</Error>
+
+        <Error Key="ColumnNotFound" Params="1" NativeErrorCode="31750">Столбец не найден: %1%</Error>
+
+        <Error Key="InvalidSqlDataType" Params="3" NativeErrorCode="31760">Недопустимый тип данных SQL: %1% [%2%: %3%].</Error>
+
+        <Error Key="OperationCanceled" NativeErrorCode="31765">Операция отменена.</Error>
+
+        <Error Key="InvalidOutputParameter" Params="1" NativeErrorCode="31770">Аргумент хранимой процедуры %1% должен быть привязан в качестве выходного параметра.</Error>
+
+        <Error Key="CatalogNotSupported" NativeErrorCode="31771">Каталоги не поддерживаются для идентификаторов списков.</Error>
+
+        <Error Key="SchemaNotSupported" NativeErrorCode="31772">Схемы не поддерживаются для идентификаторов списков.</Error>
+      
+        <Error Key="FeatureNotSupported" NativeErrorCode="31780">Это действие не поддерживается.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CreateTableNotSupported" NativeErrorCode="31781">Инструкции создания таблиц не поддерживаются.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="CreateIndexNotSupported" NativeErrorCode="31785">Инструкции создания индексов не поддерживаются.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="DropTableNotSupported" NativeErrorCode="31790">Инструкции удаления таблиц не поддерживаются.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="DropIndexNotSupported" NativeErrorCode="31795">Инструкции удаления индексов не поддерживаются.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="TableConstraintNotSupported" NativeErrorCode="31800">Ограничения таблицы не поддерживаются.</Error>
+      
+        <!-- MAINTENANCE NOTE: This translation needs to be reviewed -->
+        <Error Key="InvalidNumberTypeParameters" NativeErrorCode="31820">Недопустимое количество параметров для типа данных %1%.</Error>
+
+    </Package> 
+</Messages>

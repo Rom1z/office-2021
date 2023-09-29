@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Python በ Excel ውስጥ ይሞክሩት (ቅድመ እይታ)",
+  "premiumHubMessageTextForPythonInExcel": "ውሂብዎን ለማጽዳት፣ ለማሰስ እና ለመተንተን የ Python ቀመሮችን ከ Excel ፍርግርግ ጋር ያዋህዱ። በ Microsoft ክላውድ የተጠበቀ፣ የላቁ ትንታኔዎችን በ Excel ውስጥ ይፍጠሩ እና ያጋሩ።",
+  "premiumHubSectionOneHeaderForPythonInExcel": "ወደ ማከማቻ ስፍራ መታ ያድርጉ",
+  "premiumHubSectionOneMessageForPythonInExcel": "ትንታኔዎን በተለመደው የ Python ማከማቻ ስፍራ ያቃልሉ እና ያፋጥኑ።",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "መልኮችን ያግኙ",
+  "premiumHubSectionTwoMessageForPythonInExcel": "በመረጃዎ ውስጥ የተደበቁ ግንዛቤዎችን ለማግኘት እና በሴራ ለማየት የ Python ቀመሮችን ይጠቀሙ።",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "ምንም ቅንብር አያስፈልግም",
+  "premiumHubSectionThreeMessageForPythonInExcel": "ለአገልግሎት ዝግጁ በሆኑ ደህንነታቸው በተጠበቁ አካባቢዎች የስራ ፍሰቶችን ያመቻቹ።",
+  "premiumHubTermsOfUseForPythonInExcel": "Python in Excel ውስጥ በህዝብ ቅድመ ዕይታ ላይ እያለ, እርስዎ ይህን መተግበሪያ የእርስዎ ንረት ክፍል ሆኖ መጠቀም ይችላል. ከቅድመ ዕይታው በኋላ ለመጠቀም ተጨማሪ ፈቃድ መግዛት ያስፈልግዎታል። {0} ይመልከቱ።",
+  "premiumHubLearnMoreLinkForPythonInExcel": "ተጨማሪ ይወቁ",
+  "premiumHubPythonCenterButtonForPythonInExcel": "እሱ እንዴት እንደሚሰራ አሳየኝ",
+  "premiumHubTryPreviewButtonForPythonInExcel": "ቅድመ እይታን ይሞክሩ",
+  "termsOfUseLinkForPreview": "የአጠቃቀም ውል ቅድመ-ዕይታ"
+}

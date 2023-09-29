@@ -1,0 +1,14 @@
+{
+  "oneOfManyChoiceButtonAccessibilityLabelAugment": "{0}, {1} из {2}",
+  "defaultOverflowButtonAccessibilityLabel": "Подробнее",
+  "defaultSplitButtonOverflowAccessibilityLabel": "Другие возможности для {0}",
+  "voiceOverSplitButton2AccessibilityHint": "Чтобы просмотреть дополнительные параметры, нажмите клавиши CONTROL+OPTION+SHIFT+M",
+  "cancelButton": "Отмена",
+  "closeButton": "Закрыть",
+  "nextButton": "Далее",
+  "submitButton": "Отправить",
+  "doneButton": "Готово",
+  "backButton": "Назад",
+  "suggestionsGroupLoadingSuggestionsText": "Загрузка предложений",
+  "suggestionsGroupNoSuggestionsText": "Нет доступных предложений"
+}

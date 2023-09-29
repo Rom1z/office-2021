@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+  <!ELEMENT Messages (Package*)>
+
+  <!ELEMENT Package (Error*)>
+  <!ATTLIST Package ID CDATA #REQUIRED>
+  <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+  <!ELEMENT Error (#PCDATA)>
+  <!ATTLIST Error Key ID #REQUIRED>
+  <!ATTLIST Error Component CDATA #IMPLIED>
+  <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+  <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- Package SF_ERROR. ID corresponds to the SF_ERROR constant defined in Salesforce.h -->
+    <Package ID="100" DefaultComponent="Salesforce">
+        <Error Key="SFLicenseFailure" Params="1" NativeErrorCode="0">Ошибка при проверке лицензии: %1%. Обратитесь в компанию Simba Technologies Inc. по электронному адресу sales@simba.com.</Error>
+
+        <Error Key="SFUnknownType" Params="1" NativeErrorCode="5">Неизвестный тип данных Salesforce: %1%</Error>
+
+        <Error Key="SFXMLResultParseFormatError" Params="1" NativeErrorCode="22">Ошибка при анализе XML-отклика c Salesforce: %1%</Error>
+
+        <Error Key="SFHTTPError" Params="1" NativeErrorCode="23">Ошибка в HTTP-запросе: %1%</Error>
+
+        <Error Key="SFNoSessionId" NativeErrorCode="24">Нет доступных идентификаторов сеанса. Попробуйте подключиться еще раз.</Error>
+
+        <Error Key="SFSoqlParseError" NativeErrorCode="30">Синтаксическая ошибка или нарушение прав доступа при анализе SOQL.</Error>
+
+        <Error Key="JSONParseError" Params="1" NativeErrorCode="56">Ошибка анализа JSON: %1%.</Error>
+
+        <Error Key="SFUnknownSqlType" Params="1" NativeErrorCode="57">Неизвестный тип SQL %1%.</Error>
+
+        <Error Key="SFInvalidURL" Params="1" NativeErrorCode="60">Для подключения использован недопустимый URL-адрес Salesforce: %1%. Разрешено использовать только URL-адреса, указывающие на сайт salesforce.com или visual.force.com.</Error>
+
+        <Error Key="SFReportError" Params="2" NativeErrorCode="70">[%1%] %2%</Error>
+
+        <Error Key="SFUnknownSoapError" NativeErrorCode="80">В отклике SOAP получена неизвестная ошибка. Возможно, она вызвана проблемой с правами пользователей.</Error>
+
+        <Error Key="SFUnknownRestError" NativeErrorCode="81">В отклике REST получена неизвестная ошибка. Возможно, она вызвана проблемой с правами пользователей.</Error>
+
+        <Error Key="SFBulkApiError" Params="1" NativeErrorCode="90">Ошибка в массовом API: %1%</Error>
+
+        <Error Key="SFColumnWriteError" Params="1" NativeErrorCode="100">Не удается выполнить запись в столбец: %1%</Error>
+
+        <Error Key="SFMaxFieldsError" NativeErrorCode="110">Количество полей не должно быть больше 5000.</Error>
+
+        <Error Key="SFFieldsCharError" NativeErrorCode="111">В записи должно быть не более 400 000 символов.</Error>
+
+        <Error Key="SFBatchCharError" NativeErrorCode="112">В пакете должно быть не более 10 000 000 символов. Попробуйте уменьшить значение BulkBatchSize.</Error>
+
+        <Error Key="SFFieldCharError" NativeErrorCode="113">В поле должно быть не более 32 000 символов.</Error>
+
+        <Error Key="SFBatchSizeError" NativeErrorCode="114">Значение BulkBatchSize не должно быть больше 10 000.</Error>
+
+        <Error Key="SFMissingServicePath" NativeErrorCode="115">Отсутствует параметр ServicePath. Переустановите драйвер или проверьте его конфигурацию.</Error>
+		
+        <Error Key="SFPKChunkSizeError" NativeErrorCode="116">Значение PKChunkSize должно быть положительным целым числом и не должно превышать 250 000.</Error>
+
+        <Error Key="SFSOQLFirstError" Params="2" NativeErrorCode="120">Ошибка при подготовке режима SOQL_FIRST: 
+Ошибка SOQL: %1%
+Ошибка SQL: %2%</Error>
+
+        <Error Key="SFSQLFirstError" Params="2" NativeErrorCode="121">Ошибка при подготовке режима SOQL_FIRST:
+Ошибка SQL: %1%
+Ошибка SOQL: %2%</Error>
+
+        <Error Key="SFError" Params="1" NativeErrorCode="148">%1%</Error>
+
+        <Error Key="SFkParseErrorNone" NativeErrorCode="200">Ошибка анализа JSON: ошибок нет.</Error>
+        <Error Key="SFkParseErrorDocumentEmpty" NativeErrorCode="201">Ошибка анализа JSON: документ пуст.</Error>
+        <Error Key="SFkParseErrorDocumentRootNotSingular" NativeErrorCode="202">Ошибка анализа JSON: корень документа не должен быть расположен после других значений.</Error>
+        <Error Key="SFkParseErrorValueInvalid" NativeErrorCode="203">Ошибка анализа JSON: недопустимое значение.</Error>
+        <Error Key="SFkParseErrorObjectMissName" NativeErrorCode="204">Ошибка анализа JSON: отсутствует имя элемента объекта.</Error>
+        <Error Key="SFkParseErrorObjectMissColon" NativeErrorCode="205">Ошибка анализа JSON: после имени элемента объекта нет двоеточия.</Error>
+        <Error Key="SFkParseErrorObjectMissCommaOrCurlyBracket" NativeErrorCode="206">Ошибка анализа JSON: после элемента объекта нет запятой или символа }.</Error>
+        <Error Key="SFkParseErrorArrayMissCommaOrSquareBracket" NativeErrorCode="207">Ошибка анализа JSON: после элемента массива нет запятой или символа ].</Error>
+        <Error Key="SFkParseErrorStringUnicodeEscapeInvalidHex" NativeErrorCode="208">Ошибка анализа JSON: неправильная шестнадцатиричная цифра после escape-символа \\u в строке.</Error>
+        <Error Key="SFkParseErrorStringUnicodeSurrogateInvalid" NativeErrorCode="209">Ошибка анализа JSON: недопустимая суррогатная пара в строке.</Error>
+        <Error Key="SFkParseErrorStringEscapeInvalid" NativeErrorCode="210">Ошибка анализа JSON: недопустимый escape-символ в строке.</Error>
+        <Error Key="SFkParseErrorStringMissQuotationMark" NativeErrorCode="211">Ошибка анализа JSON: в строке отсутствует закрывающая кавычка.</Error>
+        <Error Key="SFkParseErrorStringInvalidEncoding" NativeErrorCode="212">Ошибка анализа JSON: недопустимая кодировка в строке.</Error>
+        <Error Key="SFkParseErrorNumberTooBig" NativeErrorCode="213">Ошибка анализа JSON: номер слишком велик для хранения в переменной типа double.</Error>
+        <Error Key="SFkParseErrorNumberMissFraction" NativeErrorCode="214">Ошибка анализа JSON: в числе отсутствует дробная часть.</Error>
+        <Error Key="SFkParseErrorNumberMissExponent" NativeErrorCode="215">Ошибка анализа JSON: в числе отсутствует показатель степени.</Error>
+        <Error Key="SFkParseErrorTermination" NativeErrorCode="216">Ошибка анализа JSON: анализ был прекращен.</Error>
+        <Error Key="SFkParseErrorUnspecificSyntaxError" NativeErrorCode="217">Ошибка анализа JSON: неспецифическая синтаксическая ошибка.</Error>
+
+        <Error Key="SFJSONTypeError" NativeErrorCode="230">Непредвиденный тип JSON в преобразовании данных.</Error>
+
+      <!-- Configuration dialog error messages. -->
+        <Error Key="SFInvalidPort" Params="1" NativeErrorCode="1060">Недопустимый порт: %1%. Диапазон допустимых значений: [0, 65535].</Error>
+    </Package>
+</Messages>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+
+  <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
+
+  <Id>ca3979b9-7a57-4b37-8bcd-3997b6b8d4ea</Id>
+
+  <Version>1.0.0.0</Version>
+  <ProviderName>Microsoft Corporation</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used in various places of the Office UI such as the add-ins dialog. -->
+  <DisplayName DefaultValue="Modern Comments SDX" />
+  <Description DefaultValue="SDX Comments" />
+
+  <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
+  <IconUrl DefaultValue="assets/SharedCommentsLogo.png" />
+
+  <!-- SupportUrl for end users to get additional help with your SDX. -->
+  <!-- The Url below can be used to get more information about SDXs during development. -->
+  <!-- IMPORTANT! Make sure to update this link before going to production. -->
+  <SupportUrl DefaultValue="https://support.office.com/en-us" />
+  <!--End Basic Settings. -->
+
+  <!--Begin TaskPane Mode integration. This section is used if there are no VersionOverrides or if the Office client version does not support add-in commands. -->
+  <Hosts>
+    <Host Name="Presentation" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://jackychen.azurewebsites.net/agaves/testapps/app/home/HomeAppCmds.html" />
+  </DefaultSettings>
+  <!-- End TaskPane Mode integration.  -->
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <ConnectedServiceControls>
+      <Scopes>
+      </Scopes>
+    </ConnectedServiceControls>
+  </VersionOverrides>
+</OfficeApp>

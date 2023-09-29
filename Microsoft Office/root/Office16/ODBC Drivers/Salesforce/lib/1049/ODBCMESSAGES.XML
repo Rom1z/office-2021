@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages [
+    <!ELEMENT Messages (Package*)>
+
+    <!ELEMENT Package (Error*)>
+    <!ATTLIST Package ID CDATA #REQUIRED>
+    <!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+    <!ELEMENT Error (#PCDATA)>
+    <!ATTLIST Error Key ID #REQUIRED>
+    <!ATTLIST Error Component CDATA #IMPLIED>
+    <!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+    <!ATTLIST Error Params CDATA "0">
+]>
+
+<Messages>
+    <!-- #################################################################################### -->
+    <Package ID="1" DefaultComponent="ODBC">
+
+      <!-- Errors and warnings in general operation. --> 
+      <Error Key="GenErr" NativeErrorCode="10000">Общая ошибка: возникло непредусмотренное исключение.</Error>
+
+      <Error Key="GenErr1" Params="1" NativeErrorCode="10001">Общая ошибка: %1%</Error>
+
+      <Error Key="MemAllocErr" NativeErrorCode="10010">Ошибка выделения памяти: возникло исключение std::bad_alloc.</Error>
+
+      <Error Key="FuncSeqErr" NativeErrorCode="10020">Функции ODBC выполнены за пределами допустимой последовательности.</Error>
+
+      <Error Key="InvalidStmt" NativeErrorCode="10040">Инструкция является недопустимой либо не найдена.</Error>
+
+      <Error Key="InvalidConn" NativeErrorCode="10050">Подключение является недопустимым либо не найдено.</Error>
+
+      <Error Key="InvalidAppDesc" NativeErrorCode="10060">Дескриптор приложения является недопустимым либо не найден.</Error>
+
+      <Error Key="InvalidExplAppDesc" NativeErrorCode="10070">Явный дескриптор приложения является недопустимым либо не найден.</Error>
+
+      <Error Key="InvalidQueryMgr" NativeErrorCode="10080">Диспетчер запросов является недопустимым либо не найден.</Error>
+
+      <Error Key="InvalidExecResults" NativeErrorCode="10090">Результаты выполнения являются недопустимыми либо не найдены.</Error>
+
+      <!-- Errors and warnings with diagnostics reporting. --> 
+      <Error Key="InvalidDiagIdent" NativeErrorCode="10110">Использован недопустимый диагностический идентификатор.</Error>
+
+      <Error Key="NoBinaryDiagFields" NativeErrorCode="10120">Отсутствуют двоичные диагностические поля. Не удается возвратить диагностическое поле в двоичном формате.</Error>
+
+
+      <!-- Errors and warnings with the provided buffer and buffer length. --> 
+      <Error Key="InvalidStrOrBuffLen" NativeErrorCode="10130">Приложение представило недопустимую длину строки или буфера.</Error>
+
+      <Error Key="StrRightTruncWarn" NativeErrorCode="10160">Усечение строковых данных справа: строковые данные имеют слишком большую длину для буфера выходных данных, поэтому они были усечены.</Error>
+
+      <Error Key="StrRightTruncErr" NativeErrorCode="10170">Усечение строковых данных справа в источнике данных: строковые данные имеют слишком большую длину для буфера данных драйвера.</Error>
+
+      <Error Key="InvalidOutputBuff" NativeErrorCode="10180">Предоставлен недопустимый выходной буфер.</Error>
+
+      <Error Key="InvalidStrTrunc" NativeErrorCode="10190">Недопустимое усечение строки.</Error>
+
+
+      <!-- Error and warnings with Attributes. --> 
+      <Error Key="AttrTypeNotSupported" NativeErrorCode="10200">Тип атрибута не поддерживается для текущей операции.</Error>
+
+      <Error Key="InvalidAttrIdent" Params="1" NativeErrorCode="10210">Идентификатор атрибута является недопустимым либо не поддерживается: %1%</Error>
+
+      <Error Key="CannotSetReadOnlyAttr" NativeErrorCode="10220">Не удается задать атрибут, предназначенный только для чтения.</Error>
+
+      <Error Key="AttrValNotFound" NativeErrorCode="10230">Не удается получить значение атрибута.</Error>
+
+      <Error Key="CannotSetImpDescHandle" NativeErrorCode="10240">Вам не удастся изменить указатель дескриптора реализации инструкции.</Error>
+
+      <Error Key="SetAsyncEnabNotSupported" NativeErrorCode="10250">Возможность настройки атрибута SQL_ATTR_ASYNC_ENABLE не поддерживается.</Error>
+
+      <Error Key="ObtainCheckingConnAttrFailed" NativeErrorCode="10260">Не удалось получить атрибут подключения, необходимый для проверки допустимости текущей операции.</Error>
+
+      <Error Key="AutoPopIpdNotSupported" NativeErrorCode="10270">Функция автозаполнения дескриптора параметра реализации не поддерживается.</Error>
+
+      <Error Key="InvalidAttrVal" NativeErrorCode="10280">Недопустимое значение атрибута.</Error>
+
+      <Error Key="OptAttrValChangedWarn" NativeErrorCode="10290">Значение атрибута является недопустимым либо не поддерживается. Оно заменено похожим значением. Чтобы увидеть его, получите значение атрибута.</Error>
+
+      <Error Key="RevertAttrValueToOrigFailed" NativeErrorCode="10300">Не удалось вернуть исходное значение атрибута вместо временного.</Error>
+
+      <Error Key="ObtainDefaultStmtAttrValueFailed" NativeErrorCode="10310">Не удалось получить значение атрибута инструкции, используемое по умолчанию.</Error>
+
+      <Error Key="ExplAppDescHandleNotFromSameConn" NativeErrorCode="10320">Маркер явного дескриптора приложения получен не из того же подключения, что и целевая инструкция.</Error>
+
+      <Error Key="ImplicitAppDescHandleNotOrig" NativeErrorCode="10330">Маркер неявного дескриптора приложения не является исходным неявным дескриптором приложения целевой инструкции.</Error>
+
+      <Error Key="BufLenTooSmallForBinaryAttrData" NativeErrorCode="10340">Буфер имеет слишком малую длину для возврата двоичных данных атрибута.</Error>
+
+      <Error Key="AttrDataTypeNotRecog" NativeErrorCode="10350">Тип данных атрибута не распознан.</Error>
+
+
+      <!-- Error and warnings with establishing connection to data source. -->
+      <Error Key="InvalidConnStr" NativeErrorCode="10360">Недопустимая строка подключения.</Error>
+
+      <Error Key="InvalidConnStrAttr" NativeErrorCode="10370">Недопустимый атрибут строки подключения, не совпадающий с запрошенными драйвером сведениями.</Error>
+
+      <Error Key="UnableToEstConn" Params="1" NativeErrorCode="10380">Не удается установить подключение к источнику данных. Отсутствующие параметры: %1%</Error>
+
+      <Error Key="UpdateConnSettingsWithDiaglogFailed" NativeErrorCode="10390">Не удалось обновить параметры подключения с помощью приглашения в диалоговом окне.</Error>
+
+      <Error Key="NoEstConn" NativeErrorCode="10400">Для выполнения текущей операции необходимо подключение, но в настоящее время не создано ни одного подключения.</Error>
+
+      <Error Key="ConnAlreadyEst" NativeErrorCode="10410">Подключение уже установлено.</Error>
+
+      <Error Key="DataSourceDidNotGiveProperResp" NativeErrorCode="10420">Источник данных не предоставил соответствующего ответа.</Error>
+
+      <Error Key="NotEnoughConnInfoButDriverNoPrompt" Params="1" NativeErrorCode="10430">Предоставлено недостаточное количество сведений, необходимых для создания подключения к источнику данных. При этом запрещено запрашивать дополнительные сведения. Отсутствуют следующие необходимые параметры: %1%</Error>
+
+      <Error Key="InvalidDriverComplFlag" NativeErrorCode="10440">Флаг завершения драйвера является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="NullIndPtrNotSupplied" NativeErrorCode="10450">Для обозначения пустых выходных данных драйверу необходим указатель индикатора, но он не предоставлен.</Error>
+
+      <Error Key="DataConvError" NativeErrorCode="10460">Ошибка преобразования данных.</Error>
+
+      <Error Key="DataConvNotSupported" NativeErrorCode="10470">Функция преобразования данных не поддерживается.</Error>
+
+      <Error Key="FetchTypeNotSupported" NativeErrorCode="10480">Тип получения не поддерживается, так как ориентация получения несовместима с текущими параметрами.</Error>
+
+      <Error Key="InvalidCursorPos" NativeErrorCode="10490">Курсор находился либо в начале, либо в конце результирующего набора.</Error>
+
+      <Error Key="InvalidForwardSetPosOper" NativeErrorCode="10495">Если курсор может перемещаться только вперед, операция SQLSetPos недопустима.</Error>
+
+      <Error Key="InvalidCursorType" NativeErrorCode="10500">Тип курсора является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="InvalidCursorState" NativeErrorCode="10510">Недопустимое состояние курсора.</Error>
+
+      <Error Key="NoMoreDataToFetch" NativeErrorCode="10530">Больше нет данных, которые можно получить.</Error>
+
+      <Error Key="NotAllowedToGetSpecifiedColumn" NativeErrorCode="10540">Не разрешено получать данные для указанного столбца, которые уже были получены ранее.</Error>
+
+      <Error Key="InvalidColNumInResultSet" NativeErrorCode="10550">Недопустимый номер столбца результирующего набора. Необходимый столбец не найден.</Error>
+
+      <Error Key="InvalidRowStatus" NativeErrorCode="10560">После выполнения операции получения обнаружено недопустимое состояние строки.</Error>
+
+      <Error Key="ChangeTypesInMultipartSQLGetDataNotSupported" NativeErrorCode="10570">Функция изменения типов между составными вызовами SQLGetData() не поддерживается.</Error>
+
+      <Error Key="InvalidSrcData" NativeErrorCode="10580">Недопустимые исходные данные.</Error>
+
+      <Error Key="NoMoreDataToGet" NativeErrorCode="10590">Нет дополнительных данных, которые можно получить.</Error>
+
+      <Error Key="InvalidStrategy" NativeErrorCode="10600">Недопустимая стратегия преобразования.</Error>
+
+      <Error Key="StrategyNotSupported" NativeErrorCode="10610">Стратегия преобразования не поддерживается.</Error>
+
+      <Error Key="CannotConvWhileHasMoreData" NativeErrorCode="10620">Не удается выполнить преобразование при наличии дополнительных данных.</Error>
+
+      <Error Key="InvalidConvResult" NativeErrorCode="10630">Недопустимый результат преобразования.</Error>
+
+      <Error Key="FlushFailed" NativeErrorCode="10640">Операции записи данных на диск не удалось очистить данные.</Error>
+
+      <Error Key="NoAvailableResultSet" NativeErrorCode="10651">После выполнения операции нет доступных результирующих наборов, но один такой набор был доступен после подготовки.</Error>
+
+
+      <!-- Error and warnings with descriptors. -->
+      <Error Key="BookmarkColumnNotSupported" NativeErrorCode="10660">Столбец закладок не поддерживается.</Error>
+
+      <Error Key="InvalidDescIndex" NativeErrorCode="10670">Недопустимый индекс дескриптора. Запись дескриптора либо не существует, либо не инициализирована должным образом.</Error>
+
+      <Error Key="InvalidDescFieldIdent" NativeErrorCode="10680">Идентификатор поля дескриптора является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="DescRecNotSeq" NativeErrorCode="10690">Во время выполнения запроса отсутствует по меньшей мере одна ожидаемая запись дескриптора.</Error>
+
+      <Error Key="InvalidDescCount" NativeErrorCode="10700">Недопустимое поле количества дескрипторов. Количество дескрипторов не будет возвращено.</Error>
+
+      <Error Key="ReadOnlyDescField" NativeErrorCode="10710">Поле дескриптора только для чтения.</Error>
+
+      <Error Key="CannotAssocNonExpDescWithDeleteListener" NativeErrorCode="10720">Не удается сопоставить неявные дескрипторы с прослушивателями дескрипторов, используемыми для очистки удаления.</Error>
+
+      <Error Key="CannotGetParentConnOnNonExpDesc" NativeErrorCode="10730">Не удается получить родительское подключение в неявном дескрипторе.</Error>
+
+      <Error Key="CannotDropRecOfImplRowDesc" NativeErrorCode="10740">Не удается удалить запись дескриптора строки реализации.</Error>
+
+      <Error Key="InvalidDatetimeSubcodeIdent" NativeErrorCode="10750">Идентификатор подкода даты и времени является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="InvalidIntevalSubcodeIdent" NativeErrorCode="10760">Идентификатор подкода интервала является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="DescFieldNotSupported" NativeErrorCode="10770">Поле дескриптора является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="CannotGetStrDescFieldInNonStrMethod" NativeErrorCode="10780">Недопустимое использование нестрокового метода для получения поля дескриптора строки.</Error>
+
+      <Error Key="InvalidDescFieldType" NativeErrorCode="10790">Тип поля дескриптора является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="DescRecNotFound" NativeErrorCode="10800">Не найдена запись дескриптора.</Error>
+
+      <Error Key="DescUnnamedNotAllowed" NativeErrorCode="10810">Не разрешено присваивать параметру SQL_DESC_UNNAMED значение SQL_NAMED.</Error>
+
+      <Error Key="StmtNotPrep" NativeErrorCode="10820">Инструкция не подготовлена.</Error>
+
+      <Error Key="DescFieldValueNotSupported" Params="2" NativeErrorCode="10830">Поле дескриптора %1% не поддерживает значение %2%.</Error>
+
+      <Error Key="CannotModImpRowDesc" NativeErrorCode="10840">Не удается изменить дескрипторы строки реализации.</Error>
+
+      <Error Key="CannotSetDescAllocType" NativeErrorCode="10850">Не удается задать дескриптор SQL_DESC_ALLOC_TYPE.</Error>
+
+      <Error Key="IllegalDescType" NativeErrorCode="10860">Обнаружен недопустимый тип дескриптора.</Error>
+
+      <Error Key="IllegalDescConciseType" NativeErrorCode="10870">Недопустимый тип сокращения дескриптора.</Error>
+
+      <Error Key="InvalidDatetimeCodeIdent" NativeErrorCode="10880">Код интервала даты и времени является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="InvalidIntervalCode" NativeErrorCode="10890">Код интервала является недопустимым либо не поддерживается.</Error>
+
+
+      <!-- Error and warnings with SQL statement execution. -->
+      <Error Key="CannotReadFromOutputParam" NativeErrorCode="10900">Не удается считать данные из выходного параметра.</Error>
+
+      <Error Key="CannotReadFromDefaultParam" NativeErrorCode="10910">Не удается получить никаких данных из входного параметра, используемого по умолчанию.</Error>
+
+      <Error Key="CannotReadFromPushedParam" NativeErrorCode="10920">Не удается получить никаких данных из входного параметра, значение которого уже передано.</Error>
+
+      <Error Key="WriteToDefaultParam" NativeErrorCode="10930">Не удается выполнить запись в параметр, используемый по умолчанию.</Error>
+
+      <Error Key="WriteToInputParam" NativeErrorCode="10940">Не удается выполнить запись во входной параметр.</Error>
+
+      <Error Key="InvalidExecStatusCode" NativeErrorCode="10950">Код состояния результата выполнения является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="SendNonCharBinaryConcatData" NativeErrorCode="10970">Не удается сцепить и отправить данные, не являющиеся символьными или двоичными.</Error>
+
+      <Error Key="SendConcatDataForDefaultOrNullParam" NativeErrorCode="10980">Не удается сцепить и отправить части данных, используемых по умолчанию, для пустого параметра.</Error>
+
+      <Error Key="InvalidGetInfoField" NativeErrorCode="10990">Поле SQLGetInfo является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="NoQueryExecutor" NativeErrorCode="11000">Отсутствует исполнитель запросов для диспетчера запросов каталога.</Error>
+
+      <Error Key="NoDataAtExecParameter" NativeErrorCode="11010">Отсутствует параметр обрабатываемых данных.</Error>
+
+      <Error Key="CannotQueryParmSrcDuringPopulate" NativeErrorCode="11020">Во время автозаполнения параметра не удается запросить сведения о его источнике.</Error>
+
+      <Error Key="CannotSetParmSrcAttrDuringPushData" NativeErrorCode="11030">Во время отправки данных параметра не удается задать атрибуты источника параметра.</Error>
+
+      <Error Key="PushValueStatusUnknown" NativeErrorCode="11040">Состояние значения отправки можно запросить только во время выполнения.</Error>
+
+      <Error Key="ParamRegistNotPermit" NativeErrorCode="11050">Не разрешено регистрировать параметр.</Error>
+
+      <Error Key="InvalidParamRegistIndex" NativeErrorCode="11060">Для регистрации использован недопустимый индекс параметра.</Error>
+
+      <Error Key="DescFieldNotRecg" NativeErrorCode="11070">Значение поля дескриптора не распознано.</Error>
+
+      <Error Key="InvalidParameterType" NativeErrorCode="11080">Тип параметра является недопустимым либо не поддерживается.</Error>
+
+
+      <!-- Error and warnings with connection and statement. -->
+      <Error Key="CursorNameTooLong" NativeErrorCode="11100">Слишком длинное имя курсора.</Error>
+
+      <Error Key="DuplicateCursorName" NativeErrorCode="11110">Дублирующееся имя курсора.</Error>
+
+      <Error Key="OutstandingTransDuringDisconn" NativeErrorCode="11120">Во время отключения не выполнены некоторые транзакции.</Error>
+
+      <Error Key="AllocNonStmtDescInConn" NativeErrorCode="11130">Не удается использовать подключение для выделения ресурса, не предназначенного для инструкции или дескриптора.</Error>
+
+      <Error Key="FreeNonStmtDescInConn" NativeErrorCode="11140">Не удается использовать подключение для освобождения ресурса, не предназначенного для инструкции или дескриптора.</Error>
+
+      <Error Key="FreeImplicitAppDesc" NativeErrorCode="11150">Не удается освободить неявный дескриптор приложения.</Error>
+
+      <Error Key="DropImplicitAppDesc" NativeErrorCode="11160">Не удается удалить неявный дескриптор приложения из его родительской инструкции.</Error>
+
+      <!-- MAINTENANCE NOTE: This error message needs to manually be duplicated in the other locales, since it has not be translated -->
+      <Error Key="GetInfoPropNotFound" NativeErrorCode="11180" Params="1">Свойство SQLGetInfo не найдено: %1%</Error>
+
+      <Error Key="FreeStmtWithoutAllocStmt" NativeErrorCode="11190">Не удается освободить инструкцию без выделенной инструкции.</Error>
+
+      <Error Key="AttrCantBeSetNow" NativeErrorCode="11200">Не удается задать атрибут.</Error>
+
+      <Error Key="InvalidTransState" NativeErrorCode="11210">Недопустимое состояние транзакции: во время этого состояния транзакции не разрешено выполнять операцию.</Error>
+
+      <Error Key="PreparedStmtNotCursorSpec" NativeErrorCode="11220">Подготовленная инструкция не является спецификацией курсора.</Error>
+
+      <Error Key="CancelTreatedAsCloseWarn" NativeErrorCode="11230">Команда отмены обработана как команда закрытия курсора.</Error>
+
+      <Error Key="InvalidFreeStmtOptionIdent" NativeErrorCode="11240">Функция освобождения идентификатора параметра инструкции является недопустимой либо не поддерживается.</Error>
+
+      <Error Key="InvalidColAttrFieldIdent" NativeErrorCode="11250">Идентификатор поля атрибута столбца является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="InvalidStmtResultType" NativeErrorCode="11270">Тип результата выполнения инструкции является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="InvalidCursorStateSetCatalog" NativeErrorCode="11280">Недопустимое состояние курсора. Во время ожидания результатов не удается задать текущий каталог.</Error>
+
+
+      <!-- Error and warnings with environment. -->
+      <Error Key="AllocNonConnInEnv" NativeErrorCode="11290">Не удается использовать среду для выделения ресурса, не предназначенного для подключения.</Error>
+
+      <Error Key="InvalidFreeHandleOperationInEnvAllocState" NativeErrorCode="11300">Недопустимая операция освобождения маркера в состоянии выделенной среды.</Error>
+
+      <Error Key="SqlCTypeNotSupported" NativeErrorCode="11310">Тип SQL C не поддерживается.</Error>
+
+      <Error Key="SqlTypeNotSupported" NativeErrorCode="11320">Тип SQL не поддерживается.</Error>
+
+      <Error Key="CursorNameBeginWithReservedPrefix" NativeErrorCode="11330">Имя курсора не должно начинаться с зарезервированного префикса.</Error>
+
+
+      <!-- Error and warnings with catalog functions. -->
+      <Error Key="MetadataTableIDNotFoundForCatalogFunctionId" NativeErrorCode="11360">Не удается найти идентификатор таблицы метаданных, соответствующий идентификатору функции каталога.</Error>
+
+      <Error Key="InvalidNullCatalogName" NativeErrorCode="11370">Недопустимое использование указателя NULL для имени каталога.</Error>
+
+      <Error Key="InvalidNullSchemaName" NativeErrorCode="11371">Недопустимое использование указателя NULL для имени схемы.</Error>
+
+      <Error Key="InvalidNullTableName" NativeErrorCode="11375">Недопустимое использование указателя NULL для имени таблицы.</Error>
+
+      <Error Key="InvalidNullColumnName" NativeErrorCode="11376">Недопустимое использование указателя NULL для имени столбца.</Error>
+
+      <Error Key="InvalidNullProcName" NativeErrorCode="11377">Недопустимое использование указателя NULL для имени процедуры.</Error>
+
+      <Error Key="CatalogNameTooLong" NativeErrorCode="11380">Слишком длинное имя каталога.</Error>
+
+      <Error Key="SchemaNameTooLong" NativeErrorCode="11390">Слишком длинное имя схемы.</Error>
+
+      <Error Key="TableNameTooLong" NativeErrorCode="11400">Слишком длинное имя таблицы.</Error>
+
+      <Error Key="ProcNameTooLong" NativeErrorCode="11410">Слишком длинное имя процедуры.</Error>
+
+      <Error Key="ColumnNameTooLong" NativeErrorCode="11420">Слишком длинное имя столбца.</Error>
+
+      <Error Key="CatalogNameNotSupported" NativeErrorCode="11430">Имя каталога не поддерживается.</Error>
+
+      <Error Key="SchemaNotSupported" NativeErrorCode="11440">Схема не поддерживается.</Error>
+
+      <Error Key="BookmarkNotSupportedForCursorType" NativeErrorCode="11450">Для типа курсора закладка не поддерживается.</Error>
+
+      <Error Key="InvalidCatalogFuncID" NativeErrorCode="11460">Идентификатор функции каталога является недопустимым либо не поддерживается.</Error>
+
+      <Error Key="TransNotSupported" NativeErrorCode="11470">Транзакции не поддерживаются.</Error>
+
+      <!-- Error and warnings with driver functions. -->
+      <Error Key="TooManyHandles" NativeErrorCode="11480">Слишком много дескрипторов. Для создания других дескрипторов освободите существующие.</Error>
+
+      <Error Key="OperationCanceled" NativeErrorCode="11490">Операция отменена.</Error>
+
+
+      <!-- Error and warnings with driver functions. -->
+      <Error Key="DriverConfigurationWarningEncoding" NativeErrorCode="11510">Недопустимая конфигурация драйвера для DriverManagerEncoding.</Error>
+
+      <Error Key="NoSQLGetPrivateProfileString" NativeErrorCode="11560">Не удается найти функцию SQLGetPrivateProfileString.</Error>
+
+      <Error Key="CredentialMissing" NativeErrorCode="11570" Params="1">Отсутствуют обязательные параметры учетных данных: %1%. </Error>
+    </Package>
+    
+    <!-- #################################################################################### -->
+    <Package ID="2" DefaultComponent="DSI">
+
+      <Error Key="DSIConnPropNotFound" Params="1" NativeErrorCode="20000">Свойство подключения не найдено в DSI: %1%</Error>
+
+      <Error Key="DSIDriverPropNotFound" Params="1" NativeErrorCode="20001">Свойство драйвера не найдено в DSI: %1%</Error>
+
+      <Error Key="DSIEnvPropNotFound" Params="1" NativeErrorCode="20002">Свойство среды не найдено в DSI: %1%</Error>
+
+      <Error Key="DSIStmtPropNotFound" Params="1" NativeErrorCode="20003">Свойство инструкции не найдено в DSI: %1%</Error>
+
+      <Error Key="EnvAttrOutputNtsNotSupported" NativeErrorCode="20004">Драйвер возвращает только строки, оканчивающиеся символом NULL.</Error>
+
+      <Error Key="DSIStmtPropLimitNotFound" Params="1" NativeErrorCode="20005">Не найдено ограничение свойства инструкции: %1%</Error>
+
+      <Error Key="ResultSetTraverseDirNotSupported" Params="1" NativeErrorCode="20006">Направление обхода результирующего набора не поддерживается: %1%</Error>
+
+      <Error Key="InvalidMetadataTableID" Params="1" NativeErrorCode="20007">Недопустимый идентификатор таблицы метаданных: %1%</Error>
+
+      <Error Key="InvalidFilterInMetadataRestrictionGenerator" NativeErrorCode="20008">В генераторе ограничений метаданных используется недопустимый фильтр.</Error>
+
+      <Error Key="NoColumnsNeededDuringDataRetrieval" NativeErrorCode="20012">Не запрошено никаких данных из столбца, но операция получения данных выполнена.</Error>
+
+      <Error Key="InvalidColumnNum" Params="1" NativeErrorCode="20013">Недопустимый номер столбца: %1%</Error>
+
+      <Error Key="MetadataSourceNotFound" NativeErrorCode="20014">Источник метаданных является недопустимым либо не найден.</Error>
+
+      <Error Key="CursorTypeNotSupported" Params="1" NativeErrorCode="20016">Тип курсора не поддерживается: %1%</Error>
+
+      <Error Key="CannotGetDerivedDataOnBasicResult" NativeErrorCode="20017">Не удается получить производные данные в основном отфильтрованном результате метаданных.</Error>
+
+      <Error Key="InvalidDerivedColumnID" NativeErrorCode="20018">Недопустимый идентификатор столбца производных метаданных.</Error>
+
+      <Error Key="DefaultParamNotAllowed" NativeErrorCode="20020">У текущего параметра нет значения, используемого по умолчанию, поэтому запрещено использовать это значение по умолчанию.</Error>
+
+      <Error Key="InvalidColumnName" Params="1" NativeErrorCode="20021">Недопустимое имя столбца: %1%</Error>
+
+      <Error Key="InvalidFilterVal" NativeErrorCode="20023">Недопустимое значение фильтра: не используйте пустые строки в значениях фильтров. Если фильтрация не нужна, используйте пустой вектор.</Error>
+      
+      <Error Key="CannotPerformCursorOrDataRetrievalOperationOnRowCountResult" NativeErrorCode="20027">Не удается выполнить операции, связанные с получением курсора или данных, над результатом подсчета количества строк.</Error>
+      
+      <Error Key="FuncNotSupported" NativeErrorCode="20029">Функция не поддерживается.</Error>
+      
+      <Error Key="DSIMemAllocErr" NativeErrorCode="20030">Ошибка управления памятью.</Error>
+
+      <Error Key="CustomPropNotFound" Params="1" NativeErrorCode="20031">Настраиваемое свойство не найдено: %1%</Error>
+
+      <Error Key="DSIReqSettingNotFound" Params="1" NativeErrorCode="20032">В параметрах подключения отсутствует обязательный параметр %1%.</Error>
+
+      <Error Key="IncompatibleParameterTypes" Params="1" NativeErrorCode="20033">Для параметра указан несовместимый тип: %1%.</Error>
+
+      <Error Key="IncompatibleParameterSqlTypes" Params="3" NativeErrorCode="20034">Для параметра указан несовместимый тип SQL: %1%. Привязанный тип: %2%. Ожидаемый тип: %3%</Error>
+
+      <Error Key="InvalidCurrentCatalog" Params="1" NativeErrorCode="20035">Указан недопустимый каталог: %1%</Error>
+
+      <Error Key="DSIHexToBinaryConversionOddLengthError" NativeErrorCode="20036">При преобразовании шестнадцатеричной строки в двоичную возникла ошибка: данная шестнадцатеричная строка имела нечетную длину.</Error>
+
+      <Error Key="DSIHexToBinaryConversionInvalidCharacterError" Params="1" NativeErrorCode="20037">При преобразовании шестнадцатеричной строки в двоичную возникла ошибка: в данной шестнадцатеричной строке имелся нешестнадцатеричный символ %1%.</Error>
+
+      <Error Key="IncorrectPropertyAttributeType" Params="3" NativeErrorCode="20038">Тип свойства AttributeData не подходит для ключа свойства %1%. Ожидаемый тип: %2%, фактический тип: %3%</Error>
+      
+      <Error Key="ICUUFailureStatus" Params="3" NativeErrorCode="20039">При инициализации функции ICU %1% возникла ошибка со следующим кодом UErrorCode: %2%.</Error>
+
+      <Error Key="SwapLimitErr" NativeErrorCode="20040">Закончилось место на диске, предназначенное для файлов подкачки.</Error>
+    
+      <Error Key="LibLoadErr" NativeErrorCode="20041">При загрузке динамической или общей библиотеки "%1%" возникла ошибка: %2%.</Error>
+    
+      <Error Key="LibFunctLoadErr" NativeErrorCode="20042">При загрузке функции %2% из динамической или общей библиотеки "%1%" возникла ошибка.</Error>
+    
+      <Error Key="SwapFileEncryptErr" NativeErrorCode="20043">При шифровании или расшифровке содержимого файла подкачки возникла внутренняя ошибка: вызов %1%, причина: %2%.</Error>
+    
+      <Error Key="InvalidEscapeChar" Params="1" NativeErrorCode="22019">Недопустимое предложение LIKE ESCAPE %1%. Оно должно состоять только из одного символа.</Error>
+
+      <Error Key="InvalidEscapeSequence" NativeErrorCode="22025">Недопустимая escape-последовательность LIKE. За escape-символом должен следовать символ %, _ или другой escape-символ.</Error>
+
+    </Package>
+
+    <!-- #################################################################################### -->
+    <Package ID="3" DefaultComponent="Support">
+
+      <Error Key="AttrDataTypeNotRecog" NativeErrorCode="40020">Тип данных атрибута не распознан.</Error>
+
+      <Error Key="BufLenTooSmallForBinaryAttrData" NativeErrorCode="40070">Буфер имеет слишком малую длину для возврата двоичных данных атрибута.</Error>
+
+      <Error Key="WarningListenerNotValid" NativeErrorCode="40090">Недопустимый прослушиватель предупреждений.</Error>
+
+      <Error Key="InvalidStrBufLen" NativeErrorCode="40100">Недопустимый размер буфера строки.</Error>
+
+      <Error Key="IllegalDataConvFromCToCType" NativeErrorCode="40110">Недопустимое преобразование данных типа SQL C в данные типа SQL C.</Error>
+
+      <Error Key="IllegalDataConvFromSQLToSQLType" NativeErrorCode="40120">Недопустимое преобразование данных типа SQL в данные типа SQL.</Error>
+
+      <Error Key="PrecLessThanZero" NativeErrorCode="40130">Значение точности не должно быть меньше нуля.</Error>
+
+      <Error Key="MaxPrecisionExceeded" Params="2" NativeErrorCode="40131">Число %1% имеет точность, превосходящую максимально разрешенную (%2%).</Error>
+
+      <Error Key="ScaleLessThanZero" NativeErrorCode="40140">Значение масштаба не должно быть меньше нуля.</Error>
+
+      <Error Key="SQLCTypeNotSupported" Params="2" NativeErrorCode="40150">Тип SQL C не поддерживается: %1% (%2%)</Error>
+
+      <Error Key="SQLTypeNotSupported" Params="2" NativeErrorCode="40160">Тип SQL не поддерживается: %1% (%2%)</Error>
+
+      <Error Key="SQLTDWTypeNotSupported" Params="1" NativeErrorCode="40170">Тип SQL TDW не поддерживается (%1%).</Error>
+
+      <Error Key="DataConvAlgorithmError" NativeErrorCode="40180">Ошибка алгоритма преобразования данных.</Error>
+
+      <Error Key="DataConvAlgorithmMemError" NativeErrorCode="40181">Ошибка выделения памяти для алгоритма преобразования данных.</Error>
+
+      <Error Key="DataConvAlgorithmNotSupported" Params="2" NativeErrorCode="40190">Алгоритм преобразования данных типа %1% в данные типа %2% не поддерживается.</Error>
+
+      <Error Key="TDWTypeNotFoundForCType" Params="2" NativeErrorCode="40450">Не удается найти соответствующий тип TDW для типа SQL C %1% (%2%).</Error>
+
+      <Error Key="TDWTypeNotFoundForSqlType" Params="2" NativeErrorCode="40460">Не удается найти соответствующий тип TDW для типа SQL %1% (%2%).</Error>
+
+      <Error Key="DefaultCForTDWTypeNotFound" Params="2" NativeErrorCode="40210">Не удается найти тип SQL C, используемый по умолчанию, для типа TDW %1% (%2%).</Error>
+
+      <Error Key="InvalidTDWTimestampType" NativeErrorCode="40220">Недопустимый тип метки времени TDW.</Error>
+
+      <Error Key="DetectedBufferDescriptorLoop" NativeErrorCode="40240">При соединении двух дескрипторов буферов обнаружен цикл.</Error>
+
+      <Error Key="CannotAllocateMemoryForString" NativeErrorCode="40250">Не удается выделить память для чтения строки.</Error>
+
+      <Error Key="CannotGenerateHandle" NativeErrorCode="40260">Слишком много дескрипторов. Для создания других дескрипторов освободите существующие.</Error>
+
+      <Error Key="IllegalArgument" NativeErrorCode="40280">В функцию передан недопустимый аргумент.</Error>
+
+      <Error Key="HandleInsertionFailed" NativeErrorCode="40290">Не удалось вставить дескриптор в диспетчер дескрипторов.</Error>
+
+      <Error Key="BadAttrType" NativeErrorCode="40300">Не удается получить атрибут в качестве требуемого типа.</Error>
+
+      <Error Key="InvalidBufferStrategyOperation" NativeErrorCode="40310">Недопустимая операция для выбранной стратегии владения буфером.</Error>
+
+      <Error Key="TDWNumericArithmeticError" Params="1" NativeErrorCode="40320">Результат числовой операции "%1%" — недопустимое число.</Error>
+
+      <Error Key="TDWNumericStringError" Params="1" NativeErrorCode="40321">Значение строки "%1%" — недопустимое число.</Error>
+
+      <Error Key="TDWNumericValueError" Params="1" NativeErrorCode="40322">Значение %1% — недопустимое число.</Error>
+
+      <Error Key="TDWNumericOperationOnInvalid" Params="1" NativeErrorCode="40323">Попытка выполнить операцию "%1%" с недопустимым числом.</Error>
+
+      <Error Key="TDWNumericOutOfRangeError" Params="2" NativeErrorCode="40324">Значение "%1%", извлеченное как "%2%", находилось вне допустимого диапазона.</Error>
+
+      <Error Key="SwapInvalidColumnNum" NativeErrorCode="40340">Внутренняя ошибка: SwapInvalidRowColumnNum.</Error>
+
+      <Error Key="SwapInvalidOffset" NativeErrorCode="40350">Внутренняя ошибка: SwapInvalidOffset.</Error>
+
+      <Error Key="SwapInvalidRowNum" NativeErrorCode="40360">Внутренняя ошибка: SwapInvalidRowNum.</Error>
+
+      <Error Key="SwapReadError" NativeErrorCode="40370">Внутренняя ошибка: SwapReadError.</Error>
+
+      <Error Key="SwapSeekError" NativeErrorCode="40380">Внутренняя ошибка: SwapSeekError.</Error>
+
+      <Error Key="SwapWriteError" NativeErrorCode="40390">Внутренняя ошибка: SwapWriteError.</Error>
+
+      <Error Key="UnexpectedBufferEnd" NativeErrorCode="40400">Неожиданно достигнут конец буфера содержимого.</Error>
+
+      <Error Key="OutOfMemToSerialize" NativeErrorCode="40410">Недостаточно памяти для сериализации содержимого.</Error>
+
+      <Error Key="TempTableTraverseDirNotSupported" NativeErrorCode="40430">Направление обхода не поддерживается для временной таблицы.</Error>
+
+      <Error Key="CannotAccessDataWithCursor" NativeErrorCode="40440">Не удается получить доступ к данным во временной таблице без открытого курсора.</Error>
+
+      <Error Key="StrRightTrunc" NativeErrorCode="40450">Данные строки усекаются при преобразовании.</Error>
+
+      <Error Key="FractionalTrunc" NativeErrorCode="40460">При выполнении преобразования дробные данные усекаются.</Error>
+
+      <Error Key="RestrictedDataTypeAttrViolation" NativeErrorCode="40461">Нарушение атрибута ограниченного типа данных.</Error>
+
+      <Error Key="InvalidMultiFieldIntervalConversion" NativeErrorCode="40462">Недопустимое преобразование. Не удается преобразовать интервалы с несколькими полями в одно число.</Error>
+
+      <Error Key="StrRightTruncErr" NativeErrorCode="40465">Данные строки усекаются при преобразовании.</Error>
+
+      <Error Key="NumericValOutOfRange" Params="2" NativeErrorCode="40470">Ошибка преобразования в столбце %1% и строке %2%. Числовое значение выходит за границы диапазона.</Error>
+
+      <Error Key="InvalidDatetimeFormat" NativeErrorCode="40480">Недопустимый формат даты, времени или метки времени.</Error>
+
+      <Error Key="InvalidDateFormat" Params="1" NativeErrorCode="40481">Недопустимый формат даты для элемента "%1%". Требуемый формат: [-]гггг-мм-дд.</Error>
+
+      <Error Key="InvalidTimeFormat" Params="1" NativeErrorCode="40482">Недопустимый формат времени для элемента "%1%". Требуемый формат: чч:мм:сс[.fffffffff].</Error>
+
+      <Error Key="InvalidTimestampFormat" Params="1" NativeErrorCode="40483">Недопустимый формат метки времени для элемента "%1%". Требуемый формат: [-]гггг-мм-дд чч:мм:сс[.fffffffff].</Error>
+
+      <Error Key="InvalidDatetimeValue" NativeErrorCode="40490">Недопустимое значение даты, времени или метки времени.</Error>
+
+      <Error Key="InvalidDateValue" Params="1" NativeErrorCode="40500">Недопустимое значение даты %1%. Значение года должно быть в диапазоне [–9999, 9999], значение месяца — в диапазоне [1, 12], а значение дня — в диапазоне [1, 31]. При этом значение дня должно соответствовать диапазону дней для указанного месяца и года.</Error>
+
+      <Error Key="InvalidTimeValue" Params="1" NativeErrorCode="40501">Недопустимое значение времени %1%. Значение часа должно быть в диапазоне [0, 23], значение минуты — в диапазоне [0, 59], а значение секунды — в диапазоне [0, 61]. При этом значения 60 и 61 необходимо использовать для корректировочных секунд.</Error>
+
+      <Error Key="InvalidTimestampValue" Params="1" NativeErrorCode="40502">Недопустимое значение метки времени %1%. Значение года должно быть в диапазоне [–9999, 9999] (за исключением значения 0), значение месяца — в диапазоне [1, 12], значение дня — в диапазоне [1, 31]. При этом значение дня должно соответствовать диапазону дней для указанного года и месяца. Значение часа должно быть в диапазоне [0, 23], значение минуты — в диапазоне [0, 59] и значения секунды — в диапазоне [0, 61]. При этом значения 60 и 61 необходимо использовать для корректировочных секунд.</Error>
+
+      <Error Key="InvalidYearMonthIntervalValue" Params="1" NativeErrorCode="40491">Недопустимое значение интервала с указанием месяца и года: %1%. Значение года должно быть в диапазоне [0, 999999999], а значение месяца — в диапазоне [0, 11].</Error>
+
+      <Error Key="InvalidDayHourIntervalValue" Params="1" NativeErrorCode="40492">Недопустимое значение интервала с указанием дня и часа: %1%. Значение дня должно быть в диапазоне [0, 999999999], а значение часа — в диапазоне [0, 23].</Error>
+
+      <Error Key="InvalidDayMinuteIntervalValue" Params="1" NativeErrorCode="40493">Недопустимое значение интервала с указанием дня, часа и минуты: %1%. Значение дня должно быть в диапазоне [0, 999999999], значение часа — в диапазоне [0, 23], а значение минуты — в диапазоне [0, 59].</Error>
+
+      <Error Key="InvalidDaySecondIntervalValue" Params="1" NativeErrorCode="40494">Недопустимое значение интервала с указанием дня, часа, минуты и секунды: %1%. Значение дня должно быть в диапазоне [0, 999999999], значение часа — в диапазоне [0, 23], а значения минуты и секунды — в диапазоне [0, 59].</Error>
+
+      <Error Key="InvalidHourMinuteIntervalValue" Params="1" NativeErrorCode="40495">Недопустимое значение интервала с указанием часа и минуты: %1%. Значение часа должно быть в диапазоне [0, 999999999], а значение минуты — в диапазоне [0, 59].</Error>
+
+      <Error Key="InvalidHourSecondIntervalValue" Params="1" NativeErrorCode="40496">Недопустимое значение интервала с указанием часа, минуты и секунды: %1%. Значение часа должно быть в диапазоне [0, 999999999], а значения минуты и секунды — в диапазоне [0, 59].</Error>
+
+      <Error Key="InvalidMinuteSecondIntervalValue" Params="1" NativeErrorCode="40497">Недопустимое значение интервала с указанием минуты и секунды: %1%. Значение минуты должно быть в диапазоне [0, 999999999], а значение секунды — в диапазоне [0, 59].</Error>
+
+      <Error Key="InvalidSecondIntervalValue" Params="1" NativeErrorCode="40498">Недопустимое значение интервала с указанием секунды: %1%. Значение секунды должно быть в диапазоне [0, 999999999].</Error>
+
+      <Error Key="InvalidSingleFieldIntervalValue" Params="1" NativeErrorCode="40499">Недопустимое значение интервала с одним полем: %1%. Оно должно быть в диапазоне [0, 999999999].</Error>
+
+      <Error Key="IntervalArithOverflow" Params="1" NativeErrorCode="40519">Переполнение поля интервала — результат операции "%1%".</Error>
+
+      <Error Key="DatetimeFieldOverflow" NativeErrorCode="40520">Переполнение поля даты и времени из-за указания недопустимых значений даты и времени.</Error>
+
+      <Error Key="IntervalFieldOverflow" NativeErrorCode="40530">Переполнение поля интервала.</Error>
+
+      <Error Key="InvalidLeadingPrecision" NativeErrorCode="40540">Точность ведущего значения недостаточна для ведущего значения интервала.</Error>
+
+      <Error Key="LeadingPrecisionExceeded" Params="1" NativeErrorCode="40541">Превышена точность начального интервала, равная %1%.</Error>
+
+      <Error Key="FractionalPrecisionExceeded" Params="1" NativeErrorCode="40542">Превышена точность значения долей секунды: %1%.</Error>
+
+      <Error Key="InvalidCharValForCast" NativeErrorCode="40550">Недопустимое символьное значение для указания отклонения.</Error>
+
+      <Error Key="InvalidGuidValue" Params="1" NativeErrorCode="40560">Недопустимый GUID значения данных: %1%. Данные должны быть в формате XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX и могут быть заключены в фигурные скобки.</Error>
+
+      <Error Key="OutOfMemoryError" NativeErrorCode="40600">Ошибка нехватки памяти.</Error>
+      
+      <Error Key="ConvInvalidData" NativeErrorCode="40610">Недопустимые данные для преобразования.</Error>
+      
+      <Error Key="ConvLogicError" NativeErrorCode="40620">Логическая ошибка во время преобразования.</Error>
+
+      <Error Key="InvalidArgument" Params="2" NativeErrorCode="30020">В функцию [%1%: %2%] переданы недопустимые аргументы.</Error>
+
+      <Error Key="InvalidArgumentParam" Params="3" NativeErrorCode="30021">В функцию [%2%: %3%] передан недопустимый аргумент (%1%).</Error>
+
+      <Error Key="InvalidOperation" Params="3" NativeErrorCode="30030">При вызове функции %1% [%2%: %3%] возникла логическая ошибка. Убедитесь, что операция поддерживается, а функция реализована.</Error>
+
+      <Error Key="ErrSemaphoreMaxValue" NativeErrorCode="40621">Не удается задать для семафора значение больше, чем SEMAPHORE_MAX_VALUE.</Error>
+
+      <Error Key="ErrSemaphoreInit" Params="1" NativeErrorCode="40622">Ошибка при инициализации семафора: %1%</Error>
+
+      <Error Key="IOError" NativeErrorCode="40630">Произошла ошибка ввода-вывода.</Error>
+
+      <Error Key="RegKeyNotFound" NativeErrorCode="50010">Раздел реестра не найден.</Error>
+
+      <Error Key="CannotOpenRegistry" NativeErrorCode="50020">Не удалось открыть реестр.</Error>
+
+      <Error Key="CannotOpenIniFile" NativeErrorCode="50040">Не удается открыть INI-файл.</Error>
+
+      <Error Key="EnvVarNotFound" Params="1" NativeErrorCode="50050">Переменная среды не найдена: %1%.</Error>
+
+      <Error Key="CannotOpenFile" Params="2" NativeErrorCode="50070">Не удается открыть файл %1%. Ошибка: %2%</Error>
+
+      <Error Key="EncodingNotRecog" NativeErrorCode="50080">Кодировка не распознана.</Error>
+
+      <Error Key="StrToNumConvFailed" Params="1" NativeErrorCode="50090">Не удалось преобразовать значение "%1%" из строки в число</Error>
+
+      <Error Key="StrToNumConvFailedUnsigned" Params="1" NativeErrorCode="50100">Не удалось преобразовать значение "%1%" из строки в число без знака</Error>
+
+      <Error Key="StrToNumConvFailedOverflow" Params="1" NativeErrorCode="50110">Не удалось преобразовать значение "%1%" из строки в число из-за переполнения</Error>
+
+      <Error Key="StrToNumConvFailedUnderflow" Params="1" NativeErrorCode="50120">Не удалось преобразовать значение "%1%" из строки в число из-за потери значимости</Error>
+
+      <Error Key="NumToStrConvFailed" NativeErrorCode="50130">Не удалось выполнить преобразование из числа в строку из-за недостаточного размера символьного буфера.</Error>
+
+      <Error Key="NotImplYet" NativeErrorCode="50140">Метод еще не реализован.</Error>
+
+      <Error Key="ThreadInvalidStateAction" NativeErrorCode="50160">Недопустимое действие для потока в текущем состоянии.</Error>
+
+      <Error Key="ThreadCreationFailed" NativeErrorCode="50170">Не удалось создать поток.</Error>
+
+      <Error Key="ThreadAttributeCreationFailed" NativeErrorCode="50175">Не удалось создать атрибуты потока.</Error>
+
+      <Error Key="ThreadWaitFailed" NativeErrorCode="50180">Ошибка ожидания потока.</Error>
+
+      <Error Key="ThreadAlreadyStarted" NativeErrorCode="50185">Поток уже запущен. Вам не удастся запустить его несколько раз.</Error>
+
+      <Error Key="CannotGenerateTempFileName" Params="1" NativeErrorCode="50190">Ошибка при создании имени временного файла подкачки: %1%</Error>
+
+      <Error Key="InvalidFileName" NativeErrorCode="50200">Недопустимое имя файла.</Error>
+
+      <Error Key="CannotSetFilePosition" NativeErrorCode="50210">Не удается задать положение файла.</Error>
+
+      <Error Key="InvalidCodePtMaxSize" NativeErrorCode="50220">Недопустимый максимальный размер кодовой точки.</Error>
+
+      <Error Key="InvalidNumCodePtInBuffer" NativeErrorCode="50230">Недопустимое количество кодовых точек в буфере.</Error>
+
+      <Error Key="InvalidBuffPos" NativeErrorCode="50240">Недопустимое положение в буфере.</Error>
+
+      <Error Key="StrByteAlignErr" NativeErrorCode="50250">Количество байтов в строке не совпадает с буфером.</Error>
+
+      <Error Key="InvalidEncodingEndianForPlatform" NativeErrorCode="50260">Недопустимый порядок следования байтов кодировки для платформы.</Error>
+
+      <Error Key="SetBuffErr" NativeErrorCode="50270">Настройка буфера, не использованного полностью, или недопустимого буфера.</Error>
+
+      <Error Key="InvalidNullParam" NativeErrorCode="50280">Параметр не должен иметь значение NULL.</Error>
+
+      <Error Key="ICUCreateUConverterErr" Params="1" NativeErrorCode="50290">Ошибка при создании объекта преобразователя ICU для Юникода для кодировки "%1%".</Error>
+
+      <Error Key="ICUConvErr" NativeErrorCode="50300">Ошибка преобразования строки с ICU.</Error>
+
+      <Error Key="ICUConvErrNotRecog" NativeErrorCode="50310">Неизвестная ошибка преобразования ICU.</Error>
+
+      <Error Key="ICURegexError" Params="1" NativeErrorCode="50315">Ошибка применения регулярного выражения: %1%.</Error>
+
+      <Error Key="UnsupportedCodeUnitSize" Params="1" NativeErrorCode="50320">Неподдерживаемый размер (%1%) единицы кода при получении данных.</Error>
+
+      <!-- Product License Errors and Warnings -->
+
+      <Error Key="LicFileNotFound" Params="1" NativeErrorCode="50320">Не удается найти файл лицензии %1%. Обратитесь к своему администратору или в компанию Simba Technologies Inc. по электронному адресу sales@simba.com.</Error>
+
+      <Error Key="LicFileCorrupt" Params="1" NativeErrorCode="50330">Файл лицензии %1% поврежден. Обратитесь к своему администратору или в компанию Simba Technologies Inc. по электронному адресу sales@simba.com.</Error>
+
+      <Error Key="TrialPeriodExp" Params="1" NativeErrorCode="50340">Срок действия вашей лицензии истек %1%. Обратитесь в компанию Simba Technologies Inc. по электронному адресу sales@simba.com.</Error>
+      
+      <Error Key="TrialPeriodNotBegun" Params="1" NativeErrorCode="50341">Период ознакомительного использования еще не начат, он начнется %1%. Обратитесь в компанию Simba Technologies Inc. по электронному адресу sales@simba.com.</Error>
+
+      <Error Key="TrialPeriodExpSoon" Params="1" NativeErrorCode="50342">Период ознакомительного использования истекает %1%. Обратитесь в компанию Simba Technologies Inc. по электронному адресу sales@simba.com.</Error>
+
+      <Error Key="IniParseError" Params="2" NativeErrorCode="50350">Ошибка анализа INI в строке %1% из %2%.</Error>
+
+      <Error Key="LicenseValidationFailure" Params="1" NativeErrorCode="50351">Ошибка при проверке лицензии: %1%. Обратитесь в компанию Simba Technologies Inc. по электронному адресу sales@simba.com.</Error>
+      
+      <Error Key="IntegratedSecurityAuthFailed" NativeErrorCode="50360" Params="1">Ошибка проверки подлинности встроенными средствами безопасности. (%1%)</Error>
+
+      <Error Key="FailedToAcquireCredentials" NativeErrorCode="50361" Params="1">Встроенным средствам безопасности не удалось получить локальные учетные данные. (%1%)</Error>
+
+      <Error Key="FailedToGetUsername" NativeErrorCode="50363" Params="1">Не удалось получить имя пользователя. (%1%)</Error>
+
+      <Error Key="SecurityContextInProgress" NativeErrorCode="50364">Не удается изменить свойства контекста безопасности, так как он уже выполняется.</Error>
+
+      <Error Key="ThreadImpersonationFailed" NativeErrorCode="50365" Params="1">Ошибка при включении олицетворения потока. (%1%)</Error>
+
+      <Error Key="GSSAPILoadFailed" NativeErrorCode="50366" Params="1">Не удалось загрузить библиотеку безопасности: (%1%)</Error>
+      
+      <Error Key="NoSecurityAPI" NativeErrorCode="50367" Params="0">Для этой платформы нет поддерживаемого API безопасности. </Error>
+      <Error Key="InvalidNumeric" NativeErrorCode="50368" Params="0">Не удалось выполнить проверку объекта TDWExactNumericType.</Error>
+
+      <Error Key="LibLoadErr" Params="2" NativeErrorCode="50400">При загрузке динамической или общей библиотеки "%1%" возникла ошибка: %2%.</Error>
+	  
+      <Error Key="LibFunctLoadErr" Params="2" NativeErrorCode="50401">При загрузке функции %2% из динамической или общей библиотеки "%1%" возникла ошибка.</Error>
+	  
+      <Error Key="SwapFileEncryptErr"  Params="2" NativeErrorCode="50402">При шифровании или расшифровке содержимого файла подкачки возникла внутренняя ошибка: вызов %1%, причина: %2%.</Error>
+	  
+      <Error Key="SwapLimitErr" NativeErrorCode="50403">Закончилось место на диске, предназначенное для файлов подкачки.</Error>
+	  
+    </Package>
+</Messages>

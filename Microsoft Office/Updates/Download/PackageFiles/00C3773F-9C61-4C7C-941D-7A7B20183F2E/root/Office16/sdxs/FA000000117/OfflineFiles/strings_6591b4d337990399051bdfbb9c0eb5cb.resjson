@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Wypróbuj Język Python w programie Excel (wersja zapoznawcza)",
+  "premiumHubMessageTextForPythonInExcel": "Połącz formuły języka Python z siatką programu Excel, aby wyczyścić, eksplorować i analizować dane. Po zabezpieczeniu przez usługę Microsoft Cloud twórz i udostępniaj zaawansowane analizy bezpośrednio w programie Excel.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Korzystaj z bibliotek",
+  "premiumHubSectionOneMessageForPythonInExcel": "Uprość i przyspiesz analizę za pomocą typowych bibliotek języka Python.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Znajdź wzorce",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Użyj formuł języka Python do odnajdywania ukrytych szczegółowych informacji w danych i wizualizowania ich za pomocą wykresów.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Instalacja nie jest wymagana",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Usprawnij przepływy pracy dzięki gotowym do użycia zabezpieczonym środowiskom.",
+  "premiumHubTermsOfUseForPythonInExcel": "Gdy język Python w programie Excel jest w publicznej wersji zapoznawczej, możesz używać tej funkcji jako części subskrypcji. Po zakończeniu wersji zapoznawczej musisz kupić dodatkową licencję, aby z niej korzystać. Wyświetl {0}.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Dowiedz się więcej",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Pokaż mi, jak to działa",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Wypróbuj wersję zapoznawczą",
+  "termsOfUseLinkForPreview": "podgląd warunków użytkowania"
+}

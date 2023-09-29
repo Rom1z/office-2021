@@ -1,0 +1,15 @@
+{
+  "premiumHubHeaderForPythonInExcel": "Excel бағдарламасында (алдын ала қарау нұсқасы) Python-ды сынап көріңіз",
+  "premiumHubMessageTextForPythonInExcel": "Деректерді тазалау, зерттеу және талдау үшін Python формулаларын Excel торымен біріктіріңіз. Microsoft бұлтымен қамтамасыз етілген, Excel бағдарламасының ішінде кеңейтілген талдауларды жасап, ортақ пайдалану.",
+  "premiumHubSectionOneHeaderForPythonInExcel": "Кітапханаларды қолдану",
+  "premiumHubSectionOneMessageForPythonInExcel": "Жиі пайдаланылатын Python кітапханалары арқылы талдауыңызды жеңілдетіңіз және тездетіңіз.",
+  "premiumHubSectionTwoHeaderForPythonInExcel": "Үлгілерді табу",
+  "premiumHubSectionTwoMessageForPythonInExcel": "Деректеріңіздегі жасырын аналитиканы табу және оларды графиктер арқылы визуализациялау үшін Python формулаларын пайдаланыңыз.",
+  "premiumHubSectionThreeHeaderForPythonInExcel": "Реттеу қажет емес",
+  "premiumHubSectionThreeMessageForPythonInExcel": "Пайдалануға дайын, қауіпсіз орталар арқылы жұмыс ағындарын оңтайландырыңыз.",
+  "premiumHubTermsOfUseForPythonInExcel": "Excel бағдарламасындағы Python бағдарламасы жалпыға қолжетімді алдын ала қарауда болған кезде, бұл мүмкіндікті жазылымның бір бөлігі ретінде пайдалана аласыз. Алдын ала қараудан кейін оны пайдалану үшін қосымша лицензия сатып алу қажет болады. {0} көріңіз.",
+  "premiumHubLearnMoreLinkForPythonInExcel": "Қосымша мәліметтер",
+  "premiumHubPythonCenterButtonForPythonInExcel": "Жұмыс істеу жолы",
+  "premiumHubTryPreviewButtonForPythonInExcel": "Алдын ала қарау нұсқасын қолданып көру",
+  "termsOfUseLinkForPreview": "алдын ала қарау нұсқасын пайдалану шарттары"
+}

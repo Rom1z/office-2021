@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings xmlns="http://schemas.microsoft.com/data/localizedStrings">
+  <_locDefinition>
+    <_locDefault _loc="locNone"/>
+    <_locTag _loc="locData">s</_locTag>
+  </_locDefinition>
+
+  <s _locID="Classification.Address.LabelName">Мекенжай</s>
+  <s _locID="Classification.Address.Description">Жеткізу үшін бағыт ретінде берілген тұлға немесе ұйымның орналасқан жерінің сипаттамасы</s>
+  <s _locID="Classification.Address.Group">География</s>
+  <s _locID="Classification.City.LabelName">Қала</s>
+  <s _locID="Classification.City.Description">Елді мекен, сауда және мәдениет орталығы орналасқан қала</s>
+  <s _locID="Classification.City.Group">География</s>
+  <s _locID="Classification.Continent.LabelName">Континент</s>
+  <s _locID="Classification.Continent.Description">Әлемдегі негізгі құрлықтардың бірі</s>
+  <s _locID="Classification.Continent.Group">География</s>
+  <s _locID="Classification.Country.LabelName">Ел/аймақ</s>
+  <s _locID="Classification.Country.Description">Мемлекет немесе облыс</s>
+  <s _locID="Classification.Country.Group">География</s>
+  <s _locID="Classification.County.LabelName">Аудан</s>
+  <s _locID="Classification.County.Description">Жергілікті өзін-өзі басқаратын аймақ; облыс немесе өлке бөлігі</s>
+  <s _locID="Classification.County.Group">География</s>
+  <s _locID="Classification.PostalCode.LabelName">Пошталық индекс</s>
+  <s _locID="Classification.PostalCode.Description">Поштаның жеткізілуі үшін пошталық мекенжайға әріптер және/немесе сандар тізбегі қосылды</s>
+  <s _locID="Classification.PostalCode.Group">География</s>
+  <s _locID="Classification.StateorProvince.LabelName">Облыс немесе өлке</s>
+  <s _locID="Classification.StateorProvince.Description">Ел немесе аймақ аумағында әкімшілік немесе саяси бірлік ретінде басқарылатын территория.</s>
+  <s _locID="Classification.StateorProvince.Group">География</s>
+  <s _locID="Classification.ImageURL.LabelName">Суреттің URL мекенжайы</s>
+  <s _locID="Classification.ImageURL.Description">Суретті көрсететін URL (бірыңғай ресурс көрсеткіші) мекенжайы</s>
+  <s _locID="Classification.ImageURL.Group">Сурет</s>
+  <s _locID="Classification.WebUrl.LabelName">Веб-сайттың URL мекенжайы</s>
+  <s _locID="Classification.WebUrl.Description">Веб орнын көрсететін URL (бірыңғай ресурс көрсеткіші) мекенжайы</s>
+  <s _locID="Classification.WebUrl.Group">Веб</s>
+  <s _locID="Classification.Image.LabelName">Сурет</s>
+  <s _locID="Classification.Image.Description">JPEG, GIFF немесе BMP файл пішімінде жиі кездесетін фотосурет немесе басқа сурет</s>
+  <s _locID="Classification.Image.Group">Сурет</s>
+  <s _locID="Classification.Latitude.LabelName">Бойлық</s>
+  <s _locID="Classification.Latitude.Description">Жер бетіндегі солтүстік-оңтүстік ендікті анықтайтын географиялық координат</s>
+  <s _locID="Classification.Latitude.Group">География</s>
+  <s _locID="Classification.Longitude.LabelName">Бойлық</s>
+  <s _locID="Classification.Longitude.Description">Жер бетіндегі батыс-шығыс бойлықты анықтайтын географиялық координат</s>
+  <s _locID="Classification.Longitude.Group">География</s>
+  <s _locID="Classification.Place.LabelName">Орын</s>
+  <s _locID="Classification.Place.Description">Географиялық аймақ немесе орын</s>
+  <s _locID="Classification.Place.Group">География</s>
+  <s _locID="Classification.Organization.LabelName">Ұйым</s>
+  <s _locID="Classification.Organization.Description">Белгілі бір мақсатта ұйымдастырылған адамдар тобы; бірлестік</s>
+  <s _locID="Classification.Organization.Group">Ұйым</s>
+  <s _locID="Classification.Company.LabelName">Компания</s>
+  <s _locID="Classification.Company.Description">Кәсіпорын</s>
+  <s _locID="Classification.Company.Group">Ұйым</s>
+  <s _locID="Classification.Product.LabelName">Өнім</s>
+  <s _locID="Classification.Product.Description">Сату үшін жасалған, өсірілген немесе алынған бір нәрсе</s>
+  <s _locID="Classification.Product.Group">Өнім</s>
+  <s _locID="Classification.Date.LabelName">Күн</s>
+  <s _locID="Classification.Date.Description">Күнге, айға, тоқсанға немесе жылына сәйкес көрсетілген уақыт</s>
+  <s _locID="Classification.Date.Group">Күнтізбе</s>
+</strings>

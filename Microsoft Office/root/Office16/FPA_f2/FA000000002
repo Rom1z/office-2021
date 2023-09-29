@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?><OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>CD7F7D77-5385-4C0E-9997-08526B7AB6B0</Id>
+  <Version>2.0.0.2</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Translator">
+     <Override Locale="ar-sa" Value="المترجم" />
+     <Override Locale="bg-bg" Value="Преводач" />
+     <Override Locale="cs-cz" Value="Translator" />
+     <Override Locale="da-dk" Value="Oversætter" />
+     <Override Locale="de-de" Value="Übersetzer" />
+     <Override Locale="el-gr" Value="Μεταφραστής" />
+     <Override Locale="es-es" Value="Traductor" />
+     <Override Locale="et-ee" Value="Tõlkeriist" />
+     <Override Locale="fi-fi" Value="Kääntäjä" />
+     <Override Locale="fr-fr" Value="Traducteur" />
+     <Override Locale="he-il" Value="מתרגם" />
+     <Override Locale="hi-in" Value="अनुवादक" />
+     <Override Locale="hr-hr" Value="Prevoditelj" />
+     <Override Locale="hu-hu" Value="Translator" />
+     <Override Locale="id-id" Value="Penerjemah" />
+     <Override Locale="it-it" Value="Traduttore" />
+     <Override Locale="ja-jp" Value="トランスレーター" />
+     <Override Locale="kk-kz" Value="Аудармашы" />
+     <Override Locale="ko-kr" Value="번역기" />
+     <Override Locale="lt-lt" Value="Vertyklė" />
+     <Override Locale="lv-lv" Value="Tulkotājs" />
+     <Override Locale="ms-my" Value="Penterjemah" />
+     <Override Locale="nb-no" Value="Oversetter" />
+     <Override Locale="nl-nl" Value="Vertalen" />
+     <Override Locale="pl-pl" Value="Translator" />
+     <Override Locale="pt-br" Value="Tradutor" />
+     <Override Locale="pt-pt" Value="Tradutor" />
+     <Override Locale="ro-ro" Value="Translator" />
+     <Override Locale="ru-ru" Value="Переводчик" />
+     <Override Locale="sk-sk" Value="Prekladač" />
+     <Override Locale="sl-si" Value="Prevajalnik" />
+     <Override Locale="sr-latn-rs" Value="Prevodilac" />
+     <Override Locale="sv-se" Value="Translator" />
+     <Override Locale="th-th" Value="ตัวแปลภาษา" />
+     <Override Locale="tr-tr" Value="Çevirmen" />
+     <Override Locale="uk-ua" Value="Перекладач" />
+     <Override Locale="vi-vn" Value="Translator" />
+     <Override Locale="zh-cn" Value="翻译工具" />
+     <Override Locale="zh-tw" Value="翻譯工具" />
+  </DisplayName>
+  <Description DefaultValue="Translator helps you be productive in your preferred language, with translations, definitions, and more."/>
+  <IconUrl DefaultValue="https://ogma.osi.office.net/outlooktranslatorapp/Images/TranslateIcon32x32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://ogma.osi.office.net/outlooktranslatorapp/Images/TranslateIcon64x64.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkID=257495"/>
+  <Hosts>
+    <Host Name="Document"/>
+    <Host Name="Presentation"/>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://ogma.osi.office.net/TradukoApi/UI/index.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Ogma.Taskpane.Url" DefaultValue="https://ogma.osi.office.net/TradukoApi/UI/index.html"/>
+        <bt:Url id="Ogma.Lookup.Url" DefaultValue="https://ogma.osi.office.net/TradukoApi/UI/index.html?tab=Lookup"/>
+        <bt:Url id="Ogma.Document.Url" DefaultValue="https://ogma.osi.office.net/TradukoApi/UI/index.html?tab=Document"/> 
+        <bt:Url id="Ogma.Languages.Url" DefaultValue="https://ogma.osi.office.net/TradukoApi/UI/index.html?tab=Document"/>
+        <bt:Url id="Ogma.TranslateDocument.Url" DefaultValue="https://ogma.osi.office.net/TradukoApi/UI/index.html?action=translateDocument"/>
+        <bt:Url id="Ogma.Settings.Url" DefaultValue="https://ogma.osi.office.net/TradukoApi/UI/index.html?tab=Settings"/>
+      </bt:Urls>
+    </Resources>
+    <ConnectedServiceControls>
+      <Scopes>
+        <Scope>AnalyzeUserContent</Scope>
+      </Scopes>
+    </ConnectedServiceControls>
+  </VersionOverrides>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>zud5og2rPD1JQ5tzdS8S2wNMCA8=</DigestValue></Reference></SignedInfo><SignatureValue>
+    mAsy2TYAMhqnIE7VuqO7cl2lKUy+zLtjkCteia6tXHhfS7AIcEJSf5FBgDJapYxMTCxW1KMu
+    Y+l+RojYbwoNWT//ZVsZ1+MVjSLJnyp55KewIhy9Sc9c4WI/hKomP578aDhKe4FYQMnluNAQ
+    s+MmZrlylyET6QYT0DiZKSqminFAJGCaqeiwfPwzdmHL+B48EHhFs/WsZh6r69T2Oger1/DC
+    o3EVUuofBSA7Z9YECPyjB+kn0LERXrL1qCwyP9NIGLXRz2YWYT/9OI8rMtb/lBWAicZ+k6dS
+    jAcPkXpNJOQ9/L0/jNnyM4FnFYdmRTPOxeCKPOzprggsj7scBmrgCg==
+  </SignatureValue><KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>
+            wDMEayMvFGRDWL49z7Rly2zrSLlw0Ba516K8CJ5FGNNKv9busb1ph1fYZcoP7d/i1A1PGsmH
+            JRxzugyrUMN6f00HwRG8co57HHVSY+y3eWhxQhJZwuRTSBNoPiTq55wxiEgluqZo1Nvoit8t
+            N6L6Cb2ZQYoTtka8j1ZrKxIVOslbx9sezxjHZ65JKug6Gv4ZLE8OwOLbepooLSb5UhfPZiE+
+            ZyZ2dw16XUoCxRDvaU94cWa7n0e9Hutt9glSvueXVekEp8yCO3f/iEu4qUp6A6w1QdhLiSpL
+            aEst4VmZ15CyxcjF8UmiQrzNYgEd+hNmhA7vQJll0nLzhLkfJk/bGQ==
+          </Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>
+          MIIFFTCCA/2gAwIBAgITMwAAATHHL9wie/PQbAABAAABMTANBgkqhkiG9w0BAQUFADB5MQsw
+          CQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwG
+          A1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSMwIQYDVQQDExpNaWNyb3NvZnQgQ29kZSBT
+          aWduaW5nIFBDQTAeFw0xNjA2MjkxNzE0MzBaFw0xNzA5MjkxNzE0MzBaMIGgMQswCQYDVQQG
+          EwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMV
+          TWljcm9zb2Z0IENvcnBvcmF0aW9uMQ0wCwYDVQQLEwRNT1BSMTswOQYDVQQDEzJNaWNyb3Nv
+          ZnQgQ29ycG9yYXRpb24gVGhpcmQtUGFydHkgQXBwIERpc3RyaWJ1dGlvbjCCASIwDQYJKoZI
+          hvcNAQEBBQADggEPADCCAQoCggEBAMAzBGsjLxRkQ1i+Pc+0Zcts60i5cNAWudeivAieRRjT
+          Sr/W7rG9aYdX2GXKD+3f4tQNTxrJhyUcc7oMq1DDen9NB8ERvHKOexx1UmPst3locUISWcLk
+          U0gTaD4k6uecMYhIJbqmaNTb6IrfLTei+gm9mUGKE7ZGvI9WaysSFTrJW8fbHs8Yx2euSSro
+          Ohr+GSxPDsDi23qaKC0m+VIXz2YhPmcmdncNel1KAsUQ72lPeHFmu59HvR7rbfYJUr7nl1Xp
+          BKfMgjt3/4hLuKlKegOsNUHYS4kqS2hLLeFZmdeQssXIxfFJokK8zWIBHfoTZoQO70CZZdJy
+          84S5HyZP2xkCAwEAAaOCAWwwggFoMB8GA1UdJQQYMBYGCCsGAQUFBwMDBgorBgEEAYI3TAEB
+          MB0GA1UdDgQWBBQH4DL1JAf1fO/eoax4lKmMG0/DOzBRBgNVHREESjBIpEYwRDENMAsGA1UE
+          CxMETU9QUjEzMDEGA1UEBRMqMzE2MDMrNTc4YTYzNWEtNWE3ZC00ZmQzLTgyZTEtNzVhNzgx
+          ZWIyMGI1MB8GA1UdIwQYMBaAFMsR6MrStBZYAck3LjMWFrlMmgofMFYGA1UdHwRPME0wS6BJ
+          oEeGRWh0dHA6Ly9jcmwubWljcm9zb2Z0LmNvbS9wa2kvY3JsL3Byb2R1Y3RzL01pY0NvZFNp
+          Z1BDQV8wOC0zMS0yMDEwLmNybDBaBggrBgEFBQcBAQROMEwwSgYIKwYBBQUHMAKGPmh0dHA6
+          Ly93d3cubWljcm9zb2Z0LmNvbS9wa2kvY2VydHMvTWljQ29kU2lnUENBXzA4LTMxLTIwMTAu
+          Y3J0MA0GCSqGSIb3DQEBBQUAA4IBAQAFbeSbb135Rr37uchBH4sytmeHCugfHQb+4Zso5v87
+          QS/Be9Pv13YYsVJ3sK0nfOftNTaFrwN/qlFIcPjo/eTmfU5cHFld6qJsxt3GdW1AIC5tCAk0
+          UkH0d3CH/sPVWM5dHFox1vuU93MI++zBsJbqCQfIVaT0gybZClXroh/PK84z7ymRQ3wbZL81
+          XPjUAYKtpPR8HcjpTibgqTbsfO9N1gQz+hRUop8FfQ5wsvZ8GULboKraYS1tQEjjdmaElVvo
+          T5bdFGcTonlzPruj1WDFxwWxzQUtfb4mFRBEy6gJ/Sje1pCrMmFplroc3qmZyu4GlyAGn0KY
+          MIUjjggdOKSc
+        </X509Certificate>
+      </X509Data>
+      <X509Data>
+        <X509Certificate>
+          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
+        </X509Certificate>
+      </X509Data>
+      <X509Data>
+        <X509Certificate>
+          MIIFvDCCA6SgAwIBAgIKYTMmGgAAAAAAMTANBgkqhkiG9w0BAQUFADBfMRMwEQYKCZImiZPy
+          LGQBGRYDY29tMRkwFwYKCZImiZPyLGQBGRYJbWljcm9zb2Z0MS0wKwYDVQQDEyRNaWNyb3Nv
+          ZnQgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMTAwODMxMjIxOTMyWhcNMjAwODMx
+          MjIyOTMyWjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH
+          UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSMwIQYDVQQDExpNaWNy
+          b3NvZnQgQ29kZSBTaWduaW5nIFBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+          ALJyWVwZMGS/HZpgICBCmXZTbD4b1m/My/Hqa/6XFhDg3zp0gxq3L6Ay7P/ewkJOI9VyANs1
+          VwqJyq4gSfTwaKxNS42lvXlLcZtHB9r9Jd+ddYjPqnNEf9eB2/O98jakyVxF3K+tPeAoaJca
+          p6Vyc1bxF5Tk/TWUcqDWdl8ed0WDhTgW0HNbBbpnUo2lsmkv2hkL/pJ0KeJ2L1TdFDBZ+NKN
+          Yv3LyV9GMVC5JxPkQDDPcikQKCLHN049oDI9kM2hOAaFXE5WgigqBTK3S9dPY+fSLWLxRT3n
+          rAgA9kahntFbjCZT6HqqSvJGzzc8OJ60d1ylF56NyxGPVjzBrAlfA9MCAwEAAaOCAV4wggFa
+          MA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFMsR6MrStBZYAck3LjMWFrlMmgofMAsGA1Ud
+          DwQEAwIBhjASBgkrBgEEAYI3FQEEBQIDAQABMCMGCSsGAQQBgjcVAgQWBBT90TFO0yaKleGY
+          YDuoMW+mPLzYLTAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTAfBgNVHSMEGDAWgBQOrIJg
+          QFYnl+UlE/wq4QpTlVnkpDBQBgNVHR8ESTBHMEWgQ6BBhj9odHRwOi8vY3JsLm1pY3Jvc29m
+          dC5jb20vcGtpL2NybC9wcm9kdWN0cy9taWNyb3NvZnRyb290Y2VydC5jcmwwVAYIKwYBBQUH
+          AQEESDBGMEQGCCsGAQUFBzAChjhodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpL2NlcnRz
+          L01pY3Jvc29mdFJvb3RDZXJ0LmNydDANBgkqhkiG9w0BAQUFAAOCAgEAWTk+fyZGr+tvQLEy
+          tWrrDi9uqEn361917Uw7LddDrQv+y+ktMaMjzHxQmIAhXaw9L0y6oqhWnONwu7i0+Hm1SXL3
+          PupBf8rhDBdpy6WcIC36C1DEVs0t40rSvHDnqA2iA6VW4LiKS1fylUKc8fPv7uOGHzQ8uFaa
+          8FMjhSqkghyT4pQHHfLiTviMocroE6WRTsgb0o9ylSpxbZsa+BzwU9ZnzCL/XB3Nooy9J7J5
+          Y1ZEolHN+emjWFbdmwJFRC9f9Nqu1IIybvyklRPk62nnqaIsvsgrEA5ljpnb9aL6EiYJZTiU
+          8XofSrvR4Vbo0HiWGFzJNRZf3ZMdSY4tvq00RBzuEBUaAF3dNVshzpjHCe6FDoxPbQ4TTj18
+          KUicctHzbMrB7HCjV5JXfZSNoBtIA1r3z6NnCnSlNu0tLxfI5nI3EvRvsTxngvlSso0zFmUe
+          DordEN5k9G/ORtTTF+l5xAS00/ss3x+KnqwK+xMnQK3k+eGpf0a7B2BHZWBATrBC7E7ts3Z5
+          2Ao0CW0cgDEf4g5U3eWh++VHEK1kmP9QFi58vwUheuKVQSdpw5OPlcmN2Jshrg1cnPCiroZo
+          gwxqLbt2awAdlq3yFnv2FoMkuYjPaqhHMS+a3ONxPdcAfmJH0c6IybgY+g5yjcGjPa8CQGr/
+          aZuW4hCoELQ3UAjWwz0=
+        </X509Certificate>
+      </X509Data>
+    </KeyInfo><Object id="ts-countersig"><X509Data><X509Certificate>MIIEwzCCA6ugAwIBAgITMwAAAMWWQGBL9N6uLgAAAAAAxTANBgkqhkiG9w0BAQUFADB3MQswCQYD
+VQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMV
+TWljcm9zb2Z0IENvcnBvcmF0aW9uMSEwHwYDVQQDExhNaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0Ew
+HhcNMTYwOTA3MTc1ODUyWhcNMTgwOTA3MTc1ODUyWjCBszELMAkGA1UEBhMCVVMxEzARBgNVBAgT
+Cldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3Jh
+dGlvbjENMAsGA1UECxMETU9QUjEnMCUGA1UECxMebkNpcGhlciBEU0UgRVNOOkMwRjQtMzA4Ni1E
+RUY4MSUwIwYDVQQDExxNaWNyb3NvZnQgVGltZS1TdGFtcCBTZXJ2aWNlMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEAtrwz4CWOpvnwEBVOe1crKElrs3CQl/yun1cdkpugh/MxsuoGn7BL
+43GRTxRn7sPD7rq1Dxj4smPlgVZr/ZhGMA8J3zXOqyIcD4hYFikXuhlGuuSokunCAxUl5N4gjN/M
+7+NwJPm2JtYKZLBdH5J/y+GIk7rQhpgbstpLOZf4GHgC8Myji7089O1uX2MCKFFU+wt2Y560O4Xc
+2NVjeuG+nnq5pGyq9111nK3f0DeT7FWjDVQWFghKOhyeBb4iMhmkdA8vWpYmx6TNc+d35nSZcLc0
+EhSIVJkzEBYfwkrzxFaG/pgNJ9C4jm/zHgwWLZwQpU7K2fP15fGkBGplwNjr1wIDAQABo4IBCTCC
+AQUwHQYDVR0OBBYEFA4B9X87yXgCWEZxOwn8mnVXhjjEMB8GA1UdIwQYMBaAFCM0+NlSRnAK7UD7
+dvuzK7DDNbMPMFQGA1UdHwRNMEswSaBHoEWGQ2h0dHA6Ly9jcmwubWljcm9zb2Z0LmNvbS9wa2kv
+Y3JsL3Byb2R1Y3RzL01pY3Jvc29mdFRpbWVTdGFtcFBDQS5jcmwwWAYIKwYBBQUHAQEETDBKMEgG
+CCsGAQUFBzAChjxodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpL2NlcnRzL01pY3Jvc29mdFRp
+bWVTdGFtcFBDQS5jcnQwEwYDVR0lBAwwCgYIKwYBBQUHAwgwDQYJKoZIhvcNAQEFBQADggEBAAUS
+3tgSEzCpyuw21ySUAWvGltQxunyLUCaOf1dffUcG25oaOW/WuIFJs0lv8Py6TsOrulsx/4NTkIyX
+ra/MsJvwczMX2s/vx6g63O3osQI85qHDdp8IMULGmry+oqPVTuvL7Bac905EqqGXGd9UY7y14FcK
+WBWJ28vjncTw8CW876pY80nSm8hC/38M4RMGNEp7KGYxx5ZgGX3NpAVeUBio7XccXHEy7CSNmXm2
+V8ijeuGZJ9fIMkhiAWLEfKOgxGZ63s5yGwpMt2QE/6Py03uF+X2DHK76w3FQghqiUNPFC7uUo9po
+SfArmeLDuspkPAJ46db02bqNyRLP00bczzw=</X509Certificate></X509Data><X509Data><X509Certificate>MIIGBzCCA++gAwIBAgIKYRZoNAAAAAAAHDANBgkqhkiG9w0BAQUFADBfMRMwEQYKCZImiZPyLGQB
+GRYDY29tMRkwFwYKCZImiZPyLGQBGRYJbWljcm9zb2Z0MS0wKwYDVQQDEyRNaWNyb3NvZnQgUm9v
+dCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMDcwNDAzMTI1MzA5WhcNMjEwNDAzMTMwMzA5WjB3
+MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwG
+A1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSEwHwYDVQQDExhNaWNyb3NvZnQgVGltZS1TdGFt
+cCBQQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCfoWyx39tIkip8ay4Z4b3i48WZ
+USNQrc7dGE4kD+7Rp9FMrXQwIBHrB9VUlRVJlBtCkq6YXDAm2gBr6Hu97IkHD/cOBJjwicwfyzMk
+h53y9GccLPx754gd6udOo6HBI1PKjfpFzwnQXq/QsEIEovmmbJNn1yjcRlOwhtDlKEYuJ6yGT1VS
+DOQDLPtqkJAwbofzWTCd+n7Wl7PoIZd++NIT8wi3U21StEWQn0gASkdmEScpZqiX5NMGgUqi+YSn
+EUcUCYKfhO1VeP4Bmh1QCIUAEDBG7bfeI0a7xC1Un68eeEExd8yb3zuDk6FhArUdDbH895uyAc4i
+S1T/+QXDwiALAgMBAAGjggGrMIIBpzAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQjNPjZUkZw
+Cu1A+3b7syuwwzWzDzALBgNVHQ8EBAMCAYYwEAYJKwYBBAGCNxUBBAMCAQAwgZgGA1UdIwSBkDCB
+jYAUDqyCYEBWJ5flJRP8KuEKU5VZ5KShY6RhMF8xEzARBgoJkiaJk/IsZAEZFgNjb20xGTAXBgoJ
+kiaJk/IsZAEZFgltaWNyb3NvZnQxLTArBgNVBAMTJE1pY3Jvc29mdCBSb290IENlcnRpZmljYXRl
+IEF1dGhvcml0eYIQea0WoUqgpa1Mc1j0BxMuZTBQBgNVHR8ESTBHMEWgQ6BBhj9odHRwOi8vY3Js
+Lm1pY3Jvc29mdC5jb20vcGtpL2NybC9wcm9kdWN0cy9taWNyb3NvZnRyb290Y2VydC5jcmwwVAYI
+KwYBBQUHAQEESDBGMEQGCCsGAQUFBzAChjhodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpL2Nl
+cnRzL01pY3Jvc29mdFJvb3RDZXJ0LmNydDATBgNVHSUEDDAKBggrBgEFBQcDCDANBgkqhkiG9w0B
+AQUFAAOCAgEAEJeKw1wDRDbd6bStd9vOeVFNAbEudHFbbQwTq86+e4+4LtQSooxtYrhXAstOIBNQ
+md16QOJXu69YmhzhHQGGrLt48ovQ7DsB7uK+jwoFyI1I4vBTFd1Pq5Lk541q1YDB5pTyBi+FA+mR
+KiQicPv2/OR4mS4N9wficLwYTp2OawpylbihOZxnLcVRDupiXD8WmIsgP+IHGjL5zDFKdjE9K3IL
+yOpwPf+FChPfwgphjvDXuBfrTot/xTUrXqO/67x9C0J71FNyIe4wyrt4ZVxbARcKFA7S2hSY9Ty5
+ZlizLS/n+YWGzFFW6J1wlGysOUzU9nm/qhh6YinvopspNAZ3GmLJPR5tH4LwC8csu89Ds+X57H21
+46SodDW4TsVxIxImdgs8UoxxWkZDFLyzs7BNZ8ifQv+AeSGAnhUwZuhCEl4ayJ4iIdBD6Svpu/RI
+zCzU2DKATCYqSCRfWupW76bemZ3KOm+9gSd0BhHudiG/m4LBJ1S2sWo9iaF2YbRuoROmv6pH8BJv
+/YoybLL+31HIjCPJZr2dHYcSZAI9La9Zj7jkIeW1sMpjtHhUBdRBLlCslLCleKuzoJZ1GtmShxN1
+Ii8yqAhuoFuMJb+g74TKIdbrHk/Jmu5J4PcBZW+JC33Iacjmbuqnl84xKf8OxVtc2E0bodj6L54/
+LlUWa8kTo/0=</X509Certificate></X509Data><CounterSignature xmlns="http://schemas.microsoft.com/xmldsig/timestamp/2003" ts-format="cms-timestamp-message">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</CounterSignature></Object></Signature></OfficeApp>

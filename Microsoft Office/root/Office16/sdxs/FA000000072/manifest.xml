@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>41299874-25f3-4bbd-9f6e-d7822b09928d</Id>
+  <Version>0.0.2111.19003</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Feed">
+    <Override Locale="ar-SA" Value="موجز" />
+    <Override Locale="bg-BG" Value="Информационен канал" />
+    <Override Locale="cs-CZ" Value="Informační kanál" />
+    <Override Locale="da-DK" Value="Feed" />
+    <Override Locale="de-DE" Value="Feed" />
+    <Override Locale="el-GR" Value="Τροφοδοσία" />
+    <Override Locale="en-GB" Value="Feed" />
+    <Override Locale="en-US" Value="Feed" />
+    <Override Locale="es-ES" Value="Papel" />
+    <Override Locale="es-MX" Value="Papel" />
+    <Override Locale="et-EE" Value="Kanal" />
+    <Override Locale="eu-ES" Value="Jarioa" />
+    <Override Locale="fi-FI" Value="Syöte" />
+    <Override Locale="fr-FR" Value="Flux" />
+    <Override Locale="fr-CA" Value="Flux" />
+    <Override Locale="he-IL" Value="התרעות" />
+    <Override Locale="hi-IN" Value="फ़ीड" />
+    <Override Locale="hr-HR" Value="Sažetak sadržaja" />
+    <Override Locale="hu-HU" Value="Tevékenységcsatorna" />
+    <Override Locale="id-ID" Value="Umpan" />
+    <Override Locale="is-IS" Value="Straumur" />
+    <Override Locale="it-IT" Value="Flux" />
+    <Override Locale="ja-JP" Value="Feed" />
+    <Override Locale="kk-KZ" Value="Веб-арна" />
+    <Override Locale="ko-KR" Value="공급" />
+    <Override Locale="lt-LT" Value="Informacijos santrauka" />
+    <Override Locale="lv-LV" Value="Plūsma" />
+    <Override Locale="ms-MY" Value="Suapan" />
+    <Override Locale="nb-NO" Value="Mater" />
+    <Override Locale="nl-NL" Value="Invoer" />
+    <Override Locale="pl-PL" Value="Kanał informacyjny" />
+    <Override Locale="pt-BR" Value="Feed" />
+    <Override Locale="pt-PT" Value="Feed" />
+    <Override Locale="ro-RO" Value="Flux" />
+    <Override Locale="ru-RU" Value="Лента" />
+    <Override Locale="sk-SK" Value="Informácie" />
+    <Override Locale="sl-SI" Value="Vir" />
+    <Override Locale="sr-Cyrl-RS" Value="Убацивање коверте" />
+    <Override Locale="sr-Latn-RS" Value="Feed" />
+    <Override Locale="sv-SE" Value="Flöde" />
+    <Override Locale="th-TH" Value="เนื้อหาสรุป" />
+    <Override Locale="tr-TR" Value="Akış" />
+    <Override Locale="uk-UA" Value="Канал" />
+    <Override Locale="vi-VN" Value="Nguồn cung cấp" />
+    <Override Locale="zh-CN" Value="信息页" />
+    <Override Locale="zh-TW" Value="摘要" />
+  </DisplayName>
+  <Description DefaultValue="Allows you to read and create notes">
+    <Override Locale="ar-SA" Value="يسمح لك بقراءة وإنشاء الملاحظات" />
+    <Override Locale="bg-BG" Value="Позволява ви да четете и създавате бележки" />
+    <Override Locale="cs-CZ" Value="Můžete číst a vytvářet poznámky." />
+    <Override Locale="da-DK" Value="Lader dig læse og oprette noter" />
+    <Override Locale="de-DE" Value="Ermöglicht Ihnen das Lesen und Erstellen von Notizen." />
+    <Override Locale="el-GR" Value="Επιτρέπει την ανάγνωση και δημιουργία σημειώσεων" />
+    <Override Locale="en-GB" Value="Allows you to read and create notes" />
+    <Override Locale="en-US" Value="Allows you to read and create notes" />
+    <Override Locale="es-ES" Value="Permite leer y crear notas." />
+    <Override Locale="et-EE" Value="Võimaldab lugeda ja märkmeid teha" />
+    <Override Locale="eu-ES" Value="Oharrak irakurtzea eta sortzea ahalbidetzen dizu" />
+    <Override Locale="fi-FI" Value="Voit lukea ja luoda muistiinpanoja" />
+    <Override Locale="fr-CA" Value="Vous permet de lire et de créer des notes" />
+    <Override Locale="fr-FR" Value="Vous permet de lire et de créer des notes" />
+    <Override Locale="he-IL" Value="מאפשר לך לקרוא וליצור פתקים" />
+    <Override Locale="hi-IN" Value="आपको पढ़ने, और नोट्स बनाने के लिए अनुमति देता है" />
+    <Override Locale="hr-HR" Value="Omogućuje čitanje i stvaranje bilješki" />
+    <Override Locale="hu-HU" Value="Ezzel a bővítménnyel cetliket olvashat és írhat." />
+    <Override Locale="id-IS" Value="Memungkinkan Anda untuk membaca serta membuat catatan" />
+    <Override Locale="is-IS" Value="Gerir þér kleift að lesa og búa til glósur" />
+    <Override Locale="it-IT" Value="Ti consente di leggere e creare note" />
+    <Override Locale="ja-JP" Value="ノートの読み取りと作成ができます" />
+    <Override Locale="kk-KZ" Value="Жазбаларды оқуға және жасауға мүмкіндік береді" />
+    <Override Locale="ko-KR" Value="메모를 읽고 만들 수 있습니다." />
+    <Override Locale="lt-LT" Value="Galite skaityti ir kurti pastabas" />
+    <Override Locale="lv-LV" Value="Ļauj lasīt un veidot piezīmes" />
+    <Override Locale="ms-MY" Value="Membolehkan anda membaca dan mencipta nota" />
+    <Override Locale="nb-NO" Value="Lar deg lese og opprette notater" />
+    <Override Locale="nl-NL" Value="Hiermee kunt u notities lezen en maken" />
+    <Override Locale="pl-PL" Value="Umożliwia odczytywanie i tworzenie notatek" />
+    <Override Locale="pt-BR" Value="Permite que você leia e crie anotações" />
+    <Override Locale="pt-PT" Value="Permite-lhe ler e criar notas" />
+    <Override Locale="ro-RO" Value="Vă permite să citiți și să creați note" />
+    <Override Locale="ru-RU" Value="Позволяет читать и создавать заметки" />
+    <Override Locale="sk-SK" Value="Umožňuje čítať a vytvárať poznámky" />
+    <Override Locale="sl-SI" Value="Omogoča branje in ustvarjanje opomb." />
+    <Override Locale="sr-Cyrl-RS" Value="Омогућава вам да читате и креирате белешке" />
+    <Override Locale="sr-Latn-RS" Value="Omogućava vam da čitate i kreirate beleške" />
+    <Override Locale="sv-SE" Value="Du kan läsa och skapa anteckningar" />
+    <Override Locale="th-TH" Value="ช่วยให้คุณสามารถอ่านและสร้างบันทึกย่อได้" />
+    <Override Locale="tr-TR" Value="Notları okumanıza ve not oluşturmanıza olanak sağlar" />
+    <Override Locale="uk-UA" Value="Дає змогу читати та створювати нотатки" />
+    <Override Locale="vi-VN" Value="Cho phép bạn đọc và tạo ghi chú" />
+    <Override Locale="zh-CN" Value="允许你读取和创建笔记" />
+    <Override Locale="zh-TW" Value="允許您讀取及建立便箋" />
+  </Description>
+  <IconUrl DefaultValue="assets/icon-32.png"/>
+  <SupportUrl DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+  <Hosts>
+    <Host Name="Notebook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://www.onenote.com/officeaddins/stickynotes?clientlogging=false"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <AppDomains>
+    <AppDomain>https://aka.ms</AppDomain>
+    <AppDomain>https://login.live.com</AppDomain>
+    <AppDomain>https://login.microsoftonline.com</AppDomain>
+    <AppDomain>https://www.onenote.com</AppDomain>
+  </AppDomains>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="Feed.Default.Url" DefaultValue="https://www.onenote.com/officeaddins/stickynotes?clientlogging=false"/>
+        <bt:Url id="Feed.Beta.Url" DefaultValue="https://www.onenote.com/officeaddins/stickynotes?clientlogging=false&amp;version=a4ed89ec-8afd-4bc2-b828-b204259b1e4f"/>
+      </bt:Urls>
+    </Resources>
+    <WebApplicationInfo>
+      <Id>2d4d3d8e-2be3-4bef-9f87-7875a61c29de</Id>
+      <Resource>https://www.onenote.com/</Resource>
+      <Scopes>
+        <Scope>user_impersonation</Scope>
+      </Scopes>
+      <Authorizations>
+        <!-- OrgId and MSA-->
+        <Authorization>
+          <!-- For graph access for MSA, the full scope is https://graph.microsoft.com/User.Read
+               The first-party SSO API always appends /User.Read to any resource with the graph URL
+               and does not recommend using an explicit scope when making the request -->
+          <Resource>https://graph.microsoft.com</Resource>
+          <Scopes>
+            <Scope>Directory.Read.All</Scope>
+          </Scopes>
+        </Authorization>
+        <!-- OrgId -->
+        <Authorization>
+          <Resource>https://outlook.office365.com/</Resource>
+          <Scopes>
+            <Scope>Notes.Read</Scope>
+            <Scope>Notes.ReadWrite</Scope>
+          </Scopes>
+        </Authorization>
+        <!-- MSA-->
+        <Authorization>
+          <Resource>https://outlook.com/</Resource>
+          <Scopes>
+            <Scope>Notes.Read</Scope>
+            <Scope>Notes.ReadWrite</Scope>
+          </Scopes>
+        </Authorization>
+      </Authorizations>
+    </WebApplicationInfo>
+  </VersionOverrides>
+</OfficeApp>

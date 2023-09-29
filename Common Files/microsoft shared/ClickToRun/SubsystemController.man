@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd" xmlns="http://schemas.microsoft.com/win/2004/08/events" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:trace="http://schemas.microsoft.com/win/2004/08/events/trace">
+	<instrumentation>
+		<events>
+			<provider name="Microsoft-AppV-Client-SubsystemController" guid="{D49E7F7D-2036-451A-9EE6-6EF93BD21626}" symbol="PROVIDER_MICROSOFT_APPV_CLIENT_SUBSYSTEM_CONTROLLER" resourceFileName="%windir%\system32\appv_etw_subsystem_controller.dll" messageFileName="%windir%\system32\appv_etw_subsystem_controller.dll" message="$(string.SubsystemController.Provider.Name)">
+				<channels>
+					<channel name="Microsoft-AppV-Client-SubsystemController/Debug" chid="Dbg" symbol="CHANNEL_APPV_CLIENT_SUBSYSTEM_CONTROLLER_DEBUG" type="Debug" enabled="false" isolation="Application" message="$(string.SubsystemController.Channel.Debug.Name)">
+					</channel>
+				</channels>
+        <keywords>
+          <keyword name="Performance" symbol="KEYWORD_CONTROLLER_PERFORMANCE" mask="0x800000000000" message="$(string.Microsoft-AppV-Client-SubsystemController.Keyword.Performance)" />
+        </keywords>
+        <tasks>
+				</tasks>
+				<templates>
+					<template tid="TWString">
+						<data name="wstr" inType="win:UnicodeString" outType="xs:string"/>
+					</template>
+					<template tid="TSWTYPERETCODE">
+						<data name="result" inType="win:UInt64" outType="xs:unsignedLong"/>
+					</template>
+					<template tid="StringSWTYPERETCODE">
+						<data name="string" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="result" inType="win:UInt64" outType="xs:unsignedLong"/>
+					</template>
+					<template tid="StringPidSWTYPERETCODE">
+						<data name="string" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="result" inType="win:UInt64" outType="xs:unsignedLong"/>
+					</template>
+					<template tid="StringStringStringSWTYPERETCODE">
+						<data name="string1" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="string2" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="string3" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="result" inType="win:UInt64" outType="xs:unsignedLong"/>
+					</template>
+					<template tid="StringStringStringPidSWTYPERETCODE">
+						<data name="string1" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="string2" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="string3" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="result" inType="win:UInt64" outType="xs:unsignedLong"/>
+					</template>
+					<template tid="SubsystemGuidVersionUser">
+						<data name="subsystem" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+					</template>
+					<template tid="SubsystemGuidVersionUserPid">
+						<data name="subsystem" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="GuidVersionUser">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+					</template>
+					<template tid="GuidVersionUserPid">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="PidSWTYPERETCODE">
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="result" inType="win:UInt64" outType="xs:unsignedLong"/>
+					</template>
+					<template tid="GuidVersionUserPidResult">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="result" inType="win:HexInt64"/>
+					</template>
+					<template tid="GuidVersionUserResult">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="result" inType="win:HexInt64"/>
+					</template>
+					<template tid="GuidVersionUserVEid">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="VEid" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="GuidVersionUserVEidPid">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="VEid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="GuidVersionUserVEidPidRef">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="VEid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="refcount" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="GuidVersionUserPidGuidVersion">
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="userSid" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="OtherID" inType="win:GUID"/>
+						<data name="OtherVersion" inType="win:GUID"/>
+					</template>
+					<template tid="PidLastError">
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="result" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="PidAppnameLastError">
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="appName" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="result" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="AppnameLastError">
+						<data name="appName" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="result" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="LastError">
+						<data name="result" inType="win:UInt32" outType="xs:unsignedInt"/>
+					</template>
+					<template tid="PidAppnameMonikerRC">
+						<data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+						<data name="appName" inType="win:UnicodeString" outType="xs:string"/>
+						<data name="PackageID" inType="win:GUID"/>
+						<data name="VersionID" inType="win:GUID"/>
+						<data name="uint64" inType="win:UInt64" outType="xs:unsignedLong"/>
+					</template>
+				</templates>
+				<events>
+					<!-- debugging events, id:1xx, prefix: vsc -->
+					<event symbol="vscStartRuntimeError" value="100" version="1" channel="Dbg" level="win:Error" task="win:None" template="StringSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.event.100.message)">
+					</event>
+					<event symbol="vscNotifyProcessLaunchError" value="101" version="1" channel="Dbg" level="win:Error" task="win:None" template="StringPidSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.event.101.message)">
+					</event>
+					<event symbol="vscStopRuntimeError" value="102" version="1" channel="Dbg" level="win:Error" task="win:None" template="StringSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.event.102.message)">
+					</event>
+					<event symbol="vscNotifyProcessRemoveError" value="103" version="1" channel="Dbg" level="win:Error" task="win:None" template="StringPidSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.event.103.message)">
+					</event>
+					<event symbol="vscUndoVeCreateError" value="104" version="1" channel="Dbg" level="win:Error" task="win:None" template="GuidVersionUserResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.104.message)">
+					</event>
+					<event symbol="vscUndoProcessCreateError" value="105" version="1" channel="Dbg" level="win:Error" task="win:None" template="GuidVersionUserPidResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.105.message)">
+					</event>
+					
+					<event symbol="vscStartRuntimeSuccess" value="106" version="1" channel="Dbg" level="win:Informational" task="win:None" template="SubsystemGuidVersionUser" message="$(string.Microsoft-AppV-Client-SubsystemController.event.106.message)">
+					</event>
+					<event symbol="vscStopRuntimeSuccess" value="107" version="1" channel="Dbg" level="win:Informational" task="win:None" template="SubsystemGuidVersionUser" message="$(string.Microsoft-AppV-Client-SubsystemController.event.107.message)">
+					</event>
+					<event symbol="vscNotifyProcessLaunchSuccess" value="108" version="1" channel="Dbg" level="win:Informational" task="win:None" template="SubsystemGuidVersionUserPid" message="$(string.Microsoft-AppV-Client-SubsystemController.event.108.message)">
+					</event>
+					<event symbol="vscNotifyProcessTerminationSuccess" value="109" version="1" channel="Dbg" level="win:Informational" task="win:None" template="SubsystemGuidVersionUserPid" message="$(string.Microsoft-AppV-Client-SubsystemController.event.109.message)">
+					</event>
+					<event symbol="vscInjectionFailed" value="110" version="1" channel="Dbg" level="win:Error" task="win:None" template="PidSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.event.110.message)">
+					</event>
+					<event symbol="vscHandleVeCreated" value="111" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.111.message)">
+					</event>
+					<event symbol="vscHandleVeCreatedUndo" value="112" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.112.message)">
+					</event>
+					<event symbol="vscHandleVeTerminated" value="113" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.113.message)">
+					</event>
+					<event symbol="vscHandleProcessCreated" value="114" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserPidResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.114.message)">
+					</event>
+					<event symbol="vscHandleProcessCreatedUndo" value="115" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserPidResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.115.message)">
+					</event>
+					<event symbol="vscHandleProcessTerminated" value="116" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserPidResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.116.message)">
+					</event>
+					<event symbol="vscChildProcessTerminationError" value="117" version="1" channel="Dbg" level="win:Error" task="win:None" template="PidSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.event.117.message)">
+					</event>
+					<event symbol="vscVENotEmpty" value="118" version="1" channel="Dbg" level="win:Error" task="win:None" template="GuidVersionUserVEid" message="$(string.Microsoft-AppV-Client-SubsystemController.event.118.message)">
+					</event>
+					<event symbol="vscPreviousVersionInUseError" value="119" version="1" channel="Dbg" level="win:Error" task="win:None" template="GuidVersionUserResult" message="$(string.Microsoft-AppV-Client-SubsystemController.event.119.message)">
+					</event>
+					<event symbol="vscPreviousVersionInUse" value="120" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserPidGuidVersion" message="$(string.Microsoft-AppV-Client-SubsystemController.event.120.message)">
+					</event>
+					<event symbol="vscTerminateProcessOpenProcessFailed" value="121" version="1" channel="Dbg" level="win:Error" task="win:None" template="PidLastError" message="$(string.Microsoft-AppV-Client-SubsystemController.event.121.message)">
+					</event>
+					<event symbol="vscTerminateProcessTerminateProcessFailed" value="122" version="1" channel="Dbg" level="win:Error" task="win:None" template="AppnameLastError" message="$(string.Microsoft-AppV-Client-SubsystemController.event.122.message)">
+					</event>
+					<event symbol="vscTerminateProcessWaitForSingleObjectFailed" value="123" version="1" channel="Dbg" level="win:Error" task="win:None" template="AppnameLastError" message="$(string.Microsoft-AppV-Client-SubsystemController.event.123.message)">
+					</event>
+					<event symbol="vscTerminateProcessStartHelperProcessFailed" value="124" version="1" channel="Dbg" level="win:Error" task="win:None" template="LastError" message="$(string.Microsoft-AppV-Client-SubsystemController.event.124.message)">
+					</event>
+					<event symbol="vscGetProcessBaseNameByProcessIdFailed" value="125" version="1" channel="Dbg" level="win:Error" task="win:None" template="PidAppnameMonikerRC" message="$(string.Microsoft-AppV-Client-SubsystemController.GetProcessBaseNameByProcessIdFailed)">
+					</event>
+					<event symbol="vscAddProcessToPrimaryVE" value="126" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserVEidPid" message="$(string.Microsoft-AppV-Client-SubsystemController.AddProcessToPrimaryVE)">
+					</event>
+					<event symbol="vscAddProcessToSecondaryVE" value="127" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserVEidPidRef" message="$(string.Microsoft-AppV-Client-SubsystemController.AddProcessToSecondaryVE)">
+					</event>
+					<event symbol="vscRemoveProcessFromPrimaryVE" value="128" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserVEidPid" message="$(string.Microsoft-AppV-Client-SubsystemController.RemoveProcessFromPrimaryVE)">
+					</event>
+					<event symbol="vscRemoveProcessFromSecondaryVE" value="129" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserVEidPidRef" message="$(string.Microsoft-AppV-Client-SubsystemController.RemoveProcessFromSecondaryVE)">
+					</event>
+					<event symbol="vscVEAddedToMap" value="130" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserVEid" message="$(string.Microsoft-AppV-Client-SubsystemController.VEAddedToMap)">
+					</event>
+					<event symbol="vscVERemovedFromMap" value="131" version="1" channel="Dbg" level="win:Informational" task="win:None" template="GuidVersionUserVEid" message="$(string.Microsoft-AppV-Client-SubsystemController.VERemovedFromMap)">
+					</event>
+
+					<!-- Enterprise only debugging events, id:3xx, prefix: vsc -->
+					<event symbol="vscAdjustPrivilegeSuccess" value="300" version="1" channel="Dbg" level="win:Informational" message="$(string.Microsoft-AppV-Client-SubsystemController.AdjustPrivilegeSuccess)">
+					</event>
+					<event symbol="vscAdjustPrivilegeError" value="301" version="1" channel="Dbg" level="win:Error" template="TSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.AdjustPrivilegeError)">
+					</event>
+					<event symbol="vscRevertPrivilegeSuccess" value="302" version="1" channel="Dbg" level="win:Informational" message="$(string.Microsoft-AppV-Client-SubsystemController.RevertPrivilegeSuccess)">
+					</event>
+					<event symbol="vscRevertPrivilegeError" value="303" version="1" channel="Dbg" level="win:Error" template="TSWTYPERETCODE" message="$(string.Microsoft-AppV-Client-SubsystemController.RevertPrivilegeError)">
+					</event>
+
+				</events>
+				<levels>
+				</levels>
+				<tasks>
+				</tasks>
+				<opcodes>
+				</opcodes>
+			</provider>
+		</events>
+	</instrumentation>
+	<localization>
+		<resources culture="en-US">
+			<stringTable>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.100.message" value="start_runtime() failed on %1 subsystem. Error %2.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.101.message" value="notify_process_launch() failed for %1 subsystem. pid %2. error %3.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.102.message" value="stop_runtime() failed on %1 subsystem. Error %2.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.103.message" value="notify_process_termination() failed for %1 subsystem. pid %2. error %3.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.104.message" value="undo create VE failed for package %1, version %2, user %3. error %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.105.message" value="undo create process failed for package %1, version %2, user %3, pid %4. error %5.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.106.message" value="%1 start_runtime() success. GUID %2 version %3 user %4">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.107.message" value="%1 stop_runtime() success. GUID %2 version %3 user %4">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.108.message" value="%1 notify_process_launch() success. GUID %2 version %3 user %4 pid %5">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.109.message" value="%1 notify_process_termination() success. GUID %2 version %3 user %4 pid %5">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.110.message" value="Failed to inject virtualization subssytem into process %1. Error %2.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.111.message" value="VECreated activity received. Package GUID %1, version GUID %2, user %3, result %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.112.message" value="VECreated-Undo activity received. Package GUID %1, version GUID %2, user %3, result %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.113.message" value="VETerminated activity received. Package GUID %1, version GUID %2, user %3, result %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.114.message" value="ProcessCreated activity received. Package GUID %1, version GUID %2, user %3, pid %4, result %5.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.115.message" value="ProcessCreated-Undo activity received. Package GUID %1, version GUID %2, user %3, pid %4, result %5.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.116.message" value="ProcessTerminated activity received. Package GUID %1, version GUID %2, user %3, pid %4, result %5.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.117.message" value="Terminating child processes of PID %1 failed. Error %2.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.118.message" value="Request to delete VE which is not empty. Package GUID %1, version GUID %2, user %3, VE is %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.119.message" value="Unable to check whether previous version is in use. Error retrieving package group descriptor. Package GUID %1, version GUID %2, user %3, result %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.120.message" value="Cannot launch new VE because previous version is in use. Package GUID %1, version GUID %2, user %3, pid %4. Previous vesion ve GUID %5, version GUID %6.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.121.message" value="Failed to open process handle to process %1 while trying to terminate process. Error %2.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.122.message" value="TerminateProcess() on %1 failed with error %2.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.123.message" value="Terminating process %1. WaitForSingleObject() failed with error %2.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.event.124.message" value="Terminating virtual processes: failed to start appvnice.exe helper process. Error %1.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.GetProcessBaseNameByProcessIdFailed" value="GetProcessBaseNameByProcessId failed. Pid: %1, AppName: %2, package GUID: %3, version GUID: %4, rc: %5.">
+				</string>
+
+				<string id="Microsoft-AppV-Client-SubsystemController.AddProcessToPrimaryVE" value="Adding process to primary VE. PID: %5, package GUID: %1, version GUID: %2, user SID: %3, VE id: %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.AddProcessToSecondaryVE" value="Adding process to secondary VE. PID: %5, package GUID: %1, version GUID: %2, user SID: %3, VE id: %4, refcount: %6.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.RemoveProcessFromPrimaryVE" value="Removing process from primary VE. PID: %5, package GUID: %1, version GUID: %2, user SID: %3, VE id: %4.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.RemoveProcessFromSecondaryVE" value="Removing process from secondary VE. PID: %5, package GUID: %1, version GUID: %2, user SID: %3, VE id: %4, refcount: %6.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.VEAddedToMap" value="Adding VE to map. package GUID: %1, version GUID: %2, user SID: %3, VE id: %4">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.VERemovedFromMap" value="Removing VE from map. package GUID: %1, version GUID: %2, user SID: %3, VE id: %4">
+				</string>
+
+				<string id="Microsoft-AppV-Client-SubsystemController.AdjustPrivilegeSuccess" value="Successfully adjusted SeBackupPrivilege and SeRestorePrivilege privileges.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.AdjustPrivilegeError" value="Failed to adjust SeBackupPrivilege and SeRestorePrivilege privileges. Error %1.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.RevertPrivilegeSuccess" value="Successfully reverted SeBackupPrivilege and SeRestorePrivilege privileges.">
+				</string>
+				<string id="Microsoft-AppV-Client-SubsystemController.RevertPrivilegeError" value="Failed to revert SeBackupPrivilege and SeRestorePrivilege privileges. Error %1.">
+				</string>
+
+
+				<string id="Microsoft-AppV-Client-SubsystemController.Keyword.Performance" value="Performance">
+				</string>
+
+				<string id="task.None" value="None">
+				</string>
+				<string id="opcode.Stop" value="Stop">
+				</string>
+				<string id="opcode.Start" value="Start">
+				</string>
+				<string id="level.LogAlways" value="Log Always">
+				</string>
+				<string id="level.Error" value="Error">
+				</string>
+				<string id="SubsystemController.Provider.Name" value="Microsoft Application Virtualization Client Enteprise Subsystem Controller Event Provider">
+				</string>
+				<string id="SubsystemController.Channel.Debug.Name" value="Debug">
+				</string>
+				<string id="SubsystemController.Channel.Analytic.Name" value="Performance">
+				</string>
+				<string id="Event.Perf.VirtualEnvironmentStartupStop" value="Virtual environment startup stop.">
+				</string>
+				<string id="Event.Perf.VirtualEnvironmentStartupStart" value="Virtual environment startup start.">
+				</string>
+				<string id="Event.Perf.VirtualEnvironmentShutdownStop" value="Virtual environment shutdown stop.">
+				</string>
+				<string id="Event.Perf.VirtualEnvironmentShutdownStart" value="Virtual environment shutdown start.">
+				</string>
+				<string id="Event.Perf.StopSubsystemRuntimeStop" value="Subsystem '%1' stop_runtime stop.">
+				</string>
+				<string id="Event.Perf.StopSubsystemRuntimeStart" value="Subsystem '%1' stop_runtime start.">
+				</string>
+				<string id="Event.Perf.StopStop" value="SubsystemController:Stop() stop.">
+				</string>
+				<string id="Event.Perf.StopStart" value="SubsystemController:Stop() start.">
+				</string>
+				<string id="Event.Perf.StartupStop" value="SubsystemController:Startup() stop.">
+				</string>
+				<string id="Event.Perf.StartupStart" value="SubsystemController:Startup() start.">
+				</string>
+				<string id="Event.Perf.StartSubsystemRuntimeStop" value="Subsystem '%1' start_runtime stop.">
+				</string>
+				<string id="Event.Perf.StartSubsystemRuntimeStart" value="Subsystem '%1' start_runtime start.">
+				</string>
+				<string id="Event.Perf.ShutdownStop" value="SubsystemController:Shutdown() stop.">
+				</string>
+				<string id="Event.Perf.ShutdownStart" value="SubsystemController:Shutdown() start.">
+				</string>
+				<string id="Event.Perf.RunStop" value="SubsystemController:Run() stop.">
+				</string>
+				<string id="Event.Perf.RunStart" value="SubsystemController:Run() start.">
+				</string>
+				<string id="Event.Perf.RemoveProcessFromVEStop" value="Remove process from virtual environment stop.">
+				</string>
+				<string id="Event.Perf.RemoveProcessFromVEStart" value="Remove process from virtual environment start.">
+				</string>
+				<string id="Event.Perf.DllInjectStop" value="Injecting DLLs stop.">
+				</string>
+				<string id="Event.Perf.DllInjectStart" value="Injecting DLLs start.">
+				</string>
+				<string id="Event.Perf.AddProcessToVEStop" value="Add process to virtual environment stop.">
+				</string>
+				<string id="Event.Perf.AddProcessToVEStart" value="Add process to virtual environment start.">
+				</string>
+				<string id="Event.Perf.ActivityStop" value="HandleActivity request from Controller stop.">
+				</string>
+				<string id="Event.Perf.ActivityStart" value="HandleActivity request from Controller start.">
+				</string>
+			</stringTable>
+		</resources>
+	</localization>
+</instrumentationManifest>
